@@ -11,7 +11,7 @@ https://gnehs.github.io/Anime-List/
 接下來就能開始使用了
 
 ## 範例
-- 您可在首頁的 Console 中測試
+您可在首頁的 Console 中測試
 
 輸入:
 ```
@@ -30,6 +30,7 @@ Anime.length
 參考首頁: https://gnehs.github.io/Anime-List/
 
 ## 資料
+註：尚未公布時間的被分類在星期一，使用資料時請務必注意
 ### 格式
 ```
 ['動畫名稱', '星期', '撥出時間', '改編', '日文原文', '圖片', '介紹'],
