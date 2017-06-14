@@ -11,6 +11,8 @@ https://gnehs.github.io/Anime-List/
 接下來就能開始使用了
 
 ## 範例
+- 您可在首頁的 Console 中測試
+
 輸入:
 ```
 Anime[0][0]
