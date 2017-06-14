@@ -41,9 +41,9 @@ Anime.length
 ### 資料有誤?
 依照格式修改後發 PR 回來即可
 ### 資料來源
--[2017.07 New TV Animation](https://imgur.com/85WkAcz)
--[2017年7月夏季新番放送列表](https://goo.gl/Gr4h6l)
--[Wikipedia](https://zh.wikipedia.org)
--[百度百科](https://baike.baidu.com/)
--[巴哈姆特]( https://www.gamer.com.tw/)
--[萌娘百科 (授權：cc-by-nc-sa)](https://zh.moegirl.org/)
+- [2017.07 New TV Animation](https://imgur.com/85WkAcz)
+- [2017年7月夏季新番放送列表](https://goo.gl/Gr4h6l)
+- [Wikipedia](https://zh.wikipedia.org)
+- [百度百科](https://baike.baidu.com/)
+- [巴哈姆特]( https://www.gamer.com.tw/)
+- [萌娘百科 (授權：cc-by-nc-sa)](https://zh.moegirl.org/)
