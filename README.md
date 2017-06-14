@@ -16,6 +16,7 @@ https://gnehs.github.io/Anime-List/
 輸入:
 ```
 Anime[0][0]
+// 取得排序第0個資料(DIVE!!跳水男孩)內的第0的資料(動畫名稱)
 ```
 回傳:
 ```
@@ -31,7 +32,7 @@ Anime.length
 ## 資料
 ### 格式
 ```
-['動畫名稱', '星期', '撥出時間', '改編', '日文原文', '圖片', '介紹']
+['動畫名稱', '星期', '撥出時間', '改編', '日文原文', '圖片', '介紹'],
 星期  Sun  Mon Tue  Wed  Thu  Fri  Sat
      日   一   二   三    四   五   六
 改編  Comic   Novel   Game     Original
