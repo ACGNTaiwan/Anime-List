@@ -24,10 +24,19 @@ html
         // 將資料載入網頁中
         script(src='index.js')
     body
+        #top.ts.basic.menu.top.attached
+            .ts.container
+                a.item(href='#Sun') 週日
+                a.item(href='#Mon') 週一
+                a.item(href='#Tue') 週二
+                a.item(href='#Wed') 週三
+                a.item(href='#Thu') 週四
+                a.item(href='#Fri') 週五
+                a.item(href='#Sat') 週六
+                .right.menu
+                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
         // 標題
         .ts.slate.huge
-            .image
-                script(src='https://gnehs.github.io/RandomPic/randompicture.js')
             .header 7月新番
             .description 7月新番最新情報
         br
@@ -54,3 +63,8 @@ html
             h3.ts.header 週六
                 .sub.header 是周末！
             #Sat.ts.four.doubling.waterfall.cards
+        .ts.slate.bottom.attached 
+            | 2017 棒棒勝
+            a(href='#top')
+                i.arrow.up.icon
+                | 回到頂部
