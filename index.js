@@ -13,6 +13,7 @@ $(function () {
         $("#" + Anime_Day)
             .append($("<div/>")
                 .addClass("ts card")
+                .attr("id", Anime_Name)
                 .append($("<div/>")
                     .addClass("image")
                     .append($("<img/>")
