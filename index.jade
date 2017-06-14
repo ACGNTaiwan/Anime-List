@@ -23,6 +23,13 @@ html
         script(src='anime2017.07.js')
         // 將資料載入網頁中
         script(src='index.js')
+        // 為類型新增 CSS
+        // Comic   Novel   Game     Original
+        style.
+            i.icon.Comic:before{content: "\f040";}
+            i.icon.Novel:before{content: "\f15c";}
+            i.icon.Game:before{content: "\f11b";}
+            i.icon.Original:before{content: "\f26c";}
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
@@ -42,6 +49,33 @@ html
         br
         br
         .ts.container
+            h2.ts.header.dividing.center.aligned 介紹
+                .sub.header 這個網站的使用方法
+            .ts.four.doubling.cards
+                .ts.card
+                    .content
+                        .header 原作由漫畫改編
+                        .description 你有看到一支筆嗎？對，我找不到更貼切的 Icon 了
+                    .symbol
+                        i.Comic.icon
+                .ts.card
+                    .content
+                        .header 原作由小說改編
+                        .description 你有看到一張嗎？對，我如果拿其他 Icon 會跟漫畫搞混 QQ
+                    .symbol
+                        i.Novel.icon
+                .ts.card
+                    .content
+                        .header 原作由遊戲改編
+                        .description 那是遊戲控制器，大概是我在這裡選得最貼切的 OuOb
+                    .symbol
+                        i.Game.icon
+                .ts.card
+                    .content
+                        .header 原創或其他
+                        .description 因為直接從電視上播嘛 Ow<
+                    .symbol
+                        i.Original.icon
             h2.ts.header.dividing.center.aligned 週日
                 .sub.header 一周的開始
             #Sun.ts.four.doubling.waterfall.cards
