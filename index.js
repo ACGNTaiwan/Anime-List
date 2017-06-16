@@ -45,5 +45,15 @@ $(function () {
                     )
                 )
             );
+        console.groupCollapsed("讀取成功："+Anime_Name);
+        console.log('名稱', Anime_Name);
+        console.log('原文', Anime_Name_Jpn);
+        console.log('時間', Anime_Time);
+        console.log('星期', Anime_Day);
+        console.log('改編', Anime_Adapt);
+        console.log('介紹', Anime_Info);
+        console.log('圖片', Anime_Img);
+        console.groupEnd();
     }
+    console.log("讀取完畢：一共讀取了 " + Anime.length + " 部動畫")
 });
