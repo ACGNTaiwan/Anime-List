@@ -1,0 +1,49 @@
+//- 程式碼用模板
+mixin day(day,daych)
+    .column
+        .ts.very.relaxed.divided.list(id=day) 
+            h3.ts.header=daych
+            block
+doctype html
+html
+    head
+        title 7月新番 日程表
+        meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(charset='utf-8')
+        //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時拜託不要動到這裡
+        include ./../Jade/_tocasui.jade
+        include ./../Jade/_tags.jade
+        +social_tags('7月新番 日程表','7月新番最新情報','https://gnehs.github.io/Anime-List/og.jpg','https://gnehs.github.io/Anime-List/')
+        // JQ https://cdnjs.com/libraries/jquery/
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        // 7月新番資料
+        script(src='anime2017.07.js')
+        // 將資料載入網頁中
+        script(src='schedule.js')
+    body
+        #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
+            .ts.container
+                a.item(href='schedule.html') 7月新番 日程表
+                .right.menu
+                    a.item(href='index.html') 新番介紹
+                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
+        // 標題
+        .ts.slate.huge
+            .header 7月新番 日程表
+            .description 7月新番最新情報
+        br
+        br
+        .ts.container
+            .ts.doubling.seven.column.grid
+                +day('Sun','週日')
+                +day('Mon','週一')
+                +day('Tue','週二')
+                +day('Wed','週三')
+                +day('Thu','週四')
+                +day('Fri','週五')
+                +day('Sat','週六')
+        .ts.slate.bottom.attached 
+            | 2017 棒棒勝
+            a(href='#top')
+                i.arrow.up.icon
+                | 回到頂部

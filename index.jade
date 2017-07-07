@@ -4,19 +4,10 @@ html
         title 7月新番
         meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(charset='utf-8')
-        // SEO
-        meta(name='keywords',content='棒棒勝,7月新番,情報')
-        meta(name='author',content='棒棒勝')
-        meta(name='description',content='7月新番最新情報')
-        // OG TAGS
-        meta(property='og:title',content='7月新番')
-        meta(property='og:image',content='https://gnehs.github.io/Anime-List/og.jpg')
-        meta(property='og:description',content='7月新番最新情報')
-        meta(property='article:author',content='https://www.facebook.com/gnehsouo/')
-        //-Tocas UI
-        include ./../_tocasui.jade
-        //-棒棒勝的自訂元件
-        include ./../_gnehs.jade
+        //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時拜託不要動到這裡
+        include ./../Jade/_tocasui.jade
+        include ./../Jade/_tags.jade
+        +social_tags('7月新番','7月新番最新情報','https://gnehs.github.io/Anime-List/og.jpg','https://gnehs.github.io/Anime-List/')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         // 7月新番資料
@@ -41,6 +32,7 @@ html
                 a.item(href='#Fri') 週五
                 a.item(href='#Sat') 週六
                 .right.menu
+                    a.item(href='schedule.html') 7月新番 日程表
                     a.item(href='https://github.com/gnehs/Anime-List') GitHub
         // 標題
         .ts.slate.huge
@@ -97,6 +89,8 @@ html
             h2.ts.header.dividing.center.aligned 週六
                 .sub.header 是周末！
             #Sat.ts.four.doubling.waterfall.cards
+            br
+            br
         .ts.slate.bottom.attached 
             | 2017 棒棒勝
             a(href='#top')
