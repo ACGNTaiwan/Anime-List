@@ -1,8 +1,16 @@
 //- 模板
-mixin day(day,header,caption)
-    h2.ts.header.dividing.center.aligned=header
+mixin s(header,caption)
+    h2.ts.header.dividing=header
         .sub.header=caption
-    .ts.four.doubling.cards(id=day)
+    .ts.four.doubling.cards
+        block
+mixin card(header,description,link,icon)
+    a.ts.card(href=link)
+        .content
+            .header=header
+            .description=description
+        .symbol
+            i(class="icon "+icon)
 doctype html
 html
     head
@@ -12,74 +20,25 @@ html
         //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時拜託不要動到這裡
         include ./../Jade/_tocasui.jade
         include ./../Jade/_tags.jade
-        +social_tags('7月新番','7月新番最新情報','https://gnehs.github.io/Anime-List/og.jpg','https://gnehs.github.io/Anime-List/')
-        // JQ https://cdnjs.com/libraries/jquery/
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // 7月新番資料
-        script(src='anime2017.07.js')
-        // 將資料載入網頁中
-        script(src='index.js')
-        // 為類型新增 CSS
-        // Comic   Novel   Game     Original
-        style.
-            i.icon.Comic:before{content: "\f1fc";}
-            i.icon.Novel:before{content: "\f02d";}
-            i.icon.Game:before{content: "\f11b";}
-            i.icon.Original:before{content: "\f26c";}
+        +social_tags('新番情報','最齊全的新番情報','https://gnehs.github.io/Anime-List/2017.07/og.png','https://gnehs.github.io/Anime-List/')
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
-                a.item(href='#Sun') 週日
-                a.item(href='#Mon') 週一
-                a.item(href='#Tue') 週二
-                a.item(href='#Wed') 週三
-                a.item(href='#Thu') 週四
-                a.item(href='#Fri') 週五
-                a.item(href='#Sat') 週六
                 .right.menu
-                    a.item(href='schedule.html') 7月新番 日程表
+                    a.item(href='https://gnehs.github.io/Anime-List/') 首頁
                     a.item(href='https://github.com/gnehs/Anime-List') GitHub
         // 標題
         .ts.slate.huge
-            .header 7月新番
-            .description 7月新番最新情報
+            .header 新番情報
+            .description 選擇季度
         br
         br
         .ts.container
-            h2.ts.header.dividing.center.aligned 介紹
-                .sub.header 這個網站的 Icons
-            .ts.four.doubling.cards
-                .ts.card
-                    .content
-                        .header 動畫由漫畫改編
-                        .description 你有看到一支筆嗎？對，我找不到更貼切的 Icon 了
-                    .symbol
-                        i.Comic.icon
-                .ts.card
-                    .content
-                        .header 動畫由小說改編
-                        .description 對，這是一本書
-                    .symbol
-                        i.Novel.icon
-                .ts.card
-                    .content
-                        .header 動畫由遊戲改編
-                        .description 那是遊戲控制器，大概是我在這裡選得最貼切的 OuOb
-                    .symbol
-                        i.Game.icon
-                .ts.card
-                    .content
-                        .header 原創或其他
-                        .description 因為直接從電視上播嘛 Ow<
-                    .symbol
-                        i.Original.icon
-            +day('Sun','週日','一周的開始')
-            +day('Mon','週一','憂鬱星期一')
-            +day('Tue','週二','煩躁星期二')
-            +day('Wed','週三','喝咖啡撐下去')
-            +day('Thu','週四','可以看到週六了')
-            +day('Fri','週五','加油！再撐一天')
-            +day('Sat','週六','是周末！')
+            +s('2017/10 月秋番','滿滿的第二季')
+                +card('[開發中]介紹','圖文介紹','2017.10/index.html','grid layout')
+            +s('2017/07 月夏番','應該資料沒漏掉吧，大概......')
+                +card('介紹','圖文介紹','2017.07/index.html','grid layout')
+                +card('日程表','以表格展示新番日程','2017.07/schedule.html','table')
             br
             br
         .ts.slate.bottom.attached 
