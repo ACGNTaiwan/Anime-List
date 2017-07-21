@@ -49,7 +49,7 @@ $(function() {
                 )
                 .append($("<div/>")
                     .addClass("extra content")
-                    .html(Anime_Time)
+                    .html("<i class='time icon'></i>" + Anime_Time)
                 )
                 .append($("<div/>")
                     .addClass("symbol")

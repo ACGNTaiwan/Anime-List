@@ -9,13 +9,13 @@
 // https://zh.wikipedia.org/
 //==============================//
 Anime = [
-    // 星期格式：
+    // 星期格式 / Week
     //     Sun  Mon Tue  Wed  Thu  Fri  Sat none
     //     日   一   二   三    四   五   六  尚未公開
-    // 原作載體：
+    // 原作載體 / Carrier
     //     Comic  Novel   Game  Original
     //    漫畫    小說    遊戲   原創或其他
-    // 資料存取範例：
+    // 資料存取範例 / Example
     //    -> Anime[0].name
     //    <- LoveLive! SunShine!!
     {
@@ -83,6 +83,117 @@ Anime = [
         nameInJpn: '干物妹! うまるちゃん',
         img: 'https://i.imgur.com/cLFUhKD.png',
         description: '故事背景設定在東京都八王子市，講述的是一位在外面是嫻熟高貴、但回到家後立即變成宅在家中喜歡 ACG 的乾物女小埋，與照顧她生活的哥哥以及好友們之間發生的喜劇故事。',
+    },
+    {
+        name: '阿松',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '2',
+        nameInJpn: 'おそ松くん',
+        img: 'https://i.imgur.com/vaKu2s0.png',
+        description: '故事以過去的經典作品《六胞胎》中，登場的 6 位主角設定為 20 多歳的成年人，內容多為原創。故事圍繞著松野家的六胞胎進行，描述他們的日常生活種種。',
+    },
+    {
+        name: 'Classica Loid',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Original',
+        season: '2',
+        nameInJpn: 'クラシカロイド',
+        img: 'https://i.imgur.com/LkKqPQ8.png',
+        description: '描述住在依靠音樂來振興都市中的高中生面前，突然出現了由貝多芬和莫扎特兩人所組成的可疑音樂組合。他們所演奏的音樂中有著奇妙的力量，可以引發星辰降落、巨大機器人出現等怪事，讓他們每天過得提心吊膽……',
+    },
+    {
+        name: 'LOVE 米',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Original',
+        season: '2',
+        nameInJpn: 'ラブ米 -WE LOVE RICE-',
+        img: 'https://i.imgur.com/Mm1ppLb.png',
+        description: '描述是一部將日本主食米飯擬人化的作品。剛進入即將面臨廢校的穀立稻穗學園就讀的五位新生，為了從麵包手中奪回穀物的人氣，組成了名為「LOVE RICE」的團體，朝向宣傳穀物美味的舞台邁進。',
+        complaints: '不懂為啥可以賣米到第二季...',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
     },
     {
         name: '123',
