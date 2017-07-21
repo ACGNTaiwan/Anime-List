@@ -38,5 +38,5 @@ Anime.length
 ### 資料有誤?
 依照格式修改後發 PR 回來即可
 ### 資料來源
-- [【秋番】2017年10月新番一覽（日本秋季新番列表](http://justlaughtw.blogspot.com/2017/03/201710.html)
+- [【秋番】2017年10月新番一覽（日本秋季新番列表)](http://justlaughtw.blogspot.com/2017/03/201710.html)
 - [Wikipedia](https://zh.wikipedia.org)
