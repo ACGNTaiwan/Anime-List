@@ -16,7 +16,7 @@ Anime = [
     //     Comic  Novel   Game  Original
     //    漫畫    小說    遊戲   原創或其他
     // 資料存取範例：
-    //    -> Anime[0]['name']
+    //    -> Anime[0].name
     //    <- LoveLive! SunShine!!
     {
         name: 'LoveLive! SunShine!!',
@@ -61,6 +61,39 @@ Anime = [
         nameInJpn: '3月のライオン',
         img: 'https://i.imgur.com/QID5pXV.png',
         description: '描述獨自居住在東京舊市鎮的 17 歲少年 桐山零，被周遭歌頌為天才將棋棋士的零，在幼時因意外事故失去了家人，所以生活上、還是棋盤上都背負著深沉的孤獨。在這樣的他面前卻出現了明里、日向、桃三姊妹......',
+    },
+    {
+        name: '結城友奈是勇者',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Original',
+        season: '2',
+        nameInJpn: '結城友奈は勇者である',
+        img: 'https://i.imgur.com/YTYZSEt.png',
+        description: '描述結城友奈是位國中二年級的學生，每天從家裡到學校上課的她也結交了不少的朋友，過著隨處可見的平穩的日子，但唯一跟一般人不同之處就是她所參與的社團勇者部。以社長犬吠埼風為中心，結城友奈所屬的勇者部即將開始活動。',
+    },
+    {
+        name: '我家有個魚乾妹',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '2',
+        nameInJpn: '干物妹! うまるちゃん',
+        img: 'https://i.imgur.com/cLFUhKD.png',
+        description: '故事背景設定在東京都八王子市，講述的是一位在外面是嫻熟高貴、但回到家後立即變成宅在家中喜歡 ACG 的乾物女小埋，與照顧她生活的哥哥以及好友們之間發生的喜劇故事。',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
     },
     /*{
         name: '123',
