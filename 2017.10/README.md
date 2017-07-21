@@ -14,12 +14,12 @@ https://gnehs.github.io/Anime-List/
 您可在首頁的 Console 中測試
 
 ```
-// 資料存取範例 / Example
+// 資料存取
 -> Anime[0].name
 <- LoveLive! SunShine!!
 ```
 ```
-// 取得資料高度:
+// 取得資料高度
 Anime.length
 ```
 ## 網頁範例
