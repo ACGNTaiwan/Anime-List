@@ -30,7 +30,7 @@ Anime = [
         carrier: 'Original',
         season: '2',
         nameInJpn: 'LoveLive! SunShine!!',
-        img: 'http://i.imgur.com/FbMfs4G.png',
+        img: 'https://i.imgur.com/FbMfs4G.png',
         description: "故事以日本靜岡縣的浦之星女學院為故事舞台，描述憧憬著 μ's 的主角之一高海千歌，將在這小地方與夥伴們朝著校園偶像的目標邁進。",
     },
     {
