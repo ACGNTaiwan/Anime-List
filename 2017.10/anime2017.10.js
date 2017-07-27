@@ -7,6 +7,8 @@
 // http://justlaughtw.blogspot.com/2017/03/201710.html
 // 維基百科
 // https://zh.wikipedia.org/
+// 萌娘百科
+// https://zh.moegirl.org/
 //==============================//
 Anime = [
     // 星期格式 / Week
@@ -139,6 +141,83 @@ Anime = [
         nameInJpn: 'あんさんぶるスターズ！',
         img: 'https://i.imgur.com/4K06FRV.png',
         description: '描述某天突然被傳說中的偶像三神遙人選中的高中 2 年級主人公·天宮奏。 他看到同事務所的偶像們那熱切的心意，也不甘落後地沉浸在偶像活動當中。 於是，他和夥伴們一同以在夢之祭中出場，並贏得 CD 出道為目標！ ',
+    },
+    {
+        name: '灰姑娘女孩劇場',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '2',
+        nameInJpn: 'アイドルマスターシンデレラガールズ劇場',
+        img: 'https://i.imgur.com/FOButed.jpg',
+        description: '正好評配信中的偶像培養遊戲《偶像大師 灰姑娘女孩》，在該遊戲內展開的《灰姑娘女孩劇場》，作為TV動畫嶄新登場！熟悉的偶像們，今天也是非常地吵鬧！？包含平常未被描寫的偶像們度過假期的方式，和偶像們的滑稽劇等豐富多彩內容的情緒高漲的短篇動畫，終於要開幕了♪',
+    },
+    {
+        name: '食戟之靈',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '3',
+        nameInJpn: '食戟のソーマ',
+        img: 'https://i.imgur.com/ErcOiq6.png',
+        description: '作品的舞台是位於東京內的一所料理名校「遠月學園」，國中畢業之後為了作繼承家業「幸平餐館」的主角幸平創真因為父親的指示來到這裡，以特別編入生就讀。在畢業率不到百分之十的「遠月學園」裏，來自各地廚藝精銳的年輕人彼此較勁，是互相爭奪料理頂點的戰場。在這料理便是一切的世界，所有敵人都必須用料理來征服。為了擊敗對手，互相賭上等價的賭注，用料理進行的單對單決鬥，就是遠月的傳統料理對決－「食戟」。',
+    },
+    {
+        name: '銀魂',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '6',
+        nameInJpn: 'ぎんたま',
+        img: 'https://i.imgur.com/r50dGl8.png',
+        description: '故事描述在江戶，因為突然從宇宙來的異人「天人」勢力的抬頭加上頒布廢刀令，使得武士走上衰退的道路。但是有個人依然堅持武士的靈魂名為坂田銀時。這個喜歡吃甜食又無厘頭的傢伙，說不定能將腐敗的江戶給一分為二呢。',
+    },
+    {
+        name: '悠久持有者',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '1',
+        nameInJpn: 'UQ Holder!',
+        img: 'https://i.imgur.com/Ty7GhlZ.png',
+        description: '2086年，世人皆知魔法之存在已經10年。近衛刀太住在日本熊本縣阿蘇郡（見第45話），夢想去首都「新東京天之御柱市」做一番大事業，但被村長要求：先打倒他的班導師兼監護人雪姬，才能啟程前往天之御柱市。刀太與同班四位男同學是好朋友，他們每天挑戰雪姬，希望能打倒她，但總是無功而返；雪姬覺得他們自不量力，卻也樂在其中。賞金獵人橘老師突襲雪姬，終結了這段平穩的日子。',
+    },
+    {
+        name: '魔法使的新娘',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '1',
+        nameInJpn: '魔法使いの嫁',
+        img: 'https://i.imgur.com/NeOAq5H.png',
+        description: '羽鳥智世是個無依無靠，沒有求生慾望和方法，一無所有的十五歲少女，卻有一名非人類的魔法使艾利亞斯·恩滋華斯以五百萬磅買下智世，並把她當成「徒弟」和「新娘」，她心中停止已久的時間也開始慢慢地運轉……',
+    },
+    {
+        name: '泥鯨之子們在沙地上歌唱',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Comic',
+        season: '1',
+        nameInJpn: 'クジラの子らは砂上に歌う',
+        img: 'https://i.imgur.com/E5zslbk.png',
+        description: '以一個被沙子覆蓋的世界作為舞台，居住在砂海上的巨大船「泥鯨」的居民們，是擁有著以感情為發動來源的超能力「情念動」的短命種族。背負著此般命運的少年茶珂珞，某天在突然漂流而來的廢墟船中，與一名少女相遇了……',
+    },
+    {
+        name: '123',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: '123',
+        season: '1232',
+        nameInJpn: '123',
+        img: '123',
+        description: '123',
     },
     {
         name: '123',
