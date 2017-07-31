@@ -15,7 +15,7 @@ $(function() {
         }
         var Anime_Img = Anime[i].img //圖片
         $("#waterfall") //這裡用到了 JQ
-            .append($("<a/>")
+            .append($("<div/>")
                 .addClass("ts card") //Tocas UI 的卡片
                 .attr("id", Anime_Name)
                 .attr("data-tooltip", Anime_Name)
