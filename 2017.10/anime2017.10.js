@@ -22,6 +22,18 @@ Anime = [
     // 資料存取範例 / Example
     //    -> Anime[0].name
     //    <- LoveLive! SunShine!!
+    // 格式範例 / Example
+    // {
+    //    name: '動畫名稱',
+    //    date: '首次播送日期(ex.6/13)',
+    //    week: '星期(請參照星期格式)',
+    //    time: '首次播送時間',
+    //    carrier: '原作載體(請參照原作載體格式)',
+    //    season: '第?季',
+    //    nameInJpn: '動畫原文名稱',
+    //    img: '海報(請上傳 Ingur 並將網址改成 Https 格式)',
+    //    description: '說明文(避免大量劇透)',
+    // },
     {
         name: 'LoveLive! SunShine!!',
         date: '尚未公開',
@@ -52,7 +64,7 @@ Anime = [
         carrier: 'Comic',
         season: '2',
         nameInJpn: '鬼灯の冷徹',
-        img: 'https://i.imgur.com/5mjlBsI.png',
+        img: 'https://i.imgur.com/FVCPS9b.png',
         description: '故事描述戰後人口爆發且惡靈兇暴化，亡者產生的問題使的地獄出現了前所未有混亂；身為閻羅王手下的第一補佐官鬼燈，將替代閻羅王將解決各式麻煩的問題，地獄也每天都上演著閻羅王翹班挨罵的情景。',
     },
     {
