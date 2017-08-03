@@ -22,18 +22,30 @@ html
         style.
             .ts.card{
                 overflow: hidden;
+                border-radius: 0;
+                border-radius: 0;
             }
-            .ts.card>.image>.header:not(.ts){
+            .ts.card>.image>.header{
                 opacity: 0;
-                bottom: -100px;
                 transition: .25s;
                 transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
-                margin: 7px;
-                border-radius: .28571rem;
+                border-radius: 0 !important;
+                transform: scaleY(0);
+                transform-origin:bottom;
             }
-            .ts.card:hover>.image>.header:not(.ts){
+            .ts.card:hover>.image>.header{
                 opacity: 1;
                 bottom: 0;
+                transform: scaleY(1);
+            }
+            .ts.card>.image>img{
+                transition: .25s;
+                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
+                border-radius: 0 !important;
+            }
+            .ts.card:hover>.image>img{
+                filter: blur(4.2px);
+                transform: scale(1.05);
             }
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
@@ -44,7 +56,7 @@ html
         // 標題 
         .ts.slate.huge
             .header 10月新番 - 瀑布流
-            .description 就是個展示用的頁面
+            .description 就是個展示用的頁面，滑鼠滑到圖片上或是按圖片來查看介紹
         br
         br
         .ts.container
