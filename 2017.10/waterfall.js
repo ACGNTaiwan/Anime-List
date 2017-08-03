@@ -14,16 +14,24 @@ $(function() {
             var Anime_Name = Anime[i].name; //動畫名稱
         }
         var Anime_Img = Anime[i].img //圖片
+        var Anime_Info = Anime[i].description; //介紹
         $("#waterfall") //這裡用到了 JQ
             .append($("<div/>")
                 .addClass("ts card") //Tocas UI 的卡片
                 .attr("id", Anime_Name)
-                .attr("data-tooltip", Anime_Name)
                 .append($("<div/>")
                     .addClass("image")
                     .append($("<img/>")
                         .addClass("image")
                         .attr("src", Anime_Img)
+                    )
+                    .append($("<div/>")
+                        .addClass("header")
+                        .html(Anime_Name)
+                        .append($("<div/>")
+                            .addClass("sub header")
+                            .html(Anime_Info)
+                        )
                     )
                 )
             );

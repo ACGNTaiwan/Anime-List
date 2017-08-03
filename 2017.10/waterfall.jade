@@ -18,6 +18,23 @@ html
         script(src='anime2017.10.js')
         // 將資料載入網頁中 
         script(src='waterfall.js')
+        // Hover 才顯示動畫介紹
+        style.
+            .ts.card{
+                overflow: hidden;
+            }
+            .ts.card>.image>.header:not(.ts){
+                opacity: 0;
+                bottom: -100px;
+                transition: .25s;
+                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
+                margin: 7px;
+                border-radius: .28571rem;
+            }
+            .ts.card:hover>.image>.header:not(.ts){
+                opacity: 1;
+                bottom: 0;
+            }
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
