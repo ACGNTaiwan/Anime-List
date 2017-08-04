@@ -35,21 +35,22 @@
           border-radius: 0;
           border-radius: 0;
       }
-      .ts.card>.image>.header{
+      .ts.card>.image>.header:not(.ts){
           opacity: 0;
-          transition: .25s;
+          transition: .4s;
           transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
           border-radius: 0 !important;
-          transform: scaleY(0);
           transform-origin:bottom;
+          height: 100%;
+          transform: scale(1.05);
+          padding: 1.25rem 1.5rem;
       }
-      .ts.card:hover>.image>.header{
+      .ts.card:hover>.image>.header:not(.ts){
           opacity: 1;
-          bottom: 0;
-          transform: scaleY(1);
+          transform: scale(1);
       }
       .ts.card>.image>img{
-          transition: .25s;
+          transition: .4s;
           transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
           border-radius: 0 !important;
       }
@@ -58,11 +59,11 @@
           transform: scale(1.05);
       }
       @media (max-width: 768px){
-          .ts.card:hover>.image>.header{
-              font-size: 14px;
+          .ts.card>.image>.header{
+              font-size: 14px !important;
           }
-          .ts.card:hover>.image>.header>.sub.header{
-              font-size: 11px;
+          .ts.card>.image>.header>.sub.header{
+              font-size: 11px !important;
           }
       }
     </style>
