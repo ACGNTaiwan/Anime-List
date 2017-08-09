@@ -351,7 +351,7 @@ Anime = [
         carrier: 'Novel',
         season: '2',
         nameInJpn: 'キノの旅 -the Beautiful World-',
-        img: 'https://i.imgur.com/ToRsNTJ.png',
+        img: 'https://i.imgur.com/ippCEGo.jpg',
         description: '旅行者奇諾（Kino）騎著她那會說話的摩托車漢密斯（Hermes）到各個國家旅行，在每個國家奇諾都只停留三天，在她體會了該國家人民的文化、風俗之後，三天內她便離開並前往另一個國家.......。',
     },
     {
