@@ -97,7 +97,7 @@ Anime = [
         carrier: 'Comic',
         season: '2',
         nameInJpn: '干物妹! うまるちゃん',
-        img: 'https://i.imgur.com/cLFUhKD.png',
+        img: 'https://i.imgur.com/6rxQroo.jpg',
         description: '故事背景設定在東京都八王子市，講述的是一位在外面是嫻熟高貴、但回到家後立即變成宅在家中喜歡 ACG 的乾物女小埋，與照顧她生活的哥哥以及好友們之間發生的喜劇故事。',
     },
     {
