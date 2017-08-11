@@ -68,13 +68,13 @@ html
             .description 就是個展示用的頁面，滑鼠滑到圖片上或是按圖片來查看介紹
         br
         br
-        .ts.container(style='min-height:520px')
-            #load.ts.active.dimmer(style='height: 400px;')
-                .ts.active.text.centered.loader Loading
+        .ts.container
+            #load.ts.active.inverted.dimmer(style='height:200px')
+                .ts.active.text.centered.loader 載入中
             #waterfall.ts.four.doubling.waterfall.cards(style='display:none')
             br
             br
-        .ts.fluid.center.aligned.slate 2017 棒棒勝 
+        footer.ts.fluid.center.aligned.slate(style='display:none') 2017 棒棒勝 
             br
             a(href='#top')
                 i.arrow.up.icon

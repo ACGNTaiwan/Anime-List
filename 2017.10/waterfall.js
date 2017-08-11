@@ -43,9 +43,11 @@ $(function() {
     } //結束迴圈
     console.log("讀取完畢：一共讀取了 " + Anime.length + " 部動畫"); //在載入動畫完畢之後輸出
 });
+
 window.onload = ShowList;
 
 function ShowList() {
     $("#load").removeClass("active")
     $("#waterfall").attr("style", "");
+    $("footer").attr("style", "");
 }
