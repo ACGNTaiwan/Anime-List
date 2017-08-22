@@ -26,7 +26,7 @@ $(function() {
         var Anime_Img = Anime[i].img; //圖片
         var Anime_Info = Anime[i].description; //介紹
         //$("#" + Anime_Day) //這裡用到了 JQ //等其他動畫時間都釋出後改這行
-        $("#none") //這裡用到了 JQ
+        $("#" + Anime_Day) //這裡用到了 JQ
             .append($("<div/>")
                 .addClass("ts card") //Tocas UI 的卡片
                 .attr("id", Anime_Name)
