@@ -14,7 +14,7 @@ $(function() {
             var Anime_Name = Anime[i].name; //動畫名稱
         }
         var Anime_Day = Anime[i].week; //星期
-        // 如果有撥放的星期，把時間設定為 日期+星期+時間
+        // 如果同時有撥放的日期、星期、時間，把時間設定為 日期+星期+時間
         // 如果沒有，僅顯示 尚未公開
         if (Anime[i].week != "none" || Anime[i].time != "尚未公開" || Anime[i].date != "尚未公開") {
             var Anime_Time = Anime[i].date + " " + Anime[i].week + " " + Anime[i].time; //撥出時間
@@ -25,7 +25,6 @@ $(function() {
         var Anime_Name_Jpn = Anime[i].nameInJpn; //日文原文
         var Anime_Img = Anime[i].img; //圖片
         var Anime_Info = Anime[i].description; //介紹
-        //$("#" + Anime_Day) //這裡用到了 JQ //等其他動畫時間都釋出後改這行
         $("#" + Anime_Day) //這裡用到了 JQ
             .append($("<div/>")
                 .addClass("ts card") //Tocas UI 的卡片
