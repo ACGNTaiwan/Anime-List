@@ -16,7 +16,7 @@ $(function() {
         var Anime_Day = Anime[i].week; //星期
         // 如果有撥放的星期，把時間設定為 日期+星期+時間
         // 如果沒有，僅顯示 尚未公開
-        if (Anime[i].week != "none") {
+        if (Anime[i].week != "none" || Anime[i].time != "尚未公開" || Anime[i].date != "尚未公開") {
             var Anime_Time = Anime[i].date + " " + Anime[i].week + " " + Anime[i].time; //撥出時間
         } else {
             var Anime_Time = "尚未公開";
