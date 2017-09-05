@@ -486,6 +486,28 @@ Anime = [
         img: 'https://i.imgur.com/lWfGTWh.png',
         description: '故事描述這是一場讓本季參賽者們秀出自己的重大賽事，雖然表演賽時不能過度競爭以及強硬超車，不過正式比賽中將可以期待這些選手高超技術的表現，以優勝為目標的女子賽車手們，向著終點衝刺！',
     },
+    {
+        name: '十二大戰',
+        date: '10/3',
+        week: 'Tue',
+        time: '23:30',
+        carrier: 'Novel',
+        season: '1',
+        nameInJpn: '十二大戦',
+        img: 'https://i.imgur.com/6LOSJow.png',
+        description: '描述 12 位背負著十二生肖之名的戰士，參與了一場「只要獲勝就能實現一個願望」的大戰所展開的故事。本作為收錄於集英社短篇漫畫選集《大斬》中的《無論如何都想實現的唯一 1 個願望和其他 99 個無所謂的願望》的前日譚。',
+    },
+    {
+        name: 'VANISHING LINE',
+        date: '尚未公開',
+        week: 'none',
+        time: '尚未公開',
+        carrier: 'Original',
+        season: '1',
+        nameInJpn: 'VANISHING LINE',
+        img: 'https://i.imgur.com/f55cRPj.png',
+        description: '故事舞台發生在一個高度發展的城市「羅素」之中，在這裡正在孕育著動搖世界的巨大陰謀，而很早就覺察到事情不對勁的男主索德為了揭露陰謀，自己一個人投身到與黑惡勢力的鬥爭中......。',
+    },
     /*
     {
         name: '123',
