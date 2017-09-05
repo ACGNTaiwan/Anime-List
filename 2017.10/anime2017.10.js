@@ -64,7 +64,7 @@ Anime = [
         carrier: 'Comic',
         season: '2',
         nameInJpn: '鬼灯の冷徹',
-        img: 'https://i.imgur.com/FVCPS9b.png',
+        img: 'https://i.imgur.com/FVCPS9bl.png',
         description: '故事描述戰後人口爆發且惡靈兇暴化，亡者產生的問題使的地獄出現了前所未有混亂；身為閻羅王手下的第一補佐官鬼燈，將替代閻羅王將解決各式麻煩的問題，地獄也每天都上演著閻羅王翹班挨罵的情景。',
     },
     {
