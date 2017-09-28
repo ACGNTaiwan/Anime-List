@@ -29,6 +29,7 @@ html
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
+                a.item(href='#none') 尚未公開
                 a.item(href='#Sun') 週日
                 a.item(href='#Mon') 週一
                 a.item(href='#Tue') 週二
@@ -73,6 +74,7 @@ html
                         .description 因為直接從電視上播嘛 Ow<
                     .symbol
                         i.Original.icon
+            +day('none','尚未公開','還沒公開播送時間的動畫，算了隨便啦')
             +day('Sun','週日','一周的開始')
             +day('Mon','週一','憂鬱星期一')
             +day('Tue','週二','煩躁星期二')
