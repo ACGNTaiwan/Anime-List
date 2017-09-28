@@ -2,7 +2,8 @@
 展示新番的清單
 
 https://gnehs.github.io/Anime-List/
-
+## 資料結構變更
+為了方便取用資料，本季的資料不再使用 `Anime[0][0]` 來取得資料。詳情請直接查閱資料
 ## 如何使用
 先載入資料
 ```
@@ -17,10 +18,6 @@ https://gnehs.github.io/Anime-List/
 // 資料存取
 -> Anime[0].name
 <- LoveLive! SunShine!!
-```
-```
-// 取得資料高度
-Anime.length
 ```
 ## 網頁範例
 參考首頁: https://gnehs.github.io/Anime-List/
@@ -40,3 +37,6 @@ Anime.length
 ### 資料來源
 - [【秋番】2017年10月新番一覽（日本秋季新番列表)](http://justlaughtw.blogspot.com/2017/03/201710.html)
 - [Wikipedia](https://zh.wikipedia.org)
+- [百度百科](https://baike.baidu.com)
+- [萌娘百科](https://zh.moegirl.org/)
+- 動畫官網
