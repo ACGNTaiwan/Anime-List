@@ -2,6 +2,8 @@
 展示新番的清單
 
 https://gnehs.github.io/Anime-List/
+## 本期新增的資料欄位
+official：用來顯示動畫官網位置
 ## 如何使用
 先載入資料
 ```
