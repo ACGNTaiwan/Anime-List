@@ -22,14 +22,19 @@ https://gnehs.github.io/Anime-List/
 
 ## 資料
 ### 格式
+
 星期格式 / Week
+
 | Sun | Mon | Tue | Wed | Thu | Fri | Sat | none |
 | --- | --- | --- | --- | --- | --- | --- | ---- |
 |  日 |  一  |  二 |  三 |   四 |  五 |  六 | 尚未公開 |
+
 原作載體 / Carrier
+
 | Comic | Novel | Game | Original |
 | ----- | ----- | ---- | -------- |
 |  漫畫  |  小說 | 遊戲  | 原創或其他 |
+
 ### 資料有誤?
 依照格式修改後發 PR 回來即可
 ### 資料來源
