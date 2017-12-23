@@ -545,7 +545,8 @@ Anime = [
     },
     */
 
-]
+];
+// 讓動畫按時間排序
 var Anime = Anime.sort(function(a, b) {
     return a.date.split("/")[1] - b.date.split("/")[1];
 });
