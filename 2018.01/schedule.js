@@ -8,12 +8,13 @@ $(function() {
     for (i = 0; i < Anime.length; i = i + 1) {
         var Anime_Name = Anime[i].name; //動畫名稱
         var Anime_Day = Anime[i].week; //星期
+        var Anime_Date = Anime[i].date; //星期
         if (Anime[i].week != 'none') { //看看有沒有公布星期
             $("#" + Anime_Day)
                 .append($("<div/>")
                     .addClass("item")
                     .attr("id", Anime_Name)
-                    .html(Anime_Name)
+                    .html(Anime_Date + " " + Anime_Name)
                 );
         }
     } //結束迴圈

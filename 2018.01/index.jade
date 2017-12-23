@@ -6,17 +6,17 @@ mixin day(day,header,caption)
 doctype html
 html
     head
-        title 10月新番
+        title 1月新番
         meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(charset='utf-8')
         //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時拜託不要動到這裡
         include ./../../Jade/_tocasui.jade
         include ./../../Jade/_tags.jade
-        +social_tags('10月新番','10月新番最新情報','https://gnehs.github.io/Anime-List/2017.10/og.png','https://gnehs.github.io/Anime-List/')
+        +social_tags('1月新番','1月新番最新情報','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // 10月新番資料 
-        script(src='anime2017.10.js')
+        // 新番資料 
+        script(src='anime2018.01.min.js')
         // 將資料載入網頁中 
         script(src='index.js')
         // 為類型新增 CSS 
@@ -29,7 +29,6 @@ html
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
-                a.item(href='#none') 尚未公開
                 a.item(href='#Sun') 週日
                 a.item(href='#Mon') 週一
                 a.item(href='#Tue') 週二
@@ -42,8 +41,8 @@ html
                     a.item(href='https://github.com/gnehs/Anime-List') GitHub
         // 標題 
         .ts.slate.huge
-            .header 10月新番
-            .description 10月新番最新情報
+            .header 1月新番
+            .description 1月新番最新情報
         br
         br
         .ts.container
@@ -74,7 +73,6 @@ html
                         .description 因為直接從電視上播嘛 Ow<
                     .symbol
                         i.Original.icon
-            +day('none','尚未公開','還沒公開播送時間的動畫，算了隨便啦')
             +day('Sun','週日','一周的開始')
             +day('Mon','週一','憂鬱星期一')
             +day('Tue','週二','煩躁星期二')
