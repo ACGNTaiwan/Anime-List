@@ -6,7 +6,13 @@ $(function() {
     // Anime.length = 動畫總數
     // 迴圈開始
     for (i = 0; i < Anime.length; i = i + 1) {
-        var Anime_Name = Anime[i].name; //動畫名稱
+        // 如果不是第一季，顯示季度
+        // 如果是第一季，僅顯示動畫名稱
+        if (Anime[i].season != "1") {
+            var Anime_Name = Anime[i].name + " S" + Anime[i].season; //動畫名稱
+        } else {
+            var Anime_Name = Anime[i].name; //動畫名稱
+        }
         var Anime_Day = Anime[i].week; //星期
         var Anime_Date = Anime[i].date; //星期
         if (Anime[i].week != 'none') { //看看有沒有公布星期
