@@ -520,7 +520,7 @@ Anime = [
     {
         name: '七美德',
         date: '1/26',
-        week: 'Sun Mon Tue Wed Thu Fri Sat',
+        week: 'Fri',
         time: '24:25',
         carrier: 'Original',
         season: '1',
