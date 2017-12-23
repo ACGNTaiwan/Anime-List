@@ -546,3 +546,6 @@ Anime = [
     */
 
 ]
+var Anime = Anime.sort(function(a, b) {
+    return a.date.split("/")[1] - b.date.split("/")[1];
+});
