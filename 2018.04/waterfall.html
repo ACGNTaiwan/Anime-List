@@ -29,44 +29,7 @@
     <!-- 將資料載入網頁中 -->
     <script src="waterfall.js"></script>
     <!-- Hover 才顯示動畫介紹-->
-    <style>
-      .ts.card{
-          overflow: hidden;
-          border-radius: 0;
-          border-radius: 0;
-          box-shadow: none;
-      }
-      .ts.card>.image>.header:not(.ts){
-          opacity: 0;
-          transition: .4s;
-          transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
-          border-radius: 0 !important;
-          transform-origin:bottom;
-          height: 100%;
-          transform: translateX(-100px)  scaleX(1.25);
-          padding: 1.25rem 1.5rem;
-      }
-      .ts.card:hover>.image>.header:not(.ts){
-          opacity: 1;
-          transform: none;
-      }
-      .ts.card>.image>img{
-          transition: .4s;
-          transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
-          border-radius: 0 !important;
-      }
-      .ts.card:hover>.image>img{
-          filter:  blur(2px) contrast(150%);
-      }
-      @media (max-width: 768px){
-          .ts.card>.image>.header{
-              font-size: 14px !important;
-          }
-          .ts.card>.image>.header>.sub.header{
-              font-size: 11px !important;
-          }
-      }
-    </style>
+    <link rel="stylesheet" href="../css/waterfall.css">
   </head>
   <body>
     <div class="ts basic menu top attached borderless horizontally scrollable" id="top">

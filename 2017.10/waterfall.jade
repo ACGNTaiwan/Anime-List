@@ -18,43 +18,7 @@ html
         // 將資料載入網頁中 
         script(src='waterfall.js')
         // Hover 才顯示動畫介紹
-        style.
-            .ts.card{
-                overflow: hidden;
-                border-radius: 0;
-                border-radius: 0;
-            }
-            .ts.card>.image>.header:not(.ts){
-                opacity: 0;
-                transition: .4s;
-                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
-                border-radius: 0 !important;
-                transform-origin:bottom;
-                height: 100%;
-                transform: scale(1.2);
-                padding: 1.25rem 1.5rem;
-            }
-            .ts.card:hover>.image>.header:not(.ts){
-                opacity: 1;
-                transform: scale(1);
-            }
-            .ts.card>.image>img{
-                transition: .4s;
-                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
-                border-radius: 0 !important;
-            }
-            .ts.card:hover>.image>img{
-                filter:  blur(2px) contrast(150%);
-                transform: scale(1.1);
-            }
-            @media (max-width: 768px){
-                .ts.card>.image>.header{
-                    font-size: 14px !important;
-                }
-                .ts.card>.image>.header>.sub.header{
-                    font-size: 11px !important;
-                }
-            }
+        link(rel='stylesheet', href='../css/waterfall.css')
     body
         #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
             .ts.container
