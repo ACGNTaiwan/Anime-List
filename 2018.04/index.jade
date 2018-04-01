@@ -1,0 +1,88 @@
+//- 模板
+mixin day(day,header,caption)
+    h2.ts.header.dividing.center.aligned=header
+        .sub.header=caption
+    .ts.four.doubling.cards(id=day)
+doctype html
+html
+    head
+        title 4月新番
+        meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(charset='utf-8')
+        include ../Jade/_tocasui.jade
+        include ../Jade/_tags.jade
+        +social_tags('4月新番','4月新番最新情報','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
+        // JQ https://cdnjs.com/libraries/jquery/
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        // 新番資料 
+        script(src='anime2018.04.js')
+        // 將資料載入網頁中 
+        script(src='index.js')
+        // 為類型新增 CSS 
+        // Comic   Novel   Game     Original 
+        style.
+            i.icon.Comic:before{content: "\f1fc";}
+            i.icon.Novel:before{content: "\f02d";}
+            i.icon.Game:before{content: "\f11b";}
+            i.icon.Original:before{content: "\f26c";}
+    body
+        #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
+            .ts.container
+                a.item(href='#Sun') 週日
+                a.item(href='#Mon') 週一
+                a.item(href='#Tue') 週二
+                a.item(href='#Wed') 週三
+                a.item(href='#Thu') 週四
+                a.item(href='#Fri') 週五
+                a.item(href='#Sat') 週六
+                .right.menu
+                    a.item(href='./../') 首頁
+                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
+        // 標題 
+        .ts.slate.huge
+            .header 4月新番
+            .description 4月新番最新情報
+        br
+        br
+        .ts.container
+            h2.ts.header.dividing.center.aligned 介紹
+                .sub.header 這個網站的 Icons
+            .ts.four.doubling.cards
+                .ts.card
+                    .content
+                        .header 動畫由漫畫改編
+                        .description 你有看到一支筆嗎？對，我找不到更貼切的 Icon 了
+                    .symbol
+                        i.Comic.icon
+                .ts.card
+                    .content
+                        .header 動畫由小說改編
+                        .description 對，這是一本書
+                    .symbol
+                        i.Novel.icon
+                .ts.card
+                    .content
+                        .header 動畫由遊戲改編
+                        .description 那是遊戲控制器，大概是我在這裡選得最貼切的 OuOb
+                    .symbol
+                        i.Game.icon
+                .ts.card
+                    .content
+                        .header 原創或其他
+                        .description 因為直接從電視上播嘛 Ow<
+                    .symbol
+                        i.Original.icon
+            +day('Sun','週日','一周的開始')
+            +day('Mon','週一','憂鬱星期一')
+            +day('Tue','週二','煩躁星期二')
+            +day('Wed','週三','喝咖啡撐下去')
+            +day('Thu','週四','可以看到週六了')
+            +day('Fri','週五','加油！再撐一天')
+            +day('Sat','週六','是周末！')
+            br
+            br
+        .ts.fluid.center.aligned.slate 2018 棒棒勝 
+            br
+            a(href='#top')
+                i.arrow.up.icon
+                | 回到頂部

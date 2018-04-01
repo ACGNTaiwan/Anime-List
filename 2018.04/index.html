@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4月新番</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" rel="stylesheet">
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+        <meta name="description" content="4月新番最新情報">
+        <meta name="image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta itemprop="name" content="4月新番">
+        <meta itemprop="description" content="4月新番最新情報">
+        <meta itemprop="image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="4月新番">
+        <meta name="twitter:description" content="4月新番最新情報">
+        <meta name="twitter:image:src" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="og:title" content="4月新番">
+        <meta name="og:description" content="4月新番最新情報">
+        <meta name="og:image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="og:url" content="https://gnehs.github.io/Anime-List/">
+        <meta name="og:site_name" content="4月新番">
+        <meta name="og:locale" content="zh_TW">
+        <meta name="og:type" content="website">
+    <!-- JQ https://cdnjs.com/libraries/jquery/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- 新番資料 -->
+    <script src="anime2018.04.js"></script>
+    <!-- 將資料載入網頁中 -->
+    <script src="index.js"></script>
+    <!-- 為類型新增 CSS -->
+    <!-- Comic   Novel   Game     Original -->
+    <style>
+      i.icon.Comic:before{content: "\f1fc";}
+      i.icon.Novel:before{content: "\f02d";}
+      i.icon.Game:before{content: "\f11b";}
+      i.icon.Original:before{content: "\f26c";}
+    </style>
+  </head>
+  <body>
+    <div class="ts basic menu top attached borderless horizontally scrollable" id="top">
+      <div class="ts container"><a class="item" href="#Sun">週日</a><a class="item" href="#Mon">週一</a><a class="item" href="#Tue">週二</a><a class="item" href="#Wed">週三</a><a class="item" href="#Thu">週四</a><a class="item" href="#Fri">週五</a><a class="item" href="#Sat">週六</a>
+        <div class="right menu"><a class="item" href="./../">首頁</a><a class="item" href="https://github.com/gnehs/Anime-List">GitHub</a></div>
+      </div>
+    </div>
+    <!-- 標題 -->
+    <div class="ts slate huge">
+      <div class="header">4月新番</div>
+      <div class="description">4月新番最新情報</div>
+    </div><br><br>
+    <div class="ts container">
+      <h2 class="ts header dividing center aligned">介紹
+        <div class="sub header">這個網站的 Icons</div>
+      </h2>
+      <div class="ts four doubling cards">
+        <div class="ts card">
+          <div class="content">
+            <div class="header">動畫由漫畫改編</div>
+            <div class="description">你有看到一支筆嗎？對，我找不到更貼切的 Icon 了</div>
+          </div>
+          <div class="symbol"><i class="Comic icon"></i></div>
+        </div>
+        <div class="ts card">
+          <div class="content">
+            <div class="header">動畫由小說改編</div>
+            <div class="description">對，這是一本書</div>
+          </div>
+          <div class="symbol"><i class="Novel icon"></i></div>
+        </div>
+        <div class="ts card">
+          <div class="content">
+            <div class="header">動畫由遊戲改編</div>
+            <div class="description">那是遊戲控制器，大概是我在這裡選得最貼切的 OuOb</div>
+          </div>
+          <div class="symbol"><i class="Game icon"></i></div>
+        </div>
+        <div class="ts card">
+          <div class="content">
+            <div class="header">原創或其他</div>
+            <div class="description">因為直接從電視上播嘛 Ow<</div>
+          </div>
+          <div class="symbol"><i class="Original icon"></i></div>
+        </div>
+      </div>
+      <h2 class="ts header dividing center aligned">週日
+        <div class="sub header">一周的開始</div>
+      </h2>
+      <div class="ts four doubling cards" id="Sun"></div>
+      <h2 class="ts header dividing center aligned">週一
+        <div class="sub header">憂鬱星期一</div>
+      </h2>
+      <div class="ts four doubling cards" id="Mon"></div>
+      <h2 class="ts header dividing center aligned">週二
+        <div class="sub header">煩躁星期二</div>
+      </h2>
+      <div class="ts four doubling cards" id="Tue"></div>
+      <h2 class="ts header dividing center aligned">週三
+        <div class="sub header">喝咖啡撐下去</div>
+      </h2>
+      <div class="ts four doubling cards" id="Wed"></div>
+      <h2 class="ts header dividing center aligned">週四
+        <div class="sub header">可以看到週六了</div>
+      </h2>
+      <div class="ts four doubling cards" id="Thu"></div>
+      <h2 class="ts header dividing center aligned">週五
+        <div class="sub header">加油！再撐一天</div>
+      </h2>
+      <div class="ts four doubling cards" id="Fri"></div>
+      <h2 class="ts header dividing center aligned">週六
+        <div class="sub header">是周末！</div>
+      </h2>
+      <div class="ts four doubling cards" id="Sat"></div><br><br>
+    </div>
+    <div class="ts fluid center aligned slate">2018 棒棒勝 <br><a href="#top"><i class="arrow up icon"></i>回到頂部</a></div>
+  </body>
+</html>

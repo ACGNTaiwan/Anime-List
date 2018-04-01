@@ -1,0 +1,78 @@
+//- 模板
+mixin day(day,header,caption)
+    h2.ts.header.dividing.center.aligned=header
+        .sub.header=caption
+doctype html
+html
+    head
+        title 4月新番 - 瀑布流
+        meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(charset='utf-8')
+        include ../Jade/_tocasui.jade
+        include ../Jade/_tags.jade
+        +social_tags('4月新番 - 瀑布流','展示用頁面','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
+        // JQ https://cdnjs.com/libraries/jquery/
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        // 10月新番資料 
+        script(src='anime2018.04.js')
+        // 將資料載入網頁中 
+        script(src='waterfall.js')
+        // Hover 才顯示動畫介紹
+        style.
+            .ts.card{
+                overflow: hidden;
+                border-radius: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .ts.card>.image>.header:not(.ts){
+                opacity: 0;
+                transition: .4s;
+                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
+                border-radius: 0 !important;
+                transform-origin:bottom;
+                height: 100%;
+                transform: translateX(-100px)  scaleX(1.25);
+                padding: 1.25rem 1.5rem;
+            }
+            .ts.card:hover>.image>.header:not(.ts){
+                opacity: 1;
+                transform: none;
+            }
+            .ts.card>.image>img{
+                transition: .4s;
+                transition-timing-function: cubic-bezier(0.68, 0, 0.29, 0.99);
+                border-radius: 0 !important;
+            }
+            .ts.card:hover>.image>img{
+                filter:  blur(2px) contrast(150%);
+            }
+            @media (max-width: 768px){
+                .ts.card>.image>.header{
+                    font-size: 14px !important;
+                }
+                .ts.card>.image>.header>.sub.header{
+                    font-size: 11px !important;
+                }
+            }
+    body
+        #top.ts.basic.menu.top.attached.borderless.horizontally.scrollable
+            .ts.container
+                .right.menu
+                    a.item(href='./../') 首頁
+                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
+        // 標題 
+        .ts.slate.huge
+            .header 4月新番 - 瀑布流
+            .description 就是個展示用的頁面，滑鼠滑到圖片上或是按圖片來查看介紹
+        br
+        br
+        .ts.container
+            #waterfall.ts.four.doubling.waterfall.cards
+            br
+            br
+        footer.ts.fluid.center.aligned.slate 2018 棒棒勝 
+            br
+            a(href='#top')
+                i.arrow.up.icon
+                | 回到頂部
