@@ -192,16 +192,16 @@ Anime = [
         description: 'aaa',
     },
     {
-        name: ' 鋼彈創鬥者潛網大戰',
+        name: '鋼彈創鬥者潛網大戰',
         nameInJpn: 'ガンダムビルドダイバーズ',
-        date: 'aaa',
-        time: 'aaa',
-        carrier: 'Comic Novel Game Original',
-        season: 'aaa',
+        date: '4/2',
+        time: '25:00',
+        carrier: 'Comic',
+        season: '1',
         episode: '',
-        img: 'aaaa',
-        official: 'aaa',
-        description: 'aaa',
+        img: 'https://i.imgur.com/Jv269fe.jpg',
+        official: 'http://tiramisu-anime.com/',
+        description: '主角是前途似錦的王牌駕駛員一之瀨昴，但不善交際的他在船上一直交不到朋友，也因此總是莫名其妙地做出一些搞笑的脫序行為…… ',
     },
     {
         name: '東京喰種：re',
@@ -815,33 +815,6 @@ Anime = [
         official: 'aaa',
         description: 'aaa',
     },
-
-    /*
-    {
-        name: '123'
-,
-        date: '1/'
-,
-        week: 'Sun Mon Tue Wed Thu Fri Sat'
-,
-        time: '尚未公開'
-,
-        carrier: 'Comic Novel Game Original'
-,
-        season: '1'
-,
-        nameInJpn: '123'
-,
-        img: '123'
-,
-        official: 'www'
-,
-        description: '123'
-,
-    }
-,
-    */
-
 ];
 // 讓動畫按時間排序
 var Anime = Anime.sort(function(a, b) {
