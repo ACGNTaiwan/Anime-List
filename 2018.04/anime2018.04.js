@@ -78,9 +78,9 @@ Anime = [
         carrier: 'Comic',
         season: '1',
         episode: '12',
-        img: 'https://i.imgur.com/iGT3yO2.jpg',
-        official: 'http://www.b-animation.jp/',
-        description: '某天，被稱為天才調查員的奇斯·弗列克來到王立警察特殊犯罪搜査科，並追尋著某件事件的犯人——連環殺手「殺手B」。而在犯案現場內，連環殺手「殺手B」必會刻上字母「B」，總是引起人們的注意，但沒有人知道其意思。「B」只是殺手留給她的信息，想告訴她「我在這裡」。奇斯及黑羽，這兩位陌生人的命運，不久將被一個陰謀吞噬。',
+        img: 'https://i.imgur.com/jHxwmvQ.png',
+        official: 'http://swordgai-anime.com/',
+        description: '嘗遍無數人鮮血的武器化為傳奇，有時甚至全然不受人控制。當與武器合而為一的人類宿主心中充滿憎恨與殺意時，就會如同惡魔一般渴望大開殺戒。某組織面對這類危險武器的存在長達好幾世紀，而一位名叫「凱」的男子則注定與武器合而為一…',
     },
 
     {
