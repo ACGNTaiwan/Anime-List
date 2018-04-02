@@ -6,7 +6,7 @@ https://gnehs.github.io/Anime-List/
 week：我超懶的，自己用日期推ㄅ
 ## 如何使用
 先載入資料
-```
+```html
 <script src="https://gnehs.github.io/Anime-List/2018.04/anime2018.04.min.js"></script>
 ```
 接下來就能開始使用了
@@ -14,7 +14,7 @@ week：我超懶的，自己用日期推ㄅ
 ## 範例
 您可在首頁的 Console 中測試
 
-```
+```js
 // 資料存取
 -> Anime[0].name
 <- LoveLive! SunShine!!

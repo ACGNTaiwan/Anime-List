@@ -5,7 +5,7 @@ https://gnehs.github.io/Anime-List/
 
 ## 如何使用
 先載入資料
-```
+```html
 <script src="https://gnehs.github.io/Anime-List/2017.07/anime2017.07.js"></script>
 ```
 接下來就能開始使用了
@@ -14,7 +14,7 @@ https://gnehs.github.io/Anime-List/
 您可在首頁的 Console 中測試
 
 輸入:
-```
+```js
 Anime[0][0]
 // 取得排序第0個資料(DIVE!!跳水男孩)內的第0的資料(動畫名稱)
 ```
@@ -23,7 +23,7 @@ Anime[0][0]
 DIVE!!跳水男孩
 ```
 取得資料高度:
-```
+```js
 Anime.length
 ```
 ## 網頁範例
@@ -32,13 +32,18 @@ Anime.length
 ## 資料
 註：尚未公布時間的被分類在星期一，使用資料時請務必注意
 ### 格式
-```
-['動畫名稱', '星期', '撥出時間', '改編', '日文原文', '圖片', '介紹'],
-星期  Sun  Mon Tue  Wed  Thu  Fri  Sat
-     日   一   二   三    四   五   六
-改編  Comic   Novel   Game     Original
-     漫畫     小說     遊戲     原創或其他
-```
+
+星期格式 / Week
+
+| Sun | Mon | Tue | Wed | Thu | Fri | Sat | none |
+| --- | --- | --- | --- | --- | --- | --- | ---- |
+|  日 |  一  |  二 |  三 |   四 |  五 |  六 | 尚未公開 |
+
+原作載體 / Carrier
+
+| Comic | Novel | Game | Original |
+| ----- | ----- | ---- | -------- |
+|  漫畫  |  小說 | 遊戲  | 原創或其他 |
 ### 資料有誤?
 依照格式修改後發 PR 回來即可
 ### 資料來源
