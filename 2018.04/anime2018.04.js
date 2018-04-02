@@ -119,7 +119,7 @@ Anime = [
         episode: '',
         img: 'https://i.imgur.com/vozo1qg.jpg',
         official: 'http://www.tv-tokyo.co.jp/anime/pad/',
-        description: '無',
+        description: '以《龍族拼圖X》改編，描述主人公和怪物夥伴們展開的熱血友情成長的冒險故事。',
     },
     {
         name: '你還不懂群馬',
@@ -275,7 +275,7 @@ Anime = [
         episode: '',
         img: 'https://i.imgur.com/J1KfnPj.jpg',
         official: 'http://www.aikatsu.com/friends/teaser/',
-        description: '無',
+        description: '自 2012 年起推出的跨媒體企劃《Aikatsu! 偶像學園！》，橫跨卡牌遊戲、電視動畫、玩具以及服裝等產品，本次推出的《Aikatsu! 偶像學園！Friends》第三作，以「和朋友一起 Aikatsu! 」作為主題，是系列作中首度推出雙人組合，描繪兩人朝向頂尖偶像之路邁進的故事。ｚ',
     },
     {
         name: '多田君不談戀愛',
@@ -647,7 +647,7 @@ Anime = [
         episode: '',
         img: 'https://pbs.twimg.com/media/DYOpSI6XcAUhkjK.jpg',
         official: 'https://twitter.com/LaDySp2018',
-        description: '無',
+        description: '本作以席捲全銀河系的宇宙戰爭無果而終的世界為舞台，講述通過體育運動賺取賞金的少女們，縱橫整個宇宙的故事。',
     },
     {
         name: '惡魔高校D×D HERO',
