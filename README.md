@@ -3,7 +3,7 @@
 ## Demo
 https://gnehs.github.io/Anime-List/
 ## 資料格式
-```json
+```js
 {
     name: '齊木楠雄的災難',             //動畫名稱
     date: '1/16',                     //首次放送日期
