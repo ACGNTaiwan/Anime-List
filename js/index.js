@@ -1,22 +1,22 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
         name: '2018 4月',
-        js: '/2018.04/anime2018.04.min.js',
+        js: './2018.04/anime2018.04.min.js',
         year: 2018
     },
     {
         name: '2018 1月',
-        js: '/2018.01/anime2018.01.min.js',
+        js: './2018.01/anime2018.01.min.js',
         year: 2018
     },
     {
         name: '2017 10月',
-        js: '/2017.10/anime2017.10.min.js',
+        js: './2017.10/anime2017.10.min.js',
         year: 2017
     },
     {
         name: '2017 7月',
-        js: '/2017.07/anime2017.07.min.js',
+        js: './2017.07/anime2017.07.min.js',
         year: 2017
     },
 ];
