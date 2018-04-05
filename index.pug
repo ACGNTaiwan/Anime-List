@@ -19,7 +19,14 @@ html
         header.ts.slate.huge.fluid
             .header Anime List
         .ts.container
-            #switch
+            #switch-main
+                #switch
+                #switch-buttons(style='text-align:center;margin:10px auto')
+                    .ts.relaxed.separated.circular.buttons.icon
+                            a.ts.button(data-slick='slickPrev')
+                                i.arrow.left.icon
+                            a.ts.button.right.floated(data-slick='slickNext')
+                                i.arrow.right.icon
             #content 
                 h3.ts.center.aligned.icon.header 
                     i.pointing.up.icon
@@ -28,12 +35,12 @@ html
 
         footer.ts.container
             .ts.section.horizontal.divider gnehs 2018
-            .ts.relaxed.separated.buttons
+            .ts.relaxed.separated.compact.buttons
                 a.ts.button.labeled.icon(href='#top')
                     i.arrow.up.icon
-                    | 回到頂部
+                    | Top
                 a.ts.button.labeled.icon(href='https://github.com/gnehs/Anime-List') 
                     i.github.icon
-                    |GitHub
+                    | GitHub
             br
             br

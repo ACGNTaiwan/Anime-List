@@ -19,9 +19,17 @@ header {
     pointer-events: none;
 }
 
-.ts.centered.cards {
-    justify-content: center;
-    text-align: center;
+@media (min-width: 768px) {
+    .ts.centered.cards {
+        justify-content: center;
+        text-align: center;
+    }
+    #switch-main {
+        border: 1px solid #ececec;
+        border-radius: 5px;
+        padding: 10px 0;
+        box-shadow: 0 1px 1px #00000024;
+    }
 }
 
 #switch {

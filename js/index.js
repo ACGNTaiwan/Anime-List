@@ -81,7 +81,11 @@ $(function() {
     }
     $('#switch').slick({
         arrows: false,
-        dots: true
+        speed: 270,
+    });
+    $('#switch-buttons .button').click(function() {
+
+        $('#switch').slick($(this).attr('data-slick'));
     });
     $('.slick-dots').addClass('unstyled')
     $('[data-js]').click(function() {
