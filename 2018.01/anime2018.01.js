@@ -1,41 +1,8 @@
 //==============================//
-//          2018 冬番清單
-//  github.com/gnehs/Anime-List
+//  2018 冬番                    //
+//  github.com/gnehs/Anime-List //
 //==============================//
-//            資料來源
-// 【冬番】2018年1月冬番一覽（日本冬季新番列表）
-// http://justlaughtw.blogspot.com/2017/07/20181.html
-// 維基百科
-// https://zh.wikipedia.org/
-// 百度百科
-// https://baike.baidu.com
-// 萌娘百科
-// https://zh.moegirl.org/
-//==============================//
-Anime = [
-    // 星期格式 / Week
-    //     Sun  Mon Tue  Wed  Thu  Fri  Sat none
-    //     日   一   二   三    四   五   六  尚未公開
-    // 原作載體 / Carrier
-    //     Comic  Novel   Game  Original
-    //    漫畫    小說    遊戲   原創或其他
-    // 資料存取範例 / Example
-    //    -> Anime[0].name
-    //    <- LoveLive! SunShine!!
-    // 格式範例 / Example
-    // {
-    //    name: '動畫名稱',
-    //    date: '首次播送日期(ex.6/13)',
-    //    week: '星期(請參照星期格式)',
-    //    time: '首次播送時間',
-    //    carrier: '原作載體(請參照原作載體格式)',
-    //    season: '第?季',
-    //    nameInJpn: '動畫原文名稱',
-    //    img: '海報(請上傳 Ingur 並將網址改成 Https 格式)',
-    //    official: '動畫官網',
-    //    description: '說明文(避免大量劇透)',
-    // },
-    {
+Anime = [{
         name: 'POP TEAM EPIC',
         date: '1/6',
         week: 'Sat',
@@ -528,25 +495,11 @@ Anime = [
         img: 'https://i.imgur.com/v6NsZs5.png',
         official: 'http://7-virtues.net/anime/',
         description: '天界為了阻止魔王們的「七大罪」蔓延，因而派遣天使去人間界找尋擁有「七美德」的候補救世主，然而這七位天使卻各自有著性格缺陷，另一方面，降臨至地面的天使們，則開始執行尋找救世主候補的任務……。',
-    },
-
-    /*
-    {
-        name: '123',
-        date: '1/',
-        week: 'Sun Mon Tue Wed Thu Fri Sat',
-        time: '尚未公開',
-        carrier: 'Comic Novel Game Original',
-        season: '1',
-        nameInJpn: '123',
-        img: '123',
-        official: 'www',
-        description: '123',
-    },
-    */
-
+    }
 ];
 // 讓動畫按時間排序
 var Anime = Anime.sort(function(a, b) {
-    return a.date.split("/")[1] - b.date.split("/")[1];
+    var aTime = Number(a.date.split("/")[0]) * 100000 + Number(a.date.split("/")[1]) * 10000 + Number(a.time.split(":")[0]) * 100 + Number(a.time.split(":")[1]),
+        bTime = Number(b.date.split("/")[0]) * 100000 + Number(b.date.split("/")[1]) * 10000 + Number(b.time.split(":")[0]) * 100 + Number(b.time.split(":")[1]);
+    return aTime - bTime;
 });

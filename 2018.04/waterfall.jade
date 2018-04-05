@@ -13,10 +13,11 @@ html
         +social_tags('4月新番 - 瀑布流','展示用頁面','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // 10月新番資料 
+        // 新番資料 
         script(src='anime2018.04.js')
         // 將資料載入網頁中 
-        script(src='waterfall.js')
+        script(src='../js/script.js')
+        script waterfall(Anime)
         // Hover 才顯示動畫介紹
         link(rel='stylesheet', href='../css/waterfall.css')
     body

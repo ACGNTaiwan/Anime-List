@@ -24,14 +24,25 @@ https://gnehs.github.io/Anime-List/
 
 ## 資料
 ### 格式
-
-星期格式 / Week
-
+```json
+{
+    name: '動畫名稱',
+    date: '首次播送日期(ex.6/13)',
+    week: '星期(請參照星期格式)',
+    time: '首次播送時間',
+    carrier: '原作載體(請參照原作載體格式)',
+    season: '第?季',
+    nameInJpn: '動畫原文名稱',
+    img: '海報',
+    description: '說明文(避免大量劇透)'
+}
+```
+### 星期和載體的填寫格式
+#### 星期格式 / Week
 | Sun | Mon | Tue | Wed | Thu | Fri | Sat | none |
 | --- | --- | --- | --- | --- | --- | --- | ---- |
 |  日 |  一  |  二 |  三 |   四 |  五 |  六 | 尚未公開 |
-
-原作載體 / Carrier
+#### 原作載體 / Carrier
 
 | Comic | Novel | Game | Original |
 | ----- | ----- | ---- | -------- |
