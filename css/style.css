@@ -63,28 +63,28 @@ header {
 
 [data-animation="slideOut"] {
     animation: slideOut .25s ease;
-    filter: opacity(0);
+    opacity: 0;
 }
 
 @keyframes slideIn {
     from {
-        filter: opacity(0);
-        transform: translateY(10px);
+        opacity: 0;
+        transform: translateY(50px);
     }
     to {
+        opacity: 1;
         transform: translateY(0);
-        filter: opacity(1);
     }
 }
 
 @keyframes slideOut {
     from {
-        filter: opacity(1);
+        opacity: 1;
         transform: translateY(0);
     }
     to {
-        transform: translateY(10px);
-        filter: opacity(0);
+        opacity: 0;
+        transform: translateY(50px);
     }
 }
 
