@@ -115,11 +115,11 @@ $(function() {
                     schedule(Anime, year)
                 }
             }, 251);
-            setTimeout(function() { $("#content").attr('data-animation', 'slideIn') }, 300);
+            setTimeout(function() { $("#content").attr('data-animation', 'slideIn') }, 350);
             setTimeout(function() {
                 $("#content").attr('data-animation', '')
                 $('[data-js]').removeClass('disabled')
-            }, 550);
+            }, 600);
         });
     });
 });
