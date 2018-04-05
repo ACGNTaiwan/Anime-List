@@ -27,8 +27,8 @@ $(function() {
             year = AnimeData[i].year
         $("#switch") //這裡用到了 JQ
             .append($("<div/>").attr('id', name)
-                .append($("<h2/>").addClass("ts center aligned header").html(year)
-                    .append($("<div/>").addClass("sub header").html(name))
+                .append($("<h2/>").addClass("ts center aligned header").html(name)
+                    .append($("<div/>").addClass("sub header").html(year))
                 )
                 .append($("<div/>").addClass("ts doubling four centered cards")
                     .append($("<a/>").addClass("ts card").attr('data-type', 'info').attr('data-js', js).attr('data-year', year)
