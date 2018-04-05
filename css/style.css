@@ -32,7 +32,7 @@ header {
 }
 
 #switch .ts.card:not(.active):hover {
-    filter: opacity(.6);
+    filter: opacity(.8);
     border: 1px solid #bdbdbd;
 }
 
