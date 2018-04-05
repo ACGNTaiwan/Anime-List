@@ -1,15 +1,25 @@
 # Anime-List
 展示新番的清單
-# Demo
+## Demo
 https://gnehs.github.io/Anime-List/
-## 選擇季度
-- [2018/04](https://github.com/gnehs/Anime-List/tree/master/2018.04)
-- [2018/01](https://github.com/gnehs/Anime-List/tree/master/2018.01)
-- [2017/10](https://github.com/gnehs/Anime-List/tree/master/2017.10)
-- [2017/07](https://github.com/gnehs/Anime-List/tree/master/2017.07)
-
-## 注意
-2017 七月的新番資料格式架構不同，請到資料夾內取得指南來使用
-
-### 資料有誤?
+## 資料格式
+```json
+{
+    name: '齊木楠雄的災難',             //動畫名稱
+    date: '1/16',                     //首次放送日期
+    week: 'Tue',                      //放送日（2018.04 及之後的資料已移除該欄位）
+    time: '1:35',                     //放送時間
+    carrier: 'Comic',                 //原作載體（請查看底下表格）
+    season: '2',                      //季
+    nameInJpn: '斉木楠雄のΨ難',         //日文名稱（或原文名稱）
+    img: 'https://i.imgur.co...',     //海報
+    official: 'http://www.sa...',     //官網（2017.10 及之前的資料並無該欄位）
+    description: '在一個平凡的...'      //介紹
+}
+```
+### 原作載體格式 / Carrier 
+| Comic | Novel | Game | Original |
+| ----- | ----- | ---- | -------- |
+|  漫畫  |  小說 | 遊戲  | 原創或其他 |
+## 資料有誤?
 依照格式修改後發 PR 回來即可
