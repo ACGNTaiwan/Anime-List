@@ -92,14 +92,14 @@ $(function() {
         $(this).addClass('active')
         $('[data-js]:not(.active)').addClass('disabled')
 
+        $("#content").attr('data-animation', '')
+        $("#content").attr('data-animation', 'slideOut')
+
         let js = $(this).attr('data-js')
         let type = $(this).attr('data-type')
         let year = $(this).attr('data-year')
 
         $.getScript(js, function() {
-            $("#content").attr('data-animation', '')
-            $("#content").attr('data-animation', 'slideOut')
-
             setTimeout(function() {
                 $("#content").attr('class', '').html('')
                 if (type == 'waterfall') {
