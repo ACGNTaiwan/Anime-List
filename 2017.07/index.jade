@@ -11,15 +11,16 @@ html
         meta(charset='utf-8')
         include ../Jade/_tocasui.jade
         include ../Jade/_tags.jade
-        +social_tags('7月新番','7月新番最新情報','https://gnehs.github.io/Anime-List/og.jpg','https://gnehs.github.io/Anime-List/')
+        +social_tags('7月新番','10月新番最新情報','https://gnehs.github.io/Anime-List/2017.10/og.png','https://gnehs.github.io/Anime-List/')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // 7月新番資料
+        // 10月新番資料 
         script(src='anime2017.07.js')
-        // 將資料載入網頁中
-        script(src='index.js')
-        // 為類型新增 CSS
-        // Comic   Novel   Game     Original
+        // 將資料載入網頁中 
+        script(src='../js/script.js')
+        script index(Anime,2017)
+        // 為類型新增 CSS 
+        // Comic   Novel   Game     Original 
         style.
             i.icon.Comic:before{content: "\f1fc";}
             i.icon.Novel:before{content: "\f02d";}
@@ -38,7 +39,7 @@ html
                 .right.menu
                     a.item(href='./../') 首頁
                     a.item(href='https://github.com/gnehs/Anime-List') GitHub
-        // 標題
+        // 標題 
         .ts.slate.huge
             .header 7月新番
             .description 7月新番最新情報
