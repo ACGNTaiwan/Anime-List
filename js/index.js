@@ -1,32 +1,4 @@
-showDate = [{
-        id: 'Sun',
-        day: '週日'
-    },
-    {
-        id: 'Mon',
-        day: '週一'
-    },
-    {
-        id: 'Tue',
-        day: '週二'
-    },
-    {
-        id: 'Wed',
-        day: '週三'
-    },
-    {
-        id: 'Thu',
-        day: '週四'
-    },
-    {
-        id: 'Fri',
-        day: '週五'
-    },
-    {
-        id: 'Sat',
-        day: '週六'
-    }
-];
+showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
         name: '2018 4月',
         js: '/2018.04/anime2018.04.min.js',
