@@ -107,7 +107,7 @@ function showInfo() {
         let dayID = showDate[i].id,
             dayCht = showDate[i].day
         $("#content").attr("data-type", 'info')
-            .append($("<h2/>")
+            .append($("<h3/>")
                 .html(dayCht)
             )
             .append($("<div/>")
@@ -203,9 +203,7 @@ function schedule(Anime, year) {
     });
 }
 
-function info(Anime, year) { //=========================//
-    //           輸出
-    //=========================//
+function info(Anime, year) {
     $(function() {
         // 透過迴圈輸出資料內的所有動畫
         // Anime.length = 動畫總數
