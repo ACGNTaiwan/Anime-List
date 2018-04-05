@@ -16,15 +16,22 @@ html
         script(src='./js/index.js?45')
     body
         // 標題
-        .ts.slate.huge
+        header.ts.slate.huge
             .header Anime List
-        #top.ts.basic.menu.bottom.attached.borderless.horizontally.scrollable
-            .ts.container
-                a.item(href='#') Anime List
-                .right.menu
-                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
         .ts.container
             #switch
-            #content
-        
-        include _footer.pug
+            #content 
+                h3.ts.center.aligned.icon.header 
+                    i.pointing.up.icon
+                    | 歡迎
+                    .sub.header 使用上方選擇器來瀏覽本站資料
+
+        footer.ts.container
+            .ts.section.horizontal.divider gnehs 2018
+            a(href='#top')
+                i.arrow.up.icon
+                | 回到頂部
+
+            a.item(href='https://github.com/gnehs/Anime-List') GitHub
+            br
+            br

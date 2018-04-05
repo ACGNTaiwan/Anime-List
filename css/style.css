@@ -8,7 +8,73 @@
 }
 
 #content {
-    margin-top: 50px
+    margin-top: 50px;
+}
+
+header {
+    margin-bottom: 50px
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#switch .ts.card {
+    transition: all 0.2s linear;
+}
+
+#switch .ts.card.active {
+    border: 1px solid #666;
+}
+
+#switch .ts.card:not(.active) {
+    filter: opacity(.5);
+}
+
+#switch .ts.card:not(.active):hover {
+    filter: opacity(.6);
+    border: 1px solid #bdbdbd;
+}
+
+#switch .ts.card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+
+/*
+    fade
+*/
+
+[data-animation="slideIn"] {
+    animation: slideIn .25s ease;
+}
+
+[data-animation="slideOut"] {
+    animation: slideOut .25s ease;
+    filter: opacity(0);
+}
+
+@keyframes slideIn {
+    from {
+        filter: opacity(0);
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+        filter: opacity(1);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        filter: opacity(1);
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+        filter: opacity(0);
+    }
 }
 
 

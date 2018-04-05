@@ -105,7 +105,7 @@ Anime = [{
         time: '2:05',
         carrier: 'Comic',
         season: '4',
-        nameInJpn: '123',
+        nameInJpn: '弱虫ペダル',
         img: 'https://i.imgur.com/vDLwNOW.png',
         official: 'http://yowapeda.com/',
         description: '描述熱愛動漫、遊戲和秋葉原的他，原本打算高中後一定要加入動漫研究社，不過，卻因為社員不足而中止活動。面對這樣的狀況，主角因此感到意志消沉。某日在訓練時見到坂道騎車爬坡的過程，一場又一場的熱血的高中自行車競技聯賽故事，就此展開。',
