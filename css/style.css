@@ -28,11 +28,11 @@ header {
 }
 
 #switch .ts.card:not(.active) {
-    filter: opacity(.5);
+    opacity: .45;
 }
 
 #switch .ts.card:not(.active):hover {
-    filter: opacity(.8);
+    opacity: .8;
     border: 1px solid #bdbdbd;
 }
 
