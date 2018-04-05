@@ -1,21 +1,21 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
-        name: '2018 4月春番',
+        name: '4月春番',
         js: './2018.04/anime2018.04.min.js',
         year: 2018
     },
     {
-        name: '2018 1月冬番',
+        name: '1月冬番',
         js: './2018.01/anime2018.01.min.js',
         year: 2018
     },
     {
-        name: '2017 10月秋番',
+        name: '10月秋番',
         js: './2017.10/anime2017.10.min.js',
         year: 2017
     },
     {
-        name: '2017 7月夏番',
+        name: '7月夏番',
         js: './2017.07/anime2017.07.min.js',
         year: 2017
     },
@@ -26,12 +26,11 @@ $(function() {
             js = AnimeData[i].js,
             year = AnimeData[i].year
         $("#switch") //這裡用到了 JQ
-            .append($("<div/>")
-                .attr('id', name)
-                .append($("<h2/>").addClass("ts header")
-                    .html(name)
+            .append($("<div/>").attr('id', name)
+                .append($("<h2/>").addClass("ts center aligned header").html(year)
+                    .append($("<div/>").addClass("sub header").html(name))
                 )
-                .append($("<div/>").addClass("ts doubling four cards")
+                .append($("<div/>").addClass("ts doubling four centered cards")
                     .append($("<a/>").addClass("ts card").attr('data-type', 'info').attr('data-js', js).attr('data-year', year)
                         .append($("<div/>").addClass("content")
                             .append($("<div/>").addClass("header")
