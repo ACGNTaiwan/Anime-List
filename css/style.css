@@ -19,6 +19,15 @@ header {
     pointer-events: none;
 }
 
+.ts.centered.cards {
+    justify-content: center;
+    text-align: center;
+}
+
+#switch {
+    min-height: 130px;
+}
+
 #switch .ts.card {
     transition: all 0.2s linear;
 }
