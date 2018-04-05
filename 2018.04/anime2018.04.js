@@ -1,30 +1,8 @@
 //==============================//
-//          2018 春番清單
-//  github.com/gnehs/Anime-List
+//            2018 春番          //
+//  github.com/gnehs/Anime-List //
 //==============================//
-//            資料來源
-// 維基百科
-// https://zh.wikipedia.org/
-// 百度百科
-// https://baike.baidu.com
-// 萌娘百科
-// https://zh.moegirl.org/
-// Animen 動漫平台
-// https://www.animen.com.tw/
-// 巴哈
-// https://forum.gamer.com.tw/
-//==============================//
-Anime = [
-    // 星期格式 / Week
-    //     Sun  Mon Tue  Wed  Thu  Fri  Sat none
-    //     日   一   二   三    四   五   六  尚未公開
-    // 原作載體 / Carrier
-    //     Comic  Novel   Game  Original
-    //    漫畫    小說    遊戲   原創或其他
-    // 資料存取範例 / Example
-    //    -> Anime[0].name
-    //    <- LoveLive! SunShine!!
-    {
+Anime = [{
         name: '鬼太郎',
         nameInJpn: 'ゲゲゲの鬼太郎',
         date: '4/1',
@@ -152,7 +130,7 @@ Anime = [
         time: '22:30',
         carrier: 'Novel',
         season: '1',
-        episode: '',
+        episode: '26',
         img: 'https://i.imgur.com/uvMoQkr.jpg',
         official: 'http://kakuriyo-anime.com/',
         description: '老字號旅館「天神屋」，座落於妖魔鬼怪所棲息的世界──隱世。看得見妖怪的善良女大學生葵，不知不覺中養成做料理餵食妖怪的習慣。某天，葵在餵食妖怪時，突然被天神屋的「大老闆」鬼神給抓走了。根據大老闆所言，葵成了祖父欠下巨債的「擔保品」，必須嫁入他們家。',
@@ -785,7 +763,7 @@ Anime = [
 // 讓動畫按時間排序
 var Anime = Anime.sort(function(a, b) {
     var aTime = Number(a.date.split("/")[0]) * 100000 + Number(a.date.split("/")[1]) * 10000 + Number(a.time.split(":")[0]) * 100 + Number(a.time.split(":")[1]),
-        bTime = Number(b.date.split("/")[0]) * 100000 + Number(b.date.split("/")[1]) * 10000 + Number(b.time.split(":")[0]) * 100 + Number(b.time.split(":")[1])
+        bTime = Number(b.date.split("/")[0]) * 100000 + Number(b.date.split("/")[1]) * 10000 + Number(b.time.split(":")[0]) * 100 + Number(b.time.split(":")[1]);
 
     return aTime - bTime;
 });
