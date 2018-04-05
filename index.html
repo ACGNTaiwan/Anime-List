@@ -1,115 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>新番情報</title>
+    <title>Anime List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" rel="stylesheet">
     <script href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
-        <meta name="description" content="最齊全的新番情報">
-        <meta name="image" content="https://gnehs.github.io/Anime-List/2017.07/og.png">
-        <meta itemprop="name" content="新番情報">
-        <meta itemprop="description" content="最齊全的新番情報">
-        <meta itemprop="image" content="https://gnehs.github.io/Anime-List/2017.07/og.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+        <meta name="description" content="展示新番的清單">
+        <meta name="image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta itemprop="name" content="Anime List">
+        <meta itemprop="description" content="展示新番的清單">
+        <meta itemprop="image" content="https://gnehs.github.io/Anime-List/og.png">
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="新番情報">
-        <meta name="twitter:description" content="最齊全的新番情報">
-        <meta name="twitter:image:src" content="https://gnehs.github.io/Anime-List/2017.07/og.png">
-        <meta name="og:title" content="新番情報">
-        <meta name="og:description" content="最齊全的新番情報">
-        <meta name="og:image" content="https://gnehs.github.io/Anime-List/2017.07/og.png">
+        <meta name="twitter:title" content="Anime List">
+        <meta name="twitter:description" content="展示新番的清單">
+        <meta name="twitter:image:src" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="og:title" content="Anime List">
+        <meta name="og:description" content="展示新番的清單">
+        <meta name="og:image" content="https://gnehs.github.io/Anime-List/og.png">
         <meta name="og:url" content="https://gnehs.github.io/Anime-List/">
-        <meta name="og:site_name" content="新番情報">
+        <meta name="og:site_name" content="Anime List">
         <meta name="og:locale" content="zh_TW">
         <meta name="og:type" content="website">
+    <!-- JQ https://cdnjs.com/libraries/jquery/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/js/index.js"></script>
   </head>
   <body>
-    <div class="ts basic menu top attached borderless horizontally scrollable" id="top">
-      <div class="ts container">
+    <!-- 標題-->
+    <div class="ts slate huge">
+      <div class="header">Anime List</div>
+    </div>
+    <div class="ts basic menu bottom attached borderless horizontally scrollable" id="top">
+      <div class="ts container"><a class="item" href="#">Anime List</a>
         <div class="right menu"><a class="item" href="https://github.com/gnehs/Anime-List">GitHub</a></div>
       </div>
     </div>
-    <!-- 標題-->
-    <div class="ts slate huge">
-      <div class="header">新番情報</div>
-      <div class="description">選擇季度</div>
-    </div><br><br>
     <div class="ts container">
-      <h2 class="ts header dividing">2018/4 月冬番
-        <div class="sub header">人生好難</div>
-      </h2>
-      <div class="ts four doubling cards"><a class="ts card" href="2018.04/index.html">
-          <div class="content">
-            <div class="header">介紹</div>
-            <div class="description">圖文介紹</div>
-          </div>
-          <div class="symbol"><i class="icon newspaper"></i></div></a><a class="ts card" href="2018.04/schedule.html">
-          <div class="content">
-            <div class="header">日程表</div>
-            <div class="description">以表格展示新番日程</div>
-          </div>
-          <div class="symbol"><i class="icon table"></i></div></a><a class="ts card" href="2018.04/waterfall.html">
-          <div class="content">
-            <div class="header">瀑布流</div>
-            <div class="description">一個美觀的展示用頁面</div>
-          </div>
-          <div class="symbol"><i class="icon cube"></i></div></a>
-      </div>
-      <h2 class="ts header dividing">2018/1 月冬番
-        <div class="sub header">搞到快累死</div>
-      </h2>
-      <div class="ts four doubling cards"><a class="ts card" href="2018.01/index.html">
-          <div class="content">
-            <div class="header">介紹</div>
-            <div class="description">圖文介紹</div>
-          </div>
-          <div class="symbol"><i class="icon newspaper"></i></div></a><a class="ts card" href="2018.01/schedule.html">
-          <div class="content">
-            <div class="header">日程表</div>
-            <div class="description">以表格展示新番日程</div>
-          </div>
-          <div class="symbol"><i class="icon table"></i></div></a><a class="ts card" href="2018.01/waterfall.html">
-          <div class="content">
-            <div class="header">瀑布流</div>
-            <div class="description">一個美觀的展示用頁面</div>
-          </div>
-          <div class="symbol"><i class="icon cube"></i></div></a>
-      </div>
-      <h2 class="ts header dividing">2017/10 月秋番
-        <div class="sub header">滿滿的第二季</div>
-      </h2>
-      <div class="ts four doubling cards"><a class="ts card" href="2017.10/index.html">
-          <div class="content">
-            <div class="header">介紹</div>
-            <div class="description">圖文介紹</div>
-          </div>
-          <div class="symbol"><i class="icon newspaper"></i></div></a><a class="ts card" href="2017.10/schedule.html">
-          <div class="content">
-            <div class="header">日程表</div>
-            <div class="description">以表格展示新番日程</div>
-          </div>
-          <div class="symbol"><i class="icon table"></i></div></a><a class="ts card" href="2017.10/waterfall.html">
-          <div class="content">
-            <div class="header">瀑布流</div>
-            <div class="description">一個美觀的展示用頁面</div>
-          </div>
-          <div class="symbol"><i class="icon cube"></i></div></a>
-      </div>
-      <h2 class="ts header dividing">2017/07 月夏番
-        <div class="sub header">應該資料沒漏掉吧，大概......</div>
-      </h2>
-      <div class="ts four doubling cards"><a class="ts card" href="2017.07/index.html">
-          <div class="content">
-            <div class="header">介紹</div>
-            <div class="description">圖文介紹</div>
-          </div>
-          <div class="symbol"><i class="icon newspaper"></i></div></a><a class="ts card" href="2017.07/schedule.html">
-          <div class="content">
-            <div class="header">日程表</div>
-            <div class="description">以表格展示新番日程</div>
-          </div>
-          <div class="symbol"><i class="icon table"></i></div></a>
-      </div><br><br>
+      <div id="switch"></div>
+      <div id="content"></div>
     </div>
     <div class="ts container">
       <div class="ts section horizontal divider">2018 棒棒勝 </div><a href="#top"><i class="arrow up icon"></i>回到頂部</a><br><br>

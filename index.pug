@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title Anime List
+        meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(charset='utf-8')
+        include ../Jade/_tocasui.jade
+        include ../Jade/_tags.jade
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',rel='stylesheet')
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',rel='stylesheet')
+        link(href='/css/style.css',rel='stylesheet')
+        +social_tags('Anime List','展示新番的清單','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
+        // JQ https://cdnjs.com/libraries/jquery/
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
+        script(src='/js/index.js')
+    body
+        // 標題
+        .ts.slate.huge
+            .header Anime List
+        #top.ts.basic.menu.bottom.attached.borderless.horizontally.scrollable
+            .ts.container
+                a.item(href='#') Anime List
+                .right.menu
+                    a.item(href='https://github.com/gnehs/Anime-List') GitHub
+        .ts.container
+            #switch
+            #content
+        
+        include _footer.pug
