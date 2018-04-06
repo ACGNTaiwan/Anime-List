@@ -6,6 +6,7 @@ html
         meta(charset='utf-8')
         include ../Jade/_tocasui.jade
         include ../Jade/_tags.jade
+        link(rel="icon" href="./icon/drawable-ldpi/icon.png")
         link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',rel='stylesheet')
         link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',rel='stylesheet')
         link(href='./css/style.css?' + Math.floor(Math.random() * (99999999)) ,rel='stylesheet')
@@ -15,7 +16,7 @@ html
         script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
         script(src='./js/index.js?' + Math.floor(Math.random() * (99999999)) )
         // PWA
-        link(rel="manifest" href="/manifest.json")
+        link(rel="manifest" href="./manifest.json")
         // Add to home screen for Safari on iOS
         meta(name="apple-mobile-web-app-capable" content="yes")
         meta(name="apple-mobile-web-app-status-bar-style" content="black")
