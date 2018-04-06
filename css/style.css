@@ -138,13 +138,14 @@ header .header {
     border-radius: 0 !important;
     transform-origin: bottom;
     height: 100%;
-    transform: translateX(-110%) scaleX(1.25);
+    transform: translateY(110%) scaleY(1.25);
     padding: 1.25rem 1.5rem;
 }
 
 [data-type="waterfall"] .ts.card:hover>.image>.header:not(.ts) {
     opacity: 1;
     transform: none;
+    background: rgba(0, 0, 0, 0);
 }
 
 [data-type="waterfall"] .ts.card>.image>img {
@@ -154,7 +155,7 @@ header .header {
 }
 
 [data-type="waterfall"] .ts.card:hover>.image>img {
-    filter: grayscale(70%) brightness(80%);
+    filter: brightness(50%);
 }
 
 @media (max-width: 768px) {
