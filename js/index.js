@@ -86,7 +86,7 @@ $(function() {
                         )
                         .append($("<div/>").addClass("symbol")
                             .append($("<i/>")
-                                .addClass("icon cube")
+                                .addClass("icon grid layout")
                             )
                         )
                     )
