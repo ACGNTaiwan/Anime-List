@@ -22,7 +22,7 @@ AnimeData = [{
 ];
 $(function() {
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./js/sw.js') // 註冊 Service Worker
+        navigator.serviceWorker.register('./js/sw.js', { scope: '/Anime-List/' }) // 註冊 Service Worker
             .then(function(reg) {
                 console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
             }).catch(function(error) {
