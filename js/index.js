@@ -22,6 +22,7 @@ AnimeData = [{
 ];
 $(function() {
     $("#switch").html('')
+    $("body>*:not(header) ").attr('style', 'opacity: 1;')
     for (i = 0; i < AnimeData.length; i = i + 1) {
         let name = AnimeData[i].name,
             js = AnimeData[i].js,
