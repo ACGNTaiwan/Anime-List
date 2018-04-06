@@ -96,7 +96,7 @@ $(function() {
         $('[data-js]:not(.active)').addClass('disabled')
 
         $("#content").attr('data-animation', '')
-        $("#content").attr('data-animation', 'slideOut')
+        $("#content").attr('data-animation', 'fadeOut')
 
         let js = $(this).attr('data-js')
         let type = $(this).attr('data-type')
@@ -114,12 +114,12 @@ $(function() {
                 if (type == 'schedule') {
                     schedule(Anime, year)
                 }
+                $("#content").attr('data-animation', 'fadeIn')
+                setTimeout(function() {
+                    $("#content").attr('data-animation', '')
+                    $('[data-js]').removeClass('disabled')
+                }, 250);
             }, 251);
-            setTimeout(function() { $("#content").attr('data-animation', 'slideIn') }, 400);
-            setTimeout(function() {
-                $("#content").attr('data-animation', '')
-                $('[data-js]').removeClass('disabled')
-            }, 1000);
         });
     });
 });

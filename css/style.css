@@ -57,34 +57,30 @@ header {
     fade
 */
 
-[data-animation="slideIn"] {
-    animation: slideIn .25s ease;
+[data-animation="fadeIn"] {
+    animation: fadeIn .2s linear;
 }
 
-[data-animation="slideOut"] {
-    animation: slideOut .25s ease;
+[data-animation="fadeOut"] {
+    animation: fadeOut .2s linear;
     opacity: 0;
 }
 
-@keyframes slideIn {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-@keyframes slideOut {
+@keyframes fadeOut {
     from {
         opacity: 1;
-        transform: translateY(0);
     }
     to {
         opacity: 0;
-        transform: translateY(50px);
     }
 }
 
