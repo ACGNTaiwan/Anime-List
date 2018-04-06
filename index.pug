@@ -13,10 +13,12 @@ html
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
+        script(src='./js/particles.min.js')
         script(src='./js/index.js?' + Math.floor(Math.random() * (99999999)) )
     body
         // 標題
-        header.ts.slate.huge.fluid
+        header.ts.slate.huge.fluid.vertically.padded
+            #particles-js
             .header Anime List
         .ts.container
             #switch
@@ -36,7 +38,7 @@ html
         footer.ts.container
             .ts.section.horizontal.divider gnehs 2018
             .ts.relaxed.separated.compact.buttons
-                a.ts.button.labeled.icon(href='#top')
+                a.ts.button.labeled.icon(data-top)
                     i.arrow.up.icon
                     | Top
                 a.ts.button.labeled.icon(href='https://github.com/gnehs/Anime-List') 

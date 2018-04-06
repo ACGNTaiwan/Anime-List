@@ -17,7 +17,19 @@ body>*:not(header) {
 }
 
 header {
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    padding: 0 !important;
+}
+
+header .header {
+    padding: 2.5em 2em;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .disabled {

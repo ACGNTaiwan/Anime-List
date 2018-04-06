@@ -20,9 +20,21 @@ AnimeData = [{
         year: 2017
     },
 ];
+particlesJS.load('particles-js', '/js/particlesjs-config.json');
 $(function() {
-    $("#switch").html('')
+    /* Top Button */
+    $('[data-top]').click(function() {
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+    /* Fade in */
     $("body>*:not(header) ").attr('style', 'opacity: 1;')
+
+    /* Switch */
     for (i = 0; i < AnimeData.length; i = i + 1) {
         let name = AnimeData[i].name,
             js = AnimeData[i].js,
@@ -86,12 +98,14 @@ $(function() {
         speed: 270,
     });
     $('#switch-buttons .button').click(function() {
-
         $('#switch').slick($(this).attr('data-slick'));
     });
-    $('.slick-dots').addClass('unstyled')
     $('[data-js]').click(function() {
         if ($(this).hasClass('active')) return
+
+        let js = $(this).attr('data-js'),
+            type = $(this).attr('data-type'),
+            year = $(this).attr('data-year')
 
         $('[data-js]').removeClass('active')
         $(this).addClass('active')
@@ -100,9 +114,6 @@ $(function() {
         $("#content").attr('data-animation', '')
         $("#content").attr('data-animation', 'fadeOut')
 
-        let js = $(this).attr('data-js'),
-            type = $(this).attr('data-type'),
-            year = $(this).attr('data-year')
 
         $.getScript(js, function() {
             setTimeout(function() {
@@ -120,8 +131,8 @@ $(function() {
                 setTimeout(function() {
                     $("#content").attr('data-animation', '')
                     $('[data-js]').removeClass('disabled')
-                }, 250);
-            }, 251);
+                }, 205);
+            }, 201);
         });
     });
 });
