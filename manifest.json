@@ -1,0 +1,33 @@
+{
+    "name": "Anime List",
+    "short_name": "AnimeList",
+    "icons": [{
+        "src": "./icon/drawable-mdpi/icon.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }, {
+        "src": "./icon/drawable-ldpi/icon.png",
+        "sizes": "96x96",
+        "type": "image/png"
+    }, {
+        "src": "./icon/drawable-hdpi/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }, {
+        "src": "./icon/drawable-xhdpi/icon.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }, {
+        "src": "./icon/drawable-xxhdpi/icon.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    }, {
+        "src": "./icon/drawable-xxxhdpi/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f7f7f7",
+    "theme_color": "#f7f7f7"
+}

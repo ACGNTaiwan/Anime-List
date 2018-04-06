@@ -20,7 +20,6 @@ AnimeData = [{
         year: 2017
     },
 ];
-particlesJS.load('particles-js', './js/particlesjs-config.json');
 $(function() {
     /* Top Button */
     $('[data-top]').click(function() {

@@ -13,12 +13,21 @@ html
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
-        script(src='./js/particles.min.js')
         script(src='./js/index.js?' + Math.floor(Math.random() * (99999999)) )
+        // PWA
+        link(rel="manifest" href="/manifest.json")
+		// Add to home screen for Safari on iOS
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black")
+		meta(name="apple-mobile-web-app-title" content="Anime List")
+		link(rel="apple-touch-icon" href="./icon/drawable-xhdpi/icon.png")
+		// Windows
+		meta(name="msapplication-TileImage" content="./icon/drawable-xhdpi/icon.png")
+		meta(name="msapplication-TileColor" content="#f7f7f7")
+
     body
         // 標題
-        header.ts.slate.huge.fluid.vertically.padded
-            #particles-js
+        header.ts.slate.huge.fluid.fitted
             .header Anime List
         .ts.container
             #switch
