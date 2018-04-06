@@ -21,6 +21,7 @@ AnimeData = [{
     },
 ];
 $(function() {
+    $("#switch").html('')
     for (i = 0; i < AnimeData.length; i = i + 1) {
         let name = AnimeData[i].name,
             js = AnimeData[i].js,
@@ -98,9 +99,9 @@ $(function() {
         $("#content").attr('data-animation', '')
         $("#content").attr('data-animation', 'fadeOut')
 
-        let js = $(this).attr('data-js')
-        let type = $(this).attr('data-type')
-        let year = $(this).attr('data-year')
+        let js = $(this).attr('data-js'),
+            type = $(this).attr('data-type'),
+            year = $(this).attr('data-year')
 
         $.getScript(js, function() {
             setTimeout(function() {
