@@ -23,7 +23,7 @@ AnimeData = [{
 $(function() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('./js/index.js', { scope: '/' })
+            navigator.serviceWorker.register('/js/index.js', { scope: '/Anime-List/' })
                 .then(function(registration) {
 
                     // 注册成功
