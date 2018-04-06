@@ -22,15 +22,12 @@ AnimeData = [{
 ];
 $(function() {
     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register()
-                .then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                })
-                .catch(function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-        });
+        navigator.serviceWorker.register('./js/sw.js') // 註冊 Service Worker
+            .then(function(reg) {
+                console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
+            }).catch(function(error) {
+                console.log('Registration failed with ' + error); // 註冊失敗
+            });
     }
     /* Top Button */
     $('[data-top]').click(function() {
