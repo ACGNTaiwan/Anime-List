@@ -9,7 +9,10 @@ this.addEventListener('install', function(event) {
                 './index.html',
                 './css/style.css',
                 './js/index.js',
-                './2018.01/anime2018.01.min.js', './2018.04/anime2018.04.min.js', './2017.10/anime2017.10.min.js', './2017.07/anime2017.07.min.js'
+                './2018.01/anime2018.01.min.js',
+                './2018.04/anime2018.04.min.js',
+                './2017.10/anime2017.10.min.js',
+                './2017.07/anime2017.07.min.js'
             ]);
         })
     );
