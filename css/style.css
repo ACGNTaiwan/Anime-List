@@ -104,11 +104,10 @@ header .header {
 }
 
 #switch .ts.card:not(.active) {
-    opacity: .45;
+    opacity: 1;
 }
 
 #switch .ts.card:not(.active):hover {
-    opacity: .8;
     border: 2px solid #bd80ff;
 }
 
