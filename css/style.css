@@ -75,9 +75,13 @@ header .header {
 }
 
 @media (min-width: 768px) {
-    .ts.centered.cards {
+    #switch .ts.centered.cards {
         justify-content: center;
         text-align: center;
+    }
+    #switch .ts.header {
+        display: block;
+        text-align: center !important;
     }
 }
 
