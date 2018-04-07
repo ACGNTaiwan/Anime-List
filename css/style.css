@@ -1,6 +1,14 @@
-body>*:not(header) {
-    opacity: 0;
+body>*:not(header),
+#offline {
     transition: all 0.2s linear;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#offline.hide {
+    display: none
 }
 
 .ts.card,

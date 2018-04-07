@@ -21,6 +21,7 @@ AnimeData = [{
     },
 ];
 $(function() {
+    // Sw
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js') // 註冊 Service Worker
             .then(function(reg) {
@@ -28,6 +29,18 @@ $(function() {
             }).catch(function(error) {
                 console.log('Registration failed with ' + error); // 註冊失敗
             });
+        caches.open('al-cache').then(function(cache) {
+            cache.addAll([
+                '/',
+                './index.html',
+                './css/style.css',
+                './js/index.js',
+                './2018.01/anime2018.01.min.js',
+                './2018.04/anime2018.04.min.js',
+                './2017.10/anime2017.10.min.js',
+                './2017.07/anime2017.07.min.js'
+            ]);
+        })
     }
     /* Top Button */
     $('[data-top]').click(function() {
@@ -39,7 +52,7 @@ $(function() {
     });
 
     /* Fade in */
-    $("body>*:not(header) ").attr('style', 'opacity: 1;')
+    $("body>*:not(header) ").removeClass('hide')
 
     /* Switch */
     for (i = 0; i < AnimeData.length; i = i + 1) {
@@ -121,26 +134,43 @@ $(function() {
         $("#content").attr('data-animation', '')
         $("#content").attr('data-animation', 'fadeOut')
 
-
-        $.getScript(js, function() {
-            setTimeout(function() {
-                $("#content").attr('class', '').html('')
-                if (type == 'waterfall') {
-                    waterfall(Anime)
-                }
-                if (type == 'info') {
-                    info(Anime, year)
-                }
-                if (type == 'schedule') {
-                    schedule(Anime, year)
-                }
-                $("#content").attr('data-animation', 'fadeIn')
-                setTimeout(function() {
-                    $("#content").attr('data-animation', '')
-                    $('[data-js]').removeClass('disabled')
-                }, 205);
-            }, 201);
+        // 啟用快取 $.getScript()
+        $.ajaxSetup({
+            cache: true
         });
+        $.getScript(js)
+            .done(function(script, textStatus) {
+                $("#offline").addClass('hide')
+                setTimeout(function() {
+                    $("#content").attr('class', '').html('')
+                    if (type == 'waterfall') {
+                        waterfall(Anime)
+                    }
+                    if (type == 'info') {
+                        info(Anime, year)
+                    }
+                    if (type == 'schedule') {
+                        schedule(Anime, year)
+                    }
+                    $("#content").attr('data-animation', 'fadeIn')
+                    setTimeout(function() {
+                        $("#content").attr('data-animation', '')
+                        $('[data-js]').removeClass('disabled')
+                    }, 205);
+                }, 201);
+            })
+            .fail(function(jqxhr, settings, exception) {
+                $("#offline").removeClass('hide')
+                console.log('offline')
+                setTimeout(function() {
+                    $("#content").attr('class', '').html('')
+                    $("#content").attr('data-animation', 'fadeIn')
+                    setTimeout(function() {
+                        $("#content").attr('data-animation', '')
+                        $('[data-js]').removeClass('disabled')
+                    }, 205);
+                }, 201);
+            });
     });
 });
 

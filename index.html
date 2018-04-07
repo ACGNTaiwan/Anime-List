@@ -4,12 +4,10 @@
     <title>Anime List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
+    <!-- Tocas UI -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" rel="stylesheet">
     <script href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
-    <link rel="icon" href="./icon/drawable-ldpi/icon.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
-    <link href="./css/style.css?82260336" rel="stylesheet">
+    <!-- social_tags-->
         <meta name="description" content="展示新番的清單">
         <meta name="image" content="https://gnehs.github.io/Anime-List/og.png">
         <meta itemprop="name" content="Anime List">
@@ -26,10 +24,16 @@
         <meta name="og:site_name" content="Anime List">
         <meta name="og:locale" content="zh_TW">
         <meta name="og:type" content="website">
-    <!-- JQ https://cdnjs.com/libraries/jquery/-->
+    <!-- JQuery https://cdnjs.com/libraries/jquery/ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/index.js?97575106"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+    <!--main-->
+    <script src="./js/index.js?10916591"></script>
+    <link rel="icon" href="./icon/drawable-ldpi/icon.png">
+    <link href="./css/style.css?42728300" rel="stylesheet">
     <!-- PWA-->
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#f7f7f7">
@@ -47,12 +51,18 @@
     <header class="ts slate huge fluid fitted">
       <div class="header">Anime List</div>
     </header>
-    <div class="ts container">
+    <div class="ts container hide"> 
       <div id="switch"></div>
       <div id="switch-buttons" style="text-align:center;margin:10px auto;">
         <div class="ts relaxed separated circular buttons icon"><a class="ts button" data-slick="slickPrev"><i class="chevron left icon"></i></a><a class="ts button right floated" data-slick="slickNext"><i class="chevron right icon"></i></a></div>
       </div>
       <div class="ts divider"></div>
+      <div class="hide" id="offline"> 
+        <div class="ts inverted negative message">
+          <div class="header">已離線</div>
+          <p>連上網路以取得最新資料</p>
+        </div>
+      </div>
       <div id="content"> 
         <h3 class="ts center aligned icon header"> <i class="pointing up icon"></i>歡迎
           <div class="sub header">使用上方選擇器來瀏覽本站資料</div>

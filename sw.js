@@ -4,7 +4,7 @@ this.addEventListener('install', function(event) {
     console.log('Installed service worker');
     event.waitUntil(
         caches.open('al-cache').then(function(cache) {
-            return cache.addAll([
+            cache.addAll([
                 '/',
                 './index.html',
                 './css/style.css',

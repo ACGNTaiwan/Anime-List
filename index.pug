@@ -4,17 +4,21 @@ html
         title Anime List
         meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(charset='utf-8')
+        // Tocas UI 
         include ../Jade/_tocasui.jade
+        // social_tags
         include ../Jade/_tags.jade
-        link(rel="icon" href="./icon/drawable-ldpi/icon.png")
+        +social_tags('Anime List','展示新番的清單','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
+        // JQuery https://cdnjs.com/libraries/jquery/ 
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        // slick 
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
         link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',rel='stylesheet')
         link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',rel='stylesheet')
+        //main
+        script(src='./js/index.js?' + Math.floor(Math.random() * (99999999)))
+        link(rel="icon" href="./icon/drawable-ldpi/icon.png")
         link(href='./css/style.css?' + Math.floor(Math.random() * (99999999)) ,rel='stylesheet')
-        +social_tags('Anime List','展示新番的清單','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
-        // JQ https://cdnjs.com/libraries/jquery/
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
-        script(src='./js/index.js?' + Math.floor(Math.random() * (99999999)) )
         // PWA
         link(rel="manifest" href="./manifest.json")
         meta(name="theme-color" content="#f7f7f7")
@@ -31,7 +35,7 @@ html
         // 標題
         header.ts.slate.huge.fluid.fitted
             .header Anime List
-        .ts.container
+        .ts.container.hide 
             #switch
             #switch-buttons(style='text-align:center;margin:10px auto')
                 .ts.relaxed.separated.circular.buttons.icon
@@ -40,6 +44,10 @@ html
                     a.ts.button.right.floated(data-slick='slickNext')
                         i.chevron.right.icon
             .ts.divider
+            #offline.hide 
+                .ts.inverted.negative.message
+                    .header 已離線
+                    p 連上網路以取得最新資料
             #content 
                 h3.ts.center.aligned.icon.header 
                     i.pointing.up.icon
