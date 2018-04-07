@@ -31,35 +31,39 @@ body>*:not(header),
 */
 
 header.ts.slate {
-    margin-bottom: 20px;
-}
-
-header.ts.slate {
+    margin-bottom: 50px;
     background: #2196f3;
     color: white;
-    z-index: 10;
 }
 
-header.ts.slate:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 100%;
-    top: 100%;
-    bottom: auto;
-    height: 10px;
-    pointer-events: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .3)), color-stop(40%, rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, .05)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
-}
-
-header.ts.slate .header {
-    text-align: left !important;
+@media (max-width: 768px) {
+    header.ts.slate {
+        position: fixed;
+        z-index: 10;
+    }
+    header.ts.slate:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 100%;
+        bottom: auto;
+        height: 10px;
+        pointer-events: none;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .3)), color-stop(40%, rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, .05)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+    }
+    #switch {
+        padding-top: 75px;
+    }
+    header.ts.slate .header {
+        text-align: left !important;
+    }
 }
 
 header .header {
-    padding: .1em .2em;
+    padding: .2em;
 }
 
 
@@ -92,10 +96,11 @@ header .header {
 
 #switch .ts.card {
     transition: all 0.2s linear;
+    border: 2px solid #bd80ff29;
 }
 
 #switch .ts.card.active {
-    border: 1px solid #666;
+    border: 2px solid #922cffbd;
 }
 
 #switch .ts.card:not(.active) {
@@ -104,7 +109,7 @@ header .header {
 
 #switch .ts.card:not(.active):hover {
     opacity: .8;
-    border: 1px solid #bdbdbd;
+    border: 2px solid #bd80ff;
 }
 
 #switch .ts.card:hover {

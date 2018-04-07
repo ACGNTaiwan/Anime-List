@@ -39,10 +39,11 @@ html
         .ts.container.hide 
             #switch
             #switch-buttons(style='text-align:center;margin:10px auto')
-                .ts.relaxed.separated.circular.buttons.icon
-                    a.ts.button(data-slick='slickPrev')
+                .ts.relaxed.separated.buttons.icon
+                    a.ts.button.labeled.icon(data-slick='slickPrev')
                         i.chevron.left.icon
-                    a.ts.button.right.floated(data-slick='slickNext')
+                        | 下一季度
+                    a.ts.button.right.labeled.icon.floated(data-slick='slickNext') 上一季度
                         i.chevron.right.icon
             .ts.divider
             #offline.hide 
