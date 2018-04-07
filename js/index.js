@@ -116,6 +116,7 @@ $(function() {
     $('#switch').slick({
         arrows: false,
         speed: 270,
+        infinite: false,
     });
     $('#switch-buttons .button').click(function() {
         $('#switch').slick($(this).attr('data-slick'));
