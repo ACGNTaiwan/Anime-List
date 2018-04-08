@@ -1,6 +1,7 @@
-body>*:not(header),
+body>footer,
+body>.ts.container,
 #offline {
-    transition: all 0.2s linear;
+    transition: all .4s linear;
 }
 
 .hide {
@@ -63,7 +64,8 @@ header.ts.slate {
 }
 
 header .header {
-    padding: .2em;
+    padding: .3em;
+    font-size: 1.2em !important;
 }
 
 
@@ -97,6 +99,10 @@ header .header {
 #switch .ts.card {
     transition: all 0.2s linear;
     border: 2px solid #bd80ff29;
+}
+
+#switch .ts.card .symbol {
+    color: #2196f3;
 }
 
 #switch .ts.card.active {

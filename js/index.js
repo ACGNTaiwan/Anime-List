@@ -51,8 +51,6 @@ $(function() {
         return false;
     });
 
-    /* Fade in */
-    $("body>*:not(header) ").removeClass('hide')
 
     /* Switch */
     for (i = 0; i < AnimeData.length; i = i + 1) {
@@ -119,16 +117,19 @@ $(function() {
         infinite: false,
     });
     $('#switch-buttons .button').click(function() {
-        $('#switch-buttons [data-slick]').removeClass('disabled') // 自動停用按鈕
+        $('#switch-buttons [data-slick]').removeClass('disabled')
         $('#switch').slick($(this).attr('data-slick'));
     });
-    $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled') // 自動停用按鈕
+    // 自動停用按鈕
+    $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
+    $('#switch').on('swipe', function(event, slick, direction) {
+        $('#switch-buttons [data-slick]').removeClass('disabled')
+    })
     $('#switch').on('afterChange', function(event, slick, direction) {
-        console.log(slick)
         if (direction == event.isTrigger) $('#switch-buttons [data-slick="slickNext"]').addClass('disabled')
         if (direction == 0) $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
-    }); // 自動停用按鈕
-
+    });
+    // 卡片點擊載入資料
     $('[data-js]').click(function() {
         if ($(this).hasClass('active')) return
 
@@ -181,6 +182,8 @@ $(function() {
                 }, 201);
             });
     });
+    /* Fade in */
+    $("body>footer,body>.ts.container").removeClass('hide')
 });
 
 
