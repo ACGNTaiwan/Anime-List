@@ -111,10 +111,12 @@ $(function() {
                 )
             );
     }
+    // slick 
     $('#switch').slick({
         arrows: false,
         speed: 270,
         infinite: false,
+        swipe: false
     });
     $('#switch-buttons .button').click(function() {
         $('#switch-buttons [data-slick]').removeClass('disabled')
@@ -122,9 +124,6 @@ $(function() {
     });
     // 自動停用按鈕
     $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
-    $('#switch').on('swipe', function(event, slick, direction) {
-        $('#switch-buttons [data-slick]').removeClass('disabled')
-    })
     $('#switch').on('afterChange', function(event, slick, direction) {
         if (direction == event.isTrigger) $('#switch-buttons [data-slick="slickNext"]').addClass('disabled')
         if (direction == 0) $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
