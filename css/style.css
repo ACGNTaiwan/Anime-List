@@ -159,30 +159,20 @@ header .header {
     info
 */
 
-[data-type="info"] .ts.card .symbol .icon {
-    right: .1em;
-    bottom: .2em;
-    width: auto;
-    height: auto;
-    font-size: 5em;
-    opacity: .15;
-    transform: rotate(-18deg);
-}
-
 i.icon.Comic:before {
-    content: "漫改";
+    content: "\f1fc";
 }
 
 i.icon.Novel:before {
-    content: "輕改";
+    content: "\f02d";
 }
 
 i.icon.Game:before {
-    content: "遊戲";
+    content: "\f11b";
 }
 
 i.icon.Original:before {
-    content: "原創";
+    content: "\f26c";
 }
 
 .ts.card.Comic,
