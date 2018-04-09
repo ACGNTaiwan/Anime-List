@@ -159,20 +159,30 @@ header .header {
     info
 */
 
+[data-type="info"] .ts.card .symbol .icon {
+    right: .1em;
+    bottom: .2em;
+    width: auto;
+    height: auto;
+    font-size: 5em;
+    opacity: .1;
+    transform: rotate(-18deg);
+}
+
 i.icon.Comic:before {
-    content: "\f1fc";
+    content: "漫改";
 }
 
 i.icon.Novel:before {
-    content: "\f02d";
+    content: "輕改";
 }
 
 i.icon.Game:before {
-    content: "\f11b";
+    content: "遊戲";
 }
 
 i.icon.Original:before {
-    content: "\f26c";
+    content: "原創";
 }
 
 .ts.card.Comic,
@@ -192,11 +202,11 @@ i.icon.Original:before {
 }
 
 .ts.card.Novel {
-    border-bottom-color: #76D3F4;
+    border-bottom-color: #ff5aae;
 }
 
 .ts.card.Novel .symbol .icon {
-    color: #76D3F4;
+    color: #ff5aae;
 }
 
 .ts.card.Game {
