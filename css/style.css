@@ -156,6 +156,67 @@ header .header {
 
 
 /*
+    info
+*/
+
+i.icon.Comic:before {
+    content: "\f1fc";
+}
+
+i.icon.Novel:before {
+    content: "\f02d";
+}
+
+i.icon.Game:before {
+    content: "\f11b";
+}
+
+i.icon.Original:before {
+    content: "\f26c";
+}
+
+.ts.card.Comic,
+.ts.card.Novel,
+.ts.card.Game,
+.ts.card.Original {
+    border-bottom-width: 2px;
+    border-bottom-color: #ff00bc;
+}
+
+.ts.card.Comic {
+    border-bottom-color: #ff00bc;
+}
+
+.ts.card.Comic .symbol .icon {
+    color: #ff00bc;
+}
+
+.ts.card.Novel {
+    border-bottom-color: #76D3F4;
+}
+
+.ts.card.Novel .symbol .icon {
+    color: #76D3F4;
+}
+
+.ts.card.Game {
+    border-bottom-color: #88d444;
+}
+
+.ts.card.Game .symbol .icon {
+    color: #88d444;
+}
+
+.ts.card.Original {
+    border-bottom-color: #ff86ad;
+}
+
+.ts.card.Original .symbol .icon {
+    color: #ff86ad;
+}
+
+
+/*
     waterfall
 */
 

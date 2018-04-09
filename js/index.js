@@ -301,7 +301,7 @@ function info(Anime, year) {
         var Anime_Info = Anime[i].description; //介紹
         $("#" + Anime_Day) //這裡用到了 JQ
             .append($("<div/>")
-                .addClass("ts card") //Tocas UI 的卡片
+                .addClass("ts card " + Anime_Adapt) //Tocas UI 的卡片
                 .attr("id", Anime_Name)
                 .append($("<div/>")
                     .addClass("image")
