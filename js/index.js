@@ -119,14 +119,14 @@ $(function() {
         swipe: false
     });
     $('#switch-buttons .button').click(function() {
-        $('#switch-buttons [data-slick]').removeClass('disabled')
+        $('#switch-buttons [data-slick]').removeClass('disabled').removeAttr('disabled')
         $('#switch').slick($(this).attr('data-slick'));
     });
     // 自動停用按鈕
-    $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
+    $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled').attr('disabled')
     $('#switch').on('afterChange', function(event, slick, direction) {
-        if (direction == event.isTrigger) $('#switch-buttons [data-slick="slickNext"]').addClass('disabled')
-        if (direction == 0) $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled')
+        if (direction == event.isTrigger) $('#switch-buttons [data-slick="slickNext"]').addClass('disabled').attr('disabled')
+        if (direction == 0) $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled').attr('disabled')
     });
     // 卡片點擊載入資料
     $('[data-js]').click(function() {
