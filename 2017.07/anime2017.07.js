@@ -449,4 +449,11 @@ Anime = [{
         img: 'https://i.imgur.com/CR6H2y7.jpg',
         description: "在L.C.922年，人們正在面對空前的危機。在神話世界的百年戰爭結束後，在神話世界中戰敗的魔神為了在地上尋求新的安居之所，開始向人類世界襲來。背負著守護街區宿命的警察特殊機關阿爾卡（ALCA），旗下年輕的盟約者被強制與擁有特殊能力的異世界女神合體，並進而投身戰場之中。",
     },
-]
+];
+// 讓動畫按時間排序
+var Anime = Anime.sort(function(a, b) {
+    //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+    var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+        bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+    return aTime - bTime;
+});

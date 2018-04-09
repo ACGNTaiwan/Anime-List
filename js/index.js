@@ -22,7 +22,7 @@ AnimeData = [{
 ];
 $(function() {
     // Sw
-    if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator && location.hostname != "localhost") {
         navigator.serviceWorker.register('./sw.js') // 註冊 Service Worker
             .then(function(reg) {
                 console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
