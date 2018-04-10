@@ -102,8 +102,16 @@ header.ts.slate:after {
     border-width: 0;
 }
 
+#switch .ts.card .symbol {
+    color: #2196f3;
+}
+
+#switch .ts.card:hover {
+    box-shadow: 0 4px 11px #00000024;
+    transform: none;
+}
+
 #switch .ts.card.active {
-    transform: translateY(-3px);
     box-shadow: 0 4px 11px #00000024;
     background-color: #2195f3;
 }
@@ -112,14 +120,6 @@ header.ts.slate:after {
 #switch .ts.card.active .header,
 #switch .ts.card.active .description {
     color: white;
-}
-
-#switch .ts.card .symbol {
-    color: #2196f3;
-}
-
-#switch .ts.card:hover {
-    box-shadow: 0 4px 11px #00000024;
 }
 
 .slick-slide {
