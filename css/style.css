@@ -17,6 +17,12 @@ body>.ts.container,
     border-radius: 0 !important;
 }
 
+.ts.button {
+    border-radius: 0.15rem;
+    box-shadow: 0 2px 2px #0000002b;
+    border-width: 0;
+}
+
 
 /*
     content
@@ -37,35 +43,33 @@ header.ts.slate {
     color: white;
 }
 
-@media (max-width: 768px) {
-    header.ts.slate {
-        position: fixed;
-        z-index: 10;
-    }
-    header.ts.slate:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        width: 100%;
-        top: 100%;
-        bottom: auto;
-        height: 10px;
-        pointer-events: none;
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .3)), color-stop(40%, rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, .05)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
-    }
-    #switch {
-        padding-top: 75px;
-    }
-    header.ts.slate .header {
-        text-align: left !important;
-    }
+header.ts.slate {
+    position: fixed;
+    z-index: 10;
 }
 
-header .header {
+header.ts.slate .header {
+    text-align: left !important;
     padding: .3em;
     font-size: 1.2em !important;
+}
+
+header.ts.slate:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 100%;
+    bottom: auto;
+    height: 10px;
+    pointer-events: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .3)), color-stop(40%, rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, .05)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+#switch {
+    padding-top: 75px;
 }
 
 
@@ -81,45 +85,45 @@ header .header {
     pointer-events: none;
 }
 
-@media (min-width: 768px) {
-    #switch .ts.centered.cards {
-        justify-content: center;
-        text-align: center;
-    }
-    #switch .ts.header {
-        display: block;
-        text-align: center !important;
-    }
-}
-
 #switch {
     min-height: 160px;
 }
 
+#switch .ts.cards {
+    padding: .75rem;
+}
+
 #switch .ts.card {
-    transition: all 0.2s linear;
-    border: 2px solid #bd80ff29;
+    transition: all .2s ease;
+    border-radius: 0.15rem !important;
+    box-shadow: 0 2px 5px #00000024;
+    overflow: hidden;
+    opacity: 1;
+    border-width: 0;
+}
+
+#switch .ts.card.active {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 11px #00000024;
+    background-color: #2195f3;
+}
+
+#switch .ts.card.active .symbol,
+#switch .ts.card.active .header,
+#switch .ts.card.active .description {
+    color: white;
 }
 
 #switch .ts.card .symbol {
     color: #2196f3;
 }
 
-#switch .ts.card.active {
-    border: 2px solid #922cffbd;
-}
-
-#switch .ts.card:not(.active) {
-    opacity: 1;
-}
-
-#switch .ts.card:not(.active):hover {
-    border: 2px solid #bd80ff;
-}
-
 #switch .ts.card:hover {
-    transform: none;
-    box-shadow: none;
+    box-shadow: 0 4px 11px #00000024;
+}
+
+.slick-slide {
+    padding-bottom: 10px;
 }
 
 
@@ -139,6 +143,7 @@ header .header {
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: translateY(-3px);
     }
     to {
         opacity: 1;
@@ -151,6 +156,7 @@ header .header {
     }
     to {
         opacity: 0;
+        transform: translateY(-3px);
     }
 }
 

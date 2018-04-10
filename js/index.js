@@ -62,7 +62,7 @@ $(function() {
                 .append($("<h2/>").addClass("ts header").html(name)
                     .append($("<div/>").addClass("sub header").html(year))
                 )
-                .append($("<div/>").addClass("ts doubling four centered cards")
+                .append($("<div/>").addClass("ts doubling three cards")
                     .append($("<a/>").addClass("ts card").attr('data-type', 'info').attr('data-js', js).attr('data-year', year)
                         .append($("<div/>").addClass("content")
                             .append($("<div/>").addClass("header")
