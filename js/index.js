@@ -1,5 +1,9 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
+        name: '「施工中」7月夏番',
+        js: './2018.07/anime2018.07.js',
+        year: 2018
+    }, {
         name: '4月春番',
         js: './2018.04/anime2018.04.min.js',
         year: 2018
@@ -290,7 +294,7 @@ function info(Anime, year) {
         var Anime_Day = week[setTime.getDay()]; //星期
         // 如果同時有撥放的日期、星期、時間，把時間設定為 日期+星期+時間
         // 如果沒有，僅顯示 尚未公開
-        if (Anime[i].week != "none" || Anime[i].time != "尚未公開" || Anime[i].date != "尚未公開") {
+        if (Anime[i].time != "尚未公開" || Anime[i].date != "尚未公開") {
             var Anime_Time = Anime[i].date + " (" + week_chinese[setTime.getDay()] + ") " + Anime[i].time; //撥出時間
         } else {
             var Anime_Time = "尚未公開";

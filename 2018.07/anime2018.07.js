@@ -1,0 +1,518 @@
+//==============================//
+//  2018 夏番                    //
+//  github.com/gnehs/Anime-List //
+//==============================//
+Anime = [{
+    name: '未來卡片 神之戰鬥夥伴',
+    nameInJpn: 'フューチャーカード 神バディファイト',
+    date: '6/2',
+    time: '08:00',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/HI4P785.jpg',
+    official: 'https://fc-buddyfight.com',
+    description: '故事的舞台設定在2030年，異世界通過卡片遊戲BUDDYFIGHT與地球聯繫起來。異世界的怪物們在日常生活中為普遍的存在，它們會選擇一個地球人作為夥伴在卡片遊戲中戰鬥。'
+}, {
+    name: '付喪神出租中',
+    nameInJpn: 'つくもがみ貸します',
+    date: '7/1',
+    time: '00:10',
+    carrier: 'Novel',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/YDAUIlC.jpg',
+    official: 'http://tsukumogami.jp/',
+    description: '阿紅和清次姐弟，在深川經營一間出租生意的古道具店「出雲屋」。所謂的出租是指鍋、釜、被縟、衣服等各式各樣的物品，以不同金額讓客人租借的生意。但是在這間出雲屋的舊道具店裡，卻誕生出許多經過上百年使用而化為「付喪神」的妖怪。隨著這些道具被借出，也陸續傳出奇怪的流言。而這些高傲喜歡惡作劇的付喪神，今天也還是繼續在出雲屋中胡鬧著……'
+}, {
+    name: 'OVERLORD',
+    nameInJpn: 'オーバーロード',
+    date: '7/1',
+    time: '尚未公開',
+    carrier: 'Novel',
+    season: '3',
+    episode: '',
+    img: 'https://i.imgur.com/iDYsGP3.jpg',
+    official: 'http://overlord-anime.com/',
+    description: '一款席捲遊戲界的網路遊戲「YGGDRASIL(世界樹)」，在營運十二年後停止服務，其中一名玩家「飛鼠」，在營運的最後一刻來到遊戲中曾名噪一時、由其擔任會長的強大公會—「安茲·烏爾·恭」的根據地納薩力克大墳墓進行最後巡禮，等待營運的結束。但時間過去「飛鼠」都沒有自動登出，而且公會內的NPC都像人一樣思考和活動。'
+}, {
+    name: '天狼 Sirius the Jaeger',
+    nameInJpn: '天狼 Sirius the Jaeger',
+    date: '7/',
+    time: '尚未公開',
+    carrier: 'Original',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/BQ6rZko.jpg',
+    official: 'http://sirius-the-jaeger.com/',
+    description: '以昭和初期的帝都東京作為舞台，描繪橫行於世的吸血鬼與狩獵者們「狩人」之間，圍繞著「天狼之匣」的激鬥。其中，身為狼與人類所生下的混血青年「尤里（ユーリィ）」，他的故鄉被吸血鬼所滅，交織著久遠的恩仇與陰謀，結合了懸疑與動作的原創故事就此揭幕。'
+}, {
+    name: '魔法律事務所',
+    nameInJpn: 'ムヒョとロージーの魔法律相談事務所',
+    date: '7/',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/1R4gps2.png',
+    official: 'http://mahouritsu.com/',
+    description: '發生在本來世界上不應該存在的死靈橫行傷人的事件的現代日本。所謂魔法律協會，是根據魔法律裁決幽靈犯罪而新設置的機構。六冰魔法律事務所是主要的舞台，以魔法律運用自如的天才少年六冰與平庸助手郎次兩人的活躍作為主軸，故事就此展開。'
+}, {
+    name: '闇芝居',
+    nameInJpn: '闇芝居',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Original',
+    season: '6',
+    episode: '',
+    img: 'https://i.imgur.com/PzK2Lzf.png',
+    official: 'http://www.tv-tokyo.co.jp/anime/yamishibai/',
+    description: '本作以日本昭和年代最知名的紙芝居（即連環畫的畫劇）為形式，將一個個令人背後發涼的恐怖怪談展現給觀眾。'
+}, {
+    name: 'ISLAND',
+    nameInJpn: 'アイランド',
+    date: '7/1',
+    time: '22:00',
+    carrier: 'Game',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/J6ziQHL.jpg',
+    official: 'http://never-island.com/',
+    description: '浦島是一個距離日本本土很遙遠的島嶼，某一天，自稱來自未來的青年三千界切那漂流至這個島上，並宣稱要改變浦島的未來。'
+}, {
+    name: '羽球戰爭！',
+    nameInJpn: 'はねバド!',
+    date: '7/1',
+    time: '24:00',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/bx9pEY0.jpg',
+    official: 'http://hanebad.com/',
+    description: '位於神奈川線的北小町高校，當羽球社教練立花健太郎為了社員不足而煩惱時，正好被他發現一位運動神經相當優秀的學生羽咲綾乃。雖然在好說歹說下總算將綾乃拉進羽球社，但她其實對羽球沒有太大的好感，不過隨著劇情發展，和他校選手交流過後，綾乃的心境也了改變並逐漸成長。'
+}, {
+    name: '刃牙',
+    nameInJpn: 'バキ',
+    date: '7/1',
+    time: '24:30',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/w5fIRoH.jpg',
+    official: 'http://baki-anime.jp/',
+    description: '述地下格鬥場的冠軍范馬刃牙及其父,冠有地上最強生命這一稱呼的范馬勇次郎還有作品中各格鬥家的熱血格鬥物語。'
+}, {
+    name: 'One Room',
+    nameInJpn: 'One Room',
+    date: '7/2',
+    time: '25:35',
+    carrier: 'Original',
+    season: '2',
+    episode: '',
+    img: 'https://i.imgur.com/Pl3UZvM.jpg',
+    official: 'http://oneroom-anime.com/',
+    description: '本次的動畫原作是由 SMIRAL 擔任，負責腳本是由霜井蒼星，角色原案則是由《變態王子與不笑貓》的監督擔當，角色設計由《魔法少女奈葉》的奧田泰弘負責，之後詳細情報等後續公開。故事大綱是「從你房間所孕育出的三段故事」。'
+}, {
+    name: '前進吧！登山少女',
+    nameInJpn: 'ヤマノススメ',
+    date: '7/2',
+    time: '25:40',
+    carrier: 'Comic',
+    season: '3',
+    episode: '',
+    img: 'https://i.imgur.com/o9k2KZ6.png',
+    official: 'http://www.yamanosusume.com/',
+    description: '原本是一個室內派的女主角葵，自己的好友日向是戶外派，把他帶出去運動，從一開始的不怎麼高的山，然後有信心後，再去挑戰大山！'
+}, {
+    name: '偶像大師灰姑娘女孩劇場',
+    nameInJpn: 'アイドルマスター シンデレラガールズ劇場',
+    date: '7/3',
+    time: '21:54',
+    carrier: 'Comic',
+    season: '3',
+    episode: '',
+    img: 'https://i.imgur.com/HuA6GCg.jpg',
+    official: 'http://cingeki-anime.com/',
+    description: '《灰姑娘女孩劇場》是手機遊戲《偶像大師 灰姑娘女孩》的官方漫畫。是連載於遊戲中、以網頁型式展示的五格漫畫，不定期推出新的內容。這次動畫將再次集結《小小偶像大師》動畫的製作團隊，為各位粉絲們獻上偶像們的可愛日常生活。'
+}, {
+    name: '千銃士',
+    nameInJpn: '千銃士',
+    date: '7/3',
+    time: '23:00',
+    carrier: 'Game',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/C0vqR45.jpg',
+    official: 'https://noble.marv.jp/anime/',
+    description: '全世界因核戰爭而荒廢，在那之後的時代——。在世界帝府的絕對統治之下，人們全都受到管制，在被奪走了自由的世界中生存。但在一切武力均被禁止之時，還存在著為了打破世界帝的獨裁而暗中持續抗戰的反抗運動。他們手持作為美術品留下的 “古槍”，發起挑戰。以及，如同呼應其靈魂般現身的古槍化身 “貴銃士”。高貴華麗地戰鬥的他們所擁有的 “絕對高貴”，給世界帶來一線希望——！'
+}, {
+    name: '殭屍少女的災難',
+    nameInJpn: 'あるゾンビ少女の災難',
+    date: '7/4',
+    time: '00:00',
+    carrier: 'Novel',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/drACtpU.jpg',
+    official: 'http://www.zombie-girl.net/',
+    description: '明明是美少女卻是個殭屍！於大學地下資料室沉睡的美少女殭屍歐芙洛希妮，某天剛甦醒的她其女僕告知『秘石』被取走了，除非殺掉學生將『秘石』奪回否則身體將會灰飛煙滅……。'
+}, {
+    name: 'Back Street Girls 後街女孩',
+    nameInJpn: 'バックストリートガールズ',
+    date: '7/3',
+    time: '25:00',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/TPjIFAV.jpg',
+    official: 'http://backstreetgirls-anime.toeiad.co.jp/',
+    description: '該作品是一部描述黑道3人組因為犯錯而為了不要被老大殺掉，因此被迫接受變性手術與全身整型手術而成為地下偶像「後街女孩」出道的的搞笑漫畫。'
+}, {
+    name: '中間管理錄利根川',
+    nameInJpn: '中間管理錄トネガワ',
+    date: '7/3',
+    time: '25:59',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'https://i.imgur.com/1NqLyom.jpg',
+    official: 'http://www.tonegawa-anime.com/',
+    description: '敘述中間管理階層的利根川幸雄，其被夾在帝愛集團會長・兵藤和尊及屬下間的苦惱與矛盾。'
+}, {
+    name: '春原荘的管理人',
+    nameInJpn: 'すのはら荘の管理人さん',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '異世界魔王與召喚少女的奴隸魔術',
+    nameInJpn: '異世界魔王と召喚少女の奴隷魔術',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'BanG Dream! Girls Band Party!☆PICO',
+    nameInJpn: 'BanG Dream! ガルパ☆ピコ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '夢王國與沉睡中的100位王子殿下',
+    nameInJpn: '夢王國と眠れる100人の王子様',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'BANANA FISH',
+    nameInJpn: 'バナナフィッシュ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '昴宿七星',
+    nameInJpn: '七星のスバル',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '殺戮的天使',
+    nameInJpn: '殺戮の天使',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '遙的接球',
+    nameInJpn: 'はるかなレシーブ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '千緒的通學路',
+    nameInJpn: 'ちおちゃんの通學路',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '音樂少女',
+    nameInJpn: '音楽少女',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '機獸創世紀 ZoidsWild',
+    nameInJpn: 'ゾイドワイルド',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '工作細胞',
+    nameInJpn: 'はたらく細胞',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '百鍊霸王與聖約女武神',
+    nameInJpn: '百錬の覇王と聖約の戦乙女',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '遊戲3人娘',
+    nameInJpn: 'あそびあそばせ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Planet With',
+    nameInJpn: 'プラネット・ウィズ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '銀魂 銀之魂篇 後半戰',
+    nameInJpn: '銀魂 銀ノ魂篇 後半戦',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Phantom in the Twilight',
+    nameInJpn: 'ファントム イン ザ トワイライト',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '小邪神飛踢！',
+    nameInJpn: '邪神ちゃんドロップキック',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '京都寺町三條商店街的福爾摩斯',
+    nameInJpn: '京都寺町三條のホームズ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Angolmois 元寇合戰記',
+    nameInJpn: 'アンゴルモア 元寇合戦記',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '深夜！天才妙老爹',
+    nameInJpn: '深夜！天才バカボン',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Free!-Dive to the Future-',
+    nameInJpn: 'Free!-Dive to the Future-',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '少女☆歌劇 Revue Starlight',
+    nameInJpn: '少女☆歌劇 レヴュースタァライト',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '高分少女',
+    nameInJpn: 'ハイスコアガール',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'LORD of VERMILION 紅蓮之王',
+    nameInJpn: 'ロード オブ ヴァーミリオン 紅蓮の王',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Happy Sugar Life',
+    nameInJpn: 'ハッピーシュガーライフ',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'GRAND BLUE碧藍之海',
+    nameInJpn: 'ぐらんぶる',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '搖曳莊的幽奈小姐',
+    nameInJpn: 'ゆらぎ荘の幽奈さん',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: '進撃的巨人 Season 3',
+    nameInJpn: '進撃の巨人 Season 3',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, {
+    name: 'Fate/EXTRA Last Encore Illustrius天動說',
+    nameInJpn: 'Fate/EXTRA Last Encore イルステリアス天動説',
+    date: '7/aaa',
+    time: '尚未公開',
+    carrier: 'Comic',
+    season: '1',
+    episode: '',
+    img: 'aaa',
+    official: 'aaa',
+    description: 'aaa'
+}, ];
+// 讓動畫按時間排序
+var Anime = Anime.sort(function(a, b) {
+    //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+    var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+        bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+    return aTime - bTime;
+});
