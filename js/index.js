@@ -25,27 +25,6 @@ AnimeData = [{
     }
 ];
 $(function() {
-    // Sw
-    if ('serviceWorker' in navigator && location.hostname != "localhost") {
-        navigator.serviceWorker.register('./sw.js') // 註冊 Service Worker
-            .then(function(reg) {
-                console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
-            }).catch(function(error) {
-                console.log('Registration failed with ' + error); // 註冊失敗
-            });
-        caches.open('al-cache').then(function(cache) {
-            cache.addAll([
-                '/',
-                './index.html',
-                './css/style.css',
-                './js/index.js',
-                './2018.01/anime2018.01.min.js',
-                './2018.04/anime2018.04.min.js',
-                './2017.10/anime2017.10.min.js',
-                './2017.07/anime2017.07.min.js'
-            ]);
-        })
-    }
     /* Top Button */
     $('[data-top]').click(function() {
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
