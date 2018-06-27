@@ -1,6 +1,6 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
-        name: '「施工中」7月夏番',
+        name: '7月夏番',
         js: './2018.07/anime2018.07.js',
         year: 2018
     }, {
