@@ -54,7 +54,7 @@ Anime = [{
     carrier: 'Comic',
     season: '1',
     episode: '',
-    img: 'https://i.imgur.com/1R4gps2.png',
+    img: 'https://i.imgur.com/a5115im.jpg',
     official: 'http://mahouritsu.com/',
     description: '發生在本來世界上不應該存在的死靈橫行傷人的事件的現代日本。所謂魔法律協會，是根據魔法律裁決幽靈犯罪而新設置的機構。六冰魔法律事務所是主要的舞台，以魔法律運用自如的天才少年六冰與平庸助手郎次兩人的活躍作為主軸，故事就此展開。'
 }, {
@@ -508,9 +508,9 @@ Anime = [{
     img: 'https://i.imgur.com/bgJWpzd.jpg',
     official: 'http://fate-extra-lastencore.com/',
     description: '存在於月球的，乃擁有能實現任何願望之力量的靈子計算機「Mooncell Automaton」。構築於Mooncell內部的，為靈子虛構世界「SE.RA.PH」。原本過著普通校園生活的主人公，隨著對現況感到違和，正式踏入一場零和遊戲當中。經過預選後共誕生了共128名Master，在近300個英靈中覓得代理戰鬥的Servant，一旦戰敗就會迎來死亡。忘記過去的主人公，能在眾多Master中勝出嗎？賭上「聖盃」，由魔術師與英靈引發的新的月之聖盃戰爭，開演。'
-}, ];
+},];
 // 讓動畫按時間排序
-var Anime = Anime.sort(function(a, b) {
+var Anime = Anime.sort(function (a, b) {
     //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
     var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
         bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
