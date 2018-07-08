@@ -63,9 +63,9 @@ Anime = [{
     date: '7/7',
     time: '4:00',
     carrier: 'Original',
-    season: '6',
+    season: 6,
     episode: '',
-    img: 'https://i.imgur.com/PzK2Lzf.png',
+    img: 'https://i.imgur.com/F2XO2FL.jpg',
     official: 'http://www.tv-tokyo.co.jp/anime/yamishibai/',
     description: '本作以日本昭和年代最知名的紙芝居（即連環畫的畫劇）為形式，將一個個令人背後發涼的恐怖怪談展現給觀眾。'
 }, {
@@ -229,7 +229,7 @@ Anime = [{
     time: '24:55',
     carrier: 'Comic',
     season: '1',
-    episode: '',
+    episode: 24,
     img: 'https://i.imgur.com/IIhpzDL.jpg',
     official: 'http://bananafish.tv/',
     description: '故事以 1985 年的紐約作為舞台，描述貧民街的首領「亞修」，與日本少年「英二」為瞭解開神秘藥物「BANANA FISH」而展開的故事。'
@@ -508,9 +508,9 @@ Anime = [{
     img: 'https://i.imgur.com/bgJWpzd.jpg',
     official: 'http://fate-extra-lastencore.com/',
     description: '存在於月球的，乃擁有能實現任何願望之力量的靈子計算機「Mooncell Automaton」。構築於Mooncell內部的，為靈子虛構世界「SE.RA.PH」。原本過著普通校園生活的主人公，隨著對現況感到違和，正式踏入一場零和遊戲當中。經過預選後共誕生了共128名Master，在近300個英靈中覓得代理戰鬥的Servant，一旦戰敗就會迎來死亡。忘記過去的主人公，能在眾多Master中勝出嗎？賭上「聖盃」，由魔術師與英靈引發的新的月之聖盃戰爭，開演。'
-},];
+}, ];
 // 讓動畫按時間排序
-var Anime = Anime.sort(function (a, b) {
+var Anime = Anime.sort(function(a, b) {
     //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
     var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
         bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
