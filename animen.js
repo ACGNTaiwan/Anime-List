@@ -10,7 +10,7 @@ for (i = 0; i < $("#item-list .one-shiban").length; i++) {
     date: '10/',
     time: 'none',
     carrier: 'Comic Novel Game Original',
-    season: '1',
+    season: 1,
     episode: '',
     img: '${img}',
     official: '',
