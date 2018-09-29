@@ -31,11 +31,9 @@ AnimeData = [{
 $(function() {
     /* Top Button */
     $('[data-top]').click(function() {
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
+        $('html').animate({
             scrollTop: 0
         }, 600);
-        return false;
     });
 
 
@@ -277,11 +275,10 @@ function info(Anime, year) {
         var Anime_Day = week[setTime.getDay()]; //星期
         // 如果同時有撥放的日期、星期、時間，把時間設定為 日期+星期+時間
         // 如果沒有，僅顯示 尚未公開
-        if (Anime[i].time != "尚未公開" || Anime[i].date != "尚未公開") {
-            var Anime_Time = Anime[i].date + " (" + week_chinese[setTime.getDay()] + ") " + Anime[i].time; //撥出時間
-        } else {
-            var Anime_Time = "尚未公開";
-        }
+
+        var Anime_Time = Anime[i].time.match(/[0-9]?[0-9]\:[0-9]?[0-9]/) || Anime[i].date.match(/[0-9]?[0-9]\/[0-9]?[0-9]/) ?
+            Anime[i].date + " (" + week_chinese[setTime.getDay()] + ") " + Anime[i].time :
+            "尚未公開"
         var Anime_Adapt = Anime[i].carrier; //載體
         var Anime_Name_Jpn = Anime[i].nameInJpn; //日文原文
         var Anime_Img = Anime[i].img; //圖片
