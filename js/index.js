@@ -1,33 +1,29 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
-        name: '10月秋番',
-        js: './2018.10/anime2018.10.js',
-        year: 2018
-    }, {
-        name: '7月夏番',
-        js: './2018.07/anime2018.07.js',
-        year: 2018
-    }, {
-        name: '4月春番',
-        js: './2018.04/anime2018.04.min.js',
-        year: 2018
-    },
-    {
-        name: '1月冬番',
-        js: './2018.01/anime2018.01.min.js',
-        year: 2018
-    },
-    {
-        name: '10月秋番',
-        js: './2017.10/anime2017.10.min.js',
-        year: 2017
-    },
-    {
-        name: '7月夏番',
-        js: './2017.07/anime2017.07.min.js',
-        year: 2017
-    }
-];
+    name: '10月秋番',
+    js: './2018.10/anime2018.10.js',
+    year: 2018
+}, {
+    name: '7月夏番',
+    js: './2018.07/anime2018.07.js',
+    year: 2018
+}, {
+    name: '4月春番',
+    js: './2018.04/anime2018.04.min.js',
+    year: 2018
+}, {
+    name: '1月冬番',
+    js: './2018.01/anime2018.01.min.js',
+    year: 2018
+}, {
+    name: '10月秋番',
+    js: './2017.10/anime2017.10.min.js',
+    year: 2017
+}, {
+    name: '7月夏番',
+    js: './2017.07/anime2017.07.min.js',
+    year: 2017
+}];
 $(function() {
     /* Top Button */
     $('[data-top]').click(function() {
@@ -153,7 +149,7 @@ $(function() {
                     }, 205);
                 }, 201);
             })
-            .fail(function(jqxhr, settings, exception) {
+            .fail(function() {
                 $("#offline").removeClass('hide')
                 console.log('offline')
                 setTimeout(function() {
@@ -178,33 +174,18 @@ function waterfall(Anime) {
     for (i = 0; i < Anime.length; i = i + 1) {
         // 如果不是第一季，顯示季度
         // 如果是第一季，僅顯示動畫名稱
-        if (Anime[i].season != "1") {
-            var Anime_Name = Anime[i].name + " S" + Anime[i].season; //動畫名稱
-        } else {
-            var Anime_Name = Anime[i].name; //動畫名稱
-        }
-        var Anime_Img = Anime[i].img //圖片
-        var Anime_Info = Anime[i].description; //介紹
+        let animeName = Anime[i].season != "1" ? Anime[i].name + " S" + Anime[i].season : Anime[i].name,
+            animeImg = Anime[i].img,
+            animeDescription = Anime[i].description
         $("#content").attr('class', 'ts four doubling waterfall cards').attr("data-type", 'waterfall')
-            .append($("<div/>")
-                .addClass("ts card") //Tocas UI 的卡片
-                .attr("id", Anime_Name)
-                .append($("<div/>")
-                    .addClass("image")
-                    .append($("<img/>")
-                        .addClass("image")
-                        .attr("src", Anime_Img)
-                    )
-                    .append($("<div/>")
-                        .addClass("header")
-                        .html(Anime_Name)
-                        .append($("<div/>")
-                            .addClass("sub header")
-                            .html(Anime_Info)
-                        )
-                    )
-                )
-            );
+            .append($(`<div class="ts card" id="${animeName}">
+                <div class="image">
+                    <img class="image" src="${animeImg}">
+                    <div class="header">${animeName}
+                        <div class="sub header">${animeDescription}</div>
+                    </div>
+                </div>
+            </div>`))
     } //結束迴圈
 }
 
@@ -227,21 +208,13 @@ function schedule(Anime, year) {
     for (i = 0; i < Anime.length; i = i + 1) {
         // 如果不是第一季，顯示季度
         // 如果是第一季，僅顯示動畫名稱
-        if (Anime[i].season != "1") {
-            var Anime_Name = Anime[i].name + " S" + Anime[i].season; //動畫名稱
-        } else {
-            var Anime_Name = Anime[i].name; //動畫名稱
-        }
+        let animeName = Anime[i].season != "1" ? Anime[i].name + " S" + Anime[i].season : Anime[i].name,
+            animeDay, animeDate
         setTime = new Date(year + "/" + Anime[i].date)
-        week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        var Anime_Day = week[setTime.getDay()]; //星期
-        var Anime_Date = Anime[i].date; //星期
-        $("#" + Anime_Day)
-            .append($("<div/>")
-                .addClass("item")
-                .attr("id", Anime_Name)
-                .html(Anime_Date + " " + Anime_Name)
-            );
+        animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
+        animeDate = Anime[i].date; //星期
+        $("#" + animeDay)
+            .append($(`<div class="item" id="${animeName}">${animeDate} ${animeName}</div>`));
     } //結束迴圈
 }
 
@@ -255,7 +228,7 @@ function info(Anime, year) {
             )
             .append($("<div/>")
                 .attr("id", dayID)
-                .attr('class', 'ts four doubling waterfall cards')
+                .attr('class', 'ts four doubling cards')
             );
     }
     // 透過迴圈輸出資料內的所有動畫
@@ -284,43 +257,23 @@ function info(Anime, year) {
         var Anime_Img = Anime[i].img; //圖片
         var Anime_Info = Anime[i].description; //介紹
         $("#" + Anime_Day) //這裡用到了 JQ
-            .append($("<div/>")
-                .addClass("ts card " + Anime_Adapt) //Tocas UI 的卡片
-                .attr("id", Anime_Name)
-                .append($("<div/>")
-                    .addClass("image")
-                    .append($("<img/>")
-                        .addClass("image")
-                        .attr("src", Anime_Img)
-                    )
-                )
-                .append($("<div/>")
-                    .addClass("content")
-                    .append($("<div/>")
-                        .addClass("header")
-                        .html(Anime_Name)
-                    )
-                    .append($("<div/>")
-                        .addClass("meta")
-                        .append($("<div/>")
-                            .html(Anime_Name_Jpn)
-                        )
-                    )
-                    .append($("<div/>")
-                        .addClass("extra")
-                        .html(Anime_Info)
-                    )
-                )
-                .append($("<div/>")
-                    .addClass("extra content")
-                    .html("<i class='time icon'></i>" + Anime_Time)
-                )
-                .append($("<div/>")
-                    .addClass("symbol")
-                    .append($("<i/>")
-                        .addClass(Anime_Adapt + " icon")
-                    )
-                )
-            );
+            .append(`<div class="ts card Original" id="${Anime_Name}">
+                <div class="image">
+                    <img class="image" src="${Anime_Img}">
+                </div>
+                <div class="content">
+                    <div class="header">${Anime_Name}</div>
+                    <div class="meta">
+                        <div>${Anime_Name_Jpn}</div>
+                    </div>
+                    <div class="extra">${Anime_Info}</div>
+                </div>
+                <div class="extra content">
+                    <i class="time icon"></i>${Anime_Time}
+                </div>
+                <div class="symbol">
+                    <i class="${Anime_Adapt} icon"></i>
+                </div>
+            </div>`)
     } //結束迴圈
 }
