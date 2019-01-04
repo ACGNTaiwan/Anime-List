@@ -1,0 +1,223 @@
+//==============================//
+//  2019 冬番                    //
+//  github.com/gnehs/Anime-List //
+//==============================//
+Anime = [{
+    name: '路人超能100',
+    nameInJpn: 'モブサイコ100',
+    date: '1/7',
+    time: '23:00',
+    carrier: 'Comic',
+    season: '2',
+    episode: '',
+    img: 'https://imgur.com/a/WsTP01r',
+    official: 'http://mobpsycho100.com/',
+    description: '故事描述平凡又對青春抱有憧憬的中二少年──影山茂夫（通稱＝路人），他其實擁有特別的能力──那就是「超能力」。冒牌靈能者、可疑的宗教團體其他等等……想利用他這種超能力的各種怪咖都被他吸引而來，少年‧路人的心中似乎有股「力量」正在蠢蠢欲動。衝擊的超能力，青春的章節，就此開幕。'
+}, {
+    name: 'BanG Dream!',
+    nameInJpn: 'バンドリ!',
+    date: '1/3',
+    time: '23:00',
+    carrier: 'Comic',
+    season: '2',
+    episode: '',
+    img: 'https://imgur.com/a/tim0mdy',
+    official: 'https://anime.bang-dream.com/2nd/',
+    description: '少女「香澄」一直尋找著幼年時在欣賞星空時所感受到的那股星之鼓動…… 直至高中入學後不久，香澄在古物商倉庫中偶然看見了一把星型吉他、她心中那股封閉已久的情感就此流露而出。以此為契機、香澄與 4 位同樣在尋找光輝之所的女孩們相遇，一同演奏出了單憑一人無法表現出的音樂，共同朝著夢想邁進！'
+}, {
+    name: '琴之森',
+    nameInJpn: 'ピアノの森',
+    date: '1/27',
+    time: '24:10',
+    carrier: 'Comic',
+    season: '2',
+    episode: '',
+    img: 'https://imgur.com/a/0BBDIuC',
+    official: 'http://piano-anime.jp/',
+    description: '故事描述有座陰暗的森林、被稱為「琴之森」；在森林的深處，有台來歷不明的殘破鋼琴，叫做「森林中的鋼琴」，而這裡、正是少年一之瀨海的美妙世界。在昔日鋼琴王子阿字野的調教下，一之瀨海的才華因此而覺醒……'
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, {
+    name: '',
+    nameInJpn: '',
+    date: '/',
+    time: ':',
+    carrier: '',
+    season: '',
+    episode: '',
+    img: '',
+    official: '',
+    description: ''
+}, 
+]
+
+// 讓動畫按時間排序
+Anime = Anime.sort(function(a, b) {
+    //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+    var aTime = new Date(2019, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+        bTime = new Date(2019, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+    return aTime - bTime;
+});
