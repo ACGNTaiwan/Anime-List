@@ -1,5 +1,9 @@
 showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
 AnimeData = [{
+    name: '1月冬番',
+    js: './2019.01/anime2019.01.js',
+    year: 2019
+},{
     name: '10月秋番',
     js: './2018.10/anime2018.10.js',
     year: 2018
