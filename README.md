@@ -1,7 +1,7 @@
 # Anime-List
 展示新番的清單
 ## Demo
-https://acgntaiwan.github.io/Anime-List/
+https://ACGNTaiwan.github.io/Anime-List/
 ## 資料格式
 ```js
 {
