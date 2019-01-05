@@ -91,16 +91,16 @@ Anime = [{
     official: '',
     description: ''
 }, {
-    name: '',
-    nameInJpn: '',
-    date: '/',
-    time: ':',
-    carrier: '',
-    season: '',
+    name: 'Endro~!',
+    nameInJpn: 'えんどろ〜！',
+    date: '1/12',
+    time: '25:00',
+    carrier: 'Original',
+    season: '1',
     episode: '',
-    img: '',
-    official: '',
-    description: ''
+    img: 'https://pbs.twimg.com/media/DqLm3tAUUAAMkwi.jpg:orig',
+    official: 'http://endro.jp/',
+    description: '人々とモンスターが共存して暮らす剣と魔法の大陸「ナラル島」。そこには恐ろしい「魔王」が存在していました。はるかはるかの大昔、ナラル島に現れた魔王を倒した初代勇者――それからも、様々な時代で何度も何度も魔王は蘇り、同時にそれに対抗する勇者もまた現れ…。少女たちは、いつの日か出ずる魔王を倒すべく冒険者学校へ通います'
 }, {
     name: '',
     nameInJpn: '',
