@@ -1,6 +1,6 @@
 //==============================//
 //  2018 夏番                    //
-//  github.com/gnehs/Anime-List //
+//  github.com/ACGNTaiwan/Anime-List //
 //==============================//
 Anime = [{
     name: '未來卡片 神之戰鬥夥伴',

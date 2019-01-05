@@ -1,6 +1,6 @@
 //==============================//
 //  2018 秋番                    //
-//  github.com/gnehs/Anime-List //
+//  github.com/ACGNTaiwan/Anime-List //
 //==============================//
 Anime = [{
     name: 'DOUBLE DECKER！道格＆西里爾',

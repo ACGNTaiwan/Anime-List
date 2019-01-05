@@ -1,6 +1,6 @@
 //==============================//
 //  2018 冬番                    //
-//  github.com/gnehs/Anime-List //
+//  github.com/ACGNTaiwan/Anime-List //
 //==============================//
 Anime = [{
         name: 'POP TEAM EPIC',

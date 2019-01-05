@@ -1,6 +1,6 @@
 //==============================//
 //  2018 春番                    //
-//  github.com/gnehs/Anime-List //
+//  github.com/ACGNTaiwan/Anime-List //
 //==============================//
 Anime = [{
         name: '鬼太郎',

@@ -1,6 +1,6 @@
 //==============================//
 //  2017 秋番                    //
-//  github.com/gnehs/Anime-List //
+//  github.com/ACGNTaiwan/Anime-List //
 //==============================//
 Anime = [{
         name: '相親對象是我教的強勢問題兒',
