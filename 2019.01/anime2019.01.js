@@ -10,7 +10,7 @@ Anime = [{
     carrier: 'Comic',
     season: '2',
     episode: '',
-    img: 'https://imgur.com/a/WsTP01r',
+    img: 'https://i.imgur.com/XBScmSr.jpg',
     official: 'http://mobpsycho100.com/',
     description: '故事描述平凡又對青春抱有憧憬的中二少年──影山茂夫（通稱＝路人），他其實擁有特別的能力──那就是「超能力」。冒牌靈能者、可疑的宗教團體其他等等……想利用他這種超能力的各種怪咖都被他吸引而來，少年‧路人的心中似乎有股「力量」正在蠢蠢欲動。衝擊的超能力，青春的章節，就此開幕。'
 }, {
@@ -32,7 +32,7 @@ Anime = [{
     carrier: 'Comic',
     season: '2',
     episode: '',
-    img: 'https://imgur.com/a/0BBDIuC',
+    img: 'https://i.imgur.com/GJh3C92.png',
     official: 'http://piano-anime.jp/',
     description: '故事描述有座陰暗的森林、被稱為「琴之森」；在森林的深處，有台來歷不明的殘破鋼琴，叫做「森林中的鋼琴」，而這裡、正是少年一之瀨海的美妙世界。在昔日鋼琴王子阿字野的調教下，一之瀨海的才華因此而覺醒……'
 }, {
