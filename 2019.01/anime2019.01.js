@@ -76,7 +76,7 @@ Anime = [{
     carrier: 'Comic',
     season: '2',
     episode: '',
-    img: 'http://mononokean.tv/images/mk_mv01.jpg',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034571735564288/mk_mv01.png',
     official: 'http://mononokean.tv/',
     description: ''
 }, {
@@ -87,7 +87,7 @@ Anime = [{
     carrier: '',
     season: '2',
     episode: '',
-    img: 'http://date-a-live-anime.com/images/renewal/update9/sample_bg2.jpg',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034504408596501/sample_bg2.png',
     official: '',
     description: ''
 }, {
@@ -98,7 +98,7 @@ Anime = [{
     carrier: 'Original',
     season: '1',
     episode: '',
-    img: 'https://pbs.twimg.com/media/DqLm3tAUUAAMkwi.jpg:orig',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034409911058453/DqLm3tAUUAAMkwi.png',
     official: 'http://endro.jp/',
     description: '人々とモンスターが共存して暮らす剣と魔法の大陸「ナラル島」。そこには恐ろしい「魔王」が存在していました。はるかはるかの大昔、ナラル島に現れた魔王を倒した初代勇者――それからも、様々な時代で何度も何度も魔王は蘇り、同時にそれに対抗する勇者もまた現れ…。少女たちは、いつの日か出ずる魔王を倒すべく冒険者学校へ通います'
 }, {
