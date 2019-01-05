@@ -21,7 +21,7 @@ Anime = [{
     carrier: 'Comic',
     season: '2',
     episode: '',
-    img: 'https://imgur.com/a/tim0mdy',
+    img: 'https://i.imgur.com/vHNeOg3.png',
     official: 'https://anime.bang-dream.com/2nd/',
     description: '少女「香澄」一直尋找著幼年時在欣賞星空時所感受到的那股星之鼓動…… 直至高中入學後不久，香澄在古物商倉庫中偶然看見了一把星型吉他、她心中那股封閉已久的情感就此流露而出。以此為契機、香澄與 4 位同樣在尋找光輝之所的女孩們相遇，一同演奏出了單憑一人無法表現出的音樂，共同朝著夢想邁進！'
 }, {
