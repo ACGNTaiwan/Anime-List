@@ -85,7 +85,7 @@ Anime = [{
     date: '1/11',
     time: '21:30',
     carrier: '',
-    season: '2',
+    season: '3',
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034504408596501/sample_bg2.png',
     official: '',
