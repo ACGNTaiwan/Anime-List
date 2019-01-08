@@ -313,14 +313,14 @@ Anime = [{
 }, {
     name: '迷你刀使',
     nameInJpn: 'みにとじ',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/6',
+    time: '1:55',
+    carrier: 'Original',
     season: 1,
-    episode: '',
+    episode: '11',
     img: 'https://www.animen.com.tw/animen_image/sfH2UxyLFMM26d9a5Qei_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://minitoji.jp',
+    description: '將自古以來威脅人世的異形存在·荒魂，以御刀祓除的神薙之巫女。 以制服佩刀為主要裝束的她們，被稱作「刀使」。正式名稱則是隸屬警察組織的特別祭祀機動隊。她們在身為得到佩刀許可的超法規國家公務員的同時， 還是在位於全國五處的中高一貫制訓練學校就讀的女學生。平常過着普通校園生活的她們，一旦身負職務，便會手持御刀，發揮種種超常之力，為守護人們而戰。這年春天。自全國五校遴選出來的刀使們齊聚一堂，切磋各自技術的常例大賽將要舉辦。以大賽為目標的眾多刀使們為此而勤於修煉，而在她們之中，有一位懷着尤其強烈的心情磨鍊個人技術的少女。她所舉起的御刀之刃，面向的前方是——。'
 }, {
     name: '巴哈姆特之怒-Manaria Friends-',
     nameInJpn: 'マナリアフレンズ',
@@ -368,13 +368,13 @@ Anime = [{
 }, {
     name: '動物朋友2',
     nameInJpn: 'けものフレンズ2',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/15',
+    time: '21:00',
+    carrier: 'Game',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/zmnX3GZPi1qMtFJFnYKQ_M_A.jpg',
-    official: '',
+    official: 'https://kemono-friends.jp',
     description: ''
 }, {
     name: '多羅羅',
@@ -423,24 +423,24 @@ Anime = [{
 }, {
     name: '飛翔吧！戰機少女',
     nameInJpn: 'ガーリー・エアフォース',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/10',
+    time: '23:00',
+    carrier: 'Novel',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/s2i8YGk1DqCP3CphoKHK_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://gaf-anime.jp',
+    description: '突然出现在人类面前的神秘飞翔体“灾”。意味着灾厄的此一存在凭借异样的战斗力凌驾于所有的航空战力之上。为对抗他们而开发的，便是对现有机体进行特别调整以实现超水准高机动力， 被称为“子体”的兵器。负责操控的则是名为“阿尼玛”的操纵机构。它──竟拥有少女的外表。因“灾”的缘故而失去驾驶员母亲的少年“鸣谷慧”，他遇见了闪耀鲜红光辉的瑞典制战斗机以及驾驶它的阿尼玛“格里芬”。身为人类最终兵器却动作不稳定的格里芬，还有一心向往天空的少年，两人漫长且炙热的故事就此展开。'
 }, {
     name: '多彩田園曲來自百慕達三角',
     nameInJpn: 'カラフル・パストラーレ ～from Bermuda△～',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/12',
+    time: '22:00',
+    carrier: 'Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/JAxKkAxgu0qoPaw2VrAX_M_A.png',
-    official: '',
+    official: 'https://colorful-pastrale.com',
     description: ''
 }]
 
