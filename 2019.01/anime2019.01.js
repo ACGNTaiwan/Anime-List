@@ -157,16 +157,16 @@ Anime = [{
     official: 'http://www.tbs.co.jp/anime/5hanayome/',
     description: '2019年1月放送開始！貧乏な生活を送る高校2年生・上杉風太郎のもとに、好条件の家庭教師アルバイトの話が舞い込む。ところが教え子はなんと同級生!! しかも五つ子だった!! 全員美少女、だけど「落第寸前」「勉強嫌い」の問題児! 最初の課題は姉妹からの信頼を勝ち取ること…!? 毎日がお祭り騒ぎ! 中野家の五つ子が贈る、かわいさ500%の五人五色ラブコメ開演!!'
 }, {
-    name: '',
-    nameInJpn: '',
-    date: '/',
-    time: ':',
-    carrier: '',
-    season: '',
+    name: '粉彩回憶',
+    nameInJpn: 'ぱすてるメモリーズ',
+    date: '1/7',
+    time: '24:30',
+    carrier: 'Game',
+    season: '1',
     episode: '',
-    img: '',
-    official: '',
-    description: ''
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532186002203082762/unknown.png',
+    official: 'https://pasumemotv.com/',
+    description: '本作是一款以秋葉原為舞台的遊戲，時代設定在距今不久的未來20XX 年。雖然秋葉原曾經被稱作禦宅聖地，但是在20XX年時、當地的宅文化卻整個沒落。玩家將扮演殘存在秋葉原中的少數宅店店長，與店裡身負各種宅能力的女孩們同心協力，奪回人們心中被奪走的回憶而與神秘敵人展開戰鬥。'
 }, {
     name: '',
     nameInJpn: '',
