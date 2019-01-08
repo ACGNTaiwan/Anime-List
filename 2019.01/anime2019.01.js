@@ -351,7 +351,7 @@ Anime = [{
     carrier: 'Original',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/zEWmqKOrxf5lBSlyBI1n_M_A.jpg',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532199121466163210/mainvisual01.png',
     official: 'http://egaonodaika.com/',
     description: '描繪在遙遠的星球上、充滿歡笑的王國中，12 歲的王女「悠希」，被忠心的家臣們、還有導師雷拉、政治輔佐官伊薩那、騎士團長哈洛爾德、自幼相處的親信約書亞等人環繞著，在王宮中過著開心的生活。'
 }, {
