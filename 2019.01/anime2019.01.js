@@ -203,14 +203,14 @@ Anime = [{
 }, {
     name: '盾之勇者成名錄',
     nameInJpn: '盾の勇者の成り上がり',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/9',
+    time: '22:00',
+    carrier: 'Novel',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/lTb8vXwqrmhGN19jgSCb_M_A.jpg',
-    official: '',
-    description: ''
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532198439929249802/mv_lg.png',
+    official: 'http://shieldhero-anime.jp/',
+    description: '身為大學二年級的岩谷尚文，在鎮上的公立圖書館翻到一本書「四聖武器書」。當翻閱到空白的頁面時，竟被招換到另一個世界，被稱為「盾之勇者」。在一個視盾牌為無用論的異世界裡，盾之勇者又被公主誣陷為強暴犯，跌入深淵中的尚文變得再也不相信任何人地獨自行動...'
 }, {
     name: '天使降臨到我身邊',
     nameInJpn: '私に天使が舞い降りた!',
@@ -346,14 +346,14 @@ Anime = [{
 }, {
     name: '笑容的代價',
     nameInJpn: 'エガオノダイカ',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/4',
+    time: '22:30',
+    carrier: 'Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/zEWmqKOrxf5lBSlyBI1n_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://egaonodaika.com/',
+    description: '描繪在遙遠的星球上、充滿歡笑的王國中，12 歲的王女「悠希」，被忠心的家臣們、還有導師雷拉、政治輔佐官伊薩那、騎士團長哈洛爾德、自幼相處的親信約書亞等人環繞著，在王宮中過著開心的生活。'
 }, {
     name: 'W’z',
     nameInJpn: 'W’z《ウィズ》',
