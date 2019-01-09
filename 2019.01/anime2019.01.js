@@ -170,36 +170,36 @@ Anime = [{
 }, {
     name: 'HERO MASK',
     nameInJpn: 'HERO MASK',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '12/3',
+    time: '0:0',
+    carrier: 'Original',
     season: 1,
-    episode: '',
+    episode: 'https://cdn.discordapp.com/attachments/88111110519009280/532515024808181760/mv.png',
     img: 'https://www.animen.com.tw/animen_image/jP6I3XV4Z5nSlTJb8bob_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://heromask.jp/',
+    description: '故事將以圍繞在神秘面具的多起兇殘事件，以及為了追尋事件真相的特殊搜查部刑警詹姆士布萊德作為主軸展開。'
 }, {
     name: '聖鬥士星矢 聖鬥少女翔',
     nameInJpn: '聖闘士星矢 セインティア翔',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '12/10',
+    time: '19:00',
+    carrier: 'Comic',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/LOGgTECl3MDcnJW3nniG_M_A.jpg',
-    official: '',
-    description: ''
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532515512937349120/img_main.png',
+    official: 'https://www.saintia-sho.com/pc/',
+    description: '在城戶沙織以「銀河戰爭」的開幕為開端，覺悟到自己要為將在聖域蔓延的邪惡曝光於天下而戰的宿命之後，感覺到紛爭氣息的邪惡女神「厄里斯」在彗星「雷帕魯斯（Repulse）」的引導下再次襲擊地球，企圖為大地帶來流血混亂。爲了粉碎她的野心，身為雅典娜的侍女的聖鬥少女們陸續展開了激鬥。'
 }, {
     name: 'Dimension高中',
     nameInJpn: 'Dimensionハイスクール',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/10',
+    time: '22:00',
+    carrier: 'Comic',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/de0lK7fRAJmosOJBlVcx_M_A.jpg',
-    official: '',
-    description: ''
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532516663095197707/main_img.png',
+    official: 'http://dimension-hs.com/',
+    description: '次元高校に通う白山純平は、校庭である石を拾う。緑ヶ丘流星、黄川田 剛、水上ゆりおらと、教師・桃谷総司が行う補習を受けていると、拾った石が勝手に動き出し……しゃべり始めた！'
 }, {
     name: '盾之勇者成名錄',
     nameInJpn: '盾の勇者の成り上がり',
@@ -214,13 +214,13 @@ Anime = [{
 }, {
     name: '天使降臨到我身邊',
     nameInJpn: '私に天使が舞い降りた!',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/8',
+    time: '22:00',
+    carrier: 'Comic',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/qaNOusN5DHK8H7xdjiij_M_A.jpg',
-    official: '',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532516905982885898/v_001.png',
+    official: 'http://watatentv.com/',
     description: ''
 }, {
     name: '臨死！！江古田醬',
@@ -236,14 +236,14 @@ Anime = [{
 }, {
     name: '笨拙之極的上野',
     nameInJpn: '上野さんは不器用',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/6',
+    time: '24:30',
+    carrier: 'Comic',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/VRtFcK7bobZDFVQ3yvtj_M_A.jpg',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532517709280444426/kv01-on.png',
     official: '',
-    description: ''
+    description: '這裡是某間中學的理科教室━━━━。科學部部長「上野」，暗戀著同社團學弟「田中」。藉著天才般奇想天外的發明物和用盡各式各樣方法就為了試著想引起田中的注意。加上有冷靜沈著1年級的社團學妹山下的後援協助上野！究竟上野的這段戀情是否能開花結果呢？！？還是...'
 }, {
     name: '荒野的KOTOBUKI飛行隊',
     nameInJpn: '荒野のコトブキ飛行隊',
