@@ -221,7 +221,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/532516905982885898/v_001.png',
     official: 'http://watatentv.com/',
-    description: ''
+    description: '怕生的御宅族女大學生宮子，遇到了天使般的小學生！？ 在看到妹妹帶來的新朋友小花的瞬間，宮子就無法抑制住心跳！！ 她為了和小花成為朋友而奮鬥，但……。 「想要和超絕可愛的她做朋友」系小品喜劇，開幕！'
 }, {
     name: '臨死！！江古田醬',
     nameInJpn: '臨死!! 江古田ちゃん',
