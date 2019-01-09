@@ -174,8 +174,8 @@ Anime = [{
     time: '0:0',
     carrier: 'Original',
     season: 1,
-    episode: 'https://cdn.discordapp.com/attachments/88111110519009280/532515024808181760/mv.png',
-    img: 'https://www.animen.com.tw/animen_image/jP6I3XV4Z5nSlTJb8bob_M_A.jpg',
+    episode: '',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532515024808181760/mv.png',
     official: 'http://heromask.jp/',
     description: '故事將以圍繞在神秘面具的多起兇殘事件，以及為了追尋事件真相的特殊搜查部刑警詹姆士布萊德作為主軸展開。'
 }, {
@@ -219,7 +219,7 @@ Anime = [{
     carrier: 'Comic',
     season: 1,
     episode: '',
-    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532516905982885898/v_001.png',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/532545714983534603/v_001.png',
     official: 'http://watatentv.com/',
     description: '怕生的御宅族女大學生宮子，遇到了天使般的小學生！？ 在看到妹妹帶來的新朋友小花的瞬間，宮子就無法抑制住心跳！！ 她為了和小花成為朋友而奮鬥，但……。 「想要和超絕可愛的她做朋友」系小品喜劇，開幕！'
 }, {
