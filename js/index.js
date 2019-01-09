@@ -92,7 +92,7 @@ $(function () {
     let p = router.lastRouteResolved().params
     let u = router.lastRouteResolved().url
     new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
-    $(p ? `[href="${u}"]` : `[href="/"][data-navigo]`).addClass('mdui-list-item-active')
+    $(p ? `[href="${u}"]` : `[href="/#"][data-navigo]`).addClass('mdui-list-item-active')
 
 });
 
