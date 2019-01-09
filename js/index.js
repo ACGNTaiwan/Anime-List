@@ -61,7 +61,7 @@ router
     })
 $(function () {
     $("#drawer>.mdui-list").append(
-        `<li class="mdui-list-item mdui-ripple" href="/" data-navigo>
+        `<li class="mdui-list-item mdui-ripple" href="/#" data-navigo>
             <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
             <div class="mdui-list-item-content">首頁</div>
         </li>`
