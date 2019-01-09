@@ -4,57 +4,38 @@ html
         title Anime List
         meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(charset='utf-8')
-        // Tocas UI 
-        include ../Jade/_tocasui.jade
         // social_tags
         include ../Jade/_tags.jade
-        +social_tags('Anime List','展示新番的清單','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/')
-        // JQuery https://cdnjs.com/libraries/jquery/ 
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // slick 
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',rel='stylesheet')
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',rel='stylesheet')
-        //main
-        script(src='./js/index.js?' + Math.floor(Math.random() * (999)))
-        link(href='./css/style.css?' + Math.floor(Math.random() * (999)) ,rel='stylesheet')
+        +social_tags('Anime List','展示新番的清單','https://gnehs.github.io/Anime-List/og.png','https://gnehs.github.io/Anime-List/') 
+        // MDUI
+        link(href='//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css',rel='stylesheet')
+        //evaicon
+        link(href='//unpkg.com/eva-icons@1.1.0/style/eva-icons.css',rel='stylesheet')
+        link(href='./css/flexboxgrid.css', rel='stylesheet')
+        link(href='./css/AnimeList.css?' + Math.floor(Math.random() * (999)), rel='stylesheet')
 
-        meta(name="theme-color" content="#2196f3")
+        meta(name="theme-color" content="#3f51b5")
         link(rel="icon" href="./icon/drawable-ldpi/icon.png")
 
-    body
-        // 標題
-        header.ts.slate.huge.fluid.fitted
-            .ts.container
-                .header Anime List
-        .ts.container.hide 
-            #switch
-            #switch-buttons(style='text-align:center;margin:10px auto')
-                .ts.relaxed.separated.buttons.icon.primary
-                    button.ts.button.labeled.icon(data-slick='slickPrev')
-                        i.chevron.left.icon
-                        | 下一季度
-                    button.ts.button.right.labeled.icon.floated(data-slick='slickNext') 上一季度
-                        i.chevron.right.icon
-            .ts.divider
-            #offline.hide 
-                .ts.inverted.negative.message
-                    .header 已離線
-                    p 連上網路以取得最新資料
-            #content 
-                h3.ts.center.aligned.icon.header 
-                    i.pointing.up.icon
-                    | 歡迎
-                    .sub.header 使用上方選擇器來瀏覽本站資料
+    body.mdui-drawer-body-left.mdui-theme-primary-indigo.mdui-theme-accent-indigo
+        header.mdui-appbar.mdui-appbar-fixed
+            .mdui-toolbar.mdui-color-theme
+                a.mdui-btn.mdui-btn-icon.mdui-ripple.mdui-ripple-white(mdui-drawer="{target: '#drawer', swipe: true}")
+                    i.mdui-icon.material-icons menu
+                .mdui-typo-title Anime List
+                .mdui-toolbar-spacer
+                a.mdui-btn.mdui-btn-icon.mdui-ripple.mdui-ripple-white(href="https://github.com/ACGNTaiwan/Anime-List",target="_blank",mdui-tooltip="{content:'Github'}")
+                    i.mdui-icon.eva.eva-github
 
-        footer.ts.container.hide 
-            .ts.section.horizontal.divider gnehs 2018
-            .ts.relaxed.separated.compact.buttons.primary
-                a.ts.button.labeled.icon(data-top)
-                    i.arrow.up.icon
-                    | Top
-                a.ts.button.labeled.icon(href='https://github.com/ACGNTaiwan/Anime-List') 
-                    i.github.icon
-                    | GitHub
-            br
-            br
+        #drawer.mdui-drawer.mdui-appbar-with-toolbar
+            ul.mdui-list(mdui-collapse="{accordion: true}")
+
+        #content.mdui-container hiii
+        //navigo
+        script(src='/js/navigo.min.js')
+        // MDUI
+        script(src='//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js')        
+        // JQuery https://cdnjs.com/libraries/jquery/ 
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        // main
+        script(src='./js/index.js?' + Math.floor(Math.random() * (999)))

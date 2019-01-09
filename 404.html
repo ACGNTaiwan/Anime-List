@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Anime List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <!-- social_tags-->
+        <meta name="description" content="展示新番的清單">
+        <meta name="image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta itemprop="name" content="Anime List">
+        <meta itemprop="description" content="展示新番的清單">
+        <meta itemprop="image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Anime List">
+        <meta name="twitter:description" content="展示新番的清單">
+        <meta name="twitter:image:src" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="og:title" content="Anime List">
+        <meta name="og:description" content="展示新番的清單">
+        <meta name="og:image" content="https://gnehs.github.io/Anime-List/og.png">
+        <meta name="og:url" content="https://gnehs.github.io/Anime-List/">
+        <meta name="og:site_name" content="Anime List">
+        <meta name="og:locale" content="zh_TW">
+        <meta name="og:type" content="website">
+        <!-- MDUI-->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css" rel="stylesheet">
+        <!--evaicon-->
+        <link href="//unpkg.com/eva-icons@1.1.0/style/eva-icons.css" rel="stylesheet">
+        <link href="./css/flexboxgrid.css" rel="stylesheet">
+        <link href="./css/AnimeList.css?759" rel="stylesheet">
+        <meta name="theme-color" content="#3f51b5">
+        <link rel="icon" href="./icon/drawable-ldpi/icon.png">
+    </head>
+
+    <body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-indigo">
+        <header class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme"><a class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+                    mdui-drawer="{target: '#drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></a>
+                <div class="mdui-typo-title">Anime List</div>
+                <div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+                    href="https://github.com/ACGNTaiwan/Anime-List" target="_blank" mdui-tooltip="{content:'Github'}"><i
+                        class="mdui-icon eva eva-github"></i></a>
+            </div>
+        </header>
+        <div class="mdui-drawer mdui-appbar-with-toolbar" id="drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}"></ul>
+        </div>
+        <div class="mdui-container" id="content"></div>
+        <!--navigo-->
+        <script src="/js/navigo.min.js"></script>
+        <!-- MDUI-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js"> </script>
+        <!-- JQuery https://cdnjs.com/libraries/jquery/ -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- main-->
+        <script src="./js/index.js?735"></script>
+    </body>
+
+</html>

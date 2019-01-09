@@ -1,283 +1,215 @@
-showDate = [{ id: 'Sun', day: '週日' }, { id: 'Mon', day: '週一' }, { id: 'Tue', day: '週二' }, { id: 'Wed', day: '週三' }, { id: 'Thu', day: '週四' }, { id: 'Fri', day: '週五' }, { id: 'Sat', day: '週六' }];
-AnimeData = [{
-    name: '1月冬番',
-    js: './2019.01/anime2019.01.js',
-    year: 2019
-},{
-    name: '10月秋番',
-    js: './2018.10/anime2018.10.js',
-    year: 2018
+showDate = [{
+    id: 'Sun',
+    day: '週日'
 }, {
-    name: '7月夏番',
-    js: './2018.07/anime2018.07.js',
-    year: 2018
+    id: 'Mon',
+    day: '週一'
 }, {
-    name: '4月春番',
-    js: './2018.04/anime2018.04.min.js',
-    year: 2018
+    id: 'Tue',
+    day: '週二'
 }, {
-    name: '1月冬番',
-    js: './2018.01/anime2018.01.min.js',
-    year: 2018
+    id: 'Wed',
+    day: '週三'
 }, {
-    name: '10月秋番',
-    js: './2017.10/anime2017.10.min.js',
-    year: 2017
+    id: 'Thu',
+    day: '週四'
 }, {
-    name: '7月夏番',
-    js: './2017.07/anime2017.07.min.js',
-    year: 2017
+    id: 'Fri',
+    day: '週五'
+}, {
+    id: 'Sat',
+    day: '週六'
 }];
-$(function() {
-    /* Top Button */
-    $('[data-top]').click(function() {
-        $('html').animate({
-            scrollTop: 0
-        }, 600);
-    });
-
-
-    /* Switch */
-    for (i = 0; i < AnimeData.length; i = i + 1) {
-        let name = AnimeData[i].name,
-            js = AnimeData[i].js,
-            year = AnimeData[i].year
-        $("#switch") //這裡用到了 JQ
-            .append($("<div/>").attr('id', name)
-                .append($("<h2/>").addClass("ts header").html(name)
-                    .append($("<div/>").addClass("sub header").html(year))
-                )
-                .append($("<div/>").addClass("ts doubling three cards")
-                    .append($("<a/>").addClass("ts card").attr('data-type', 'info').attr('data-js', js).attr('data-year', year)
-                        .append($("<div/>").addClass("content")
-                            .append($("<div/>").addClass("header")
-                                .html('介紹')
-                            )
-                            .append($("<div/>").addClass("description")
-                                .html('圖文介紹')
-                            )
-                        )
-                        .append($("<div/>").addClass("symbol")
-                            .append($("<i/>")
-                                .addClass("icon newspaper")
-                            )
-                        )
-                    )
-                    .append($("<a/>").addClass("ts card").attr('data-type', 'schedule').attr('data-js', js).attr('data-year', year)
-                        .append($("<div/>").addClass("content")
-                            .append($("<div/>").addClass("header")
-                                .html('日程表')
-                            )
-                            .append($("<div/>").addClass("description")
-                                .html('以表格展示新番日程')
-                            )
-                        )
-                        .append($("<div/>").addClass("symbol")
-                            .append($("<i/>")
-                                .addClass("icon table")
-                            )
-                        )
-                    )
-                    .append($("<a/>").addClass("ts card").attr('data-type', 'waterfall').attr('data-js', js).attr('data-year', year)
-                        .append($("<div/>").addClass("content")
-                            .append($("<div/>").addClass("header")
-                                .html('瀑布流')
-                            )
-                            .append($("<div/>").addClass("description")
-                                .html('一個美觀的展示用頁面')
-                            )
-                        )
-                        .append($("<div/>").addClass("symbol")
-                            .append($("<i/>")
-                                .addClass("icon grid layout")
-                            )
-                        )
-                    )
-                )
-            );
+indexData = {
+    2017: {
+        7: "./2017.07/anime2017.07.min.js",
+        10: "./2017.10/anime2017.10.min.js"
+    },
+    2018: {
+        1: "./2018.01/anime2018.01.js",
+        4: "./2018.04/anime2018.04.js",
+        7: "./2018.07/anime2018.07.js",
+        10: "./2018.10/anime2018.10.js"
+    },
+    2019: {
+        1: "./2019.01/anime2019.01.js"
     }
-    // slick 
-    $('#switch').slick({
-        arrows: false,
-        speed: 270,
-        infinite: false,
-        swipe: false
-    });
-    $('#switch-buttons .button').click(function() {
-        $('#switch-buttons [data-slick]').removeClass('disabled').removeAttr('disabled')
-        $('#switch').slick($(this).attr('data-slick'));
-    });
-    // 自動停用按鈕
-    $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled').attr('disabled')
-    $('#switch').on('afterChange', function(event, slick, direction) {
-        if (direction == event.isTrigger + 1) $('#switch-buttons [data-slick="slickNext"]').addClass('disabled').attr('disabled', '')
-        if (direction == 0) $('#switch-buttons [data-slick="slickPrev"]').addClass('disabled').attr('disabled', '')
-    });
-    // 卡片點擊載入資料
-    $('[data-js]').click(function() {
-        if ($(this).hasClass('active')) return
+}
+// 路由
+const router = new Navigo('./', true, '#/');
+router
+    .on({
+        ':type/:year/:month/': params => loadData({
+            js: indexData[params.year][params.month],
+            type: params.type,
+            year: params.year
+        }),
+        '*': showHome
+    })
+    .resolve()
+router
+    .hooks({
+        before: (done, params) => {
+            $("#content").attr('class', '').html('')
+            $("#drawer>.mdui-list *").removeClass('mdui-list-item-active')
+            $(`[href="${router.lastRouteResolved().url}"]`).addClass('mdui-list-item-active')
+            done()
+        },
+        after: params => {
+            $('html, body').scrollTop(0)
+        }
+    })
+$(function () {
+    $("#drawer>.mdui-list").append(
+        `<li class="mdui-list-item mdui-ripple" href="/" data-navigo>
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">首頁</div>
+        </li>`
+    )
+    for (year of Object.keys(indexData).reverse()) {
+        for (month of Object.keys(indexData[year]).reverse()) {
+            let html = $(
+                `<li class="mdui-collapse-item" al-month="${year}-${month}">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">access_time</i>
+                        <div class="mdui-list-item-content">${year} ${month.length>1?month:'0'+month} 月新番</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                        <li class="mdui-list-item mdui-ripple" href="info/${year}/${month}" data-navigo>圖文介紹</li>
+                        <li class="mdui-list-item mdui-ripple" href="schedule/${year}/${month}" data-navigo>日程表</li>
+                        <li class="mdui-list-item mdui-ripple" href="waterfall/${year}/${month}" data-navigo>瀑布流</li>
+                    </ul>
+                </li>`
+            )
+            $("#drawer>.mdui-list").append(html)
+        }
+    }
 
-        let js = $(this).attr('data-js'),
-            type = $(this).attr('data-type'),
-            year = $(this).attr('data-year')
+    router.updatePageLinks()
+    mdui.mutation(); //地方的 MDUI 需要初始化
+    // p == null => 在首頁
+    let p = router.lastRouteResolved().params
+    let u = router.lastRouteResolved().url
+    new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
+    $(p ? `[href="${u}"]` : `[href="/"][data-navigo]`).addClass('mdui-list-item-active')
 
-        $('[data-js]').removeClass('active')
-        $(this).addClass('active')
-        $('[data-js]:not(.active)').addClass('disabled')
-
-        $("#content").attr('data-animation', '')
-        $("#content").attr('data-animation', 'fadeOut')
-
-        // 啟用快取 $.getScript()
-        $.ajaxSetup({
-            cache: true
-        });
-        $.getScript(js)
-            .done(function(script, textStatus) {
-                $("#offline").addClass('hide')
-                setTimeout(function() {
-                    $("#content").attr('class', '').html('')
-                    if (type == 'waterfall') {
-                        waterfall(Anime)
-                    }
-                    if (type == 'info') {
-                        info(Anime, year)
-                    }
-                    if (type == 'schedule') {
-                        schedule(Anime, year)
-                    }
-                    $("#content").attr('data-animation', 'fadeIn')
-                    setTimeout(function() {
-                        $("#content").attr('data-animation', '')
-                        $('[data-js]').removeClass('disabled')
-                    }, 205);
-                }, 201);
-            })
-            .fail(function() {
-                $("#offline").removeClass('hide')
-                console.log('offline')
-                setTimeout(function() {
-                    $("#content").attr('class', '').html('')
-                    $("#content").attr('data-animation', 'fadeIn')
-                    setTimeout(function() {
-                        $("#content").attr('data-animation', '')
-                        $('[data-js]').removeClass('disabled')
-                    }, 205);
-                }, 201);
-            });
-    });
-    /* Fade in */
-    $("body>footer,body>.ts.container").removeClass('hide')
 });
 
+function showHome() {
+    $("#content").html(
+        `<div class="mdui-typo"><div class="mdui-typo-display-2">Anime List</div>
+        <p>使用右方選單來瀏覽本站資料</p>
+        <div class="mdui-typo-display-1">資料有誤？</div>
+        <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List">GitHub</a> 提交 PR</p></div>
+        `
+    )
+}
 
-function waterfall(Anime) {
-    // 透過迴圈輸出資料內的所有動畫
-    // Anime.length = 動畫總數
-    // 迴圈開始
-    for (i = 0; i < Anime.length; i = i + 1) {
-        // 如果不是第一季，顯示季度
-        // 如果是第一季，僅顯示動畫名稱
-        let animeName = Anime[i].season != "1" ? Anime[i].name + " S" + Anime[i].season : Anime[i].name,
-            animeImg = Anime[i].img,
-            animeDescription = Anime[i].description
-        $("#content").attr('class', 'ts four doubling waterfall cards').attr("data-type", 'waterfall')
-            .append($(`<div class="ts card" id="${animeName}">
-                <div class="image">
-                    <img class="image" src="${animeImg}">
-                    <div class="header">${animeName}
-                        <div class="sub header">${animeDescription}</div>
-                    </div>
+function loadData({
+    js,
+    type,
+    year
+}) {
+    $.ajaxSetup({
+        cache: true
+    });
+    $.getScript(js)
+        .done(function (script, textStatus) {
+            $("#content").attr('class', '').html('')
+            if (type == 'waterfall') {
+                waterfall(Anime)
+            }
+            if (type == 'info') {
+                info(Anime, year)
+            }
+            if (type == 'schedule') {
+                schedule(Anime, year)
+            }
+        })
+}
+
+function waterfall(Anime, year) {
+    let container = $('<div class="waterfall"></div>')
+    for (item of Anime) {
+        // 如果不是第一季 ? 動畫名稱+季度 : 動畫名稱
+        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
+        $(container).append(
+            `<div class="card">
+                <img src="${item.img}"/>
+                <div class="content">
+                    <div class="name mdui-text-color-theme">${animeName}</div>
+                    <div class="nameInJpn">${item.nameInJpn}</div>
+                    <div class="description">${item.description}</div>
                 </div>
-            </div>`))
-    } //結束迴圈
+            </div>`
+        )
+    }
+    $("#content").append(container)
 }
 
 function schedule(Anime, year) {
-    $("#content").attr("class", 'ts doubling seven column grid')
-    for (i = 0; i < showDate.length; i = i + 1) {
-        let dayID = showDate[i].id,
-            dayCht = showDate[i].day
-        $("#content")
-            .append($("<div/>").attr('class', 'column')
-                .append($("<div/>").attr('class', 'ts very relaxed divided list').attr('id', dayID)
-                    .append($("<h3/>").attr('class', 'ts header').html(dayCht))
-                )
-            );
-
+    $("#content").append(`<div class="schedule"></div>`)
+    for (day of showDate) {
+        $(`#content>.schedule`).append(
+            `<div class="day" id="${day.id}">
+                <h3>${day.day}</h3>
+            </div>`
+        )
     }
-    // 透過迴圈輸出資料內的所有動畫
-    // Anime.length = 動畫總數
-    // 迴圈開始
-    for (i = 0; i < Anime.length; i = i + 1) {
-        // 如果不是第一季，顯示季度
-        // 如果是第一季，僅顯示動畫名稱
-        let animeName = Anime[i].season != "1" ? Anime[i].name + " S" + Anime[i].season : Anime[i].name,
-            animeDay, animeDate
-        setTime = new Date(year + "/" + Anime[i].date)
-        animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
-        animeDate = Anime[i].date; //星期
-        $("#" + animeDay)
-            .append($(`<div class="item" id="${animeName}">${animeDate} ${animeName}</div>`));
-    } //結束迴圈
+    for (item of Anime) {
+        if (item.date == "" || item.date.split("/")[1] == "") continue //跳過沒日期的
+        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
+        let setTime = new Date(year + "/" + item.date)
+        let animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
+        $(`#${animeDay}`).append(
+            `<div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="${item.img}"/>
+                <div class="mdui-card-header-title" title="${animeName}">${animeName}</div>
+                <div class="mdui-card-header-subtitle">${item.date} ${item.time}</div>
+            </div>`
+        )
+    }
 }
 
 function info(Anime, year) {
-    for (i = 0; i < showDate.length; i = i + 1) {
-        let dayID = showDate[i].id,
-            dayCht = showDate[i].day
-        $("#content").attr("data-type", 'info')
-            .append($("<h3/>")
-                .html(dayCht)
-            )
-            .append($("<div/>")
-                .attr("id", dayID)
-                .attr('class', 'ts four doubling cards')
-            );
+    $(`#content`).append(
+        `<div class="mdui-typo-display-2 mdui-text-center" al-time-unknown>播出時間未知</div>
+        <div class="mdui-typo" al-time-unknown><hr/></div>
+        <div class="info" id="unknown" al-time-unknown></div>`
+    )
+    for (day of showDate) {
+        $(`#content`).append(
+            `<div class="mdui-typo-display-2 mdui-text-center">${day.day}</div>
+            <div class="mdui-typo"><hr/></div>
+            <div class="info" id="${day.id}"></div>`
+        )
     }
-    // 透過迴圈輸出資料內的所有動畫
-    // Anime.length = 動畫總數
-    // 迴圈開始
-    for (i = 0; i < Anime.length; i = i + 1) {
-        // 如果不是第一季，顯示季度
-        // 如果是第一季，僅顯示動畫名稱
-        if (Anime[i].season != "1") {
-            var Anime_Name = Anime[i].name + " S" + Anime[i].season; //動畫名稱
-        } else {
-            var Anime_Name = Anime[i].name; //動畫名稱
-        }
-        setTime = new Date(year + "/" + Anime[i].date)
-        week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        week_chinese = ["日", "一", "二", "三", "四", "五", "六"]
-        var Anime_Day = week[setTime.getDay()]; //星期
-        // 如果同時有撥放的日期、星期、時間，把時間設定為 日期+星期+時間
-        // 如果沒有，僅顯示 尚未公開
+    for (item of Anime) {
+        let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        let weekChinese = ["日", "一", "二", "三", "四", "五", "六"]
+        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
+        let setTime = new Date(year + "/" + item.date)
 
-        var Anime_Time = Anime[i].time.match(/[0-9]?[0-9]\:[0-9]?[0-9]/) || Anime[i].date.match(/[0-9]?[0-9]\/[0-9]?[0-9]/) ?
-            Anime[i].date + " (" + week_chinese[setTime.getDay()] + ") " + Anime[i].time :
-            "尚未公開"
-        var Anime_Adapt = Anime[i].carrier; //載體
-        var Anime_Name_Jpn = Anime[i].nameInJpn; //日文原文
-        var Anime_Img = Anime[i].img; //圖片
-        var Anime_Info = Anime[i].description; //介紹
-        $("#" + Anime_Day) //這裡用到了 JQ
-            .append(`<div class="ts card Original" id="${Anime_Name}">
-                <div class="image">
-                    <img class="image" src="${Anime_Img}">
+        let animeDay = week[setTime.getDay()]; //星期
+
+        let time = `<i class="mdui-icon material-icons">access_time</i> ${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
+        if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
+
+        $(`#${animeDay}`).append(
+            `<div class="card">
+                <div class="image" style="background-image:url('${item.img}')">
+                    <div class="time">${time}</div>
                 </div>
                 <div class="content">
-                    <div class="header">${Anime_Name}</div>
-                    <div class="meta">
-                        <div>${Anime_Name_Jpn}</div>
-                    </div>
-                    <div class="extra">${Anime_Info}</div>
+                    <div class="name mdui-text-color-theme">${animeName}</div>
+                    <div class="nameInJpn">${item.nameInJpn}</div>
+                    <div class="description">${item.description}</div>
                 </div>
-                <div class="extra content">
-                    <i class="time icon"></i>${Anime_Time}
-                </div>
-                <div class="symbol">
-                    <i class="${Anime_Adapt} icon"></i>
-                </div>
-            </div>`)
-    } //結束迴圈
+            </div>`
+        )
+    }
+    if ($("#unknown>*").length == 0) {
+        $(`[al-time-unknown]`).remove()
+    }
 }

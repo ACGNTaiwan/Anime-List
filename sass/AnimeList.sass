@@ -1,0 +1,101 @@
+
+/* MDUI List avatar fix */
+.mdui-list-item-avatar,.mdui-card-header-avatar
+  background-color: #FFF
+  overflow: hidden
+  img
+    min-height: 100%
+    min-width: 100%
+    object-fit: cover
+
+.mdui-appbar 
+    z-index: 5001
+#content
+    padding: 10px
+    padding-top: 86px
+.card
+    width: 100%
+    display: inline-block
+    margin-bottom: 25px
+    border-radius: 15px
+    overflow: hidden
+    background-color: #fff
+    border: 3px solid rgba(0, 0, 0, 0.1)
+    img 
+        width: 100%
+    .image
+        height: 0
+        overflow: hidden
+        padding-bottom: 141.7%
+        background-size: cover    
+        background-position: center
+    .content
+        padding: 10px 15px 10px 15px 
+        .nameInJpn
+            color: #5a5a5a
+        .name
+            color: 000
+            font-size: 20px
+        .description:not(:empty)
+            line-height: 1.35em
+            margin-top: 5px
+            color: #5a5a5a
+.waterfall
+    column-count: 6
+    column-gap: 25px    
+.schedule
+    display: flex
+    flex-wrap: wrap
+    .day
+        width: calc(100% / 7)
+        display: block
+.info
+    display: flex
+    flex-wrap: wrap
+    .card
+        width: calc(100% / 6 - 20px)
+        display: block
+        margin: 10px    
+        height: fit-content
+        border: none
+    .image
+        border-radius: 15px
+        position: relative
+        .time
+            position: absolute
+            bottom: 0
+            width: 100%
+            text-align: center
+            line-height: 2em
+            font-size: 14px
+            color: white
+            background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0,.6) 90%)
+            i
+                font-size: 1em
+                height: 1em
+                width: 1.15em
+
+@media (max-width: 1450px)
+    .waterfall
+        column-count: 5
+@media (max-width: 1200px)
+    .waterfall
+        column-count: 4
+    .schedule .day
+        width: calc(100% / 4)
+    .info .card
+        width: calc(100% / 4 - 20px)
+@media (max-width: 800px)
+    .waterfall
+        column-count: 2
+    .schedule .day
+        width: calc(100% / 2)
+    .info .card
+        width: calc(100% / 2 - 20px)
+@media (max-width: 600px)
+    .waterfall
+        column-count: 1
+    .schedule .day
+        width: 100%
+    .info .card
+        width: calc(100% - 20px)
