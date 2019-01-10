@@ -61,7 +61,7 @@ router
     })
 $(function () {
     $("#drawer>.mdui-list").append(
-        `<li class="mdui-list-item mdui-ripple" href="/#" data-navigo>
+        `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
             <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
             <div class="mdui-list-item-content">首頁</div>
         </li>`
@@ -92,17 +92,18 @@ $(function () {
     let p = router.lastRouteResolved().params
     let u = router.lastRouteResolved().url
     new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
-    $(p ? `[href="${u}"]` : `[href="/#"][data-navigo]`).addClass('mdui-list-item-active')
+    $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass('mdui-list-item-active')
 
 });
 
 function showHome() {
     $("#content").html(
-        `<div class="mdui-typo"><div class="mdui-typo-display-2">Anime List</div>
-        <p>使用右方選單來瀏覽本站資料</p>
-        <div class="mdui-typo-display-1">資料有誤？</div>
-        <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List">GitHub</a> 提交 PR</p></div>
-        `
+        `<div class="mdui-typo">
+            <div class="mdui-typo-display-2">Anime List</div>
+            <p>使用右方選單來瀏覽本站資料</p>
+            <div class="mdui-typo-display-1">資料有誤？</div>
+            <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List">GitHub</a> 提交 PR</p>
+        </div>`
     )
 }
 
@@ -117,14 +118,13 @@ function loadData({
     $.getScript(js)
         .done(function (script, textStatus) {
             $("#content").attr('class', '').html('')
-            if (type == 'waterfall') {
-                waterfall(Anime)
-            }
-            if (type == 'info') {
-                info(Anime, year)
-            }
-            if (type == 'schedule') {
-                schedule(Anime, year)
+            switch (type) {
+                case "waterfall":
+                    return waterfall(Anime)
+                case "info":
+                    return info(Anime)
+                case "schedule":
+                    return schedule(Anime)
             }
         })
 }
@@ -136,7 +136,7 @@ function waterfall(Anime, year) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         $(container).append(
             `<div class="card">
-                <img src="${item.img}"/>
+                <div class="image" style="background-image:url('${item.img}')"></div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${animeName}</div>
                     <div class="nameInJpn">${item.nameInJpn}</div>
@@ -152,7 +152,7 @@ function schedule(Anime, year) {
     $("#content").append(`<div class="schedule"></div>`)
     for (day of showDate) {
         $(`#content>.schedule`).append(
-            `<div class="day" id="${day.id}">
+            `<div class="mdui-list day" id="${day.id}">
                 <h3>${day.day}</h3>
             </div>`
         )
@@ -163,10 +163,12 @@ function schedule(Anime, year) {
         let setTime = new Date(year + "/" + item.date)
         let animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         $(`#${animeDay}`).append(
-            `<div class="mdui-card-header">
-                <img class="mdui-card-header-avatar" src="${item.img}"/>
-                <div class="mdui-card-header-title" title="${animeName}">${animeName}</div>
-                <div class="mdui-card-header-subtitle">${item.date} ${item.time}</div>
+            `<div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
+                <div class="mdui-list-item-content" title="${animeName}">
+                    <div class="mdui-list-item-title">${animeName}</div>
+                    <div class="mdui-list-item-text">${item.date} ${item.time}</div>
+                </div>
             </div>`
         )
     }
@@ -180,7 +182,7 @@ function info(Anime, year) {
     )
     for (day of showDate) {
         $(`#content`).append(
-            `<div class="mdui-typo-display-2 mdui-text-center">${day.day}</div>
+            `<div class="mdui-typo-display-1 mdui-text-center">${day.day}</div>
             <div class="mdui-typo"><hr/></div>
             <div class="info" id="${day.id}"></div>`
         )

@@ -8,6 +8,15 @@
     -o-object-fit: cover;
     object-fit: cover; }
 
+/* MDUI List */
+.mdui-list-item {
+  border-radius: 10px; }
+
+/* drawer */
+#drawer {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 .mdui-appbar {
   z-index: 5001; }
 
@@ -21,8 +30,7 @@
   margin-bottom: 25px;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #fff;
-  border: 3px solid rgba(0, 0, 0, 0.1); }
+  background-color: #fff; }
   .card img {
     width: 100%; }
   .card .image {
@@ -30,7 +38,25 @@
     overflow: hidden;
     padding-bottom: 141.7%;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    border-radius: 15px;
+    position: relative; }
+    .card .image .time {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 2em;
+      font-size: 14px;
+      color: white;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, rgba(0, 0, 0, 0.6)));
+      background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 90%);
+      background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 90%);
+      background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 90%); }
+      .card .image .time i {
+        font-size: 1em;
+        height: 1em;
+        width: 1.15em; }
   .card .content {
     padding: 10px 15px 10px 15px; }
     .card .content .nameInJpn {
@@ -73,25 +99,6 @@
     height: -moz-fit-content;
     height: fit-content;
     border: none; }
-  .info .image {
-    border-radius: 15px;
-    position: relative; }
-    .info .image .time {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      line-height: 2em;
-      font-size: 14px;
-      color: white;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, rgba(0, 0, 0, 0.6)));
-      background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 90%);
-      background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 90%);
-      background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 90%); }
-      .info .image .time i {
-        font-size: 1em;
-        height: 1em;
-        width: 1.15em; }
 
 @media (max-width: 1450px) {
   .waterfall {
@@ -117,10 +124,5 @@
     width: calc(100% / 2 - 20px); } }
 
 @media (max-width: 600px) {
-  .waterfall {
-    -webkit-column-count: 1;
-    column-count: 1; }
   .schedule .day {
-    width: 100%; }
-  .info .card {
-    width: calc(100% - 20px); } }
+    width: 100%; } }

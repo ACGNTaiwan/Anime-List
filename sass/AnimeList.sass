@@ -8,6 +8,15 @@
     min-width: 100%
     object-fit: cover
 
+/* MDUI List */
+.mdui-list-item
+    border-radius: 10px
+
+/* drawer */
+#drawer
+    padding-left: 5px
+    padding-right: 5px
+
 .mdui-appbar 
     z-index: 5001
 #content
@@ -20,7 +29,6 @@
     border-radius: 15px
     overflow: hidden
     background-color: #fff
-    border: 3px solid rgba(0, 0, 0, 0.1)
     img 
         width: 100%
     .image
@@ -29,6 +37,21 @@
         padding-bottom: 141.7%
         background-size: cover    
         background-position: center
+        border-radius: 15px
+        position: relative
+        .time
+            position: absolute
+            bottom: 0
+            width: 100%
+            text-align: center
+            line-height: 2em
+            font-size: 14px
+            color: white
+            background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0,.6) 90%)
+            i
+                font-size: 1em
+                height: 1em
+                width: 1.15em
     .content
         padding: 10px 15px 10px 15px 
         .nameInJpn
@@ -58,22 +81,6 @@
         margin: 10px    
         height: fit-content
         border: none
-    .image
-        border-radius: 15px
-        position: relative
-        .time
-            position: absolute
-            bottom: 0
-            width: 100%
-            text-align: center
-            line-height: 2em
-            font-size: 14px
-            color: white
-            background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0,.6) 90%)
-            i
-                font-size: 1em
-                height: 1em
-                width: 1.15em
 
 @media (max-width: 1450px)
     .waterfall
@@ -93,9 +100,5 @@
     .info .card
         width: calc(100% / 2 - 20px)
 @media (max-width: 600px)
-    .waterfall
-        column-count: 1
     .schedule .day
         width: 100%
-    .info .card
-        width: calc(100% - 20px)
