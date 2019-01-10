@@ -176,7 +176,7 @@ function schedule(Anime, year) {
 
 function info(Anime, year) {
     $(`#content`).append(
-        `<div class="mdui-typo-display-2 mdui-text-center" al-time-unknown>播出時間未知</div>
+        `<div class="mdui-typo-display-1 mdui-text-center" al-time-unknown>播出時間未知</div>
         <div class="mdui-typo" al-time-unknown><hr/></div>
         <div class="info" id="unknown" al-time-unknown></div>`
     )

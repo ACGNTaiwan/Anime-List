@@ -103,14 +103,14 @@
 @media (max-width: 1450px) {
   .waterfall {
     -webkit-column-count: 5;
-    column-count: 5; } }
+    column-count: 5; }
+  .schedule .day {
+    width: calc(100% / 4); } }
 
 @media (max-width: 1200px) {
   .waterfall {
     -webkit-column-count: 4;
     column-count: 4; }
-  .schedule .day {
-    width: calc(100% / 4); }
   .info .card {
     width: calc(100% / 4 - 20px); } }
 
