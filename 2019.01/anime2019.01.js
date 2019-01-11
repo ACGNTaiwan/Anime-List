@@ -171,9 +171,10 @@ Anime = [{
     name: 'HERO MASK',
     nameInJpn: 'HERO MASK',
     date: '12/3',
-    time: '0:0',
+    time: '0:00',
     carrier: 'Original',
     season: 1,
+    year: 2018,
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/532515024808181760/mv.png',
     official: 'http://heromask.jp/',
@@ -184,6 +185,7 @@ Anime = [{
     date: '12/10',
     time: '19:00',
     carrier: 'Comic',
+    year: 2018,
     season: 1,
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/532515512937349120/img_main.png',
@@ -447,7 +449,7 @@ Anime = [{
 // 讓動畫按時間排序
 Anime = Anime.sort(function (a, b) {
     //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-    var aTime = new Date(2019, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-        bTime = new Date(2019, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+    var aTime = new Date(a.year ? a.year : 2019, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+        bTime = new Date(b.year ? b.year : 2019, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
     return aTime - bTime;
 });

@@ -176,7 +176,7 @@ function schedule(Anime, year) {
             animeDay = 'unknown'
             time = item.nameInJpn
         } else {
-            let setTime = new Date(year + "/" + item.date)
+            let setTime = new Date((item.year || year) + "/" + item.date)
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
         $(`#${animeDay}`).append(
@@ -211,7 +211,7 @@ function info(Anime, year) {
         let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         let weekChinese = ["日", "一", "二", "三", "四", "五", "六"]
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
-        let setTime = new Date(year + "/" + item.date)
+        let setTime = new Date((item.year || year) + "/" + item.date)
 
         let animeDay = week[setTime.getDay()]; //星期
 
