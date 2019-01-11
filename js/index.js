@@ -120,11 +120,11 @@ function loadData({
             $("#content").attr('class', '').html('')
             switch (type) {
                 case "waterfall":
-                    return waterfall(Anime)
+                    return waterfall(Anime, year)
                 case "info":
-                    return info(Anime)
+                    return info(Anime, year)
                 case "schedule":
-                    return schedule(Anime)
+                    return schedule(Anime, year)
             }
         })
 }
