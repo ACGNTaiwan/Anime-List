@@ -88,7 +88,7 @@ Anime = [{
     season: '3',
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034504408596501/sample_bg2.png',
-    official: '',
+    official: 'http://date-a-live-anime.com/',
     description: ''
 }, {
     name: 'Endro~!',
@@ -122,7 +122,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531408478271700994/unknown.png',
     official: 'http://magical-five.jp/',
-    description: ''
+    description: '21 世紀。人類終於實現了與其他智慧生命體的接觸。但，這一相遇卻並非幸福之物。從地冥界侵入的怪物，將大多數現代兵器無效化，人類的命運如同風中殘燭。但在同樣為地冥界所苦的精靈環境條約機構的協助下，人類獲得了起死回生的一著棋。那就是魔法少女。獲得強大魔力的少女，即使在身心多處負傷的同時，仍然將人類引導向勝利，並終於使大戰結束。但，這只不過是新的戰爭的開端而已。國際犯罪、無差別恐怖襲擊、內戰、紛爭……。魔法少女的戰鬥沒有結束——'
 }, {
     name: '約定的夢幻島',
     nameInJpn: '約束のネバーランド',
@@ -280,36 +280,36 @@ Anime = [{
 }, {
     name: '明治東京戀伽',
     nameInJpn: '明治東亰恋伽',
-    date: '1/',
-    time: 'none',
+    date: '1/9',
+    time: '23:00',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/AZXmWgb3onO4EFLlrPm9_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://meikoi.com/tv-anime/',
+    description: '女高中生「綾月芽衣」在一個紅色滿月之夜，遇見了一位自稱是「魔術師」查理的人相遇。借助查理的手穿越到了明治時代。在這裡，存在著很多奇怪的東西，這就是明治時代的「東京」。在查理的引導下，到達了鹿鳴館。等待潛入晚會主人公的是森鴎外、菱田春草、川上音二郎、泉鏡花、藤田五郎、小泉八雲等歷史上的人物們。並且瞭解到了關於「魂依」的存在，也逐漸的能夠親眼目睹一些奇異的東西……'
 }, {
     name: '幻影死神',
     nameInJpn: 'ブギーポップは笑わない',
-    date: '1/',
-    time: 'none',
+    date: '1/4',
+    time: '21:00',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/U3An7iC8ZjgRVpIrHwN4_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://boogiepop-anime.com/',
+    description: '為了與世界的敵人戰鬥，從一名少女心中所出現，名為「Boogiepop （ブギーポップ）」的人格，以及懷抱著各是夢想、希望、煩惱等……少年少女們的故事。'
 }, {
     name: 'Flying Babies',
     nameInJpn: 'フライングベイビーズ',
-    date: '1/',
-    time: 'none',
+    date: '1/10',
+    time: '3:05',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/JDPS8oZjw9wPqUFGhWF5_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'https://hulaingbabies.com/',
+    description: '四名經歷了東日本大地震的少女為了成為草裙舞少女而奮鬥的故事。'
 }, {
     name: '迷你刀使',
     nameInJpn: 'みにとじ',
@@ -324,25 +324,25 @@ Anime = [{
 }, {
     name: '巴哈姆特之怒-Manaria Friends-',
     nameInJpn: 'マナリアフレンズ',
-    date: '1/',
-    time: 'none',
+    date: '1/20',
+    time: '24:30',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/tlydYUy2Rq9bcOD4KF6n_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'https://manaria.jp/',
+    description: '故事以遊戲中的「Manaria 魔法學院」為背景，描述人、神、魔共存的世界中，活潑 Manaria 王國的公主「安」，與內向的龍族公主「格蕾雅」在 Manaria 魔法學院發生的種種故事。'
 }, {
     name: '家有女友',
     nameInJpn: 'ドメスティックな彼女',
-    date: '1/',
-    time: 'none',
+    date: '1/11',
+    time: '1:45',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/3PM3TYFseyLIKM9XrvEP_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://domekano-anime.com/',
+    description: '高中生的藤井夏生主角暗戀著經常在頂樓散心的女老師陽菜，在一場聯誼會上和初次見面的女生瑠衣糊里糊塗的經歷了初體驗，幾天過去，心情仍未平復的夏生得知了老爸要再婚的消息，而新母親帶來的兩個孩子——正是陽菜老師和初體驗的女孩！ ？於是乎這段錯綜複雜的三角關係就這麼開始了。'
 }, {
     name: '笑容的代價',
     nameInJpn: 'エガオノダイカ',
@@ -357,13 +357,13 @@ Anime = [{
 }, {
     name: 'W’z',
     nameInJpn: 'W’z《ウィズ》',
-    date: '1/',
-    time: 'none',
+    date: '1/5',
+    time: '25:00',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/6OomIBSOYvjtLoDBgxhq_M_A.jpg',
-    official: '',
+    official: 'http://wz-anime.net/',
     description: ''
 }, {
     name: '動物朋友2',
@@ -375,29 +375,29 @@ Anime = [{
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/zmnX3GZPi1qMtFJFnYKQ_M_A.jpg',
     official: 'https://kemono-friends.jp',
-    description: ''
+    description: '《動物朋友 2》中藪貓與獰貓在森林中遇到了「人類」的小孩，並與那個孩子—キュルル一同展開了旅程，在途中除了遇上各式各樣的朋友，還發現了傑帕力公園的秘密、更遇上了巨大的危機'
 }, {
     name: '多羅羅',
     nameInJpn: 'どろろ',
-    date: '1/',
-    time: 'none',
+    date: '1/7',
+    time: '22:00',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/zLmMOWiZA7450ty5KhTP_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'https://dororo-anime.com/',
+    description: '被鬼神奪取 48 個身體部位的少年「百鬼丸」，為了找回身體與在旅程碰見的「多羅羅」，展開討伐妖怪取回身體部位的故事。'
 }, {
     name: '雨色可可side G',
     nameInJpn: '雨色ココアside G',
-    date: '1/',
-    time: 'none',
+    date: '1/8',
+    time: '22:55',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/wsXr55LV3AvrgzAXOasy_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://rainycocoa.jp/anime/',
+    description: '描繪在咖啡廳「Rainy Color」中具有個性的人們所發生的日常事情，在第五季「side G」的故事中，Rainy Color 老闆天見浩司的女兒成為了代理店長。'
 }, {
     name: '同居人是貓',
     nameInJpn: '同居人はひざ、時々、頭のうえ。',
@@ -412,14 +412,14 @@ Anime = [{
 }, {
     name: '格林筆記 The Animation',
     nameInJpn: 'グリムノーツ The Animation',
-    date: '1/',
-    time: 'none',
+    date: '1/10',
+    time: '2:30',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/IZmHqqPE3SfSB1e0C36f_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'http://www.tbs.co.jp/anime/grimmsnotes/',
+    description: '由 SQUARE ENIX 在 2016 年所推出的智慧型手機遊戲，遊戲是以「童話」作為主軸，以童話世界「想區」做為舞台的奇幻角色扮演遊戲。人們從出生開始，就被付與了一本書。從生到死按照 “命運之書” 記載的腳本生存下去的宿命。在此之中，持有空白腳本的 “空白之書” 出生的艾克斯，與同樣擁有 “空白之書” 的同伴們相遇，踏上了尋找自己使命的旅程。這是一部被不斷閱讀過的童話故事。'
 }, {
     name: '飛翔吧！戰機少女',
     nameInJpn: 'ガーリー・エアフォース',
@@ -430,7 +430,7 @@ Anime = [{
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/s2i8YGk1DqCP3CphoKHK_M_A.jpg',
     official: 'http://gaf-anime.jp',
-    description: '突然出现在人类面前的神秘飞翔体“灾”。意味着灾厄的此一存在凭借异样的战斗力凌驾于所有的航空战力之上。为对抗他们而开发的，便是对现有机体进行特别调整以实现超水准高机动力， 被称为“子体”的兵器。负责操控的则是名为“阿尼玛”的操纵机构。它──竟拥有少女的外表。因“灾”的缘故而失去驾驶员母亲的少年“鸣谷慧”，他遇见了闪耀鲜红光辉的瑞典制战斗机以及驾驶它的阿尼玛“格里芬”。身为人类最终兵器却动作不稳定的格里芬，还有一心向往天空的少年，两人漫长且炙热的故事就此展开。'
+    description: '突然出現在人類面前的神秘飛行體“災”。意味着灾厄的此一存在凭借异样的战斗力凌驾于所有的航空战力之上。为对抗他们而开发的，便是对现有机体进行特别调整以实现超水准高机动力， 被称为“子体”的兵器。负责操控的则是名为“阿尼玛”的操纵机构。它──竟拥有少女的外表。因“灾”的缘故而失去驾驶员母亲的少年“鸣谷慧”，他遇见了闪耀鲜红光辉的瑞典制战斗机以及驾驶它的阿尼玛“格里芬”。身为人类最终兵器却动作不稳定的格里芬，还有一心向往天空的少年，两人漫长且炙热的故事就此展开。'
 }, {
     name: '多彩田園曲來自百慕達三角',
     nameInJpn: 'カラフル・パストラーレ ～from Bermuda△～',
