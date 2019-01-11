@@ -88,6 +88,12 @@ $(function () {
 
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
+    // 手機自動收回 drawer
+    $(`#drawer [href]`).click(function () {
+        if ($(window).width() < 1024) {
+            new mdui.Drawer("#drawer").close();
+        }
+    });
     // p == null => 在首頁
     let p = router.lastRouteResolved().params
     let u = router.lastRouteResolved().url
@@ -157,20 +163,34 @@ function schedule(Anime, year) {
             </div>`
         )
     }
+    $(`#content>.schedule`).append(
+        `<div class="mdui-list day" id="unknown" al-time-unknown>
+            <h3>播出時間未知</h3>
+        </div>`
+    )
     for (item of Anime) {
-        if (item.date == "" || item.date.split("/")[1] == "") continue //跳過沒日期的
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
-        let setTime = new Date(year + "/" + item.date)
-        let animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
+        let animeDay;
+        let time = `${item.date} ${item.time}`
+        if (item.date == "" || item.date.split("/")[1] == "") {
+            animeDay = 'unknown'
+            time = item.nameInJpn
+        } else {
+            let setTime = new Date(year + "/" + item.date)
+            animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
+        }
         $(`#${animeDay}`).append(
             `<div class="mdui-list-item mdui-ripple">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
-                    <div class="mdui-list-item-text">${item.date} ${item.time}</div>
+                    <div class="mdui-list-item-text">${time}</div>
                 </div>
             </div>`
         )
+    }
+    if ($("#unknown>*").length == 1) {
+        $(`[al-time-unknown]`).remove()
     }
 }
 

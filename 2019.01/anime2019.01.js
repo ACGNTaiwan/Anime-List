@@ -225,14 +225,14 @@ Anime = [{
 }, {
     name: '臨死！！江古田醬',
     nameInJpn: '臨死!! 江古田ちゃん',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/8',
+    time: '25:00',
+    carrier: 'Comic',
     season: 1,
-    episode: '',
-    img: 'https://www.animen.com.tw/animen_image/jiCDvPxWUZg6QHZYfkCg_M_A.jpg',
-    official: '',
-    description: ''
+    episode: 12,
+    img: 'https://i.imgur.com/4LHyjdT.png',
+    official: 'http://ekodachan.com/',
+    description: '在家中總是全裸著的自由業主角江古田，白天時是派遣員工、偶爾也會接裸體模特兒的工作，故事描述有著自由開放兩性觀念的她，與周遭朋友之間值得玩味的日常生活點滴…。'
 }, {
     name: '笨拙之極的上野',
     nameInJpn: '上野さんは不器用',
