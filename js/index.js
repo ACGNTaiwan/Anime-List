@@ -64,7 +64,7 @@ $(function () {
     if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
     $("#drawer>.mdui-list").append(
         `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
-            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <i class="mdui-list-item-icon mdui-icon eva eva-home-outline"></i>
             <div class="mdui-list-item-content">首頁</div>
         </li>`
     )
@@ -73,7 +73,7 @@ $(function () {
             let html = $(
                 `<li class="mdui-collapse-item" al-month="${year}-${month}">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">access_time</i>
+                        <i class="mdui-list-item-icon mdui-icon eva eva-archive-outline"></i>
                         <div class="mdui-list-item-content">${year} ${month.length>1?month:'0'+month} 月新番</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
@@ -110,9 +110,25 @@ function showHome() {
             <div class="mdui-typo-display-2">Anime List</div>
             <p>使用右方選單來瀏覽本站資料</p>
             <div class="mdui-typo-display-1">資料有誤？</div>
-            <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List">GitHub</a> 提交 PR</p>
-        </div>`
+            <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR</p>
+            <div class="mdui-typo-display-1">貢獻者</div>
+        </div>
+        <div al-contributors>正在讀取新鮮的肝......</div>`
     )
+    $.get("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors", function (data) {
+        let r = `<div class="info contributors">`
+        for (user of data) {
+            r += `<a class="card" href="${user.html_url}" title="${user.login}">
+                <div class="image" style="background-image:url('${user.avatar_url}')"></div>
+                <div class="content">
+                    <div class="name mdui-text-color-theme">${user.login}</div>
+                    <div class="nameInJpn">${user.contributions}</div>
+                </div>
+            </a>`
+        }
+        r += `</div>`
+        $("[al-contributors]").html(r);
+    });
 }
 
 function loadData({

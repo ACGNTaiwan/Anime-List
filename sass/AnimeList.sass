@@ -52,7 +52,8 @@ body:not(.firefox) .mdui-dialog-content
     margin-bottom: 25px
     border-radius: 15px
     overflow: hidden
-    background-color: #fff
+    background-color: #fff    
+    transition: all .3s cubic-bezier(0,0,.2,1)
     img 
         width: 100%
     .image
@@ -106,6 +107,17 @@ body:not(.firefox) .mdui-dialog-content
         height: fit-content
         border: none
 
+.contributors
+    display: flex
+    flex-wrap: wrap
+    .card
+        text-decoration: none
+        .image
+            padding-bottom: 100%
+        &:hover    
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1)
+        &:active
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3)
 @media (max-width: 1450px)
     .waterfall
         column-count: 5
