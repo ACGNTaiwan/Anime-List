@@ -98,7 +98,7 @@ Anime = [{
     carrier: 'Original',
     season: '1',
     episode: '',
-    img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034409911058453/DqLm3tAUUAAMkwi.png',
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/533252146704154624/Dum8DidUcAEiOmg.jpg_orig.jpg',
     official: 'http://endro.jp/',
     description: '人々とモンスターが共存して暮らす剣と魔法の大陸「ナラル島」。そこには恐ろしい「魔王」が存在していました。はるかはるかの大昔、ナラル島に現れた魔王を倒した初代勇者――それからも、様々な時代で何度も何度も魔王は蘇り、同時にそれに対抗する勇者もまた現れ…。少女たちは、いつの日か出ずる魔王を倒すべく冒険者学校へ通います'
 }, {
