@@ -247,36 +247,36 @@ Anime = [{
 }, {
     name: '荒野的KOTOBUKI飛行隊',
     nameInJpn: '荒野のコトブキ飛行隊',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/13',
+    time: '22:30',
+    carrier: 'Original',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/wKTHMRbTl87E1ar73Ud7_M_A.jpg',
-    official: '',
-    description: ''
+    img: 'https://cdn.discordapp.com/attachments/88111110519009280/533246618439385088/main.png',
+    official: 'https://kotobuki-anime.com/',
+    description: '荒野×美少女×戰鬥機'
 }, {
-    name: 'Kemurikusa',
+    name: 'ケムリクサ',
     nameInJpn: 'ケムリクサ',
-    date: '1/',
-    time: 'none',
+    date: '1/9',
+    time: '22:30',
     carrier: 'Comic Novel Game Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/H6SxYXrOREXgKerfLirW_M_A.jpg',
     official: '',
-    description: ''
+    description: '赤い霧に包まれた、荒廃した建造物に囲まれた人気の無い世界を舞台に３人の姉妹が生き抜く物語。物語の中心的人物でまとめ髪の特徴的なりん、猫耳でいつもおっとりしているお姉さんキャラのりつ、メイド調の服に身を包み天真爛漫なムードメーカーりな。謎多き世界でこの姉妹が目指すものは一体…'
 }, {
     name: 'CIRCLET PRINCESS',
     nameInJpn: 'サークレット・プリンセス',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/8',
+    time: '23:00',
+    carrier: 'Game',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/LImUYvVHQ20myoPn0ZA3_M_A.jpg',
-    official: '',
-    description: ''
+    img: 'https://cirpri-anime.jp/assets/images/common/main_visual3.png',
+    official: 'https://cirpri-anime.jp/',
+    description: '隨著AR與VR技術的發展，一項能將現實與虛擬情報疊加在一起的MR系統被研製成功。使用MR進行的校園虛擬戰鬥「Circlet Bout」作為一項運動在女高中生中流行開來。為了參加這項運動，優佳來到了東京的聖聯合學園。'
 }, {
     name: '明治東京戀伽',
     nameInJpn: '明治東亰恋伽',
@@ -399,16 +399,16 @@ Anime = [{
     official: '',
     description: ''
 }, {
-    name: '同居人時而在腿上、時而跑到腦袋上',
+    name: '同居人是貓',
     nameInJpn: '同居人はひざ、時々、頭のうえ。',
-    date: '1/',
-    time: 'none',
-    carrier: 'Comic Novel Game Original',
+    date: '1/9',
+    time: '23:30',
+    carrier: 'Comic',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/Ul7sqGV2i9pF9q5XyDvA_M_A.jpg',
-    official: '',
-    description: ''
+    official: 'https://hizaue.com/',
+    description: '故事描述討厭人的孤僻小說家素晴，在某日尋找靈感的時候，發現了一隻黑色的野貓，為了將牠當作靈感來源、從而開始養育牠的溫馨故事。'
 }, {
     name: '格林筆記 The Animation',
     nameInJpn: 'グリムノーツ The Animation',
