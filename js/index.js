@@ -1,3 +1,4 @@
+const activeDrawerItemClassName = 'mdui-color-theme-50 mdui-text-color-theme'
 showDate = [{
     id: 'Sun',
     day: '週日'
@@ -51,8 +52,8 @@ router
     .hooks({
         before: (done, params) => {
             $("#content").attr('class', '').html('')
-            $("#drawer>.mdui-list *").removeClass('mdui-list-item-active')
-            $(`[href="${router.lastRouteResolved().url}"]`).addClass('mdui-list-item-active')
+            $("#drawer>.mdui-list *").removeClass(activeDrawerItemClassName)
+            $(`[href="${router.lastRouteResolved().url}"]`).addClass(activeDrawerItemClassName)
             done()
         },
         after: params => {
@@ -99,7 +100,7 @@ $(function () {
     let p = router.lastRouteResolved().params
     let u = router.lastRouteResolved().url
     new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
-    $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass('mdui-list-item-active')
+    $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass(activeDrawerItemClassName)
 
 });
 
