@@ -192,6 +192,7 @@ function schedule(Anime, year) {
                 mdui.dialog({
                     title: animeName,
                     content: animeDialogContent,
+                    history: !typeof InstallTrigger !== 'undefined', //!isFirefox
                     buttons: [{
                         text: '關閉'
                     }],
