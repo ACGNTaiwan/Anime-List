@@ -60,6 +60,7 @@ router
         }
     })
 $(function () {
+    if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
     $("#drawer>.mdui-list").append(
         `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
             <i class="mdui-list-item-icon mdui-icon material-icons">home</i>

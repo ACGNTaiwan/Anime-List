@@ -15,6 +15,22 @@
 /* MDUI Dialog */
 .mdui-dialog
     border-radius: 12px
+    body:not(.firefox) &
+        bottom: 0 !important
+        top: 0 !important
+        height: fit-content !important
+
+body:not(.firefox) .mdui-dialog-content
+    height: fit-content !important
+    max-height: 60vh
+
+@media screen and (max-height: 512px)
+    body:not(.firefox) .mdui-dialog-content
+        max-height: 40vh
+
+@media screen and (max-height: 256px)
+    body:not(.firefox) .mdui-dialog-content
+        max-height: 20vh
 
 /* drawer */
 #drawer
