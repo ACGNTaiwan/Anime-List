@@ -171,6 +171,7 @@ function schedule(Anime, year) {
     for (item of Anime) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let animeDay;
+        let animeDialogContent = `<img class="mdui-img-rounded" style="max-width: 20%;float: left;margin-right: 10px;" src="${item.img}"/>${item.description||'尚無簡介：（'}`
         let time = `${item.date} ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") {
             animeDay = 'unknown'
@@ -180,13 +181,23 @@ function schedule(Anime, year) {
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
         $(`#${animeDay}`).append(
-            `<div class="mdui-list-item mdui-ripple">
+            $(`<div class="mdui-list-item mdui-ripple">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
-            </div>`
+            </div>`).click(function () {
+                router.pause()
+                mdui.dialog({
+                    title: animeName,
+                    content: animeDialogContent,
+                    buttons: [{
+                        text: '關閉'
+                    }],
+                    onClose: () => router.pause(false)
+                });
+            })
         )
     }
     if ($("#unknown>*").length == 1) {

@@ -12,6 +12,25 @@
 .mdui-list-item
     border-radius: 10px
 
+/* MDUI Dialog */
+.mdui-dialog
+    border-radius: 12px
+    bottom: 0 !important
+    top: 0 !important
+    height: fit-content !important
+
+.mdui-dialog-content
+    height: fit-content !important
+    max-height: 60vh
+
+@media screen and (max-height: 512px)
+    .mdui-dialog-content
+        max-height: 40vh
+
+@media screen and (max-height: 256px)
+    .mdui-dialog-content
+        max-height: 20vh
+        
 /* drawer */
 #drawer
     padding-left: 5px

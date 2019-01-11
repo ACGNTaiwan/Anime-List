@@ -448,8 +448,7 @@ Anime = [{
 
 // 讓動畫按時間排序
 Anime = Anime.sort(function (a, b) {
-    //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-    var aTime = new Date(a.year ? a.year : 2019, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-        bTime = new Date(b.year ? b.year : 2019, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+    let aTime = new Date(a.year || 2019, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+        bTime = new Date(b.year || 2019, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
     return aTime - bTime;
 });
