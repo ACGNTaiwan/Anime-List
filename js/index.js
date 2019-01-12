@@ -108,7 +108,8 @@ function showHome() {
     $("#content").html(
         `<div class="mdui-typo">
             <div class="mdui-typo-display-2">Anime List</div>
-            <p>使用右方選單來瀏覽本站資料</p>
+            <p hide-phone>使用右方選單來瀏覽本站資料</p>
+            <p hide-desktop>使用點擊右上角選單鈕來瀏覽本站資料</p>
             <div class="mdui-typo-display-1">資料有誤？</div>
             <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR</p>
             <div class="mdui-typo-display-1">貢獻者</div>
@@ -157,17 +158,22 @@ function loadData({
 function waterfall(Anime, year) {
     let container = $('<div class="waterfall"></div>')
     for (item of Anime) {
+        let dialogData = item
         // 如果不是第一季 ? 動畫名稱+季度 : 動畫名稱
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         $(container).append(
-            `<div class="card">
-                <div class="image" style="background-image:url('${item.img}')"></div>
-                <div class="content">
-                    <div class="name mdui-text-color-theme">${animeName}</div>
-                    <div class="nameInJpn">${item.nameInJpn}</div>
-                    <div class="description">${item.description}</div>
+            $(`<div class="card">
+                <div class="image mdui-ripple mdui-ripple-white">
+                    <img src="${item.img}"/>
+                    <div class="content">
+                        <div class="name">${animeName}</div>
+                        <div class="nameInJpn">${item.nameInJpn}</div>
+                        <div class="description">${item.description}</div>
+                    </div>
                 </div>
-            </div>`
+            </div>`).click(function () {
+                showAnimeInfoDialog(dialogData)
+            })
         )
     }
     $("#content").append(container)
@@ -188,9 +194,9 @@ function schedule(Anime, year) {
         </div>`
     )
     for (item of Anime) {
+        let dialogData = item
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let animeDay;
-        let animeDialogContent = `<img class="mdui-img-rounded" style="max-width: 20%;float: left;margin-right: 10px;" src="${item.img}"/>${item.description||'尚無簡介：（'}`
         let time = `${item.date} ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") {
             animeDay = 'unknown'
@@ -199,26 +205,17 @@ function schedule(Anime, year) {
             let setTime = new Date((item.year || year) + "/" + item.date)
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
-        $(`#${animeDay}`).append(
-            $(`<div class="mdui-list-item mdui-ripple">
+        $(`#${animeDay}`).append(function () {
+            return $(`<div class="mdui-list-item mdui-ripple">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
             </div>`).click(function () {
-                router.pause()
-                mdui.dialog({
-                    title: animeName,
-                    content: animeDialogContent,
-                    history: !typeof InstallTrigger !== 'undefined', //!isFirefox
-                    buttons: [{
-                        text: '關閉'
-                    }],
-                    onClose: () => router.pause(false)
-                });
+                showAnimeInfoDialog(dialogData)
             })
-        )
+        })
     }
     if ($("#unknown>*").length == 1) {
         $(`[al-time-unknown]`).remove()
@@ -265,4 +262,19 @@ function info(Anime, year) {
     if ($("#unknown>*").length == 0) {
         $(`[al-time-unknown]`).remove()
     }
+}
+
+function showAnimeInfoDialog(item) {
+    let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
+    let animeDialogContent = `<img class="mdui-img-rounded" style="max-width: 20%;float: left;margin-right: 10px;" src="${item.img}"/>${item.description||'尚無簡介：（'}`
+    router.pause()
+    mdui.dialog({
+        title: animeName,
+        content: animeDialogContent,
+        history: !typeof InstallTrigger !== 'undefined', //!isFirefox
+        buttons: [{
+            text: '關閉'
+        }],
+        onClose: () => router.pause(false)
+    });
 }
