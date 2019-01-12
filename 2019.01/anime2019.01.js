@@ -45,7 +45,7 @@ Anime = [{
     episode: '',
     img: 'https://bpro-anime.com/assets/img/top/main_img_kv_pc.png',
     official: 'https://bpro-anime.com/',
-    description: 'MAGES.負責的虛擬偶像計劃'
+    description: '故事講述音樂行業的巨頭唱片公司犍陀羅music，請身為新人的主人公來就職於他們公司。 就如同進入了陷阱，你剛剛進入公司，就讓你負責管理『キタコレ』『THRIVE』『MooNs』這三個組合。 第一次的工作給你帶來了各種各樣的糾紛和煩惱，醜聞，緋聞全都出現了。 你就這樣進入了甜蜜的戀愛陷阱？！ 天生就自信而風度翩翩有著王子般氣質的男子，可愛的讓人恨不起來的男子 各種性格的帥氣男子出現在你面前，然而負責人與舞台偶像之間的戀愛是業界所禁止的！ 各種各樣的困難超出了你的想像，你會和他們一起如何應對呢？'
 }, {
     name: '狂賭之淵',
     nameInJpn: '賭ケグルイ××',
@@ -78,7 +78,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034571735564288/mk_mv01.png',
     official: 'http://mononokean.tv/',
-    description: ''
+    description: '不相信妖怪與幽靈存在的高中生主角「蘆屋花繪」，某日卻被一隻毛絨絨的妖怪附身，為了解決問題而找上了妖怪庵的主人安倍晴齋，從此一腳踏進了充滿了妖怪的世界，兩人展開了為妖怪解決煩惱的日子。'
 }, {
     name: '約會大作戰',
     nameInJpn: 'デート・ア・ライブ',
@@ -89,7 +89,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531034504408596501/sample_bg2.png',
     official: 'http://date-a-live-anime.com/',
-    description: ''
+    description: '人類被一種名為「空間震」的新災害所威脅。這種震搖空間，將一切破壞殆盡的災害，是由被稱作精靈的存在從臨界 出現於人類世界時所產生的現象。想要阻止空間震發生，使人類遠離災害的話，只有兩種作法……一種是動用武力消滅精靈，另一種是……「與精靈約會，並且讓對方迷戀上你！」'
 }, {
     name: 'Endro~!',
     nameInJpn: 'えんどろ〜！',
@@ -133,7 +133,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531413257374662676/img_main.png',
     official: 'https://neverland-anime.com/',
-    description: '母と慕う彼女は親ではない。共に暮らす彼らは兄弟ではない。グレイス＝フィールドハウスは、親の居ない子どもたちが住むところ。血の繋がりはなくても、ママと38人の兄弟が幸せな毎日をすごす、かけがえのない家。しかし、彼らの日常はある日突然終わりを告げた……'
+    description: '被我當成媽媽敬愛的她，並不是親生母親。跟我一起生活的他們，也不是兄弟姊妹。艾瑪、諾曼、雷三個人住在小小的孤兒院裡，每天都過得很幸福。但是，他們的平凡生活突然在某一天宣告結束。知道真相之後，等著他們的命運將會是…？'
 }, {
     name: '輝夜姬想讓人告白',
     nameInJpn: 'かぐや様は告らせたい',
@@ -144,7 +144,7 @@ Anime = [{
     episode: '',
     img: 'https://kaguya.love/assets/img/story/01/03.jpg',
     official: 'https://kaguya.love/',
-    description: '将来を期待された秀才が集う秀知院学園。その生徒会副会長・四宮かぐやと会長・白銀御行は互いに惹かれているはずなのだが、プライドが高く素直になれない２人は、面倒臭いことに、“如何に相手に告白させるか”ばかりを考えるようになってしまう。何もないまま半年が経過したある日、書記の藤原千花が懸賞で当てた「男女で観に行くと結ばれるジンクスのある映画のペアチケット」をきっかけに、”恋愛頭脳戦”の火蓋が切って落とされる…。 '
+    description: '在備受期待的菁英就讀的秀知院學園，在學生會裡相遇的副會長·四宮輝夜與會長白銀御行對彼此都有好感，但兩人的自尊心都不允許自己就這樣向對方告白，就在這樣的情況下僵持了半年——完全不夠坦率的兩人，認為自己只要先告白就輸了，每天想的都是「設法讓對方先告白」。就這樣直到今天，輝夜與白銀使盡渾身解數的戀愛頭腦戰仍在持續著。'
 }, {
     name: '五等分的新娘',
     nameInJpn: '五等分の花嫁',
@@ -155,7 +155,7 @@ Anime = [{
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/531414991555919872/unknown.png',
     official: 'http://www.tbs.co.jp/anime/5hanayome/',
-    description: '2019年1月放送開始！貧乏な生活を送る高校2年生・上杉風太郎のもとに、好条件の家庭教師アルバイトの話が舞い込む。ところが教え子はなんと同級生!! しかも五つ子だった!! 全員美少女、だけど「落第寸前」「勉強嫌い」の問題児! 最初の課題は姉妹からの信頼を勝ち取ること…!? 毎日がお祭り騒ぎ! 中野家の五つ子が贈る、かわいさ500%の五人五色ラブコメ開演!!'
+    description: '上杉風太郎是個占據學年主席位置的天才高中生，性格孤僻、不擅社交、家貧負債。風太郎接到妹妹的通知，聽說老爸替他找到一個收入很高的兼職，對方是最近搬來有錢人家，因為女兒成績很差所以在找家庭教師，而風太郎的工作就是擔任這個女生的老師，對方也是高中生，轉學進風太郎的學校。然而超乎想像的是，要教導的對方居然是同卵五胞胎。這些少女們的頭腦都十分笨拙，似乎在學校有不愉快的經歷。因此對學習抱有無所謂態度，並且排斥男主角。五名少女的測驗筆試得到的成績結果雖然是一百分，但卻是五人全部加起來的分數……'
 }, {
     name: '粉彩回憶',
     nameInJpn: 'ぱすてるメモリーズ',
@@ -244,7 +244,7 @@ Anime = [{
     season: 1,
     episode: '',
     img: 'https://cdn.discordapp.com/attachments/88111110519009280/532517709280444426/kv01-on.png',
-    official: '',
+    official: 'http://miss-ueno.com/',
     description: '這裡是某間中學的理科教室━━━━。科學部部長「上野」，暗戀著同社團學弟「田中」。藉著天才般奇想天外的發明物和用盡各式各樣方法就為了試著想引起田中的注意。加上有冷靜沈著1年級的社團學妹山下的後援協助上野！究竟上野的這段戀情是否能開花結果呢？！？還是...'
 }, {
     name: '荒野的KOTOBUKI飛行隊',
@@ -258,15 +258,15 @@ Anime = [{
     official: 'https://kotobuki-anime.com/',
     description: '荒野×美少女×戰鬥機'
 }, {
-    name: 'ケムリクサ',
+    name: '菸草',
     nameInJpn: 'ケムリクサ',
     date: '1/9',
     time: '22:30',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Original',
     season: 1,
     episode: '',
-    img: 'https://www.animen.com.tw/animen_image/H6SxYXrOREXgKerfLirW_M_A.jpg',
-    official: '',
+    img: 'https://i.imgur.com/bqja9PP.jpg',
+    official: 'http://kemurikusa.com/',
     description: '赤い霧に包まれた、荒廃した建造物に囲まれた人気の無い世界を舞台に３人の姉妹が生き抜く物語。物語の中心的人物でまとめ髪の特徴的なりん、猫耳でいつもおっとりしているお姉さんキャラのりつ、メイド調の服に身を包み天真爛漫なムードメーカーりな。謎多き世界でこの姉妹が目指すものは一体…'
 }, {
     name: 'CIRCLET PRINCESS',
@@ -284,7 +284,7 @@ Anime = [{
     nameInJpn: '明治東亰恋伽',
     date: '1/9',
     time: '23:00',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Game',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/AZXmWgb3onO4EFLlrPm9_M_A.jpg',
@@ -295,7 +295,7 @@ Anime = [{
     nameInJpn: 'ブギーポップは笑わない',
     date: '1/4',
     time: '21:00',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Novel',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/U3An7iC8ZjgRVpIrHwN4_M_A.jpg',
@@ -328,7 +328,7 @@ Anime = [{
     nameInJpn: 'マナリアフレンズ',
     date: '1/20',
     time: '24:30',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Game',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/tlydYUy2Rq9bcOD4KF6n_M_A.jpg',
@@ -339,7 +339,7 @@ Anime = [{
     nameInJpn: 'ドメスティックな彼女',
     date: '1/11',
     time: '1:45',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Comic',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/3PM3TYFseyLIKM9XrvEP_M_A.jpg',
@@ -361,12 +361,12 @@ Anime = [{
     nameInJpn: 'W’z《ウィズ》',
     date: '1/5',
     time: '25:00',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Original',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/6OomIBSOYvjtLoDBgxhq_M_A.jpg',
     official: 'http://wz-anime.net/',
-    description: ''
+    description: '荒城幸也，大概14歲。平常一個人在做DJ。因為受到父母的影響，從小開始就一直在聽House Music……也經常上傳音樂。想要向某人傳達些什麼。想要受到認同，想要成為必要之人。但很害怕受傷。有什麼地方不和諧的日常……某天，為了增加點擊數而做的事情，卻成了無法挽回的事態。來自“那個世界”的直播。以此為契機，我被人給盯上，被捲入了人們的願望和心意的漩渦當中。獨自一人束手無策的狀況……但是，只要有誰和我一起的話——。'
 }, {
     name: '動物朋友2',
     nameInJpn: 'けものフレンズ2',
@@ -383,7 +383,7 @@ Anime = [{
     nameInJpn: 'どろろ',
     date: '1/7',
     time: '22:00',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Comic',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/zLmMOWiZA7450ty5KhTP_M_A.jpg',
@@ -394,7 +394,7 @@ Anime = [{
     nameInJpn: '雨色ココアside G',
     date: '1/8',
     time: '22:55',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Comic',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/wsXr55LV3AvrgzAXOasy_M_A.jpg',
@@ -416,7 +416,7 @@ Anime = [{
     nameInJpn: 'グリムノーツ The Animation',
     date: '1/10',
     time: '2:30',
-    carrier: 'Comic Novel Game Original',
+    carrier: 'Game',
     season: 1,
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/IZmHqqPE3SfSB1e0C36f_M_A.jpg',
@@ -432,7 +432,7 @@ Anime = [{
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/s2i8YGk1DqCP3CphoKHK_M_A.jpg',
     official: 'http://gaf-anime.jp',
-    description: '突然出現在人類面前的神秘飛行體“災”。意味着灾厄的此一存在凭借异样的战斗力凌驾于所有的航空战力之上。为对抗他们而开发的，便是对现有机体进行特别调整以实现超水准高机动力， 被称为“子体”的兵器。负责操控的则是名为“阿尼玛”的操纵机构。它──竟拥有少女的外表。因“灾”的缘故而失去驾驶员母亲的少年“鸣谷慧”，他遇见了闪耀鲜红光辉的瑞典制战斗机以及驾驶它的阿尼玛“格里芬”。身为人类最终兵器却动作不稳定的格里芬，还有一心向往天空的少年，两人漫长且炙热的故事就此展开。'
+    description: '突然出現在人類面前的神秘飛行體“災”。意味著災厄的此一存在憑藉異樣的戰鬥力凌駕於所有的航空戰力之上。為對抗他們而開發的，便是對現有機體進行特別調整以實現超水準高機動力， 被稱為“子體”的兵器。負責操控的則是名為“阿尼瑪”的操縱機構。它──竟擁有少女的外表。因“災”的緣故而失去駕駛員母親的少年“鳴谷慧”，他遇見了閃耀鮮紅光輝的瑞典制戰鬥機以及駕駛它的阿尼瑪“格里芬”。身為人類最終兵器卻動作不穩定的格里芬，還有一心嚮往天空的少年，兩人漫長且炙熱的故事就此展開。'
 }, {
     name: '多彩田園曲來自百慕達三角',
     nameInJpn: 'カラフル・パストラーレ ～from Bermuda△～',
@@ -443,7 +443,7 @@ Anime = [{
     episode: '',
     img: 'https://www.animen.com.tw/animen_image/JAxKkAxgu0qoPaw2VrAX_M_A.png',
     official: 'https://colorful-pastrale.com',
-    description: ''
+    description: '光輝四射的聚光燈。亮閃閃而輕飄飄的可愛衣服。洋溢笑容的舞蹈配上魅人的美聲。炫目的燈光所照亮的是，在水中自由躍動的人魚。「人魚偶像」們活動在那燈光搖曳的海中——。這是在離大都會相隔甚遠的，寧靜的鄉下之海開始的故事。'
 }]
 
 // 讓動畫按時間排序
