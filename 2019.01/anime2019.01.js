@@ -43,7 +43,7 @@ Anime = [{
     carrier: 'Original',
     season: '2',
     episode: '',
-    img: 'https://bpro-anime.com/assets/img/top/main_img_kv_pc.png',
+    img: 'https://i.imgur.com/nNd90CY.jpg',
     official: 'https://bpro-anime.com/',
     description: '故事講述音樂行業的巨頭唱片公司犍陀羅music，請身為新人的主人公來就職於他們公司。 就如同進入了陷阱，你剛剛進入公司，就讓你負責管理『キタコレ』『THRIVE』『MooNs』這三個組合。 第一次的工作給你帶來了各種各樣的糾紛和煩惱，醜聞，緋聞全都出現了。 你就這樣進入了甜蜜的戀愛陷阱？！ 天生就自信而風度翩翩有著王子般氣質的男子，可愛的讓人恨不起來的男子 各種性格的帥氣男子出現在你面前，然而負責人與舞台偶像之間的戀愛是業界所禁止的！ 各種各樣的困難超出了你的想像，你會和他們一起如何應對呢？'
 }, {
@@ -54,7 +54,7 @@ Anime = [{
     carrier: 'Comic',
     season: '2',
     episode: '',
-    img: 'https://screenshotscdn.firefoxusercontent.com/images/31b1253a-e558-4231-a3e5-3d16eb3ec1fc.jpg',
+    img: 'https://i.imgur.com/PHsJtgu.jpg',
     official: 'https://kakegurui-anime.com/',
     description: '私立百花王學園，一所以培養學生戰術策略、讀心術及關機時刻掌握勝負能力-即賭博能力為重的學校。而在這階級森嚴的學校，出現了轉學第一天就讓班裡強者大敗的學生！'
 }, {
@@ -65,7 +65,7 @@ Anime = [{
     carrier: '',
     season: '1',
     episode: '',
-    img: 'https://screenshotscdn.firefoxusercontent.com/images/bcdfd31e-d3a8-4a7c-a8de-0b4fbb8a2af0.png',
+    img: 'https://i.imgur.com/s4DcxNE.jpg',
     official: 'http://www.3dkanojo-anime.com/',
     description: '高中三年級的筒井光是所謂的禦宅族少年。只要有遊戲或動畫裡的二次元女生的話，感覺就能獨自一人生活了……。但，他突然被超絕3D（現實）美少女·五十嵐色葉告白，並開始和她交往！在被奔放的色葉玩弄於股掌之間的同時，筒井逐漸愛上了她......'
 }, {
@@ -142,7 +142,7 @@ Anime = [{
     carrier: 'Comic',
     season: '1',
     episode: '',
-    img: 'https://kaguya.love/assets/img/story/01/03.jpg',
+    img: 'https://i.imgur.com/D8YwJfF.jpg',
     official: 'https://kaguya.love/',
     description: '在備受期待的菁英就讀的秀知院學園，在學生會裡相遇的副會長·四宮輝夜與會長白銀御行對彼此都有好感，但兩人的自尊心都不允許自己就這樣向對方告白，就在這樣的情況下僵持了半年——完全不夠坦率的兩人，認為自己只要先告白就輸了，每天想的都是「設法讓對方先告白」。就這樣直到今天，輝夜與白銀使盡渾身解數的戀愛頭腦戰仍在持續著。'
 }, {
