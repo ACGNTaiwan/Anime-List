@@ -118,6 +118,7 @@ function showHome() {
     $.get("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors", function (data) {
         let r = `<div class="info contributors">`
         for (user of data) {
+            if (user.login == 'invalid-email-address') continue
             r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
                 <div class="image" style="background-image:url('${user.avatar_url}')"></div>
                 <div class="content">
