@@ -23,17 +23,17 @@ const showDate = [{
 }];
 const indexData = {
     2017: {
-        7: "anime2017.07.yaml",
-        10: "anime2017.10.yaml"
+        7: "anime2017.07.json",
+        10: "anime2017.10.json"
     },
     2018: {
-        1: "anime2018.01.yaml",
-        4: "anime2018.04.yaml",
-        7: "anime2018.07.yaml",
-        10: "anime2018.10.yaml"
+        1: "anime2018.01.json",
+        4: "anime2018.04.json",
+        7: "anime2018.07.json",
+        10: "anime2018.10.json"
     },
     2019: {
-        1: "anime2019.01.yaml"
+        1: "anime2019.01.json"
     }
 };
 // 路由
@@ -141,8 +141,7 @@ function loadData({
     $.ajaxSetup({
         cache: true
     });
-    $.get(js, function (yaml_data) {
-        const anime_data = jsyaml.safeLoad(yaml_data);
+    $.get(js, function (anime_data) {
         // 讓動畫按時間排序
         const sorted_anime = anime_data.sort(function(a, b) {
             //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
