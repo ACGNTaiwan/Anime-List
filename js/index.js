@@ -108,8 +108,8 @@ function showHome() {
     $("#content").html(
         `<div class="mdui-typo">
             <div class="mdui-typo-display-2">Anime List</div>
-            <p hide-phone>使用右方選單來瀏覽本站資料</p>
-            <p hide-desktop>使用點擊右上角選單鈕來瀏覽本站資料</p>
+            <p hide-phone>使用左方選單來瀏覽本站資料</p>
+            <p hide-desktop>使用點擊左上角選單鈕來瀏覽本站資料</p>
             <div class="mdui-typo-display-1">資料有誤？</div>
             <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR</p>
             <div class="mdui-typo-display-1">貢獻者</div>
