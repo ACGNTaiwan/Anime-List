@@ -1,5 +1,5 @@
-const activeDrawerItemClassName = 'mdui-color-theme-50 mdui-text-color-theme'
-showDate = [{
+const activeDrawerItemClassName = 'mdui-color-theme-50 mdui-text-color-theme';
+const showDate = [{
     id: 'Sun',
     day: '週日'
 }, {
@@ -21,7 +21,7 @@ showDate = [{
     id: 'Sat',
     day: '週六'
 }];
-indexData = {
+const indexData = {
     2017: {
         7: "./2017.07/anime2017.07.min.js",
         10: "./2017.10/anime2017.10.min.js"
@@ -35,7 +35,7 @@ indexData = {
     2019: {
         1: "./2019.01/anime2019.01.js"
     }
-}
+};
 // 路由
 const router = new Navigo('./', true, '#/');
 router
