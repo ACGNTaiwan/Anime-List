@@ -23,17 +23,17 @@ const showDate = [{
 }];
 const indexData = {
     2017: {
-        7: "./2017.07/anime2017.07.min.js",
-        10: "./2017.10/anime2017.10.min.js"
+        7: "anime2017.07.yaml",
+        10: "anime2017.10.yaml"
     },
     2018: {
-        1: "./2018.01/anime2018.01.js",
-        4: "./2018.04/anime2018.04.js",
-        7: "./2018.07/anime2018.07.js",
-        10: "./2018.10/anime2018.10.js"
+        1: "anime2018.01.yaml",
+        4: "anime2018.04.yaml",
+        7: "anime2018.07.yaml",
+        10: "anime2018.10.yaml"
     },
     2019: {
-        1: "./2019.01/anime2019.01.js"
+        1: "anime2019.01.yaml"
     }
 };
 // 路由
@@ -41,7 +41,7 @@ const router = new Navigo('./', true, '#/');
 router
     .on({
         ':type/:year/:month/': params => loadData({
-            js: indexData[params.year][params.month],
+            js: "./anime-data/" + indexData[params.year][params.month],
             type: params.type,
             year: params.year
         }),
@@ -141,18 +141,26 @@ function loadData({
     $.ajaxSetup({
         cache: true
     });
-    $.getScript(js)
-        .done(function (script, textStatus) {
-            $("#content").attr('class', '').html('')
-            switch (type) {
-                case "waterfall":
-                    return waterfall(Anime, year)
-                case "info":
-                    return info(Anime, year)
-                case "schedule":
-                    return schedule(Anime, year)
-            }
-        })
+    $.get(js, function (yaml_data) {
+        const anime_data = jsyaml.safeLoad(yaml_data);
+        // 讓動畫按時間排序
+        const sorted_anime = anime_data.sort(function(a, b) {
+            //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+            var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+                bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+            return aTime - bTime;
+        });
+
+        $("#content").attr('class', '').html('')
+        switch (type) {
+            case "waterfall":
+                return waterfall(sorted_anime, year)
+            case "info":
+                return info(sorted_anime, year)
+            case "schedule":
+                return schedule(sorted_anime, year)
+        }
+    })
 }
 
 function waterfall(Anime, year) {
