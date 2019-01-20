@@ -4,14 +4,15 @@ html
         title Anime List
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(charset='utf-8')
-        // social_tags
+        //- social_tags
         include ./Jade/_tags.jade
         +social_tags('Anime List', '展示新番的清單', 'https://acgntaiwan.github.io/Anime-List/og.png', 'https://acgntaiwan.github.io/Anime-List/') 
-        // MDUI
+        
+        //- MDUI
         link(href='//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css', rel='stylesheet')
-        // evaicon
+        //- evaicon
         link(href='//unpkg.com/eva-icons@1.1.0/style/eva-icons.css', rel='stylesheet')
-        link(href='./css/flexboxgrid.css', rel='stylesheet')
+        //- main 
         link(href='./css/AnimeList.css?' + Math.floor(Math.random() * (999)), rel='stylesheet')
 
         meta(name="theme-color" content="#3f51b5")
@@ -31,11 +32,13 @@ html
             ul.mdui-list(mdui-collapse="{accordion: true}")
 
         #content Loading
-        // navigo
+        //- navigo 
         script(src='./js/navigo.min.js')
-        // MDUI
+        //- animejs 
+        script(src='//cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js')
+        //- MDUI 
         script(src='//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js')
-        // JQuery https://cdnjs.com/libraries/jquery/ 
+        //- JQuery
         script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-        // main
+        //- main 
         script(src='./js/index.js?' + Math.floor(Math.random() * (999)))

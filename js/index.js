@@ -116,13 +116,20 @@ function showHome() {
         </div>
         <div al-contributors>正在讀取新鮮的肝......</div>`
     )
+
+    anime({
+        targets: '#content .mdui-typo>*',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(20) // increase delay by 100ms for each elements.
+    })
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
         .then(function (data) {
             let r = `<div class="info contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
-                r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
+                r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank" style="opacity:0">
                 <div class="image" style="background-image:url('${user.avatar_url}')"></div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
@@ -132,6 +139,12 @@ function showHome() {
             }
             r += `</div>`
             $("[al-contributors]").html(r);
+            anime({
+                targets: '[al-contributors] .card',
+                translateY: [100, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(100) // increase delay by 100ms for each elements.
+            });
         }).catch(err => $("[al-contributors]").attr('class', '').html(
             `蹦蹦爆炸了，請稍後再試<br/>
             錯誤原因
@@ -178,7 +191,7 @@ function waterfall(Anime, year) {
         // 如果不是第一季 ? 動畫名稱+季度 : 動畫名稱
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         $(container).append(
-            $(`<div class="card">
+            $(`<div class="card" style="opacity:0">
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
                     <div class="content">
@@ -193,6 +206,12 @@ function waterfall(Anime, year) {
         )
     }
     $("#content").append(container)
+    anime({
+        targets: '#content .waterfall .card',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(10) // increase delay by 100ms for each elements.
+    })
 }
 
 function schedule(Anime, year) {
@@ -200,13 +219,13 @@ function schedule(Anime, year) {
     for (day of showDate) {
         $(`#content>.schedule`).append(
             `<div class="mdui-list day" id="${day.id}">
-                <h3>${day.day}</h3>
+                <h3 style="opacity:0">${day.day}</h3>
             </div>`
         )
     }
     $(`#content>.schedule`).append(
         `<div class="mdui-list day" id="unknown" al-time-unknown>
-            <h3>播出時間未知</h3>
+            <h3 style="opacity:0">播出時間未知</h3>
         </div>`
     )
     for (let item of Anime) {
@@ -221,7 +240,7 @@ function schedule(Anime, year) {
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
         $(`#${animeDay}`).append(function () {
-            return $(`<div class="mdui-list-item mdui-ripple">
+            return $(`<div class="mdui-list-item mdui-ripple" style="opacity:0">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
@@ -235,6 +254,13 @@ function schedule(Anime, year) {
     if ($("#unknown>*").length == 1) {
         $(`[al-time-unknown]`).remove()
     }
+
+    anime({
+        targets: '#content .day>*',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(20) // increase delay by 100ms for each elements.
+    })
 }
 
 function info(Anime, year) {
@@ -262,7 +288,7 @@ function info(Anime, year) {
         if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
 
         $(`#${animeDay}`).append(
-            `<div class="card">
+            `<div class="card" style="opacity:0">
                 <div class="image" style="background-image:url('${item.img}')">
                     <div class="time">${time}</div>
                 </div>
@@ -277,6 +303,12 @@ function info(Anime, year) {
     if ($("#unknown>*").length == 0) {
         $(`[al-time-unknown]`).remove()
     }
+    anime({
+        targets: '#content .info>.card',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(100) // increase delay by 100ms for each elements.
+    })
 }
 
 function showAnimeInfoDialog(item) {
