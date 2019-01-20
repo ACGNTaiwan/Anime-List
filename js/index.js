@@ -118,7 +118,7 @@ function showHome() {
     )
 
     anime({
-        targets: '#content .mdui-typo>*',
+        targets: '#content .mdui-typo>*,[al-contributors]',
         translateY: [100, 0],
         opacity: [0, 1],
         delay: anime.stagger(20) // increase delay by 100ms for each elements.
@@ -146,9 +146,7 @@ function showHome() {
                 delay: anime.stagger(100) // increase delay by 100ms for each elements.
             });
         }).catch(err => $("[al-contributors]").attr('class', '').html(
-            `蹦蹦爆炸了，請稍後再試<br/>
-            錯誤原因
-            <div class="mdui-typo"><pre>${err}</pre></div>`
+            `<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`
         ))
 }
 
@@ -179,9 +177,7 @@ function loadData({
                     return schedule(sorted_anime, year)
             }
         }).catch(err => $("#content").attr('class', '').html(
-            `蹦蹦爆炸了，請稍後再試<br/>
-            錯誤原因
-            <div class="mdui-typo"><pre>${err}</pre></div>`
+            `<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`
         ))
 }
 
