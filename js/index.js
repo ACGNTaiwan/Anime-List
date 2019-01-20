@@ -116,21 +116,27 @@ function showHome() {
         </div>
         <div al-contributors>正在讀取新鮮的肝......</div>`
     )
-    $.get("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors", function (data) {
-        let r = `<div class="info contributors">`
-        for (user of data) {
-            if (user.login == 'invalid-email-address') continue
-            r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
+    fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
+        .then(res => res.json())
+        .then(function (data) {
+            let r = `<div class="info contributors">`
+            for (user of data) {
+                if (user.login == 'invalid-email-address') continue
+                r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
                 <div class="image" style="background-image:url('${user.avatar_url}')"></div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
                     <div class="nameInJpn">${user.contributions}</div>
                 </div>
             </a>`
-        }
-        r += `</div>`
-        $("[al-contributors]").html(r);
-    });
+            }
+            r += `</div>`
+            $("[al-contributors]").html(r);
+        }).catch(err => $("[al-contributors]").attr('class', '').html(
+            `蹦蹦爆炸了，請稍後再試<br/>
+            錯誤原因
+            <div class="mdui-typo"><pre>${err}</pre></div>`
+        ))
 }
 
 function loadData({
@@ -138,34 +144,37 @@ function loadData({
     type,
     year
 }) {
-    $.ajaxSetup({
-        cache: true
-    });
-    $.get(js, function (anime_data) {
-        // 讓動畫按時間排序
-        const sorted_anime = anime_data.sort(function(a, b) {
-            //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-            var aTime = new Date(2018, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-                bTime = new Date(2018, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
-            return aTime - bTime;
-        });
-
-        $("#content").attr('class', '').html('')
-        switch (type) {
-            case "waterfall":
-                return waterfall(sorted_anime, year)
-            case "info":
-                return info(sorted_anime, year)
-            case "schedule":
-                return schedule(sorted_anime, year)
-        }
-    })
+    fetch(js, {
+            cache: "force-cache"
+        })
+        .then(res => res.json())
+        .then(anime_data => {
+            // 讓動畫按時間排序
+            const sorted_anime = anime_data.sort(function (a, b) {
+                //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+                var aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+                    bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+                return aTime - bTime;
+            });
+            $("#content").attr('class', '').html('')
+            switch (type) {
+                case "waterfall":
+                    return waterfall(sorted_anime, year)
+                case "info":
+                    return info(sorted_anime, year)
+                case "schedule":
+                    return schedule(sorted_anime, year)
+            }
+        }).catch(err => $("#content").attr('class', '').html(
+            `蹦蹦爆炸了，請稍後再試<br/>
+            錯誤原因
+            <div class="mdui-typo"><pre>${err}</pre></div>`
+        ))
 }
 
 function waterfall(Anime, year) {
     let container = $('<div class="waterfall"></div>')
-    for (item of Anime) {
-        let dialogData = item
+    for (let item of Anime) {
         // 如果不是第一季 ? 動畫名稱+季度 : 動畫名稱
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         $(container).append(
@@ -179,7 +188,7 @@ function waterfall(Anime, year) {
                     </div>
                 </div>
             </div>`).click(function () {
-                showAnimeInfoDialog(dialogData)
+                showAnimeInfoDialog(item)
             })
         )
     }
@@ -200,8 +209,7 @@ function schedule(Anime, year) {
             <h3>播出時間未知</h3>
         </div>`
     )
-    for (item of Anime) {
-        let dialogData = item
+    for (let item of Anime) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let animeDay;
         let time = `${item.date} ${item.time}`
@@ -220,7 +228,7 @@ function schedule(Anime, year) {
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
             </div>`).click(function () {
-                showAnimeInfoDialog(dialogData)
+                showAnimeInfoDialog(item)
             })
         })
     }
