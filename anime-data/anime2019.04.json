@@ -1,298 +1,470 @@
-[{
-    "name": "花牌情緣",
-    "nameInJpn": "ちはやふる",
-    "date": "4/",
-    "time": "none",
-    "carrier": "Comic Novel Game Original",
-    "season": 3,
-    "episode": 0,
-    "img": "https://www.animen.com.tw/animen_image/nKy7f3tMeSeSs4dhZmsR_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+[
+  {
     "name": "ULTRAMAN 超人力霸王",
     "nameInJpn": "ULTRAMAN",
-    "date": "4/",
+    "date": "4/1",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/KfqvSUj5UhJjPVQPgBbz_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://anime.heros-ultraman.com/",
+    "description": "本作是以《超人力霸王》數 10 年後的世界做為舞台，故事描述，早田進次郎，是初代超人力霸王早田進的兒子。由於殘留在父親體內的超人力霸王因子影響，讓他與生俱來就擁有特殊能力。進次郎本來以為無比和平的生活，卻因為突然找上他的敵人攻擊，徹底改變。從此，他被捲入無法抵抗的命運之中……"
+  },
+  {
     "name": "一拳超人",
-    "nameInJpn": "ワンパンマン",
-    "date": "4/",
+    "nameInJpn": "ワンパンマン 第2期",
+    "date": "4/2",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 2,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/XamLfGyICcJftrpuMpaL_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://onepunchman-anime.net/",
+    "description": "《一拳超人》故事描述因為興趣而開始當英雄的男人「埼玉」，在經過三年特訓之後，得到了無敵的力量。然而，他實在是強過了頭，所以無論多厲害的對手，都被他一拳解決。「絕對強勢的力量，實在是很無聊。」在這種普通熱血的最強英雄面前，今天也出現新的敵蹤。"
+  },
+  {
     "name": "POP TEAM EPIC",
     "nameInJpn": "ポプテピピック",
-    "date": "4/",
+    "date": "4/1",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/j6qXAArtFTEJCcJJryp9_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://hoshiiro.jp/",
+    "description": "改編自 大川武久部（大川ぶくぶ）所著的搞笑四格漫畫作品《POP TEAM EPIC》。《POP TEAM EPIC》主要以 POP 子與 PIPI 美兩位各具特色的角色為中心，並將時事、動漫電玩、電視劇等話題做為題材來發揮搞笑。"
+  },
+  {
     "name": "八十龜醬觀察日記",
     "nameInJpn": "八十亀ちゃんかんさつにっき",
-    "date": "4/",
+    "date": "4/4",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/w25wLpa3zum3b6yEC83y_M_A.png",
-    "official": "",
-    "description": ""
-}, {
+    "official": "https://yatogame.nagoya/",
+    "description": "《八十龜醬觀察日記》是以說著一口名古屋腔的少女「八十龜醬」做為中心的四格漫畫，內容描繪許多的當地文化，讓許多名古屋市民有共鳴。"
+  },
+  {
     "name": "一個人的○○小日子",
     "nameInJpn": "ひとりぼっちの○○生活",
-    "date": "4/",
+    "date": "4/5",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/QUZbhOk5gjdQn9nVmzb0_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://hitoribocchi.jp/",
+    "description": "《一個人的○○小日子》故事描述極度怕生的國中女生為了交朋友而背水一戰，她孤獨的未來能有所改變嗎？超怕生的女孩「一里波知」，要是不能和國中全班同學變成朋友的話，她唯一的朋友就宣言要和她絕交？"
+  },
+  {
     "name": "KING OF PRISM -Shiny Seven Stars-",
     "nameInJpn": "キングオブプリズム シャイニーセブンスターズ",
-    "date": "4/",
+    "date": "4/8",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Original",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/VM1yNGOOBlrHxVSpBtwH_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://kinpri.com/",
+    "description": "華麗出道的Over The Rainbow。浩、幸司與一月瞬間迷倒了眾多少女的心，一口氣爬到星光界的頂峰。為了以他們為目標，「薔薇學園」（エーデルローズ）陸陸續續吸納了不少新生入學。 正當阿浩他們準備4年一度的「星光天王盃」（プリズムキングカップ）而不繼練習時，突如其來的對立勢力「Schwartz Rose」（シュワルツローズ）出現，讓「薔薇學園」陷入困境…在那時，作為天才作詞作曲家並且是Over The Rainbow支柱的幸司受到來自美國電影音樂製作的巨額邀請。明年就要面臨四年一度的星光天王盃了，3人的前路是「薔薇學園」存亡危機。"
+  },
+  {
     "name": "賢者之孫",
     "nameInJpn": "賢者の孫",
-    "date": "4/",
+    "date": "4/10",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Novel",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/SpYxMYTGzTCLhyGneAAr_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://kenja-no-mago.jp/",
+    "description": "《賢者之孫》故事描述一個理應意外身亡的青年，以嬰兒姿態轉世到了異世界！結果被救國英雄──「賢者」梅林．沃夫特撿回家收養，並取名為「西恩」。西恩被當成孫子扶養長大，吸收了梅林畢生所學，練就出一身驚天本領......。"
+  },
+  {
     "name": "一弦定音！",
     "nameInJpn": "この音とまれ!",
-    "date": "4/",
+    "date": "4/6",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/YBlqfM68Zpih6qTMtktf_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://konooto-anime.jp/",
+    "description": "《一弦定音！》描述在學姊們畢業後，箏曲社就只剩下武藏一個社員了。到了四月的新學期，雖然很努力招募新社員，但這個社團的存在本身就不為人知。這時突然出現了一個外表看起來就知道是不良少年，一臉和古箏扯不上關係的新生說要入社！？"
+  },
+  {
     "name": "鬼滅之刃",
     "nameInJpn": "鬼滅の刃",
-    "date": "4/",
+    "date": "4/6",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/tST6X9aPwEIGbakMWVLi_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "YU-NO在這世界盡頭詠唱愛的少女",
+    "official": "https://kimetsu.com/anime/",
+    "description": "《鬼滅之刃》舞台是日本的大正時代，名叫竈門炭治郎的平凡農村少年，靠著賣炭來維持一家的生計。某天他下山去賣炭，回家時天色已暗，好心的三郎爺爺變留他住了一晚。隔天他回到家卻發現家人全都遭到殘殺，只剩禰豆子身體還有餘溫，然而她似乎變得跟平常不太一樣？"
+  },
+  {
+    "name": "YU-NO 在這世界盡頭詠唱愛的少女",
     "nameInJpn": "この世の果てで恋を唄う少女YU-NO",
-    "date": "4/",
+    "date": "4/2",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Game",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/2HF8prqryaFrRcLk2BDs_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "SARAZANMAI",
+    "official": "http://yuno-anime.com/",
+    "description": "《YU-NO 在這世界盡頭詠唱愛的少女》敘述有馬拓也的父親在研究時失蹤。可是暑假時主角卻收到一個父親寄來的一個神秘的羅盤和三顆神秘的水晶珠，以及一封寫著「時間是可逆的，歷史是不可逆的」的信，並交待主角晚上去當地有名的地標劍之岬去見一個人。"
+  },
+  {
+    "name": "皿三昧",
     "nameInJpn": "さらざんまい",
-    "date": "4/",
+    "date": "4/11",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Original",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/FxdMo3v322hxaRWfjeq3_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://sarazanmai.com/",
+    "description": "《皿三昧》舞台是淺草。初二的矢逆一稀等三人某天遇到了神秘的河童型生命體，並被強行奪走了尻子玉而變成了河童。「想要變回原狀的話，就通過某個方法產生聯繫，並把殭屍的尻子玉拿來吧」。 究竟少年們能否相互產生聯繫，並奪取殭屍的尻子玉呢......"
+  },
+  {
     "name": "CAROL&TUESDAY",
     "nameInJpn": "キャロル＆チューズデイ",
-    "date": "4/",
+    "date": "4/10",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Original",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/yEyd29kdgn0572qDgBja_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "戰姬絕唱SYMPHOGEAR XV",
-    "nameInJpn": "戦姫絶唱シンフォギアXV",
-    "date": "4/",
-    "time": "none",
-    "carrier": "Comic Novel Game Original",
-    "season": 1,
-    "episode": 0,
-    "img": "https://www.animen.com.tw/animen_image/Kh4Gu2RGsGFCDvZ6PIzK_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://caroleandtuesday.com/",
+    "description": "《卡蘿與特絲緹》是作為動畫製作公司 BONES 20 週年以及 Flying DOG 10 週年所發表的原創動畫作品。故事以未來的火星作為舞台，描述在首都阿爾巴市中，為了成為音樂家而努力不懈的少女卡蘿，以及出生在漢榭爾市一個富裕的家庭，同樣想成為音樂家卻不受理解的孤獨少女特絲緹 2 人的故事。"
+  },
+  {
     "name": "MIX",
     "nameInJpn": "MIX",
-    "date": "4/",
+    "date": "4/6",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/dKfaTTem4cgK6yWQ2i1C_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "https://www.ytv.co.jp/mix/",
+    "description": "《MIX》以《TOUCH 鄰家女孩》的故事舞台明青學園作為背景，距離上杉兄弟所創下的傳說已經過了 26 年。現在，命中注定的兩兄弟將再度開啟明青學園的大門……同在棒球社、沒有血緣的兄弟立花投馬與立花走一郎，將展開全新的青春篇章。"
+  },
+  {
     "name": "進擊的巨人",
-    "nameInJpn": "進撃の巨人",
-    "date": "4/",
+    "nameInJpn": "進撃の巨人Season 3",
+    "date": "4/28",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 3,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/pfRypAzS8nUfRBooujmg_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://shingeki.tv/season3/",
+    "description": "《進擊的巨人》故事描述百年前世界莫名出現神秘的巨人怪物，不斷殘忍食人，人類幾乎無法與之對抗，最後人類建造了三道寬 3 公尺、高 50 公尺的高聳圍牆，百年來未有巨人攻破，10 歲的艾連，親眼見到母親被巨人一口咬碎的慘劇，艾連發誓要消滅所有巨人。"
+  },
+  {
     "name": "叛逆性百萬亞瑟王",
-    "nameInJpn": "叛逆性ミリオンアーサー",
-    "date": "4/",
+    "nameInJpn": "叛逆性ミリオンアーサー 第2シーズン",
+    "date": "4/4",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Game",
     "season": 2,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/Ivj5J2kb1g4E3KC0AQ9F_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://hangyakusei-anime.com/",
+    "description": "《叛逆性百萬亞瑟王》是由 SQUARE ENIX 與網易聯合開發的《百萬亞瑟王》系列新作，作為《百萬亞瑟王》新作的一環同步展開了電視動畫的企劃。其故事以 100 萬人的亞瑟王與 100 萬把的聖劍做為開端展開。該系列作至今推出多款手機遊戲，在日本與亞洲各地也有著一定程度的人氣。"
+  },
+  {
     "name": "深夜的神祕學公務員",
     "nameInJpn": "真夜中のオカルト公務員",
-    "date": "4/",
+    "date": "4/7",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/wQPHhHpknDiT0qyeVMue_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://occultkoumuin.com/",
+    "description": "《深夜的神祕學公務員》故事以為了解決神秘現象而設置的區公所夜間地域交流課作為舞台，一位初來報到的新人「宮古新」，不但能夠理解非人類的語言，並從一隻妖怪開始稱他為安倍晴明後展開了故事。"
+  },
+  {
     "name": "異世界四重奏",
     "nameInJpn": "異世界かるてっと",
-    "date": "4/",
+    "date": "4/9",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Original",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/4LFBOwfke2vIdDa6OU7H_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "拉拉熊與小薰",
-    "nameInJpn": "リラックマとカオルさん",
-    "date": "4/",
-    "time": "none",
-    "carrier": "Comic Novel Game Original",
-    "season": 1,
-    "episode": 0,
-    "img": "https://www.animen.com.tw/animen_image/AujczQ4QYb9SqZK5jeb1_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "7SEEDS",
-    "nameInJpn": "7SEEDS",
-    "date": "4/",
-    "time": "none",
-    "carrier": "Comic Novel Game Original",
-    "season": 1,
-    "episode": 0,
-    "img": "https://www.animen.com.tw/animen_image/SzSBEzhGu1TP76zhCZdA_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
-    "name": "STAR☆TWINKLE光之美少女",
-    "nameInJpn": "スター☆トゥインクルプリキュア",
-    "date": "4/",
-    "time": "none",
-    "carrier": "Comic Novel Game Original",
-    "season": 1,
-    "episode": 0,
-    "img": "https://www.animen.com.tw/animen_image/msl4nnbob5rkPtDk7XJH_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://isekai-quartet.com/",
+    "description": "《異世界四重奏》是集合四部「異世界」作品《OVERLORD》、《為美好的世界獻上祝福！》、《 Re：從零開始的異世界生活》、《幼女戰記》的跨界原創動畫。"
+  },
+  {
     "name": "我們真的學不來！",
     "nameInJpn": "ぼくたちは勉強ができない",
-    "date": "4/",
+    "date": "4/6",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/ds0MKFB7zgDLS0Xikwmw_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "https://boku-ben.com/",
+    "description": "《我們真的學不來》描述高三學生唯我成幸家境貧窮，身為長子的他，一心想獲得校內提供的特別 VIP 推薦資格以進入好大學、將來找到好工作，養活一家五口。某天，學園長突然召見他，並以推薦資格為條件任命他為「教育員」，負責教導兩名天才少女。"
+  },
+  {
     "name": "機動戰士鋼彈 THE ORIGIN",
     "nameInJpn": "機動戦士ガンダム THE ORIGIN",
-    "date": "4/",
+    "date": "4/28",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/fKsxHiCNAhsrTxnftY35_M_A.jpg",
-    "official": "",
+    "official": "http://gundam40th.net/",
     "description": ""
-}, {
-    "name": "強襲魔女 501部隊出動！",
+  },
+  {
+    "name": "強襲魔女 501 部隊出動！",
     "nameInJpn": "ストライクウィッチーズ 501 部隊発進します！",
-    "date": "4/",
+    "date": "4/9",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/7HYLwjOV0HvhGd2tQ3kd_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://w-witch.jp/501_takeoff/",
+    "description": "《強襲魔女 501 部隊出動！》是《強襲魔女》的外傳作品，描寫 501 部隊的日常。改編自「強襲魔女」的獨立短篇四格漫畫，501 部隊的成員比在動畫裡還要熱鬧！？偶爾和異形軍打打架，與平常不一樣的奇怪日常！"
+  },
+  {
     "name": "偶像大師 灰姑娘女孩劇場",
-    "nameInJpn": "アイドルマスターシンデレラガールズ劇場",
-    "date": "4/",
+    "nameInJpn": "アイドルマスターシンデレラガールズ劇場 第4期",
+    "date": "4/2",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Game",
     "season": 4,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/u8lKUukwtqDZwrXvB7Wt_M_A.jpg",
-    "official": "",
-    "description": ""
-}, {
+    "official": "http://cingeki-anime.com/index.html",
+    "description": "《灰姑娘女孩劇場》是手機遊戲《偶像大師 灰姑娘女孩》的官方漫畫。是連載於遊戲中、以網頁型式展示的五格漫畫，不定期推出新的內容。至 2015 年 7 月為止，已推出超過五百期。"
+  },
+  {
     "name": "川柳少女",
     "nameInJpn": "川柳少女",
-    "date": "4/",
+    "date": "4/5",
     "time": "none",
-    "carrier": "Comic Novel Game Original",
+    "carrier": "Comic",
     "season": 1,
     "episode": 0,
     "img": "https://www.animen.com.tw/animen_image/lnKdJwcsBx4UVHpgZvuB_M_A.jpg",
-    "official": "",
-    "description": ""
-}, ]
+    "official": "http://senryu-girl-official.com/",
+    "description": "《川柳少女》故事以喜怒哀樂皆以日本詩「川柳」的形式五、七、五（共計 17 音節）呈現的文學少女雪白七七子，與面貌兇惡卻有著善良內心的文學部少年毒島英二所展開的愛情喜劇。"
+  },
+  {
+    "name": "文豪野犬",
+    "nameInJpn": "文豪ストレイドッグス",
+    "date": "4/12",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-WIVnHy5XU6c/XDGdsZf7W-I/AAAAAAAAWho/qfakNieA3t0Nzzoy74CS0ZQ0Xgy1k95vwCLcBGAs/s1600/0.png",
+    "official": "http://bungo-stray-dogs.jp/",
+    "description": "《文豪野犬》描述被趕出孤兒院來到橫濱的少年中島敦，無意間救了一位自殺失敗、在河裡浮沉的男子太宰治。隸屬於解決危險事件的特殊能力集團「武裝偵探社」。 他為了解決造成社會不安的「食人虎」騷動， 和食人虎有某種關聯的中島，在太宰的強硬邀請下陪同進行調查..."
+  },
+  {
+    "name": "拾又之國",
+    "nameInJpn": "群青のマグメル",
+    "date": "4/7",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://2.bp.blogspot.com/-9OGBnBNRehk/XFZs4lTc_RI/AAAAAAAAW6I/1YLmbfrIhCA3fh4QtWKkxRuOB0awr_4bgCLcBGAs/s1600/0.png",
+    "official": "http://gunjyo-magumeru.com/",
+    "description": "《拾又之國》描述一個怪物橫行，危險與財富並存的新世界，吸引了大批冒險家，也葬送了無數人的生命。看似懶散的少年因又與阿零經營著一家奇怪的店鋪——拾人館。隨著少女艾米莉亞的到來，因又與阿零在聖洲的冒險與救助活動就此展開……"
+  },
+  {
+    "name": "RobiHachi",
+    "nameInJpn": "ロビハチ",
+    "date": "4/8",
+    "time": "none",
+    "carrier": "Original",
+    "season": 1,
+    "episode": 0,
+    "img": "https://3.bp.blogspot.com/-6Of-69Td738/XHocl63GyNI/AAAAAAAAXGU/1F0RevL0UZEY26HlgSvVhzLsfYVSP0m4QCLcBGAs/s1600/0.png",
+    "official": "https://robihachi.jp/",
+    "description": "《RobiHachi》是由執導過《銀魂》、《碧藍之海》等動畫的高松信司推出的原創動畫。"
+  },
+  {
+    "name": "消滅都市",
+    "nameInJpn": "消滅都市",
+    "date": "4/7",
+    "time": "none",
+    "carrier": "Game",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-TP1evyEYaB8/XDGjO29Ac_I/AAAAAAAAWjo/l9OCX8BxFzInen_GIbUwf1hFkzYaYiM5ACLcBGAs/s1600/0.png",
+    "official": "https://shoumetsutoshi-anime.com/",
+    "description": "《消滅都市》故事描述 3 年前，一座都市被「消滅」了！3 年後，拓也接到委託，和神秘少女小雪前往人稱「失落之地」的消滅都市展開意想不到的旅程......"
+  },
+  {
+    "name": "信長老師的年幼妻子",
+    "nameInJpn": "ノブナガ先生の幼な妻",
+    "date": "4/8",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://2.bp.blogspot.com/-3R68B4FhuWk/XDGjl_5Rr0I/AAAAAAAAWj0/XxC1aOHtgTAg7j22nA-KuG0HIKfDO3SBACLcBGAs/s1600/0.png",
+    "official": "http://nobutsuma-anime.com/",
+    "description": "《信長老師的年幼妻子》故事描述超喜歡自己的少女突然出現在身旁──中學教師「信永」一直以來都沒放棄這有如美少女遊戲般的夢想，某一天他身邊真的出現了一位自稱 14 歲的少女！？這位名為「歸蝶」的女孩似乎來自戰國世代，她立志要和信永生下愛的結晶……"
+  },
+  {
+    "name": "賢惠幼妻仙狐小姐",
+    "nameInJpn": "世話やきキツネの仙狐さん",
+    "date": "4/10",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://2.bp.blogspot.com/-qOluPTn4adc/XDGojn_vW2I/AAAAAAAAWlo/3jPkAGQembI4MatunPxIt5KkLpKnspouQCLcBGAs/s1600/0.png",
+    "official": "http://senkosan.com/",
+    "description": "《賢惠幼妻仙狐小姐》描述每天加班搭著末班車回家、身心俱疲的上班族中野，某日回到家發現作為神明使者的仙狐來到家中，實際上已經 800 歲卻看似幼女的仙狐，為了能夠消解中野疲勞而發揮了壓倒性的包容力讓他撒嬌，展開了一段充滿療癒感的喜劇故事。"
+  },
+  {
+    "name": "超可動女孩 1/6",
+    "nameInJpn": "超可動ガール1/6",
+    "date": "4/8",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-rlcbC4_1Yxg/XHoYX3l82GI/AAAAAAAAXFE/bQbcd6QXWAQ7V-IegEz4XTex269BbfFiACLcBGAs/s1600/0.png",
+    "official": "http://choukadou-anime.com/",
+    "description": "《超可動女孩 1/6》描述御宅族房伊田春人終於買了最喜歡的動畫女主角的模型，但那具模型不知為何動了起來，惹人憐愛的女主角終於變成了「不請自來的囉嗦妻子」？！會動的美少女模型「諾娜」與阿宅社會人士「春人」，奇妙夫妻生活喜劇。"
+  },
+  {
+    "name": "八月的棒球甜心",
+    "nameInJpn": "八月のシンデレラナイン",
+    "date": "4/7",
+    "time": "none",
+    "carrier": "Game",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-j7iuYJb_1Jg/XHoZWyxcWtI/AAAAAAAAXFU/kxXvi0PEhKMyKO7V8ydI7P343cWilPb4wCLcBGAs/s1600/0.png",
+    "official": "https://anime-hachinai.com/",
+    "description": "《八月的棒球甜心》原作描寫玩家化身為球隊教練來指導、培育女孩們，一起朝向「甲子園」的夢想前進。既然身為教練，當然也要在遊戲中負責解決女主角們的煩惱與困擾，讓選手們藉此獲得成長，並深入了解女主角內心的一面。"
+  },
+  {
+    "name": "魔法水果籃",
+    "nameInJpn": "フルーツバスケット",
+    "date": "4/5",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-ij5P7PbomrM/XFZqcZHIq7I/AAAAAAAAW5U/n-C4hOh4uWUgpVioJ9lPVDWZ1RPyVjpiwCLcBGAs/s1600/0.png",
+    "official": "https://fruba.jp/",
+    "description": "《魔法水果籃》故事描述相依為命的母親亡故以後，本田透開始了露營生活，而她搭起帳篷的地方卻是家世顯赫的草摩家的土地。草摩紫吳決定讓透住進來幫忙家務，於是透開始了和學校的人氣王子草摩由希，以及看由希不順眼的草摩夾的共同生活……。"
+  },
+  {
+    "name": "滿腦都是○○的我沒辦法談戀愛",
+    "nameInJpn": "淫らな青ちゃんは勉強ができない",
+    "date": "4/5",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://1.bp.blogspot.com/-W4YWv-uAX4A/XFZsCCimK5I/AAAAAAAAW50/9ZQ1tApCDmoVALbIE5e1cPlx0_R2OFRSQCLcBGAs/s1600/0.png",
+    "official": "http://aochan-anime.com/",
+    "description": "《滿腦都是○○的我沒辦法談戀愛》描述堀江青身為有名黃色小說家的女兒，連「青」這個名字都是取自「青姦」。讓她將男人視為性慾的集合體，極度討厭男人與自己的名字。她為了遠離父親，搬出家裡獨自生活而努力學習著。但某天卻被班上的純情帥哥告白了……"
+  },
+  {
+    "name": "女子高中生",
+    "nameInJpn": "女子かう生",
+    "date": "4/8",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://1.bp.blogspot.com/-ya8IkOADBbQ/XFZtSykQzmI/AAAAAAAAW6U/0Nd9D3zzerEunh_8vSWdNBuok2rS7xZdgCLcBGAs/s1600/0.png",
+    "official": "http://joshikau-anime.com/",
+    "description": "《女子高中生》故事以天然系的女高中生富戶桃子做為主軸，描述她與周遭同學親友之間的日常故事，即使沒什麼事也覺得很開心。這是天然的高中女生「桃子」與她周遭人事物的日常生活。"
+  },
+  {
+    "name": "Fairy gone",
+    "nameInJpn": "フェアリーゴーン",
+    "date": "4/7",
+    "time": "none",
+    "carrier": "Original",
+    "season": 1,
+    "episode": 0,
+    "img": "https://3.bp.blogspot.com/-JdStTjYHHjE/XFZtm4YMolI/AAAAAAAAW6g/2Rc5swBigkwtaCn9LQZw9jAtDxQFERkngCLcBGAs/s1600/0.png",
+    "official": "https://www.fairygone.com/",
+    "description": "《Fairy gone》描述距離戰爭 9 年後那不穩定的政局，因戰爭受到傷害展開復仇的恐怖份子因此出現。過去故鄉被戰爭毀滅的主角瑪莉亞，為了阻止同樣在那時候活下來卻選擇成為復仇者的維羅妮卡，因此加入了取締違法妖精機構 Dorothea …"
+  },
+  {
+    "name": "鑽石王牌",
+    "nameInJpn": "ダイヤのA",
+    "date": "4/2",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 3,
+    "episode": 0,
+    "img": "https://1.bp.blogspot.com/-2H_YEJKX8os/XHoaRVEKNTI/AAAAAAAAXFk/uV-eK3fHnX01Bl3tYafmR105_YQlvTgXACLcBGAs/s1600/0.png",
+    "official": "https://diaace.com/",
+    "description": "《鑽石王牌》作品描述以稱霸國中聯賽為目標的主角澤村榮純，在最後一次的聯賽中，因為自己的暴投而輸了比賽。他發誓要和以前的隊友去高中一雪前恥，後來，因為棒球名校青道高中球探來訪，澤村去參觀了青道高中的練習，重新燃起了澤村對棒球的熱情。"
+  },
+  {
+    "name": "為什麼老師會在這裡！？",
+    "nameInJpn": "なんでここに先生が!?",
+    "date": "4/7",
+    "time": "none",
+    "carrier": "Comic",
+    "season": 1,
+    "episode": 0,
+    "img": "https://1.bp.blogspot.com/-k5g4k1EsbLA/XHobw7zYkEI/AAAAAAAAXGA/vfoXzRllgvEYfFiwFZS8py_Z2Cet_HNQwCLcBGAs/s1600/0.png",
+    "official": "http://nankoko-anime.com/",
+    "description": "《為什麼老師會在這裡！？》描述在學生之間以「魔鬼」聞名的女老師兒島，但在我面前就是個愛出槌又令人困擾的傻妹。廁所、男浴池、鬼屋、我的房間、南國小島等…不知為何她總是用性感的身體誘惑著我！"
+  },
+  {
+    "name": "南無阿彌陀佛！-蓮台 UTENA-",
+    "nameInJpn": "なむあみだ仏っ！- 蓮台 UTENA -",
+    "date": "4/8",
+    "time": "none",
+    "carrier": "Game",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-Y173oET3Lm4/XHodJlhx6dI/AAAAAAAAXGk/w6kVoSwyF_8OeNJPG224v_U2bLCqDQB6QCLcBGAs/s1600/0.png",
+    "official": "https://namuami-utena-anime.com/",
+    "description": "《南無阿彌陀佛！-蓮台 UTENA-》作品將不動明王、釋迦如來、文殊菩薩、普賢菩薩、地藏菩薩、彌勒菩薩、藥師如來、觀音菩薩、勢至菩薩、阿彌陀如來、阿閦如來、大日如來、虛空藏菩薩等眾神佛轉化為美男子，降臨到現代的他們，為了困擾著人間的「煩惱」而戰鬥。"
+  },
+  {
+    "name": "爆丸",
+    "nameInJpn": "爆丸バトルブローラーズ",
+    "date": "4/1",
+    "time": "none",
+    "carrier": "Original",
+    "season": 1,
+    "episode": 0,
+    "img": "https://4.bp.blogspot.com/-aC8yLA_Cvzw/XHoebmI4ZuI/AAAAAAAAXHE/c2jXgPDtZd8llZqrM97_S0Q5FEvPOijpwCLcBGAs/s1600/0.png",
+    "official": "https://www.tv-tokyo.co.jp/anime/bakugan-bp/",
+    "description": "《爆丸》系列作品故事講述某年某月某日，全球各地的小朋友都收到一套不可思議的卡牌。玩家能從牌中召喚出來自異世界的、叫爆丸的怪獸進行格鬥。"
+  },
+  {
+    "name": "戰鬥陀螺 爆烈世代",
+    "nameInJpn": "ベイブレードバースト",
+    "date": "4/5",
+    "time": "none",
+    "carrier": "Original",
+    "season": 1,
+    "episode": 0,
+    "img": "https://3.bp.blogspot.com/-3LpIpJqfito/XHofnfVxcEI/AAAAAAAAXHk/E6BjEhwE99cJkXS34kIeJlLE-7KmPPjDwCLcBGAs/s1600/0.png",
+    "official": "https://www.beyblade.jp/",
+    "description": "《戰鬥陀螺 爆烈世代》描述熱愛戰鬥陀螺的少年蒼井霸斗在比賽中又一次失利，而他的朋友-紅修卻已經在陀螺界非常有名，為了追尋夢想，他打算帶著自己心愛的勝利武神參加地區賽......。"
+  }
+]
