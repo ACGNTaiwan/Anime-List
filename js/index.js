@@ -1,4 +1,17 @@
 const activeDrawerItemClassName = 'mdui-color-theme-50 mdui-text-color-theme';
+const weekChinese = ["日", "一", "二", "三", "四", "五", "六"]
+const carrierChinese = {
+    "Comic": "漫畫改編",
+    "Game": "遊戲改編",
+    "Novel": "小說改編",
+    "Original": "原創劇情",
+}
+const carrierIcon = {
+    "Comic": "edit",
+    "Game": "videogame_asset",
+    "Novel": "book",
+    "Original": "tv",
+}
 const showDate = [{
     id: 'Sun',
     day: '週日'
@@ -61,7 +74,7 @@ router
             $('html, body').scrollTop(0)
         }
     })
-$(function () {
+$(function() {
     if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
     $("#drawer>.mdui-list").append(
         `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
@@ -92,7 +105,7 @@ $(function () {
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
     // 手機自動收回 drawer
-    $(`#drawer [href]`).click(function () {
+    $(`#drawer [href]`).click(function() {
         if ($(window).width() < 1024) {
             new mdui.Drawer("#drawer").close();
         }
@@ -126,7 +139,7 @@ function showHome() {
     })
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
-        .then(function (data) {
+        .then(function(data) {
             let r = `<div class="info contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
@@ -162,7 +175,7 @@ function loadData({
         .then(res => res.json())
         .then(anime_data => {
             // 讓動畫按時間排序
-            const sorted_anime = anime_data.sort(function (a, b) {
+            const sorted_anime = anime_data.sort(function(a, b) {
                 //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
                 var aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
                     bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
@@ -197,8 +210,8 @@ function waterfall(Anime, year) {
                         <div class="description">${item.description}</div>
                     </div>
                 </div>
-            </div>`).click(function () {
-                showAnimeInfoDialog(item)
+            </div>`).click(function() {
+                showAnimeInfoDialog(item, year)
             })
         )
     }
@@ -236,15 +249,15 @@ function schedule(Anime, year) {
             let setTime = new Date((item.year || year) + "/" + item.date)
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
-        $(`#${animeDay}`).append(function () {
+        $(`#${animeDay}`).append(function() {
             return $(`<div class="mdui-list-item mdui-ripple" style="opacity:0">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
-            </div>`).click(function () {
-                showAnimeInfoDialog(item)
+            </div>`).click(function() {
+                showAnimeInfoDialog(item, year)
             })
         })
     }
@@ -275,7 +288,6 @@ function info(Anime, year) {
     }
     for (item of Anime) {
         let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        let weekChinese = ["日", "一", "二", "三", "四", "五", "六"]
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
 
@@ -308,17 +320,40 @@ function info(Anime, year) {
     })
 }
 
-function showAnimeInfoDialog(item) {
+function showAnimeInfoDialog(item, year) {
     let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
-    let animeDialogContent = `<img class="mdui-img-rounded" style="max-width: 20%;float: left;margin-right: 10px;" src="${item.img}"/>${item.description||'尚無簡介：（'}`
+    let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
+    let animeDialogContent = `
+    <div class="anime-info-container">
+        <div class="anime-poster" style="background-image:url('${item.img}')"></div>
+        <div class="anime-info-container">
+            <div class="anime-info">
+                <div class="mdui-typo-title">${animeName}</div>
+                <div class="mdui-typo-subheading-opacity">${item.nameInJpn}</div>
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">access_time</i></span>
+                    <span class="mdui-chip-title">${time}</span>
+                </div>
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">${carrierIcon[item.carrier]}</i></span>
+                    <span class="mdui-chip-title">${carrierChinese[item.carrier]}</span>
+                </div>
+                <p>${item.description||'尚無簡介：（'}</p>
+            </div>
+            <div class="anime-actions">
+                ${item.official?`<a class="mdui-btn mdui-btn-dense mdui-ripple" href="${item.official}" target="_blank">官網</a>`:''}
+                <button class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" mdui-dialog-close>關閉</button>
+            </div>
+        </div>
+    </div>`
     router.pause()
     mdui.dialog({
-        title: animeName,
+        //title: animeName,
         content: animeDialogContent,
         history: !typeof InstallTrigger !== 'undefined', //!isFirefox
-        buttons: [{
-            text: '關閉'
-        }],
+        /* buttons: [{
+             text: '關閉'
+         }],*/
         onClose: () => router.pause(false)
     });
 }

@@ -65,7 +65,7 @@ body:not(.firefox) .mdui-dialog-content
     img
         width: 100%
     .content
-        padding: 10px 15px 10px 15px
+        padding: 10px 0
         .nameInJpn
             color: #5a5a5a
         .name
@@ -171,6 +171,23 @@ body:not(.firefox) .mdui-dialog-content
                 transform: scale(.95)
         &:active
             box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3)
+.anime-info-container
+    min-height: 300px
+    display: flex
+    margin: -24px
+    >.anime-poster
+        max-width: 25%
+        min-width: 200px
+        background-size: cover
+        background-position: center
+    >.anime-info-container
+        margin: 12px
+        display: flex
+        flex-direction: column
+        >.anime-info
+            flex: 1
+        >.anime-actions
+            text-align: right
 @media (max-width: 1450px)
     .waterfall
         column-count: 5
