@@ -163,8 +163,17 @@ body:not(.firefox) .mdui-dialog-content
 .contributors
     display: flex
     flex-wrap: wrap
+    --column-count: 6
     .card
+        width: calc(100% / var(--column-count) - 3px * 2)
+        margin: 3px
         text-decoration: none
+        .content
+            padding: 10px 5px
+            .name
+                overflow: hidden
+                text-overflow: ellipsis
+                white-space: nowrap
         .image
             padding-bottom: 100%
         &:hover
@@ -193,16 +202,22 @@ body:not(.firefox) .mdui-dialog-content
 @media (max-width: 1450px)
     .waterfall
         column-count: 5
+    .contributors
+        --column-count: 5
     .schedule .day
         width: calc(100% / 4)
 @media (max-width: 1200px)
     .waterfall
         column-count: 4
+    .contributors
+        --column-count: 4
     .info .card
         width: calc(100% / 4 - 20px)
 @media (max-width: 800px)
     .waterfall
         column-count: 2
+    .contributors
+        --column-count: 3
     .schedule .day
         width: calc(100% / 2)
     .info .card

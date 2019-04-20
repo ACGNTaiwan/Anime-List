@@ -140,7 +140,7 @@ function showHome() {
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
         .then(function(data) {
-            let r = `<div class="info contributors">`
+            let r = `<div class="contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank" style="opacity:0">
