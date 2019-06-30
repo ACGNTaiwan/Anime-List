@@ -129,7 +129,12 @@ function showHome() {
             'https://cdn.discordapp.com/attachments/468412959119638550/591666130440159242/key_visual_01.png',
             'https://cdn.discordapp.com/attachments/468412959119638550/591670537588178970/kv.png',
             'https://cdn.discordapp.com/attachments/88111110519009280/591651856854548480/mainImg_2.png',
-            'https://4.bp.blogspot.com/-aC8yLA_Cvzw/XHoebmI4ZuI/AAAAAAAAXHE/c2jXgPDtZd8llZqrM97_S0Q5FEvPOijpwCLcBGAs/s1600/0.png',
+            'https://cdn.discordapp.com/attachments/468412959119638550/591672728902172672/main_img_2.png',
+            'https://cdn.discordapp.com/attachments/468412959119638550/591696683793121281/img01.png',
+            'https://cdn.discordapp.com/attachments/88111110519009280/532517709280444426/kv01-on.png',
+            'https://i.imgur.com/cNmql8G.png',
+            'https://i.imgur.com/EguHw7O.jpg',
+            'https://i.imgur.com/SZg299H.jpg',
         ]
         for (year of Object.keys(indexData).reverse()) {
             for (month of Object.keys(indexData[year]).reverse()) {
