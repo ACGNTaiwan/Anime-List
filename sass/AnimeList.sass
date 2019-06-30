@@ -184,6 +184,29 @@ body:not(.firefox) .mdui-dialog-content
                 transform: scale(.95)
         &:active
             box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3)
+.recent-update
+    display: flex
+    flex-wrap: wrap
+    --column-count: 3
+    .card
+        --margin: 6px
+        width: calc(100% / var(--column-count) - var(--margin) * 2)
+        margin: var(--margin)
+        text-decoration: none
+        .content
+            padding: 10px 5px
+            .name
+                overflow: hidden
+                text-overflow: ellipsis
+                white-space: nowrap
+        .image
+            padding-bottom: 42.86%
+        &:hover
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1)
+            .image
+                transform: scale(.95)
+        &:active
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3)
 .anime-info-container
     min-height: 300px
     display: flex
@@ -206,6 +229,8 @@ body:not(.firefox) .mdui-dialog-content
         column-count: 5
     .contributors
         --column-count: 7
+    .recent-update
+        --column-count: 3
     .schedule .day
         width: calc(100% / 4)
 @media (max-width: 1200px)
@@ -213,6 +238,8 @@ body:not(.firefox) .mdui-dialog-content
         column-count: 4
     .contributors
         --column-count: 5
+    .recent-update
+        --column-count: 3
     .info .card
         width: calc(100% / 4 - 20px)
 @media (max-width: 800px)
@@ -220,6 +247,8 @@ body:not(.firefox) .mdui-dialog-content
         column-count: 2
     .contributors
         --column-count: 3
+    .recent-update
+        --column-count: 1
     .schedule .day
         width: calc(100% / 2)
     .info .card

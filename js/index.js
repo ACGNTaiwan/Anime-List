@@ -120,27 +120,67 @@ $(function () {
 });
 
 function showHome() {
+    function appendRecentUpdate() {
+        let count = 0
+        let bg = [
+            'https://i.imgur.com/NlrxM2r.png',
+            'https://i.imgur.com/EEvQxpd.jpg',
+            'https://pbs.twimg.com/media/D1noaUmUcAMmG3I.jpg',
+            'https://cdn.discordapp.com/attachments/468412959119638550/591666130440159242/key_visual_01.png',
+            'https://cdn.discordapp.com/attachments/468412959119638550/591670537588178970/kv.png',
+            'https://cdn.discordapp.com/attachments/88111110519009280/591651856854548480/mainImg_2.png',
+            'https://cdn.discordapp.com/attachments/468412959119638550/591702376058978304/D7pIv-xVsAA677f.png',
+        ]
+        for (year of Object.keys(indexData).reverse()) {
+            for (month of Object.keys(indexData[year]).reverse()) {
+                let y = year, m = month
+                let bgImg = bg[Math.floor(Math.random() * bg.length)]
+                bg = bg.filter(x => x !== bgImg)
+                $('#content .recent-update').append(
+                    $(
+                        `<a class="card" title="${y} 年 ${m} 月新番" href="info/${y}/${m}" data-navigo>
+                        <div class="image" style="background-image:url('${bgImg}')"></div>
+                        <div class="content">
+                            <div class="name mdui-text-color-theme">${m} 月新番</div>
+                            <div class="nameInJpn">${y} 年</div>
+                        </div>
+                    </a>`).click(function () {
+                            console.log('open:' + `[al-month="${y}-${m}"]`)
+                            new mdui.Collapse("#drawer>.mdui-list").open(`[al-month="${y}-${m}"]`);
+                        })
+                )
+                count++
+                if (count >= 3) break;
+            }
+            if (count >= 3) break;
+        }
+        router.updatePageLinks()
+    }
     $("#content").html(
         `<div class="mdui-typo">
             <div class="mdui-typo-display-2">Anime List</div>
             <p hide-phone>使用左方選單來瀏覽本站資料</p>
             <p hide-desktop>使用點擊左上角選單鈕來瀏覽本站資料</p>
+            <div class="mdui-typo-display-1">最近更新</div> 
+        </div>
+        <div class="recent-update"></div>
+        <div class="mdui-typo">
             <div class="mdui-typo-display-1">資料有誤？</div>
             <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR</p>
             <div class="mdui-typo-display-1">貢獻者</div>
         </div>
         <div al-contributors>正在讀取新鮮的肝......</div>`
     )
-
+    appendRecentUpdate()
     anime({
-        targets: '#content .mdui-typo>*,[al-contributors]',
+        targets: '#content .mdui-typo>*,[al-contributors],.recent-update',
         translateY: [100, 0],
         opacity: [0, 1],
         delay: anime.stagger(20) // increase delay by 100ms for each elements.
     })
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
-        .then(function (data) {
+        .then(data => {
             let r = `<div class="contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
@@ -176,9 +216,9 @@ function loadData({
         .then(res => res.json())
         .then(anime_data => {
             // 讓動畫按時間排序
-            const sorted_anime = anime_data.sort(function (a, b) {
+            const sorted_anime = anime_data.sort((a, b) => {
                 //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-                var aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+                let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
                     bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
                 return aTime - bTime;
             });
