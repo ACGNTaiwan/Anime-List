@@ -356,7 +356,7 @@ function showAnimeInfoDialog(item, year) {
     mdui.dialog({
         //title: animeName,
         content: animeDialogContent,
-        history: !typeof InstallTrigger !== 'undefined', //!isFirefox
+        history: navigator.userAgent.toLowerCase().indexOf('firefox') == -1, // not Firefox
         /* buttons: [{
              text: '關閉'
          }],*/
