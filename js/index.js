@@ -75,7 +75,7 @@ router
             $('html, body').scrollTop(0)
         }
     })
-$(function() {
+$(function () {
     if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
     $("#drawer>.mdui-list").append(
         `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
@@ -89,7 +89,7 @@ $(function() {
                 `<li class="mdui-collapse-item" al-month="${year}-${month}">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon eva eva-archive-outline"></i>
-                        <div class="mdui-list-item-content">${year} ${month.length>1?month:'0'+month} 月新番</div>
+                        <div class="mdui-list-item-content">${year} ${month.length > 1 ? month : '0' + month} 月新番</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
                     <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
@@ -106,7 +106,7 @@ $(function() {
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
     // 手機自動收回 drawer
-    $(`#drawer [href]`).click(function() {
+    $(`#drawer [href]`).click(function () {
         if ($(window).width() < 1024) {
             new mdui.Drawer("#drawer").close();
         }
@@ -140,7 +140,7 @@ function showHome() {
     })
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
-        .then(function(data) {
+        .then(function (data) {
             let r = `<div class="contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
@@ -171,12 +171,12 @@ function loadData({
     year
 }) {
     fetch(js, {
-            cache: "force-cache"
-        })
+        cache: "force-cache"
+    })
         .then(res => res.json())
         .then(anime_data => {
             // 讓動畫按時間排序
-            const sorted_anime = anime_data.sort(function(a, b) {
+            const sorted_anime = anime_data.sort(function (a, b) {
                 //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
                 var aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
                     bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
@@ -211,7 +211,7 @@ function waterfall(Anime, year) {
                         <div class="description">${item.description}</div>
                     </div>
                 </div>
-            </div>`).click(function() {
+            </div>`).click(function () {
                 showAnimeInfoDialog(item, year)
             })
         )
@@ -250,14 +250,14 @@ function schedule(Anime, year) {
             let setTime = new Date((item.year || year) + "/" + item.date)
             animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
         }
-        $(`#${animeDay}`).append(function() {
+        $(`#${animeDay}`).append(function () {
             return $(`<div class="mdui-list-item mdui-ripple" style="opacity:0">
                 <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
-            </div>`).click(function() {
+            </div>`).click(function () {
                 showAnimeInfoDialog(item, year)
             })
         })
@@ -324,6 +324,14 @@ function info(Anime, year) {
 function showAnimeInfoDialog(item, year) {
     let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
     let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
+    if (item.date.trim() === "" || !item.date) time = "播出時間未知"
+    let carrierChip = ""
+    if (item.carrier)
+        carrierChip = `
+        <div class="mdui-chip">
+            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">${carrierIcon[item.carrier]}</i></span>
+            <span class="mdui-chip-title">${carrierChinese[item.carrier]}</span>
+        </div>`
     let animeDialogContent = `
     <div class="anime-info-container">
         <div class="anime-poster" style="background-image:url('${item.img}')"></div>
@@ -335,14 +343,11 @@ function showAnimeInfoDialog(item, year) {
                     <span class="mdui-chip-icon"><i class="mdui-icon material-icons">access_time</i></span>
                     <span class="mdui-chip-title">${time}</span>
                 </div>
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">${carrierIcon[item.carrier]}</i></span>
-                    <span class="mdui-chip-title">${carrierChinese[item.carrier]}</span>
-                </div>
-                <p>${item.description||'尚無簡介：（'}</p>
+                ${carrierChip}
+                <p>${item.description || '尚無簡介：（'}</p>
             </div>
             <div class="anime-actions">
-                ${item.official?`<a class="mdui-btn mdui-btn-dense mdui-ripple" href="${item.official}" target="_blank">官網</a>`:''}
+                ${item.official ? `<a class="mdui-btn mdui-btn-dense mdui-ripple" href="${item.official}" target="_blank">官網</a>` : ''}
                 <button class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" mdui-dialog-close>關閉</button>
             </div>
         </div>
