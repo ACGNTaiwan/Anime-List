@@ -114,35 +114,36 @@ body:not(.firefox) .mdui-dialog-content
                 width: 1.15em
 .waterfall
     column-count: 6
-    column-gap: 8px
+    column-gap: 16px
     .card
         margin-bottom: 8px
         display: block
-        border-radius: 0
+        border-radius: 8px
         .content
-            padding: 10px 15px
+            padding: 16px 15px
         .image
             border-radius: 0
             height: fit-content
             padding-bottom: 0
             img
                 display: block
+                transition: all .3s cubic-bezier(0,0,.2,1)
             .time
                 bottom: -1em
                 opacity: 0
                 transition: all .3s cubic-bezier(0,0,.2,1)
         &:hover
-            transform: scale(1.025)
+            transform: translateY(-3px) !important
             position: relative
             z-index: 5
-            box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.8)
+            box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.4)
             .image
                 .content
                     opacity: 1
                     transform: none
                 img
                     filter: blur(3px) brightness(.8)
-                    transform: scale(1.05)
+                    transform: scale(1.2)
                     background: #FFF
 .schedule
     display: flex
@@ -163,10 +164,11 @@ body:not(.firefox) .mdui-dialog-content
 .contributors
     display: flex
     flex-wrap: wrap
-    --column-count: 6
+    --column-count: 8
     .card
-        width: calc(100% / var(--column-count) - 3px * 2)
-        margin: 3px
+        --margin: 6px
+        width: calc(100% / var(--column-count) - var(--margin) * 2)
+        margin: var(--margin)
         text-decoration: none
         .content
             padding: 10px 5px
@@ -203,14 +205,14 @@ body:not(.firefox) .mdui-dialog-content
     .waterfall
         column-count: 5
     .contributors
-        --column-count: 5
+        --column-count: 7
     .schedule .day
         width: calc(100% / 4)
 @media (max-width: 1200px)
     .waterfall
         column-count: 4
     .contributors
-        --column-count: 4
+        --column-count: 5
     .info .card
         width: calc(100% / 4 - 20px)
 @media (max-width: 800px)
