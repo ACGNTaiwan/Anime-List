@@ -31,12 +31,13 @@ body:not(.firefox) .mdui-dialog-content
 @media screen and (max-height: 256px)
     body:not(.firefox) .mdui-dialog-content
         max-height: 20vh
-
+/* MDUI overlay */
+.mdui-overlay
+	backdrop-filter: blur(5px)
 /* MDUI Button */
 .mdui-btn:not(.mdui-btn-icon)
     border-radius: 8px
 /*  Hide */
-
 @media (max-width: 1023.97px)
     [hide-phone]
         display: none
