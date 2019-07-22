@@ -1,5 +1,6 @@
 const activeDrawerItemClassName = 'mdui-color-theme-50 mdui-text-color-theme';
 const weekChinese = ["日", "一", "二", "三", "四", "五", "六"]
+const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const carrierChinese = {
     "Comic": "漫畫改編",
     "Game": "遊戲改編",
@@ -12,28 +13,7 @@ const carrierIcon = {
     "Novel": "book",
     "Original": "tv",
 }
-const showDate = [{
-    id: 'Sun',
-    day: '週日'
-}, {
-    id: 'Mon',
-    day: '週一'
-}, {
-    id: 'Tue',
-    day: '週二'
-}, {
-    id: 'Wed',
-    day: '週三'
-}, {
-    id: 'Thu',
-    day: '週四'
-}, {
-    id: 'Fri',
-    day: '週五'
-}, {
-    id: 'Sat',
-    day: '週六'
-}];
+const showDate = week.map( (w, i) => { return { id: w, day: `週${weekChinese[i]}` } } )
 const indexData = {
     2017: {
         7: "anime2017.07.json",
@@ -332,7 +312,6 @@ function info(Anime, year) {
         )
     }
     for (let item of Anime) {
-        let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
 
