@@ -331,7 +331,7 @@ function info(Anime, year) {
             <div class="info" id="${day.id}"></div>`
         )
     }
-    for (item of Anime) {
+    for (let item of Anime) {
         let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
@@ -341,8 +341,7 @@ function info(Anime, year) {
         let time = `<i class="mdui-icon material-icons">access_time</i> ${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
 
-        $(`#${animeDay}`).append(
-            `<div class="card" style="opacity:0">
+        $(`#${animeDay}`).append($(`<div class="card" style="opacity:0">
                 <div class="image" style="background-image:url('${item.img}')">
                     <div class="time">${time}</div>
                 </div>
@@ -351,7 +350,9 @@ function info(Anime, year) {
                     <div class="nameInJpn">${item.nameInJpn}</div>
                     <div class="description">${item.description}</div>
                 </div>
-            </div>`
+            </div>`).click(function () {
+                showAnimeInfoDialog(item, year)
+            })
         )
     }
     if ($("#unknown>*").length == 0) {
