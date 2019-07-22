@@ -272,7 +272,7 @@ function schedule(Anime, year) {
             time = item.nameInJpn
         } else {
             let setTime = new Date((item.year || year) + "/" + item.date)
-            animeDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][setTime.getDay()]; //星期
+            animeDay = week[setTime.getDay()]; //星期
         }
         $(`#${animeDay}`).append(function () {
             return $(`<div class="mdui-list-item mdui-ripple" style="opacity:0">
