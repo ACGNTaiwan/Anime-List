@@ -160,7 +160,7 @@ function showHome() {
         targets: '#content .mdui-typo>*,[al-contributors],.recent-update',
         translateY: [100, 0],
         opacity: [0, 1],
-        delay: anime.stagger(20) // increase delay by 100ms for each elements.
+        delay: anime.stagger(20) // increase delay by 20ms for each elements.
     })
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
         .then(res => res.json())
@@ -245,7 +245,7 @@ function waterfall(Anime, year) {
         targets: '#content .waterfall .card',
         translateY: [100, 0],
         opacity: [0, 1],
-        delay: anime.stagger(10) // increase delay by 100ms for each elements.
+        delay: anime.stagger(10) // increase delay by 10ms for each elements.
     })
 }
 
@@ -289,12 +289,11 @@ function schedule(Anime, year) {
     if ($("#unknown>*").length == 1) {
         $(`[al-time-unknown]`).remove()
     }
-
     anime({
         targets: '#content .day>*',
         translateY: [100, 0],
         opacity: [0, 1],
-        delay: anime.stagger(20) // increase delay by 100ms for each elements.
+        delay: anime.stagger(20) // increase delay by 20ms for each elements.
     })
 }
 
@@ -314,9 +313,7 @@ function info(Anime, year) {
     for (let item of Anime) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
-
         let animeDay = week[setTime.getDay()]; //星期
-
         let time = `<i class="mdui-icon material-icons">access_time</i> ${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
 
