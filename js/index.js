@@ -167,7 +167,7 @@ function showHome() {
             let r = `<div class="contributors">`
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
-                r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank" style="opacity:0">
+                r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
                 <div class="image" style="background-image:url('${user.avatar_url}')"></div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
