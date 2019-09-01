@@ -150,7 +150,7 @@ function showHome() {
         `<div class="mdui-typo">
             <div class="mdui-typo-display-2">Anime List</div>
             <p hide-phone>使用左方選單來瀏覽本站資料</p>
-            <p hide-desktop>使用點擊左上角選單鈕來瀏覽本站資料</p>
+            <p hide-desktop>點擊左上角選單鈕來瀏覽本站資料</p>
             <div class="mdui-typo-display-1">最近更新</div>
         </div>
         <div class="recent-update"></div>
