@@ -183,35 +183,41 @@ function showHome() {
         ))
 }
 
-function loadData({
+async function loadData({
     js,
     type,
     year
 }) {
-    fetch(js, {
-            cache: "force-cache"
-        })
-        .then(res => res.json())
-        .then(anime_data => {
-            // 讓動畫按時間排序
-            const sorted_anime = anime_data.sort((a, b) => {
-                //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-                let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-                    bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
-                return aTime - bTime;
-            });
-            $("#content").attr('class', '').html('')
-            switch (type) {
-                case "waterfall":
-                    return waterfall(sorted_anime, year)
-                case "info":
-                    return info(sorted_anime, year)
-                case "schedule":
-                    return schedule(sorted_anime, year)
-            }
-        }).catch(err => $("#content").attr('class', '').html(
-            `<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`
-        ))
+    try {
+        let anime_data
+        if (sessionStorage["anime_data_" + js]) {
+            anime_data = JSON.parse(sessionStorage["anime_data_" + js]).data
+        } else {
+            anime_data = await fetch(js).then(res => res.json())
+            sessionStorage["anime_data_" + js] = JSON.stringify({
+                data: anime_data,
+                updatedTime: new Date()
+            })
+        }
+        // 讓動畫按時間排序
+        const sorted_anime = anime_data.sort((a, b) => {
+            //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+            let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
+                bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
+            return aTime - bTime;
+        });
+        $("#content").attr('class', '').html('')
+        switch (type) {
+            case "waterfall":
+                return waterfall(sorted_anime, year)
+            case "info":
+                return info(sorted_anime, year)
+            case "schedule":
+                return schedule(sorted_anime, year)
+        }
+    } catch (err) {
+        $("#content").attr('class', '').html(`<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`)
+    }
 }
 
 function waterfall(Anime, year) {
