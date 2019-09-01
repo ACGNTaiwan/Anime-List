@@ -120,14 +120,15 @@ function showHome() {
             'https://i.imgur.com/cNmql8G.png',
             'https://i.imgur.com/EguHw7O.jpg',
             'https://i.imgur.com/SZg299H.jpg',
-        ]
+        ].sort(() => Math.random() - 0.5)
+        let bgCounter = 0
         for (year of Object.keys(indexData).reverse()) {
             for (month of Object.keys(indexData[year]).reverse()) {
                 if (count >= 3) break;
                 let y = year,
                     m = month
-                let bgImg = bg[Math.floor(Math.random() * bg.length)]
-                bg = bg.filter(x => x !== bgImg)
+                let bgImg = bg[bgCounter]
+                bgCounter++
                 $('#content .recent-update').append(
                     $(
                         `<a class="card" title="${y} 年 ${m} 月新番" href="info/${y}/${m}" data-navigo>
