@@ -1,0 +1,62 @@
+[
+    {
+        "name": "PSYCHO-PASS 心靈判官 第三季",
+        "nameInJpn": "PSYCHO-PASS サイコパス",
+        "date": "",
+        "time": "",
+        "carrier": "Original",
+        "season": 3,
+        "episode": 0,
+        "img": "https://cdn.discordapp.com/attachments/468412959119638550/626694087223017472/PP3_key_fixw_640_hq.png",
+        "official": "http://psycho-pass.com/3rd/",
+        "description": "故事發生於一個處於獨裁狀態的反烏托邦未來社會，無處不在的監視器會不斷掃描每一個經過的市民的精神狀態。監視器收集被掃描者的現有心理狀態和個性傾向，並將其數值化，以此衡量市民犯罪的可能性。該「數值」在劇中一般稱為Psycho-Pass（心靈指數）。當監視器檢測到過高的心靈指數時，則會通知厚生省當局派遣轄下的公安局人員處理之。公安局的刑警都配有一枝特殊的手槍——主宰者，用以擊發指數過高的人，並根據指數過高者的心靈指數自動切換成麻醉模式（paralyzer）或致死模式（eliminator）。整個故事聚焦於刑事課第一分隊的成員，尤其是常守朱和狡嚙慎也。 "
+    },
+    {
+        "name": "碧蘭幻想 第二季",
+        "nameInJpn":"ぐらぶるアニメちゃんねる Season 2",
+        "date": "10/4",
+        "time": "",
+        "carrier": "Game",
+        "season": 2,
+        "episode": 0,
+        "img": "https://anime.granbluefantasy.jp/assets_gbf/img/top/kv_pc.jpg",
+        "official": "https://anime.granbluefantasy.jp/",
+        "description": "善良少年建造後宮的故事 :D"
+    },
+    {
+        "name": "花牌情緣 第三季",
+        "nameInJpn": "ちはやふる 3",
+        "date": "",
+        "time": "",
+        "carrier": "Comic",
+        "season": 3,
+        "episode": 0,
+        "img": "https://cdn.discordapp.com/attachments/468412959119638550/626699451737571369/unknown.png",
+        "official": "https://www.ntv.co.jp/chihayafuru/",
+        "description": "充滿愛與激情的啪牌"
+    },
+    {
+        "name": "七大罪 第三季",
+        "nameInJpn": "七つの大罪 神々の逆鱗",
+        "date": "",
+        "time": "",
+        "carrier": "Comic",
+        "season": 3,
+        "episode": 0,
+        "img": "https://www.7-taizai.net/_nuxt/img/0cd1277.png",
+        "official": "https://www.7-taizai.net/",
+        "description": "這是個關於人和非人之物的世界尚未分隔的古老物語，以布里塔尼亞大陸為舞台，描述由七位大罪人所組成的傳說騎士團——〈七大罪〉的記錄。"
+    },
+    {
+        "name": "超人高中生即便在異世界也能從容生存",
+        "nameInJpn": "超人高校生たちは異世界でも余裕で生き抜くようです！",
+        "date": "",
+        "time": "",
+        "carrier": "Novel",
+        "season": 1,
+        "episode": 0,
+        "img": "http://choyoyu.com/assets/img/en/kv_poster.jpg",
+        "official": "http://choyoyu.com/",
+        "description": "被捲入飛機事故的七名高中生。他們醒來之後，發現自己身處魔法與獸人存在的異世界。而在沒有電力的世界中建造核電站，僅僅是外出賺錢就能控制大都市的經濟，為了幫助為苛政所苦的恩人們而與無良貴族開戰，簡直為所欲為？!沒錯，他們所有人都並非是普通的高中生，而是各自立於政治、經濟、科學、醫療界頂點的超人高中生！這是擁有地球上最高的睿智與技術的夢之隊所帶來的，毫不保留地運用超高技術的異世界革命物語！"
+    }
+]
