@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "PSYCHO-PASS 心靈判官",
         "nameInJpn": "PSYCHO-PASS サイコパス",
         "date": "10/24",
@@ -13,7 +12,7 @@
     },
     {
         "name": "高分少女",
-        "nameInJpn":"ハイスコアガール",
+        "nameInJpn": "ハイスコアガール",
         "date": "10/4",
         "time": "25:05",
         "carrier": "Comic",
@@ -25,7 +24,7 @@
     },
     {
         "name": "碧蘭幻想",
-        "nameInJpn":"ぐらぶるアニメちゃんねる",
+        "nameInJpn": "ぐらぶるアニメちゃんねる",
         "date": "10/4",
         "time": "24:00",
         "carrier": "Game",
@@ -401,7 +400,7 @@
         "date": "9/27",
         "time": "17:20",
         "carrier": "",
-        "season": ,
+        "season": 1,
         "episode": 0,
         "img": "",
         "official": "https://www.kaijustep.com/anime/",
@@ -449,7 +448,7 @@
         "date": "10/4",
         "time": "17:55",
         "carrier": "Original",
-        "season": ,
+        "season": 1,
         "episode": 0,
         "img": "https://cdn.discordapp.com/attachments/468412959119638550/626754148251205655/main-visual.png",
         "official": "https://anime-zoidswild-zero.jp/",
