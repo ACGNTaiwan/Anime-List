@@ -35,6 +35,9 @@ const indexData = {
         4: "anime2019.04.json",
         7: "anime2019.07.json",
         10: "anime2019.10.json"
+    },
+    2020: {
+        1: "anime2020.01.json"
     }
 };
 // 路由

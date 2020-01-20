@@ -19,7 +19,7 @@ function tableToJson(table) {
         rowData["name"] = tableRow.cells[1].innerText.replace(/（(.+)）/, '');
         rowData["nameInJpn"] = tableRow.cells[2].innerText;
         //rowData["production"] = tableRow.cells[3].innerText;
-        rowData["episode"] = tableRow.cells[4].innerText.replace("話", "");
+        rowData["episode"] = parseInt(tableRow.cells[4].innerText.replace("話", ""));
 
         let dateDetect = tableRow.cells[0].innerText.match(/^(.+)月(.+)日－|^(.+)月－/, '')
         if (dateDetect[3]) dateDetect = dateDetect[3] + '/'
