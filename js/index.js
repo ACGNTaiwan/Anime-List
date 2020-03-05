@@ -47,7 +47,8 @@ router
         ':type/:year/:month/': params => loadData({
             js: "./anime-data/" + indexData[params.year][params.month],
             type: params.type,
-            year: params.year
+            year: params.year,
+            month: params.month
         }),
         '*': showHome
     })
@@ -108,6 +109,17 @@ $(function () {
 
 });
 
+function hwHeader(title, subtitle, phoneSubtitle) {
+    $(`#hw-header .hw-title`).text(title)
+    $(`#hw-header .hw-subtitle`).text(subtitle)
+    if (phoneSubtitle)
+        $(`#hw-header .hw-subtitle[hide-desktop]`).text(phoneSubtitle)
+}
+
+function hwBackground(url) {
+    $(`#hw-bg`).attr('style', `background-image: url("${url}")`)
+}
+
 function showHome() {
     function appendRecentUpdate() {
         let count = 0
@@ -150,11 +162,9 @@ function showHome() {
         }
         router.updatePageLinks()
     }
+    hwHeader("Anime List", "使用左方選單來瀏覽本站資料", "點擊左上角選單鈕來瀏覽本站資料")
     $("#content").html(
         `<div class="mdui-typo">
-            <div class="mdui-typo-display-2">Anime List</div>
-            <p hide-phone>使用左方選單來瀏覽本站資料</p>
-            <p hide-desktop>點擊左上角選單鈕來瀏覽本站資料</p>
             <div class="mdui-typo-display-1">最近更新</div>
         </div>
         <div class="recent-update"></div>
@@ -190,7 +200,8 @@ function showHome() {
 async function loadData({
     js,
     type,
-    year
+    year,
+    month
 }) {
     try {
         let anime_data
@@ -211,6 +222,12 @@ async function loadData({
             return aTime - bTime;
         });
         $("#content").attr('class', '').html('')
+        let typeChinsese = {
+            waterfall: "瀑布流",
+            info: "圖文介紹",
+            schedule: "日程表",
+        }
+        hwHeader(`${year} 年 ${month} 月新番`, typeChinsese[type])
         switch (type) {
             case "waterfall":
                 return waterfall(sorted_anime, year)
