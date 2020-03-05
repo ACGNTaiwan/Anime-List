@@ -31,15 +31,15 @@ header
 
 body:not(.firefox) .mdui-dialog-content
     height: fit-content !important
-    max-height: 60vh
+    max-height: 90vh
 
 @media screen and (max-height: 512px)
     body:not(.firefox) .mdui-dialog-content
-        max-height: 40vh
+        max-height: 75vh
 
 @media screen and (max-height: 256px)
     body:not(.firefox) .mdui-dialog-content
-        max-height: 20vh
+        max-height: 50vh
 /* MDUI overlay */
 .mdui-overlay
     backdrop-filter: blur(5px)
@@ -260,6 +260,10 @@ body:not(.firefox) .mdui-dialog-content
             height: 200px
             width: 100%
             max-width: 100%
+            background-repeat: no-repeat
+            background-size: contain,cover
+            background-color: #dadada
+            background-blend-mode: normal,overlay
 @media (max-width: 1450px)
     .waterfall
         column-count: 5
