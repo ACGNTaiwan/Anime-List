@@ -1,12 +1,21 @@
-
 /* MDUI List avatar fix */
 .mdui-list-item-avatar,.mdui-card-header-avatar
-  background-color: #FFF
-  overflow: hidden
-  img
+    background-color: #FFF
+    overflow: hidden
+img
     min-height: 100%
     min-width: 100%
     object-fit: cover
+/* h1-h6 */
+h1,h2,h3,h4,h5,h6,.mdui-typo-display-1
+    font-weight: bold
+/* toolbar */
+header 
+    z-index: 5001
+    > .mdui-toolbar.mdui-color-theme
+        color: #3f51b5 !important
+        background-color: #e3f0fde3 !important
+        backdrop-filter: blur(10px)
 
 /* MDUI List */
 .mdui-list-item
@@ -33,7 +42,7 @@ body:not(.firefox) .mdui-dialog-content
         max-height: 20vh
 /* MDUI overlay */
 .mdui-overlay
-	backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px)
 /* MDUI Button */
 .mdui-btn:not(.mdui-btn-icon)
     border-radius: 8px
@@ -56,12 +65,8 @@ body:not(.firefox) .mdui-dialog-content
 #drawer
     padding-left: 5px
     padding-right: 5px
-
-.mdui-appbar
-    z-index: 5001
 #content
-    padding: 10px
-    padding-top: 86px
+    padding: 16px
 .card
     width: 100%
     display: inline-block
@@ -107,14 +112,14 @@ body:not(.firefox) .mdui-dialog-content
             opacity: 0
             position: absolute
             top: 0
-            color: white !important  
+            color: white !important
             text-shadow: 0 0 2px black
             mask-image: linear-gradient(to bottom, rgba(0, 0, 0,1) 60%, transparent 90%)
             height: 100%
             transition: all .3s cubic-bezier(0,0,.2,1)
             transform: scale(.8) rotate(-3deg)
             .name,.nameInJpn,.description
-                color: white 
+                color: white
             .nameInJpn,.description
                 opacity: .87
         .time
@@ -124,7 +129,7 @@ body:not(.firefox) .mdui-dialog-content
             text-align: center
             line-height: 2em
             font-size: 14px
-            color: white    
+            color: white
             text-shadow: 0 0 2px black
             background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0,.2) 100%)
             i
@@ -247,6 +252,14 @@ body:not(.firefox) .mdui-dialog-content
             flex: 1
         >.anime-actions
             text-align: right
+
+@media (max-width: 800px)
+    .anime-info-container
+        display: block
+        .anime-poster
+            height: 200px
+            width: 100%
+            max-width: 100%
 @media (max-width: 1450px)
     .waterfall
         column-count: 5
@@ -279,3 +292,40 @@ body:not(.firefox) .mdui-dialog-content
 @media (max-width: 600px)
     .schedule .day
         width: 100%
+
+/* header-wrapper */ 
+
+.header-wrapper
+    width: 100%
+    position: relative
+    min-height: 1px
+    margin-top: -1px
+    pointer-events: none
+    .bg
+        background-size: cover
+        background-position: center
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%)
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%)
+        width: 100%
+        position: absolute
+        transition: min-height .4s
+        min-height: var(--pokabgheight,400px)
+        overflow: hidden
+    .bg.blur
+        filter: blur(5px)
+.hw-header
+    font-weight: bold
+    margin-left: 16px
+    margin-top: 96px
+    margin-bottom: 16px
+    position: relative
+    font-family: "Product Sans", Roboto, "SF Pro TC", "SF Pro Text", "SF Pro Icons","PingFang TC", "Helvetica Neue", "Helvetica", "Arial", "Source Hans","思源黑體", "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei","Microsoft Yahei", wf_SegoeUI, "Segoe UI", Segoe, "Segoe WP", Tahoma,Verdana, Ubuntu, "Bitstream Vera Sans", "DejaVu Sans", Tahoma,微軟正黑體, "LiHei Pro", "WenQuanYi Micro Hei", "Droid Sans Fallback","AR PL UMing TW", "Helvetica Neue", "Hiragino Maru Gothic ProN",メイリオ, "ヒラギノ丸ゴ ProN W4", Meiryo, "Droid Sans", sans-serif
+    >.hw-title,>.hw-subtitle
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        line-height: 1.1em
+    >.hw-title
+        font-size: 3.5em
+    >.hw-subtitle
+        font-size: 1.5em
