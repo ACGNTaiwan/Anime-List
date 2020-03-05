@@ -251,7 +251,7 @@ function waterfall(Anime, year) {
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
                     <div class="content">
-                        <div class="name">${animeName}</div>
+                        <div class="name mdui-typo-title">${animeName}</div>
                         <div class="nameInJpn">${item.nameInJpn}</div>
                         <div class="description">${item.description}</div>
                     </div>
@@ -328,7 +328,7 @@ function info(Anime, year) {
                     <div class="time">${time}</div>
                 </div>
                 <div class="content">
-                    <div class="name mdui-text-color-theme">${animeName}</div>
+                    <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
                     <div class="nameInJpn">${item.nameInJpn}</div>
                     <div class="description">${item.description}</div>
                 </div>
@@ -353,10 +353,10 @@ function showAnimeInfoDialog(item, year) {
         </div>`
     let animeDialogContent = `
     <div class="anime-info-container">
-        <div class="anime-poster" style="background-image:url('${item.img}')"></div>
+        <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"></div>
         <div class="anime-info-container">
             <div class="anime-info">
-                <div class="mdui-typo-title">${animeName}</div>
+                <div class="mdui-typo-title mdui-text-color-theme">${animeName}</div>
                 <div class="mdui-typo-subheading-opacity">${item.nameInJpn}</div>
                 <div class="mdui-chip">
                     <span class="mdui-chip-icon"><i class="mdui-icon material-icons">access_time</i></span>
