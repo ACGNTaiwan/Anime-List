@@ -13,12 +13,10 @@ const carrierIcon = {
     "Novel": "book",
     "Original": "tv",
 }
-const showDate = week.map((w, i) =>
-    ({
-        id: w,
-        day: `週${weekChinese[i]}`
-    })
-)
+const showDate = week.map((w, i) => ({
+    id: w,
+    day: `週${weekChinese[i]}`
+}))
 const indexData = {
     2017: {
         7: "anime2017.07.json",
@@ -40,6 +38,20 @@ const indexData = {
         1: "anime2020.01.json"
     }
 };
+// 圖片數量不得小於 5
+const bg = [
+    'https://i.imgur.com/NlrxM2r.png',
+    'https://i.imgur.com/EEvQxpd.jpg',
+    'https://cdn.discordapp.com/attachments/468412959119638550/591696683793121281/img01.png',
+    'https://i.imgur.com/cNmql8G.png',
+    'https://i.imgur.com/EguHw7O.jpg',
+    'https://i.imgur.com/SZg299H.jpg',
+    'https://i.imgur.com/zTT1DkC.jpg',
+    'https://i.imgur.com/FDlj5tL.png',
+    'https://i.pinimg.com/originals/3d/cf/7e/3dcf7e5cbc5e1e86ba28347ad86cf9ee.jpg',
+    'https://i.imgur.com/n85B77H.png',
+    'https://i.imgur.com/J4Sa0Wn.jpg',
+].sort(() => Math.random() - 0.5)
 // 路由
 const router = new Navigo('./', true, '#/');
 router
@@ -106,6 +118,8 @@ $(function () {
     let u = router.lastRouteResolved().url
     new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
     $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass(activeDrawerItemClassName)
+    // 隨機背景圖
+    hwBackground(bg[0])
 
 });
 
@@ -123,24 +137,10 @@ function hwBackground(url) {
 function showHome() {
     function appendRecentUpdate() {
         let count = 0
-        let bg = [
-            'https://i.imgur.com/NlrxM2r.png',
-            'https://i.imgur.com/EEvQxpd.jpg',
-            'https://pbs.twimg.com/media/D1noaUmUcAMmG3I.jpg',
-            'https://cdn.discordapp.com/attachments/468412959119638550/591666130440159242/key_visual_01.png',
-            'https://cdn.discordapp.com/attachments/468412959119638550/591670537588178970/kv.png',
-            'https://cdn.discordapp.com/attachments/88111110519009280/591651856854548480/mainImg_2.png',
-            'https://cdn.discordapp.com/attachments/468412959119638550/591672728902172672/main_img_2.png',
-            'https://cdn.discordapp.com/attachments/468412959119638550/591696683793121281/img01.png',
-            'https://cdn.discordapp.com/attachments/88111110519009280/532517709280444426/kv01-on.png',
-            'https://i.imgur.com/cNmql8G.png',
-            'https://i.imgur.com/EguHw7O.jpg',
-            'https://i.imgur.com/SZg299H.jpg',
-        ].sort(() => Math.random() - 0.5)
-        let bgCounter = 0
+        let bgCounter = 1
         for (year of Object.keys(indexData).reverse()) {
             for (month of Object.keys(indexData[year]).reverse()) {
-                if (count >= 3) break;
+                if (count >= 4) break;
                 let y = year,
                     m = month
                 let bgImg = bg[bgCounter]
