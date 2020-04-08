@@ -35,7 +35,8 @@ const indexData = {
         10: "anime2019.10.json"
     },
     2020: {
-        1: "anime2020.01.json"
+        1: "anime2020.01.json",
+        4: "anime2020.04.json"
     }
 };
 // 圖片數量不得小於 5
