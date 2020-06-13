@@ -6,7 +6,7 @@ document.querySelectorAll('[acgs-bangumi-anime-id]').forEach((el,i) => {
         let qlm=el.querySelector('.time_tomorrow').textContent.match(/播放日期：(\d{1,2})月(\d{1,2})日起／.+／(\d{1,2})時(\d{1,2})分/)
         if(qlm){
             date=qlm[1]+'/'+qlm[2]
-            time=qlm[3]+':'+qlm[4]
+            time=qlm[3].padStart(2, "0")+':'+qlm[4].padStart(2, "0")
         }
     }
     res.push({
