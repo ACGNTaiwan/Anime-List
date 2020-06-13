@@ -21,9 +21,9 @@ function tableToJson(table) {
         //rowData["production"] = tableRow.cells[3].innerText;
         rowData["episode"] = parseInt(tableRow.cells[4].innerText.replace("話", ""));
 
-        let dateDetect = tableRow.cells[0].innerText.match(/^(.+)月(.+)日－|^(.+)月－/, '')
+        let dateDetect = tableRow.cells[0].innerText.replace(/\[註\s\d+\]/, "").match(/^(.+)月(.+)日－|^(.+)月－/, '')
         if (dateDetect[3]) dateDetect = dateDetect[3] + '/'
-        else if (dateDetect[1] & dateDetect[2]) dateDetect = dateDetect[1] + '/' + dateDetect[2]
+        else if (dateDetect[1] && dateDetect[2]) dateDetect = dateDetect[1] + '/' + dateDetect[2]
         else dateDetect = dateDetect[0]
         rowData["date"] = dateDetect
 
