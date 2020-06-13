@@ -36,7 +36,8 @@ const indexData = {
     },
     2020: {
         1: "anime2020.01.json",
-        4: "anime2020.04.json"
+        4: "anime2020.04.json",
+        7: "anime2020.07.json"
     }
 };
 // 圖片數量不得小於 5
@@ -155,8 +156,8 @@ function showHome() {
                             <div class="nameInJpn">${y} 年</div>
                         </div>
                     </a>`).click(function () {
-                        new mdui.Collapse("#drawer>.mdui-list").open(`[al-month="${y}-${m}"]`);
-                    })
+                            new mdui.Collapse("#drawer>.mdui-list").open(`[al-month="${y}-${m}"]`);
+                        })
                 )
                 count++
             }
