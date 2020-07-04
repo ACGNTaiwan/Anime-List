@@ -37,7 +37,8 @@ const indexData = {
     2020: {
         1: "anime2020.01.json",
         4: "anime2020.04.json",
-        7: "anime2020.07.json"
+        7: "anime2020.07.json",
+        10: "anime2020.10.json"
     }
 };
 // 圖片數量不得小於 5
@@ -53,6 +54,8 @@ const bg = [
     'https://i.pinimg.com/originals/3d/cf/7e/3dcf7e5cbc5e1e86ba28347ad86cf9ee.jpg',
     'https://i.imgur.com/n85B77H.png',
     'https://i.imgur.com/J4Sa0Wn.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/728258277938561056/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
+    'https://cdn.discordapp.com/attachments/439314137584107532/728246802762956810/kv.png'
 ].sort(() => Math.random() - 0.5)
 // 路由
 const router = new Navigo('./', true, '#/');
