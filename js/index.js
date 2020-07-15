@@ -55,7 +55,8 @@ const bg = [
     'https://i.imgur.com/n85B77H.png',
     'https://i.imgur.com/J4Sa0Wn.jpg',
     'https://cdn.discordapp.com/attachments/439314137584107532/728258277938561056/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/728246802762956810/kv.png'
+    'https://cdn.discordapp.com/attachments/439314137584107532/728246802762956810/kv.png',
+    'https://cdn.discordapp.com/attachments/439314137584107532/732937057055539240/unknown.png'
 ].sort(() => Math.random() - 0.5)
 // 路由
 const router = new Navigo('./', true, '#/');
