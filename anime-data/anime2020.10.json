@@ -319,7 +319,7 @@
       "description": "池袋西口公園一帶出現了變態殺人狂，連續有年輕貌美的女孩被殘忍殺害。小頭目組織頭領的真島誠（長瀨智也飾）不幸被當作了嫌疑犯，為了能證實自己的清白，誠和自己的兄弟G-boys首領安藤崇（窪塚洋介飾）、水野俊（山下智久飾）等人在池袋公園到處查找真兇。"
     },
     {
-      "name": "無能的奈奈",
+      "name": "無能力者娜娜",
       "date": "10/00",
       "time": "00:00",
       "carrier": "Comic",
@@ -394,6 +394,39 @@
       "nameInJpn": "キミと僕の最後の戦場、あるいは世界が始まる聖戦",
       "img": "https://cdn.discordapp.com/attachments/439314137584107532/732942817445281792/unknown.png",
       "official": "https://kimisentv.com/",
-      "description": " 坐擁強大科學力量的帝國，以及以「魔女之國」的威名受到世人畏懼的涅比利斯皇廳。在沒有盡頭的兩國戰場上，少年與少女相遇了。以史上最低齡晉升帝國最強戰力的劍士──伊思卡。被稱為皇廳最強的寒冰魔女公主──愛麗絲莉潔。兩人以宿敵的身分展開了廝殺。然而，少年被少女的美貌和高潔的姿態奪走了心，少女也迷上了少年的強大和生存之道。即便兩人無法並肩而行，唯能戰至一方倒下──相互敵對的少年少女，將展開革新世界的英雄傳奇！"
+      "description": "坐擁強大科學力量的帝國，以及以「魔女之國」的威名受到世人畏懼的涅比利斯皇廳。在沒有盡頭的兩國戰場上，少年與少女相遇了。以史上最低齡晉升帝國最強戰力的劍士──伊思卡。被稱為皇廳最強的寒冰魔女公主──愛麗絲莉潔。兩人以宿敵的身分展開了廝殺。然而，少年被少女的美貌和高潔的姿態奪走了心，少女也迷上了少年的強大和生存之道。即便兩人無法並肩而行，唯能戰至一方倒下──相互敵對的少年少女，將展開革新世界的英雄傳奇！"
+    },
+    {
+      "name": "在魔王城說晚安",
+      "date": "10/00",
+      "time": "00:00",
+      "carrier": "Comic",
+      "season": 1,
+      "nameInJpn": "魔王城でおやすみ",
+      "img": "https://cdn.discordapp.com/attachments/439314137584107532/741878491200487524/visual_02.png",
+      "official": "https://maoujo-anime.com/",
+      "description": "以被魔王抓走公主的奇幻故事作背景，以公主在魔王城中尋求安眠為主題，當中橫插王道故事情節的搞笑短篇故事。"
+    },
+    {
+      "name": "小碧藍幻想！",
+      "nameInJpn": "ぐらぶるっ!",
+      "date": "10/00",
+      "time": "00:00",
+      "carrier": "Comic",
+      "season": 1,
+      "img": "https://cdn.discordapp.com/attachments/468412959119638550/627456015390212109/D1OCbLzU4AANr7w.png",
+      "official": "https://guraburu.granbluefantasy.jp/",
+      "description": ""
+    },
+    {
+      "carrier": "Novel",
+      "date": "10/00",
+      "description": "",
+      "img": "https://cdn.discordapp.com/attachments/439314137584107532/741880482081538058/mainvisual.png",
+      "name": "攀岩！ -Climbing Girls-",
+      "nameInJpn": "いわかける! -Climbing Girls-",
+      "official": "http://iwakakeru-anime.com/",
+      "season": 1,
+      "time": "00:00"
     }
 ]
