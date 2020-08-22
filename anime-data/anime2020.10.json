@@ -45,8 +45,8 @@
   },
   {
     "name": "我立於百萬生命之上",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/02",
+    "time": "22:00",
     "carrier": "Comic",
     "season": 1,
     "nameInJpn": "100万の命の上に俺は立っている",
@@ -56,8 +56,8 @@
   },
   {
     "name": "總之就是很可愛",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/02",
+    "time": "25:05",
     "carrier": "Comic",
     "season": 1,
     "nameInJpn": "トニカクカワイイ",
@@ -78,8 +78,8 @@
   },
   {
     "name": "請問您今天要來點兔子嗎？BLOOM",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/10",
+    "time": "21:30",
     "carrier": "Comic",
     "season": 3,
     "nameInJpn": "ご注文はうさぎですか? BLOOM",
@@ -110,25 +110,14 @@
     "description": "是以培養24位元劇團的團員為主題的養成遊戲，玩家在遊戲中扮演前演員立花泉，身負重振劇團榮光的重責大任，最終帶領團員進行公演。"
   },
   {
-    "name": "比方說，這是個出身魔王關附近的少年在新手村生活的故事",
-    "date": "10/00",
-    "time": "00:00",
-    "carrier": "Novel",
-    "season": 1,
-    "nameInJpn": "たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語",
-    "img": "https://cdn.discordapp.com/attachments/439314137584107532/728242604495601704/unknown.png",
-    "official": "https://lasdan.com/",
-    "description": "儘管受到村裡眾人反對，少年羅伊德還是無法放棄參軍的夢想，啟程前往王都。然而，包含被說是村裡最弱的他在內，竟然沒有任何村人知道他們的村子被稱為「最終地下城旁邊的怪物魔境」這個事實，連高等級的冒險者也聞之膽寒。"
-  },
-  {
     "name": "第501統合戰鬥航空團 強襲魔女 ROAD to BERLIN",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/07",
+    "time": "25:05",
     "carrier": "Comic",
     "season": 1,
     "nameInJpn": "第501統合戦闘航空団 ストライクウィッチーズ ROAD to BERLIN",
     "img": "https://cdn.discordapp.com/attachments/439314137584107532/728243378537627648/vPw56J5.png",
-    "official": "http://w-witch.jp/s-witch/pc/",
+    "official": "http://w-witch.jp/strike_witches-rtb/",
     "description": "動畫《強襲魔女 通往柏林之路》是強襲魔女系列新作，2020年播出。"
   },
   {
@@ -155,8 +144,8 @@
   },
   {
     "name": "半妖的夜叉姬",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/03",
+    "time": "17:30",
     "carrier": "Comic",
     "season": 1,
     "nameInJpn": "半妖の夜叉姫",
@@ -188,8 +177,8 @@
   },
   {
     "name": "熊熊勇闖異世界",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/07",
+    "time": "21:00",
     "carrier": "Novel",
     "season": 1,
     "nameInJpn": "くまクマ熊ベアー",
@@ -254,8 +243,8 @@
   },
   {
     "name": "Assault Lily Bouquet",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/01",
+    "time": "25:13",
     "carrier": "Original",
     "season": 1,
     "nameInJpn": "アサルトリリィ Bouquet",
@@ -298,12 +287,12 @@
   },
   {
     "name": "滿溢的水果塔",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/12",
+    "time": "21:30",
     "carrier": "Comic",
     "season": 1,
     "nameInJpn": "おちこぼれフルーツタルト",
-    "img": "https://cdn.discordapp.com/attachments/439314137584107532/728262251282432130/unknown.png",
+    "img": "https://cdn.discordapp.com/attachments/439314137584107532/746716442862551090/v_002.png",
     "official": "http://ochifuru-anime.com/",
     "description": "憧憬著成為偶像而來到東京的高中一年級女孩櫻衣乃，搬進了小白鼠製作公司第4宿舍，通稱「老鼠莊」，卻在這裡得知了宿舍即將被拆除的消息。為了阻止老鼠莊被拆除，衣乃與老鼠莊的其他成員決定挑戰經紀人的企劃「滿溢的水果塔」而一同組成了偶像團體「水果塔」。"
   },
@@ -364,10 +353,10 @@
   },
   {
     "name": "暮蟬悲鳴時",
-    "date": "10/00",
-    "time": "00:00",
+    "date": "10/01",
+    "time": "23:30",
     "carrier": "Game",
-    "season": 2,
+    "season": 4,
     "nameInJpn": "ひぐらしのなく頃に",
     "img": "https://cdn.discordapp.com/attachments/439314137584107532/732939710887886958/v_001.png",
     "official": "https://higurashianime.com/",
@@ -376,8 +365,8 @@
   {
     "name": "排球少年！！ TO THE TOP",
     "nameInJpn": "ハイキュー!! TO THE TOP",
-    "date": "1/10",
-    "time": "25:25",
+    "date": "10/02",
+    "time": "26:25",
     "carrier": "Comic",
     "season": 4,
     "episode": "25",
@@ -420,12 +409,45 @@
   },
   {
     "carrier": "Novel",
-    "date": "10/00",
+    "date": "10/03",
     "description": "",
     "img": "https://cdn.discordapp.com/attachments/439314137584107532/741880482081538058/mainvisual.png",
     "name": "攀岩！ -Climbing Girls-",
     "nameInJpn": "いわかける! -Climbing Girls-",
     "official": "http://iwakakeru-anime.com/",
+    "season": 1,
+    "time": "26:00"
+  },
+  {
+    "carrier": "Game",
+    "date": "10/02",
+    "description": "故事以為了振興地方觀光的「御一夜市」為主軸，為了振興地方觀光，主角展開一連串努力，並且與眾多美少女們展開戀愛的鐵路浪漫物語。",
+    "img": "https://cdn.discordapp.com/attachments/88111110519009280/743802515119931432/mv.png",
+    "name": "Rail Romanesque",
+    "nameInJpn": "レヱル・ロマネスク",
+    "official": "https://railromanesque.jp/",
+    "season": 1,
+    "time": "25:00"
+  },
+  {
+    "carrier": "Original",
+    "date": "10/10",
+    "description": "　時間是 2002 年，在日本男子體操界曾經很強、將人生致力於體操的上的前選手「荒垣城太郎」(29 歲)，變得無法隨心所欲的表演了。儘管如此，他還是過著反覆練習的日子，有一天教練「天草」勸他引退。煩惱的城太郎、支持他的女兒「玲」，但是，由於某個『邂逅』，荒垣家的命運將發生很大的變化。",
+    "img": "https://cdn.discordapp.com/attachments/439314137584107532/746713229400604682/unknown.png",
+    "name": "體操武士",
+    "nameInJpn": "体操ザムライ",
+    "official": "https://taiso-samurai.com/",
+    "season": 1,
+    "time": "25:30"
+  },
+  {
+    "carrier": "Game",
+    "date": "10/00",
+    "description": "",
+    "img": "https://cdn.discordapp.com/attachments/439314137584107532/746713447772717056/home-keyvisual.png",
+    "name": "最響Kamizmode！",
+    "nameInJpn": "最響カミズモード!",
+    "official": "http://kamizmode-anime.com/",
     "season": 1,
     "time": "00:00"
   }
