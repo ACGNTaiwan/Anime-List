@@ -374,7 +374,6 @@ body:not(.firefox) .mdui-dialog-content {
   display: -ms-flexbox;
   display: flex;
   margin: -24px;
-  width: calc(100% + 24px * 2);
 }
 .anime-container > .anime-poster {
   max-width: 25%;
@@ -387,6 +386,7 @@ body:not(.firefox) .mdui-dialog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
