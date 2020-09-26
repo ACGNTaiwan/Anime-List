@@ -19,11 +19,13 @@ h1, h2, h3, h4, h5, h6, .mdui-typo-display-1 {
 
 /* toolbar */
 header {
-  z-index: 5001;
+  z-index: 5001 !important;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
 }
 header > .mdui-toolbar {
   color: #3f51b5 !important;
-  background-color: #e3f0fde3 !important;
+  background-color: #FFFFFFe3 !important;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -108,7 +110,6 @@ body:not(.firefox) .mdui-dialog-content {
   display: inline-block;
   margin-bottom: 25px;
   border-radius: 15px;
-  overflow: hidden;
   background-color: #fff;
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
@@ -116,20 +117,23 @@ body:not(.firefox) .mdui-dialog-content {
 }
 .card:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
 }
-.info .card:hover .image {
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
+.card:hover .image {
+  opacity: 0.9;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
+}
+.card:hover .image .big-text.hover-show {
+  opacity: 1;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 .card:active {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
 }
 .card img {
   width: 100%;
@@ -160,15 +164,43 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  background-color: #eee;
+  -webkit-box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
 }
 .card .image .big-text {
+  --circle-size: 70px;
   position: absolute;
-  bottom: 5px;
-  right: 10px;
-  font-size: 72px;
-  font-weight: 100;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  margin: auto;
+  font-size: 32px;
   color: #FFF;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: var(--circle-size);
+  line-height: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 100em;
   text-align: center;
+  font-family: "Noto Serif TC", serif;
+}
+.card .image .big-text i:before {
+  font-size: 32px;
+  width: auto;
+  height: auto;
+}
+.card .image .big-text.hover-show {
+  opacity: 0;
+  -webkit-transform: scale(0.8) rotate(20deg);
+      -ms-transform: scale(0.8) rotate(20deg);
+          transform: scale(0.8) rotate(20deg);
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 .card .image .content {
   opacity: 0;
@@ -184,9 +216,9 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
-  -webkit-transform: scale(0.8) rotate(-3deg);
-      -ms-transform: scale(0.8) rotate(-3deg);
-          transform: scale(0.8) rotate(-3deg);
+  -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+          transform: translateY(20%);
 }
 .card .image .content .name, .card .image .content .nameInJpn, .card .image .content .description {
   color: white;
@@ -224,7 +256,9 @@ body:not(.firefox) .mdui-dialog-content {
 .waterfall .card {
   margin-bottom: 8px;
   display: block;
-  border-radius: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
 }
 .waterfall .card .content {
   padding: 16px 15px;
@@ -250,13 +284,8 @@ body:not(.firefox) .mdui-dialog-content {
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 .waterfall .card:hover {
-  -webkit-transform: translateY(-3px) !important;
-      -ms-transform: translateY(-3px) !important;
-          transform: translateY(-3px) !important;
   position: relative;
   z-index: 5;
-  -webkit-box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.4);
 }
 .waterfall .card:hover .image .content {
   opacity: 1;
@@ -267,131 +296,124 @@ body:not(.firefox) .mdui-dialog-content {
 .waterfall .card:hover .image img {
   -webkit-filter: blur(3px) brightness(0.8);
           filter: blur(3px) brightness(0.8);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
   background: #FFF;
 }
 
-.schedule {
+.contributors, .recent-update, .info, .schedule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.contributors .card, .recent-update .card, .info .card, .schedule .card {
+  --margin: 6px;
+  width: calc(100% / var(--column-count) - var(--margin) * 2);
+  margin: var(--margin);
+  text-decoration: none;
+}
+.contributors .card .content .name, .recent-update .card .content .name, .info .card .content .name, .schedule .card .content .name {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contributors .card .image, .recent-update .card .image, .info .card .image, .schedule .card .image {
+  padding-bottom: 100%;
+}
+
 .schedule .day {
   width: calc(100% / 7);
   display: block;
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  --column-count: 6;
 }
-.info .card {
-  width: calc(100% / 6 - 20px);
-  display: block;
-  margin: 10px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: none;
+.info .card .image {
+  padding-bottom: 142.86%;
 }
 
 .contributors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   --column-count: 8;
-}
-.contributors .card {
-  --margin: 6px;
-  width: calc(100% / var(--column-count) - var(--margin) * 2);
-  margin: var(--margin);
-  text-decoration: none;
-}
-.contributors .card .content {
-  padding: 10px 5px;
-}
-.contributors .card .content .name {
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .contributors .card .image {
   padding-bottom: 100%;
 }
-.contributors .card:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-}
-.contributors .card:hover .image {
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
-}
-.contributors .card:active {
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 .recent-update {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   --column-count: 4;
-}
-.recent-update .card {
-  --margin: 6px;
-  width: calc(100% / var(--column-count) - var(--margin) * 2);
-  margin: var(--margin);
-  text-decoration: none;
-}
-.recent-update .card .content {
-  padding: 10px 5px;
-}
-.recent-update .card .content .name {
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .recent-update .card .image {
   padding-bottom: 42.86%;
 }
-.recent-update .card:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-}
-.recent-update .card:hover .image {
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
-}
-.recent-update .card:active {
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
-}
 
+@media (max-width: 1450px) {
+  .waterfall {
+    -webkit-column-count: 5;
+       -moz-column-count: 5;
+            column-count: 5;
+  }
+
+  .contributors {
+    --column-count: 7;
+  }
+
+  .recent-update, .info {
+    --column-count: 4;
+  }
+
+  .schedule .day {
+    width: calc(100% / 4);
+  }
+}
+@media (max-width: 1200px) {
+  .waterfall {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
+  }
+
+  .contributors {
+    --column-count: 6;
+  }
+
+  .recent-update, .info {
+    --column-count: 4;
+  }
+}
+@media (max-width: 800px) {
+  .waterfall {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+
+  .contributors {
+    --column-count: 3;
+  }
+
+  .recent-update, .info {
+    --column-count: 2;
+  }
+
+  .schedule .day {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 600px) {
+  .schedule .day {
+    width: 100%;
+  }
+}
+/* anime-info-container */
 .anime-info-container {
   min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: -24px;
+  width: calc(100% + 24px * 2);
 }
 .anime-info-container > .anime-poster {
   max-width: 25%;
@@ -430,72 +452,6 @@ body:not(.firefox) .mdui-dialog-content {
     background-size: contain, cover;
     background-color: #dadada;
     background-blend-mode: normal, overlay;
-  }
-}
-@media (max-width: 1450px) {
-  .waterfall {
-    -webkit-column-count: 5;
-       -moz-column-count: 5;
-            column-count: 5;
-  }
-
-  .contributors {
-    --column-count: 7;
-  }
-
-  .recent-update {
-    --column-count: 4;
-  }
-
-  .schedule .day {
-    width: calc(100% / 4);
-  }
-}
-@media (max-width: 1200px) {
-  .waterfall {
-    -webkit-column-count: 4;
-       -moz-column-count: 4;
-            column-count: 4;
-  }
-
-  .contributors {
-    --column-count: 6;
-  }
-
-  .recent-update {
-    --column-count: 4;
-  }
-
-  .info .card {
-    width: calc(100% / 4 - 20px);
-  }
-}
-@media (max-width: 800px) {
-  .waterfall {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
-
-  .contributors {
-    --column-count: 3;
-  }
-
-  .recent-update {
-    --column-count: 2;
-  }
-
-  .schedule .day {
-    width: calc(100% / 2);
-  }
-
-  .info .card {
-    width: calc(100% / 2 - 20px);
-  }
-}
-@media (max-width: 600px) {
-  .schedule .day {
-    width: 100%;
   }
 }
 /* header-wrapper */ 

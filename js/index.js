@@ -84,6 +84,7 @@ router
             $('html, body').scrollTop(0)
         }
     })
+let drawer;
 $(function () {
     if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
     $("#drawer>.mdui-list").append(
@@ -123,7 +124,8 @@ $(function () {
     // p == null => 在首頁
     let p = router.lastRouteResolved().params
     let u = router.lastRouteResolved().url
-    new mdui.Collapse("#drawer>.mdui-list").open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
+    drawer = new mdui.Collapse("#drawer>.mdui-list", { accordion: true })
+    drawer.open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
     $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass(activeDrawerItemClassName)
     // 隨機背景圖
     hwBackground(bg[0])
@@ -155,13 +157,13 @@ function showHome() {
                 $('#content .recent-update').append(
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
-                        <div class="image" style="background-image:url('${bgImg}')"><div class="big-text">${month2Season(m)}</div></div>
+                        <div class="image" style="background-image:url('${bgImg}')"></div>
                         <div class="content">
                             <div class="name mdui-text-color-theme">${m} 月${month2Season(m)}番</div>
                             <div class="nameInJpn">${y} 年</div>
                         </div>
                     </a>`).click(function () {
-                            new mdui.Collapse("#drawer>.mdui-list").open(`[al-month="${y}-${m}"]`);
+                            drawer.open(`[al-month="${y}-${m}"]`);
                         })
                 )
                 count++
@@ -190,10 +192,10 @@ function showHome() {
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
-                <div class="image" style="background-image:url('${user.avatar_url}')"></div>
+                <div class="image" style="background-image:url('${user.avatar_url}')"><div class="big-text hover-show"><i class="mdui-icon eva eva-github-outline"></i></div></div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
-                    <div class="nameInJpn">${user.contributions}</div>
+                    <div class="nameInJpn">${user.contributions} commits</div>
                 </div>
             </a>`
             }
