@@ -226,7 +226,6 @@ body:not(.firefox) .mdui-dialog-content {
   padding: 0px;
 }
 .waterfall .card .image {
-  border-radius: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -416,7 +415,7 @@ body:not(.firefox) .mdui-dialog-content {
     background-blend-mode: normal, overlay;
   }
 }
-/* header-wrapper */ 
+/* header-wrapper */
 .header-wrapper {
   width: 100%;
   position: relative;
