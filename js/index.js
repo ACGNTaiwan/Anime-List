@@ -17,6 +17,7 @@ const showDate = week.map((w, i) => ({
     id: w,
     day: `週${weekChinese[i]}`
 }))
+const month2Season = month => ({ 1: '冬', 4: '春', 7: '夏', 10: '秋' }[month] || '新')
 const indexData = {
     2017: {
         7: "anime2017.07.json",
@@ -97,7 +98,7 @@ $(function () {
                 `<li class="mdui-collapse-item" al-month="${year}-${month}">
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon eva eva-archive-outline"></i>
-                        <div class="mdui-list-item-content">${year} ${month.length > 1 ? month : '0' + month} 月新番</div>
+                        <div class="mdui-list-item-content">${year} ${month.length > 1 ? month : '0' + month} 月${month2Season(month)}番</div>
                         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
                     <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
@@ -153,10 +154,10 @@ function showHome() {
                 bgCounter++
                 $('#content .recent-update').append(
                     $(
-                        `<a class="card" title="${y} 年 ${m} 月新番" href="info/${y}/${m}" data-navigo>
-                        <div class="image" style="background-image:url('${bgImg}')"></div>
+                        `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
+                        <div class="image" style="background-image:url('${bgImg}')"><div class="big-text">${month2Season(m)}</div></div>
                         <div class="content">
-                            <div class="name mdui-text-color-theme">${m} 月新番</div>
+                            <div class="name mdui-text-color-theme">${m} 月${month2Season(m)}番</div>
                             <div class="nameInJpn">${y} 年</div>
                         </div>
                     </a>`).click(function () {
@@ -233,7 +234,7 @@ async function loadData({
             info: "圖文介紹",
             schedule: "日程表",
         }
-        hwHeader(`${year} 年 ${month} 月新番`, typeChinsese[type])
+        hwHeader(`${year} 年 ${month} 月${month2Season(month)}番`, typeChinsese[type])
         switch (type) {
             case "waterfall":
                 return waterfall(sorted_anime, year)
