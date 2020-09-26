@@ -259,11 +259,10 @@ function waterfall(Anime, year) {
             $(`<div class="card">
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
-                    <div class="content">
-                        <div class="name mdui-typo-title">${animeName}</div>
-                        <div class="nameInJpn">${item.nameInJpn}</div>
-                        <div class="description">${item.description}</div>
-                    </div>
+                </div>
+                <div class="float content">
+                    <div class="name mdui-typo-title mdui-text-color-theme">${animeName}</div>
+                    <div class="nameInJpn">${item.nameInJpn}</div>
                 </div>
             </div>`).click(function () {
                 showAnimeInfoDialog(item, year)
@@ -293,14 +292,13 @@ function schedule(Anime, year) {
         let time = `${item.date} ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") {
             animeDay = 'unknown'
-            time = item.nameInJpn
+            time = ''
         } else {
             let setTime = new Date((item.year || year) + "/" + item.date)
             animeDay = week[setTime.getDay()]; //星期
         }
         $(`#${animeDay}`).append(function () {
             return $(`<div class="mdui-list-item mdui-ripple">
-                <div class="mdui-list-item-avatar"><img src="${item.img}"/></div>
                 <div class="mdui-list-item-content" title="${animeName}">
                     <div class="mdui-list-item-title">${animeName}</div>
                     <div class="mdui-list-item-text">${time}</div>
@@ -329,16 +327,17 @@ function info(Anime, year) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
         let animeDay = week[setTime.getDay()]; //星期
-        let time = `<i class="mdui-icon material-icons">access_time</i> ${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
+        let time = `${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
 
         $(`#${animeDay}`).append($(`<div class="card">
                 <div class="image" style="background-image:url('${item.img}')">
-                    <div class="time">${time}</div>
+                    <div class="big-text hover-show"><i class="mdui-icon eva eva-info-outline"></i></div>
                 </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
                     <div class="nameInJpn">${item.nameInJpn}</div>
+                    <div class="time">${time}</div>
                     <div class="description">${item.description}</div>
                 </div>
             </div>`).click(function () {
@@ -353,26 +352,40 @@ function showAnimeInfoDialog(item, year) {
     let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
     let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
     if (item.date.trim() === "" || !item.date) time = "播出時間未知"
-    let carrierChip = ""
+    let carrierItem = ""
     if (item.carrier)
-        carrierChip = `
-        <div class="mdui-chip">
-            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">${carrierIcon[item.carrier]}</i></span>
-            <span class="mdui-chip-title">${carrierChinese[item.carrier]}</span>
-        </div>`
+        carrierItem = `
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">${carrierIcon[item.carrier]}</i>
+            <div class="mdui-list-item-content">
+                <div class="mdui-list-item-title">原作載體</div>
+                <div class="mdui-list-item-text">${carrierChinese[item.carrier]}</div>
+            </div>
+        </li>`
     let animeDialogContent = `
-    <div class="anime-info-container">
+    <div class="anime-container">
         <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"></div>
         <div class="anime-info-container">
             <div class="anime-info">
-                <div class="mdui-typo-title mdui-text-color-theme">${animeName}</div>
+                <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
                 <div class="mdui-typo-subheading-opacity">${item.nameInJpn}</div>
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">access_time</i></span>
-                    <span class="mdui-chip-title">${time}</span>
-                </div>
-                ${carrierChip}
-                <p>${item.description || '尚無簡介：（'}</p>
+                <ul class="mdui-list">
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">access_time</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">播出時間</div>
+                            <div class="mdui-list-item-text">${time}</div>
+                        </div>
+                    </li>
+                    ${carrierItem}
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">info</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">簡介</div>
+                            <div class="mdui-list-item-text">${item.description || '尚無簡介！'}</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="anime-actions">
                 ${item.official ? `<a class="mdui-btn mdui-btn-dense mdui-ripple" href="${item.official}" target="_blank">官網</a>` : ''}
