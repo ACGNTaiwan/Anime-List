@@ -260,7 +260,7 @@ function waterfall(Anime, year) {
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
                 </div>
-                <div class="float content">
+                <div class="content">
                     <div class="name mdui-typo-title mdui-text-color-theme">${animeName}</div>
                     <div class="nameInJpn">${item.nameInJpn}</div>
                 </div>

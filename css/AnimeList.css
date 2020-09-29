@@ -234,29 +234,34 @@ body:not(.firefox) .mdui-dialog-content {
      -moz-column-break-inside: avoid;
           break-inside: avoid;
   padding: 1e-10px;
+  -webkit-box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
 }
 .waterfall .card .image {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 0;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .waterfall .card .image img {
   display: block;
 }
 .waterfall .card:hover {
-  position: relative;
-  z-index: 5;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
 }
 .waterfall .card:hover .image {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
 }
-.waterfall .card .content.float {
-  margin: auto;
-  display: table;
+.waterfall .card .content {
   padding: 8px;
   text-align: center;
 }
