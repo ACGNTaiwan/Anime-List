@@ -157,14 +157,19 @@ function showHome() {
                 $('#content .recent-update').append(
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
-                        <div class="image" style="background-image:url('${bgImg}')"></div>
+                        <div class="image" style="background-image:url('${bgImg}')">
+                            <div class="big-text hover-show">
+                                <i class="mdui-icon eva eva-arrow-ios-forward-outline"></i>
+                            </div>
+                        </div>
                         <div class="content">
                             <div class="name mdui-text-color-theme">${m} 月${month2Season(m)}番</div>
                             <div class="nameInJpn">${y} 年</div>
                         </div>
-                    </a>`).click(function () {
-                            drawer.open(`[al-month="${y}-${m}"]`);
-                        })
+                    </a>`
+                    ).click(function () {
+                        drawer.open(`[al-month="${y}-${m}"]`);
+                    })
                 )
                 count++
             }
@@ -192,7 +197,11 @@ function showHome() {
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
-                <div class="image" style="background-image:url('${user.avatar_url}')"><div class="big-text hover-show"><i class="mdui-icon eva eva-github-outline"></i></div></div>
+                <div class="image" style="background-image:url('${user.avatar_url}')">
+                    <div class="big-text hover-show">
+                        <i class="mdui-icon eva eva-github-outline"></i>
+                    </div>
+                </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
                     <div class="nameInJpn">${user.contributions} commits</div>
@@ -260,7 +269,7 @@ function waterfall(Anime, year) {
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
                 </div>
-                <div class="float content">
+                <div class="content">
                     <div class="name mdui-typo-title mdui-text-color-theme">${animeName}</div>
                     <div class="nameInJpn">${item.nameInJpn}</div>
                 </div>
@@ -332,7 +341,9 @@ function info(Anime, year) {
 
         $(`#${animeDay}`).append($(`<div class="card">
                 <div class="image" style="background-image:url('${item.img}')">
-                    <div class="big-text hover-show"><i class="mdui-icon eva eva-info-outline"></i></div>
+                    <div class="big-text hover-show">
+                        <i class="mdui-icon eva eva-info-outline"></i>
+                    </div>
                 </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
@@ -352,16 +363,24 @@ function showAnimeInfoDialog(item, year) {
     let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
     let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
     if (item.date.trim() === "" || !item.date) time = "播出時間未知"
-    let carrierItem = ""
+    // 動畫詳細資料清單
+    let displayItems = []
+    displayItems.push({ icon: 'access_time', title: '播出時間', content: time })
     if (item.carrier)
-        carrierItem = `
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">${carrierIcon[item.carrier]}</i>
+        displayItems.push({ icon: carrierIcon[item.carrier], title: '原作載體', content: carrierChinese[item.carrier] })
+    displayItems.push({ icon: 'info', title: '簡介', content: item.description || '尚無簡介！' })
+    if (item.official)
+        displayItems.push({ icon: 'public', title: '官網', content: item.official, href: item.official })
+    let displayItemsResult = displayItems.map(({ href, title, content, icon }) =>
+        `<a class="mdui-list-item mdui-ripple" ${href ? `href="${href}" target="_blank"` : ''}>
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">${icon}</i>
             <div class="mdui-list-item-content">
-                <div class="mdui-list-item-title">原作載體</div>
-                <div class="mdui-list-item-text">${carrierChinese[item.carrier]}</div>
+                <div class="mdui-list-item-title">${title}</div>
+                <div class="mdui-list-item-text">${content}</div>
             </div>
-        </li>`
+            ${href ? `<i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i>` : ''}
+        </a>`
+    ).join('')
     let animeDialogContent = `
     <div class="anime-container">
         <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"></div>
@@ -369,26 +388,11 @@ function showAnimeInfoDialog(item, year) {
             <div class="anime-info">
                 <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
                 <div class="mdui-typo-subheading-opacity">${item.nameInJpn}</div>
-                <ul class="mdui-list">
-                    <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">access_time</i>
-                        <div class="mdui-list-item-content">
-                            <div class="mdui-list-item-title">播出時間</div>
-                            <div class="mdui-list-item-text">${time}</div>
-                        </div>
-                    </li>
-                    ${carrierItem}
-                    <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">info</i>
-                        <div class="mdui-list-item-content">
-                            <div class="mdui-list-item-title">簡介</div>
-                            <div class="mdui-list-item-text">${item.description || '尚無簡介！'}</div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="mdui-list">
+                    ${displayItemsResult}
+                </div>
             </div>
             <div class="anime-actions">
-                ${item.official ? `<a class="mdui-btn mdui-btn-dense mdui-ripple" href="${item.official}" target="_blank">官網</a>` : ''}
                 <button class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" mdui-dialog-close>關閉</button>
             </div>
         </div>

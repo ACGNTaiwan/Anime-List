@@ -135,6 +135,11 @@ body:not(.firefox) .mdui-dialog-content {
 .card:active {
   cursor: pointer;
 }
+.card:active .image .big-text.hover-show {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
 .card img {
   width: 100%;
 }
@@ -175,34 +180,39 @@ body:not(.firefox) .mdui-dialog-content {
 }
 .card .image .big-text {
   --circle-size: 70px;
+  --font-size: 32px;
   position: absolute;
   bottom: 0;
   right: 0;
   top: 0;
   left: 0;
   margin: auto;
-  font-size: 32px;
+  font-size: var(--font-size);
   color: #FFF;
+  border-radius: 100em;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   width: var(--circle-size);
   line-height: var(--circle-size);
   height: var(--circle-size);
-  border-radius: 100em;
   text-align: center;
   font-family: "Noto Serif TC", serif;
 }
-.card .image .big-text i:before {
-  font-size: 32px;
+.card .image .big-text i {
+  display: block;
+}
+.card .image .big-text i::before {
+  font-size: var(--font-size);
+  line-height: var(--circle-size);
   width: auto;
   height: auto;
 }
 .card .image .big-text.hover-show {
   opacity: 0;
-  -webkit-transform: scale(0.8) rotate(20deg);
-      -ms-transform: scale(0.8) rotate(20deg);
-          transform: scale(0.8) rotate(20deg);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
@@ -224,29 +234,34 @@ body:not(.firefox) .mdui-dialog-content {
      -moz-column-break-inside: avoid;
           break-inside: avoid;
   padding: 1e-10px;
+  -webkit-box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0.4px 0.3px rgba(0, 0, 0, 0.008), 0 1.1px 0.8px rgba(0, 0, 0, 0.012), 0 2.2px 1.5px rgba(0, 0, 0, 0.015), 0 4.2px 2.7px rgba(0, 0, 0, 0.018), 0 7.8px 5px rgba(0, 0, 0, 0.022), 0 12px 12px rgba(0, 0, 0, 0.03);
 }
 .waterfall .card .image {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 0;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .waterfall .card .image img {
   display: block;
 }
 .waterfall .card:hover {
-  position: relative;
-  z-index: 5;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0.8px 1.9px rgba(0, 0, 0, 0.02), 0 2.3px 4.5px rgba(0, 0, 0, 0.028), 0 4.8px 8.5px rgba(0, 0, 0, 0.035), 0 9.2px 15.2px rgba(0, 0, 0, 0.042), 0 16.9px 28.4px rgba(0, 0, 0, 0.05), 0 26px 68px rgba(0, 0, 0, 0.07);
 }
 .waterfall .card:hover .image {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
 }
-.waterfall .card .content.float {
-  margin: auto;
-  display: table;
+.waterfall .card .content {
   padding: 8px;
   text-align: center;
 }
@@ -374,7 +389,6 @@ body:not(.firefox) .mdui-dialog-content {
   display: -ms-flexbox;
   display: flex;
   margin: -24px;
-  width: calc(100% + 24px * 2);
 }
 .anime-container > .anime-poster {
   max-width: 25%;
@@ -387,6 +401,7 @@ body:not(.firefox) .mdui-dialog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
