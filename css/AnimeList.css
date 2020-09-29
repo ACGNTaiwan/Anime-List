@@ -135,6 +135,11 @@ body:not(.firefox) .mdui-dialog-content {
 .card:active {
   cursor: pointer;
 }
+.card:active .image .big-text.hover-show {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
 .card img {
   width: 100%;
 }
@@ -175,13 +180,14 @@ body:not(.firefox) .mdui-dialog-content {
 }
 .card .image .big-text {
   --circle-size: 70px;
+  --font-size: 32px;
   position: absolute;
   bottom: 0;
   right: 0;
   top: 0;
   left: 0;
   margin: auto;
-  font-size: 32px;
+  font-size: var(--font-size);
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
@@ -189,20 +195,23 @@ body:not(.firefox) .mdui-dialog-content {
   width: var(--circle-size);
   line-height: var(--circle-size);
   height: var(--circle-size);
-  border-radius: 100em;
   text-align: center;
   font-family: "Noto Serif TC", serif;
 }
-.card .image .big-text i:before {
-  font-size: 32px;
+.card .image .big-text i {
+  display: block;
+}
+.card .image .big-text i::before {
+  font-size: var(--font-size);
+  line-height: var(--circle-size);
   width: auto;
   height: auto;
 }
 .card .image .big-text.hover-show {
   opacity: 0;
-  -webkit-transform: scale(0.8) rotate(20deg);
-      -ms-transform: scale(0.8) rotate(20deg);
-          transform: scale(0.8) rotate(20deg);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);

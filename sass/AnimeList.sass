@@ -86,6 +86,9 @@ body:not(.firefox) .mdui-dialog-content
                 transform: none
     &:active
         cursor: pointer
+        .image
+            .big-text.hover-show
+                transform: scale(.8)
     img
         width: 100%
     .content
@@ -116,29 +119,32 @@ body:not(.firefox) .mdui-dialog-content
         box-shadow: 0 0.4px 0.3px rgba(0,0,0,.008), 0 1.1px 0.8px rgba(0,0,0,.012), 0 2.2px 1.5px rgba(0,0,0,.015), 0 4.2px 2.7px rgba(0,0,0,.018), 0 7.8px 5px rgba(0,0,0,.022), 0 12px 12px rgba(0,0,0,.03)
         .big-text
             --circle-size: 70px
+            --font-size: 32px
             position: absolute
             bottom: 0
             right: 0
             top: 0
             left: 0
             margin: auto
-            font-size: 32px
+            font-size: var(--font-size)
             color: #FFF
             background-color: rgb(0 0 0 / .2)
             backdrop-filter: blur(10px)
             width: var(--circle-size)
             line-height: var(--circle-size)
             height: var(--circle-size)
-            border-radius: 100em
             text-align: center
             font-family: 'Noto Serif TC', serif
-            i:before
-                font-size: 32px
-                width: auto
-                height: auto
+            i
+                display: block
+                &::before
+                    font-size: var(--font-size)
+                    line-height: var(--circle-size)
+                    width: auto
+                    height: auto
         .big-text.hover-show
             opacity: 0
-            transform: scale(.8) rotate(20deg)
+            transform: scale(1.2)
             transition: all .3s cubic-bezier(0,0,.2,1)
 .waterfall
     column-count: 6
