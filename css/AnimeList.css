@@ -189,6 +189,7 @@ body:not(.firefox) .mdui-dialog-content {
   margin: auto;
   font-size: var(--font-size);
   color: #FFF;
+  border-radius: 100em;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
