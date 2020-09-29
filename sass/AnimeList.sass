@@ -1,3 +1,7 @@
+/* shadow */
+\:root
+    --shadow-default: 0 0.4px 0.3px rgba(0,0,0,.008), 0 1.1px 0.8px rgba(0,0,0,.012), 0 2.2px 1.5px rgba(0,0,0,.015), 0 4.2px 2.7px rgba(0,0,0,.018), 0 7.8px 5px rgba(0,0,0,.022), 0 12px 12px rgba(0,0,0,.03)
+    --shadow-hover: 0 0.8px 1.9px rgba(0,0,0,.02), 0 2.3px 4.5px rgba(0,0,0,.028), 0 4.8px 8.5px rgba(0,0,0,.035), 0 9.2px 15.2px rgba(0,0,0,.042), 0 16.9px 28.4px rgba(0,0,0,.05), 0 26px 68px rgba(0,0,0,.07)
 /* MDUI List avatar fix */
 .mdui-list-item-avatar,.mdui-card-header-avatar
     background-color: #FFF
@@ -80,7 +84,7 @@ body:not(.firefox) .mdui-dialog-content
         .image
             opacity: .9
             transform: translateY(-3px)
-            box-shadow: 0 0.8px 1.9px rgba(0,0,0,.02), 0 2.3px 4.5px rgba(0,0,0,.028), 0 4.8px 8.5px rgba(0,0,0,.035), 0 9.2px 15.2px rgba(0,0,0,.042), 0 16.9px 28.4px rgba(0,0,0,.05), 0 26px 68px rgba(0,0,0,.07)
+            box-shadow: var(--shadow-hover)
             .big-text.hover-show
                 opacity: 1
                 transform: none
@@ -116,7 +120,7 @@ body:not(.firefox) .mdui-dialog-content
         position: relative
         transition: all .3s cubic-bezier(0,0,.2,1)
         background-color: #eee
-        box-shadow: 0 0.4px 0.3px rgba(0,0,0,.008), 0 1.1px 0.8px rgba(0,0,0,.012), 0 2.2px 1.5px rgba(0,0,0,.015), 0 4.2px 2.7px rgba(0,0,0,.018), 0 7.8px 5px rgba(0,0,0,.022), 0 12px 12px rgba(0,0,0,.03)
+        box-shadow: var(--shadow-default)
         .big-text
             --circle-size: 70px
             --font-size: 32px
@@ -156,7 +160,7 @@ body:not(.firefox) .mdui-dialog-content
         position: relative
         break-inside: avoid
         padding: 0.0000000001px // avoid div break
-        box-shadow: 0 0.4px 0.3px rgba(0,0,0,.008), 0 1.1px 0.8px rgba(0,0,0,.012), 0 2.2px 1.5px rgba(0,0,0,.015), 0 4.2px 2.7px rgba(0,0,0,.018), 0 7.8px 5px rgba(0,0,0,.022), 0 12px 12px rgba(0,0,0,.03)
+        box-shadow: var(--shadow-default)
         .image
             height: fit-content
             padding-bottom: 0
@@ -166,7 +170,7 @@ body:not(.firefox) .mdui-dialog-content
                 display: block
         &:hover
             transform: translateY(-3px)
-            box-shadow: 0 0.8px 1.9px rgba(0,0,0,.02), 0 2.3px 4.5px rgba(0,0,0,.028), 0 4.8px 8.5px rgba(0,0,0,.035), 0 9.2px 15.2px rgba(0,0,0,.042), 0 16.9px 28.4px rgba(0,0,0,.05), 0 26px 68px rgba(0,0,0,.07)
+            box-shadow: var(--shadow-hover)
             .image
                 transform: none
         .content
@@ -192,12 +196,9 @@ body:not(.firefox) .mdui-dialog-content
         width: calc(100% / 7)
         display: block
         .mdui-list-item
-            margin: 8px 2px
-            padding: 0
-            border-left: 3px solid #3f51b5
-            border-radius: 0
+            padding: 4px 8px
             .mdui-list-item-content
-                padding: 0 4px
+                padding: 0
 .info
     --column-count: 6
     .card
@@ -242,36 +243,51 @@ body:not(.firefox) .mdui-dialog-content
     .schedule .day
         width: 100%
 /* anime-container */
+.mdui-dialog,.mdui-dialog-content
+    overflow: visible !important
 .anime-container
     min-height: 300px
-    display: flex
     margin: -24px
-    >.anime-poster
-        max-width: 25%
-        min-width: 200px
-        background-size: cover
-        background-position: center
+    position: relative
     >.anime-info-container
-        margin: 12px
-        display: flex
+        padding: 12px
         width: 100%
-        flex-direction: column
+        box-sizing: border-box
         >.anime-info
             flex: 1
         >.anime-actions
             text-align: right
-
+@media (min-width: 800.01px)
+    .anime-container
+        >.anime-poster
+            transform: scale(1.1) translateX(-12px) translateY(-12px)
+            border-radius: 12px
+            width: 250px
+            position: absolute  
+            background-image: none !important      
+            img
+                width: 100%
+                border-radius: 12px
+                box-shadow: var(--shadow-default)
+                background-color: #dadada
+        >.anime-info-container
+            padding-left: 262px
 @media (max-width: 800px)
     .anime-container
-        display: block
-        .anime-poster
+        >.anime-poster
+            border-radius: 12px 12px 0 0
             height: 200px
             width: 100%
             max-width: 100%
+            background-size: contain,cover
+            background-position: center
             background-repeat: no-repeat
             background-size: contain,cover
-            background-color: #dadada
             background-blend-mode: normal,overlay
+            box-shadow: var(--shadow-default)
+            background-color: #dadada
+            >img
+                display: none
 /* header-wrapper */
 .header-wrapper
     width: 100%

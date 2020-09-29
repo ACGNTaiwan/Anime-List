@@ -383,7 +383,7 @@ function showAnimeInfoDialog(item, year) {
     ).join('')
     let animeDialogContent = `
     <div class="anime-container">
-        <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"></div>
+        <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"><img src="${item.img}"/></div>
         <div class="anime-info-container">
             <div class="anime-info">
                 <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
