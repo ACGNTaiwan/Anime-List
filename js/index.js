@@ -157,14 +157,19 @@ function showHome() {
                 $('#content .recent-update').append(
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
-                        <div class="image" style="background-image:url('${bgImg}')"></div>
+                        <div class="image" style="background-image:url('${bgImg}')">
+                            <div class="big-text hover-show">
+                                <i class="mdui-icon eva eva-arrow-ios-forward-outline"></i>
+                            </div>
+                        </div>
                         <div class="content">
                             <div class="name mdui-text-color-theme">${m} 月${month2Season(m)}番</div>
                             <div class="nameInJpn">${y} 年</div>
                         </div>
-                    </a>`).click(function () {
-                            drawer.open(`[al-month="${y}-${m}"]`);
-                        })
+                    </a>`
+                    ).click(function () {
+                        drawer.open(`[al-month="${y}-${m}"]`);
+                    })
                 )
                 count++
             }
@@ -192,7 +197,11 @@ function showHome() {
             for (user of data) {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
-                <div class="image" style="background-image:url('${user.avatar_url}')"><div class="big-text hover-show"><i class="mdui-icon eva eva-github-outline"></i></div></div>
+                <div class="image" style="background-image:url('${user.avatar_url}')">
+                    <div class="big-text hover-show">
+                        <i class="mdui-icon eva eva-github-outline"></i>
+                    </div>
+                </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
                     <div class="nameInJpn">${user.contributions} commits</div>
@@ -332,7 +341,9 @@ function info(Anime, year) {
 
         $(`#${animeDay}`).append($(`<div class="card">
                 <div class="image" style="background-image:url('${item.img}')">
-                    <div class="big-text hover-show"><i class="mdui-icon eva eva-info-outline"></i></div>
+                    <div class="big-text hover-show">
+                        <i class="mdui-icon eva eva-info-outline"></i>
+                    </div>
                 </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
