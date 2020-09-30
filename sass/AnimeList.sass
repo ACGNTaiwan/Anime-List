@@ -260,25 +260,27 @@ body:not(.firefox) .mdui-dialog-content
 @media (min-width: 800.01px)
     .anime-container
         >.anime-poster
-            transform: scale(1.1) translateX(-12px) translateY(-12px)
+            transform: scale(1.05) translateX(-12px)
             border-radius: 12px
-            width: 250px
-            position: absolute  
+            width: 300px
+            position: absolute 
+            top: 50%
+            bottom: 50%
             background-image: none !important      
             img
                 width: 100%
                 border-radius: 12px
                 box-shadow: var(--shadow-default)
                 background-color: #dadada
+                transform: translateY(-50%)
         >.anime-info-container
-            padding-left: 262px
+            padding-left: 312px
 @media (max-width: 800px)
     .anime-container
         >.anime-poster
             border-radius: 12px 12px 0 0
             height: 200px
             width: 100%
-            max-width: 100%
             background-size: contain,cover
             background-position: center
             background-repeat: no-repeat
