@@ -1,7 +1,7 @@
 [
     {
         "name": "路人超能100",
-        "nameInJpn": "モブサイコ100",
+        "originalName": "モブサイコ100",
         "date": "1/7",
         "time": "23:00",
         "carrier": "Comic",
@@ -13,7 +13,7 @@
     },
     {
         "name": "BanG Dream!",
-        "nameInJpn": "バンドリ!",
+        "originalName": "バンドリ!",
         "date": "1/3",
         "time": "23:00",
         "carrier": "Comic",
@@ -25,7 +25,7 @@
     },
     {
         "name": "琴之森",
-        "nameInJpn": "ピアノの森",
+        "originalName": "ピアノの森",
         "date": "1/27",
         "time": "24:10",
         "carrier": "Comic",
@@ -37,7 +37,7 @@
     },
     {
         "name": "B-PROJECT",
-        "nameInJpn": "B-PROJECT",
+        "originalName": "B-PROJECT",
         "date": "1/11",
         "time": "24:00",
         "carrier": "Original",
@@ -49,7 +49,7 @@
     },
     {
         "name": "狂賭之淵",
-        "nameInJpn": "賭ケグルイ××",
+        "originalName": "賭ケグルイ××",
         "date": "1/8",
         "time": "26:30",
         "carrier": "Comic",
@@ -61,7 +61,7 @@
     },
     {
         "name": "3D 女友",
-        "nameInJpn": "3D 彼女",
+        "originalName": "3D 彼女",
         "date": "1/9",
         "time": "24:00",
         "carrier": "",
@@ -73,7 +73,7 @@
     },
     {
         "name": "不愉快的妖怪庵",
-        "nameInJpn": "不機嫌なモノノケ庵",
+        "originalName": "不機嫌なモノノケ庵",
         "date": "1/6",
         "time": "22:00",
         "carrier": "Comic",
@@ -85,7 +85,7 @@
     },
     {
         "name": "約會大作戰",
-        "nameInJpn": "デート・ア・ライブ",
+        "originalName": "デート・ア・ライブ",
         "date": "1/11",
         "time": "21:30",
         "carrier": "",
@@ -97,7 +97,7 @@
     },
     {
         "name": "Endro~!",
-        "nameInJpn": "えんどろ〜！",
+        "originalName": "えんどろ〜！",
         "date": "1/12",
         "time": "25:00",
         "carrier": "Original",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Revisions",
-        "nameInJpn": "Revisions",
+        "originalName": "Revisions",
         "date": "1/9",
         "time": "24:55",
         "carrier": "Original",
@@ -121,7 +121,7 @@
     },
     {
         "name": "魔法少女特殊戰明日香",
-        "nameInJpn": "魔法少女特殊戦あすか",
+        "originalName": "魔法少女特殊戦あすか",
         "date": "1/11",
         "time": "26:25",
         "carrier": "Comic",
@@ -133,7 +133,7 @@
     },
     {
         "name": "約定的夢幻島",
-        "nameInJpn": "約束のネバーランド",
+        "originalName": "約束のネバーランド",
         "date": "1/10",
         "time": "24:55",
         "carrier": "Comic",
@@ -145,7 +145,7 @@
     },
     {
         "name": "輝夜姬想讓人告白",
-        "nameInJpn": "かぐや様は告らせたい",
+        "originalName": "かぐや様は告らせたい",
         "date": "1/12",
         "time": "23:30",
         "carrier": "Comic",
@@ -157,7 +157,7 @@
     },
     {
         "name": "五等分的新娘",
-        "nameInJpn": "五等分の花嫁",
+        "originalName": "五等分の花嫁",
         "date": "1/11",
         "time": "11:30",
         "carrier": "Comic",
@@ -169,7 +169,7 @@
     },
     {
         "name": "粉彩回憶",
-        "nameInJpn": "ぱすてるメモリーズ",
+        "originalName": "ぱすてるメモリーズ",
         "date": "1/7",
         "time": "24:30",
         "carrier": "Game",
@@ -181,7 +181,7 @@
     },
     {
         "name": "HERO MASK",
-        "nameInJpn": "HERO MASK",
+        "originalName": "HERO MASK",
         "date": "12/3",
         "time": "0:00",
         "carrier": "Original",
@@ -194,7 +194,7 @@
     },
     {
         "name": "聖鬥士星矢 聖鬥少女翔",
-        "nameInJpn": "聖闘士星矢 セインティア翔",
+        "originalName": "聖闘士星矢 セインティア翔",
         "date": "12/10",
         "time": "19:00",
         "carrier": "Comic",
@@ -207,7 +207,7 @@
     },
     {
         "name": "Dimension高中",
-        "nameInJpn": "Dimensionハイスクール",
+        "originalName": "Dimensionハイスクール",
         "date": "1/10",
         "time": "22:00",
         "carrier": "Comic",
@@ -219,7 +219,7 @@
     },
     {
         "name": "盾之勇者成名錄",
-        "nameInJpn": "盾の勇者の成り上がり",
+        "originalName": "盾の勇者の成り上がり",
         "date": "1/9",
         "time": "22:00",
         "carrier": "Novel",
@@ -231,7 +231,7 @@
     },
     {
         "name": "天使降臨到我身邊",
-        "nameInJpn": "私に天使が舞い降りた!",
+        "originalName": "私に天使が舞い降りた!",
         "date": "1/8",
         "time": "22:00",
         "carrier": "Comic",
@@ -243,7 +243,7 @@
     },
     {
         "name": "臨死！！江古田醬",
-        "nameInJpn": "臨死!! 江古田ちゃん",
+        "originalName": "臨死!! 江古田ちゃん",
         "date": "1/8",
         "time": "25:00",
         "carrier": "Comic",
@@ -255,7 +255,7 @@
     },
     {
         "name": "笨拙之極的上野",
-        "nameInJpn": "上野さんは不器用",
+        "originalName": "上野さんは不器用",
         "date": "1/6",
         "time": "24:30",
         "carrier": "Comic",
@@ -267,7 +267,7 @@
     },
     {
         "name": "荒野的KOTOBUKI飛行隊",
-        "nameInJpn": "荒野のコトブキ飛行隊",
+        "originalName": "荒野のコトブキ飛行隊",
         "date": "1/13",
         "time": "22:30",
         "carrier": "Original",
@@ -279,7 +279,7 @@
     },
     {
         "name": "煙草",
-        "nameInJpn": "ケムリクサ",
+        "originalName": "ケムリクサ",
         "date": "1/9",
         "time": "22:30",
         "carrier": "Original",
@@ -291,7 +291,7 @@
     },
     {
         "name": "CIRCLET PRINCESS",
-        "nameInJpn": "サークレット・プリンセス",
+        "originalName": "サークレット・プリンセス",
         "date": "1/8",
         "time": "23:00",
         "carrier": "Game",
@@ -303,7 +303,7 @@
     },
     {
         "name": "明治東京戀伽",
-        "nameInJpn": "明治東亰恋伽",
+        "originalName": "明治東亰恋伽",
         "date": "1/9",
         "time": "23:00",
         "carrier": "Game",
@@ -315,7 +315,7 @@
     },
     {
         "name": "幻影死神",
-        "nameInJpn": "ブギーポップは笑わない",
+        "originalName": "ブギーポップは笑わない",
         "date": "1/4",
         "time": "21:00",
         "carrier": "Novel",
@@ -327,7 +327,7 @@
     },
     {
         "name": "Flying Babies",
-        "nameInJpn": "フライングベイビーズ",
+        "originalName": "フライングベイビーズ",
         "date": "1/10",
         "time": "3:05",
         "carrier": "Original",
@@ -339,7 +339,7 @@
     },
     {
         "name": "迷你刀使",
-        "nameInJpn": "みにとじ",
+        "originalName": "みにとじ",
         "date": "1/6",
         "time": "1:55",
         "carrier": "Original",
@@ -351,7 +351,7 @@
     },
     {
         "name": "巴哈姆特之怒-Manaria Friends-",
-        "nameInJpn": "マナリアフレンズ",
+        "originalName": "マナリアフレンズ",
         "date": "1/20",
         "time": "24:30",
         "carrier": "Game",
@@ -363,7 +363,7 @@
     },
     {
         "name": "家有女友",
-        "nameInJpn": "ドメスティックな彼女",
+        "originalName": "ドメスティックな彼女",
         "date": "1/11",
         "time": "1:45",
         "carrier": "Comic",
@@ -375,7 +375,7 @@
     },
     {
         "name": "笑容的代價",
-        "nameInJpn": "エガオノダイカ",
+        "originalName": "エガオノダイカ",
         "date": "1/4",
         "time": "22:30",
         "carrier": "Original",
@@ -387,7 +387,7 @@
     },
     {
         "name": "W’z",
-        "nameInJpn": "W’z《ウィズ》",
+        "originalName": "W’z《ウィズ》",
         "date": "1/5",
         "time": "25:00",
         "carrier": "Original",
@@ -399,7 +399,7 @@
     },
     {
         "name": "動物朋友2",
-        "nameInJpn": "けものフレンズ2",
+        "originalName": "けものフレンズ2",
         "date": "1/15",
         "time": "21:00",
         "carrier": "Game",
@@ -411,7 +411,7 @@
     },
     {
         "name": "多羅羅",
-        "nameInJpn": "どろろ",
+        "originalName": "どろろ",
         "date": "1/7",
         "time": "22:00",
         "carrier": "Comic",
@@ -423,7 +423,7 @@
     },
     {
         "name": "雨色可可亞",
-        "nameInJpn": "雨色ココアside G",
+        "originalName": "雨色ココアside G",
         "date": "1/8",
         "time": "22:55",
         "carrier": "Comic",
@@ -435,7 +435,7 @@
     },
     {
         "name": "同居人是貓",
-        "nameInJpn": "同居人はひざ、時々、頭のうえ。",
+        "originalName": "同居人はひざ、時々、頭のうえ。",
         "date": "1/9",
         "time": "23:30",
         "carrier": "Comic",
@@ -447,7 +447,7 @@
     },
     {
         "name": "格林筆記 The Animation",
-        "nameInJpn": "グリムノーツ The Animation",
+        "originalName": "グリムノーツ The Animation",
         "date": "1/10",
         "time": "2:30",
         "carrier": "Game",
@@ -459,7 +459,7 @@
     },
     {
         "name": "飛翔吧！戰機少女",
-        "nameInJpn": "ガーリー・エアフォース",
+        "originalName": "ガーリー・エアフォース",
         "date": "1/10",
         "time": "23:00",
         "carrier": "Novel",
@@ -471,7 +471,7 @@
     },
     {
         "name": "多彩田園曲來自百慕達三角",
-        "nameInJpn": "カラフル・パストラーレ ～from Bermuda△～",
+        "originalName": "カラフル・パストラーレ ～from Bermuda△～",
         "date": "1/12",
         "time": "22:00",
         "carrier": "Original",
@@ -483,7 +483,7 @@
     },
     {
         "name": "就算是爸爸也想做",
-        "nameInJpn": "パパだって、したい",
+        "originalName": "パパだって、したい",
         "date": "1/6",
         "time": "25:00",
         "carrier": "Comic",

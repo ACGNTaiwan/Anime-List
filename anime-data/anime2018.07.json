@@ -1,7 +1,7 @@
 [
     {
         "name": "未來卡片 神之戰鬥夥伴",
-        "nameInJpn": "フューチャーカード 神バディファイト",
+        "originalName": "フューチャーカード 神バディファイト",
         "date": "6/2",
         "time": "08:00",
         "carrier": "Comic",
@@ -13,7 +13,7 @@
     },
     {
         "name": "付喪神出租中",
-        "nameInJpn": "つくもがみ貸します",
+        "originalName": "つくもがみ貸します",
         "date": "7/1",
         "time": "00:10",
         "carrier": "Novel",
@@ -25,7 +25,7 @@
     },
     {
         "name": "OVERLORD",
-        "nameInJpn": "オーバーロード",
+        "originalName": "オーバーロード",
         "date": "7/10",
         "time": "22:00",
         "carrier": "Novel",
@@ -37,7 +37,7 @@
     },
     {
         "name": "天狼 Sirius the Jaeger",
-        "nameInJpn": "天狼 Sirius the Jaeger",
+        "originalName": "天狼 Sirius the Jaeger",
         "date": "7/12",
         "time": "23:00",
         "carrier": "Original",
@@ -49,7 +49,7 @@
     },
     {
         "name": "魔法律事務所",
-        "nameInJpn": "ムヒョとロージーの魔法律相談事務所",
+        "originalName": "ムヒョとロージーの魔法律相談事務所",
         "date": "8/3",
         "time": "21:30",
         "carrier": "Comic",
@@ -61,7 +61,7 @@
     },
     {
         "name": "闇芝居",
-        "nameInJpn": "闇芝居",
+        "originalName": "闇芝居",
         "date": "7/7",
         "time": "4:00",
         "carrier": "Original",
@@ -73,7 +73,7 @@
     },
     {
         "name": "ISLAND",
-        "nameInJpn": "アイランド",
+        "originalName": "アイランド",
         "date": "7/1",
         "time": "22:00",
         "carrier": "Game",
@@ -85,7 +85,7 @@
     },
     {
         "name": "羽球戰爭！",
-        "nameInJpn": "はねバド!",
+        "originalName": "はねバド!",
         "date": "7/1",
         "time": "24:00",
         "carrier": "Comic",
@@ -97,7 +97,7 @@
     },
     {
         "name": "刃牙",
-        "nameInJpn": "バキ",
+        "originalName": "バキ",
         "date": "7/1",
         "time": "24:30",
         "carrier": "Comic",
@@ -109,7 +109,7 @@
     },
     {
         "name": "One Room",
-        "nameInJpn": "One Room",
+        "originalName": "One Room",
         "date": "7/2",
         "time": "25:35",
         "carrier": "Original",
@@ -121,7 +121,7 @@
     },
     {
         "name": "前進吧！登山少女",
-        "nameInJpn": "ヤマノススメ",
+        "originalName": "ヤマノススメ",
         "date": "7/2",
         "time": "25:40",
         "carrier": "Comic",
@@ -133,7 +133,7 @@
     },
     {
         "name": "偶像大師灰姑娘女孩劇場",
-        "nameInJpn": "アイドルマスター シンデレラガールズ劇場",
+        "originalName": "アイドルマスター シンデレラガールズ劇場",
         "date": "7/3",
         "time": "21:54",
         "carrier": "Comic",
@@ -145,7 +145,7 @@
     },
     {
         "name": "千銃士",
-        "nameInJpn": "千銃士",
+        "originalName": "千銃士",
         "date": "7/3",
         "time": "23:00",
         "carrier": "Game",
@@ -157,7 +157,7 @@
     },
     {
         "name": "殭屍少女的災難",
-        "nameInJpn": "あるゾンビ少女の災難",
+        "originalName": "あるゾンビ少女の災難",
         "date": "7/4",
         "time": "00:00",
         "carrier": "Novel",
@@ -169,7 +169,7 @@
     },
     {
         "name": "Back Street Girls 後街女孩",
-        "nameInJpn": "バックストリートガールズ",
+        "originalName": "バックストリートガールズ",
         "date": "7/3",
         "time": "25:00",
         "carrier": "Comic",
@@ -181,7 +181,7 @@
     },
     {
         "name": "中間管理錄利根川",
-        "nameInJpn": "中間管理錄トネガワ",
+        "originalName": "中間管理錄トネガワ",
         "date": "7/3",
         "time": "25:59",
         "carrier": "Comic",
@@ -193,7 +193,7 @@
     },
     {
         "name": "春原莊的管理人",
-        "nameInJpn": "すのはら荘の管理人さん",
+        "originalName": "すのはら荘の管理人さん",
         "date": "7/5",
         "time": "21:00",
         "carrier": "Comic",
@@ -205,7 +205,7 @@
     },
     {
         "name": "異世界魔王與召喚少女的奴隸魔術",
-        "nameInJpn": "異世界魔王と召喚少女の奴隷魔術",
+        "originalName": "異世界魔王と召喚少女の奴隷魔術",
         "date": "7/5",
         "time": "22:00",
         "carrier": "Comic",
@@ -217,7 +217,7 @@
     },
     {
         "name": "BanG Dream! Girls Band Party!☆PICO",
-        "nameInJpn": "BanG Dream! ガルパ☆ピコ",
+        "originalName": "BanG Dream! ガルパ☆ピコ",
         "date": "7/5",
         "time": "23:00",
         "carrier": "Game",
@@ -229,7 +229,7 @@
     },
     {
         "name": "夢王國與沉睡中的100位王子殿下",
-        "nameInJpn": "夢王國と眠れる100人の王子様",
+        "originalName": "夢王國と眠れる100人の王子様",
         "date": "7/5",
         "time": "24:00",
         "carrier": "Game",
@@ -241,7 +241,7 @@
     },
     {
         "name": "BANANA FISH",
-        "nameInJpn": "バナナフィッシュ",
+        "originalName": "バナナフィッシュ",
         "date": "7/5",
         "time": "24:55",
         "carrier": "Comic",
@@ -253,7 +253,7 @@
     },
     {
         "name": "昴宿七星",
-        "nameInJpn": "七星のスバル",
+        "originalName": "七星のスバル",
         "date": "7/6",
         "time": "25:58",
         "carrier": "Novel",
@@ -265,7 +265,7 @@
     },
     {
         "name": "殺戮的天使",
-        "nameInJpn": "殺戮の天使",
+        "originalName": "殺戮の天使",
         "date": "7/6",
         "time": "20:30",
         "carrier": "Game",
@@ -277,7 +277,7 @@
     },
     {
         "name": "遙的接球",
-        "nameInJpn": "はるかなレシーブ",
+        "originalName": "はるかなレシーブ",
         "date": "7/6",
         "time": "21:00",
         "carrier": "Comic",
@@ -289,7 +289,7 @@
     },
     {
         "name": "千緒的通學路",
-        "nameInJpn": "ちおちゃんの通學路",
+        "originalName": "ちおちゃんの通學路",
         "date": "7/6",
         "time": "22:00",
         "carrier": "Comic",
@@ -301,7 +301,7 @@
     },
     {
         "name": "音樂少女",
-        "nameInJpn": "音楽少女",
+        "originalName": "音楽少女",
         "date": "7/6",
         "time": "23:00",
         "carrier": "Original",
@@ -313,7 +313,7 @@
     },
     {
         "name": "機獸創世紀 ZoidsWild",
-        "nameInJpn": "ゾイドワイルド",
+        "originalName": "ゾイドワイルド",
         "date": "7/7",
         "time": "6:30",
         "carrier": "Original",
@@ -325,7 +325,7 @@
     },
     {
         "name": "工作細胞",
-        "nameInJpn": "はたらく細胞",
+        "originalName": "はたらく細胞",
         "date": "7/7",
         "time": "24:00",
         "carrier": "Comic",
@@ -337,7 +337,7 @@
     },
     {
         "name": "百鍊霸王與聖約女武神",
-        "nameInJpn": "百錬の覇王と聖約の戦乙女",
+        "originalName": "百錬の覇王と聖約の戦乙女",
         "date": "7/8",
         "time": "25:30",
         "carrier": "Comic",
@@ -349,7 +349,7 @@
     },
     {
         "name": "遊戲3人娘",
-        "nameInJpn": "あそびあそばせ",
+        "originalName": "あそびあそばせ",
         "date": "7/8",
         "time": "21:00",
         "carrier": "Comic",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Planet With",
-        "nameInJpn": "プラネット・ウィズ",
+        "originalName": "プラネット・ウィズ",
         "date": "7/8",
         "time": "22:30",
         "carrier": "Original",
@@ -373,7 +373,7 @@
     },
     {
         "name": "銀魂 銀之魂篇 後半戰",
-        "nameInJpn": "銀魂 銀ノ魂篇 後半戦",
+        "originalName": "銀魂 銀ノ魂篇 後半戦",
         "date": "7/8",
         "time": "25:30",
         "carrier": "Comic",
@@ -385,7 +385,7 @@
     },
     {
         "name": "Phantom in the Twilight",
-        "nameInJpn": "ファントム イン ザ トワイライト",
+        "originalName": "ファントム イン ザ トワイライト",
         "date": "7/9",
         "time": "24:30",
         "carrier": "Original",
@@ -397,7 +397,7 @@
     },
     {
         "name": "小邪神飛踢！",
-        "nameInJpn": "邪神ちゃんドロップキック",
+        "originalName": "邪神ちゃんドロップキック",
         "date": "7/10",
         "time": "25:05",
         "carrier": "Comic",
@@ -409,7 +409,7 @@
     },
     {
         "name": "京都寺町三條商店街的福爾摩斯",
-        "nameInJpn": "京都寺町三條のホームズ",
+        "originalName": "京都寺町三條のホームズ",
         "date": "7/9",
         "time": "26:05",
         "carrier": "Novel",
@@ -421,7 +421,7 @@
     },
     {
         "name": "Angolmois 元寇合戰記",
-        "nameInJpn": "アンゴルモア 元寇合戦記",
+        "originalName": "アンゴルモア 元寇合戦記",
         "date": "7/10",
         "time": "24:30",
         "carrier": "Comic",
@@ -433,7 +433,7 @@
     },
     {
         "name": "深夜！天才妙老爹",
-        "nameInJpn": "深夜！天才バカボン",
+        "originalName": "深夜！天才バカボン",
         "date": "7/10",
         "time": "23:35",
         "carrier": "Comic",
@@ -445,7 +445,7 @@
     },
     {
         "name": "Free!-Dive to the Future-",
-        "nameInJpn": "Free!-Dive to the Future-",
+        "originalName": "Free!-Dive to the Future-",
         "date": "7/11",
         "time": "24:00",
         "carrier": "Comic",
@@ -457,7 +457,7 @@
     },
     {
         "name": "少女☆歌劇 Revue Starlight",
-        "nameInJpn": "少女☆歌劇 レヴュースタァライト",
+        "originalName": "少女☆歌劇 レヴュースタァライト",
         "date": "7/13",
         "time": "01:28",
         "carrier": "Original",
@@ -469,7 +469,7 @@
     },
     {
         "name": "高分少女",
-        "nameInJpn": "ハイスコアガール",
+        "originalName": "ハイスコアガール",
         "date": "7/14",
         "time": "00:30",
         "carrier": "Comic",
@@ -481,7 +481,7 @@
     },
     {
         "name": "LORD of VERMILION 紅蓮之王",
-        "nameInJpn": "ロード オブ ヴァーミリオン 紅蓮の王",
+        "originalName": "ロード オブ ヴァーミリオン 紅蓮の王",
         "date": "7/13",
         "time": "01:05",
         "carrier": "Game",
@@ -493,7 +493,7 @@
     },
     {
         "name": "Happy Sugar Life",
-        "nameInJpn": "ハッピーシュガーライフ",
+        "originalName": "ハッピーシュガーライフ",
         "date": "7/14",
         "time": "01:55",
         "carrier": "Comic",
@@ -505,7 +505,7 @@
     },
     {
         "name": "GRAND BLUE 碧藍之海",
-        "nameInJpn": "ぐらんぶる",
+        "originalName": "ぐらんぶる",
         "date": "7/14",
         "time": "02:25",
         "carrier": "Comic",
@@ -517,7 +517,7 @@
     },
     {
         "name": "搖曳莊的幽奈小姐",
-        "nameInJpn": "ゆらぎ荘の幽奈さん",
+        "originalName": "ゆらぎ荘の幽奈さん",
         "date": "7/14",
         "time": "23:30",
         "carrier": "Comic",
@@ -529,7 +529,7 @@
     },
     {
         "name": "進撃的巨人",
-        "nameInJpn": "進撃の巨人",
+        "originalName": "進撃の巨人",
         "date": "7/23",
         "time": "00:35",
         "carrier": "Comic",
@@ -541,7 +541,7 @@
     },
     {
         "name": "Fate/EXTRA Last Encore 天動說",
-        "nameInJpn": "Fate/EXTRA Last Encore イルステリアス天動説",
+        "originalName": "Fate/EXTRA Last Encore イルステリアス天動説",
         "date": "7/29",
         "time": "19:00",
         "carrier": "Game",

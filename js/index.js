@@ -164,7 +164,7 @@ function showHome() {
                         </div>
                         <div class="content">
                             <div class="name mdui-text-color-theme">${m} 月${month2Season(m)}番</div>
-                            <div class="nameInJpn">${y} 年</div>
+                            <div class="originalName">${y} 年</div>
                         </div>
                     </a>`
                     ).click(function () {
@@ -204,7 +204,7 @@ function showHome() {
                 </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme">${user.login}</div>
-                    <div class="nameInJpn">${user.contributions} commits</div>
+                    <div class="originalName">${user.contributions} commits</div>
                 </div>
             </a>`
             }
@@ -271,7 +271,7 @@ function waterfall(Anime, year) {
                 </div>
                 <div class="content">
                     <div class="name mdui-typo-title mdui-text-color-theme">${animeName}</div>
-                    <div class="nameInJpn">${item.nameInJpn}</div>
+                    <div class="originalName">${item.originalName}</div>
                 </div>
             </div>`).click(function () {
                 showAnimeInfoDialog(item, year)
@@ -349,7 +349,7 @@ function info(Anime, year) {
                 </div>
                 <div class="content">
                     <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
-                    <div class="nameInJpn">${item.nameInJpn}</div>
+                    <div class="originalName">${item.originalName}</div>
                     <div class="time">${time}</div>
                     <div class="description">${item.description}</div>
                 </div>
@@ -388,7 +388,7 @@ function showAnimeInfoDialog(item, year) {
         <div class="anime-info-container">
             <div class="anime-info">
                 <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
-                <div class="mdui-typo-subheading-opacity">${item.nameInJpn}</div>
+                <div class="mdui-typo-subheading-opacity">${item.originalName}</div>
                 <div class="mdui-list">
                     ${displayItemsResult}
                 </div>

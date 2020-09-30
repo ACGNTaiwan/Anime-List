@@ -1,7 +1,7 @@
 [
     {
         "name": "DOUBLE DECKER！道格＆西里爾",
-        "nameInJpn": "DOUBLE DECKER! ダグ&キリル",
+        "originalName": "DOUBLE DECKER! ダグ&キリル",
         "date": "9/30",
         "time": "21:30",
         "carrier": "Original",
@@ -13,7 +13,7 @@
     },
     {
         "name": "強風吹拂",
-        "nameInJpn": "風が強く吹いている",
+        "originalName": "風が強く吹いている",
         "date": "10/2",
         "time": "25:29",
         "carrier": "Novel",
@@ -25,7 +25,7 @@
     },
     {
         "name": "AKANESASU少女",
-        "nameInJpn": "あかねさす少女",
+        "originalName": "あかねさす少女",
         "date": "10/1",
         "time": "19:30",
         "carrier": "Original",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Thunderbolt Fantasy 東離劍遊紀 2",
-        "nameInJpn": "Thunderbolt Fantasy 東離劍遊紀 2",
+        "originalName": "Thunderbolt Fantasy 東離劍遊紀 2",
         "date": "10/1",
         "time": "22:00",
         "carrier": "Original",
@@ -49,7 +49,7 @@
     },
     {
         "name": "關於我轉生變成史萊姆這檔事",
-        "nameInJpn": "転生したらスライムだった件",
+        "originalName": "転生したらスライムだった件",
         "date": "10/1",
         "time": "24:00",
         "carrier": "Novel",
@@ -61,7 +61,7 @@
     },
     {
         "name": "宇宙戰艦提拉米蘇 第2期",
-        "nameInJpn": "宇宙戦艦ティラミスⅡ",
+        "originalName": "宇宙戦艦ティラミスⅡ",
         "date": "10/1",
         "time": "25:00",
         "carrier": "Comic",
@@ -73,7 +73,7 @@
     },
     {
         "name": "足球小將翼 中學篇",
-        "nameInJpn": "キャプテン翼 中学生編",
+        "originalName": "キャプテン翼 中学生編",
         "date": "10/15",
         "time": "1:35",
         "carrier": "Comic",
@@ -85,7 +85,7 @@
     },
     {
         "name": "軒轅劍 蒼之曜",
-        "nameInJpn": "軒轅剣 蒼き曜",
+        "originalName": "軒轅剣 蒼き曜",
         "date": "10/01",
         "time": "26:05",
         "carrier": "Game",
@@ -97,7 +97,7 @@
     },
     {
         "name": "爆釣BARHUNTER",
-        "nameInJpn": "爆釣バーハンター",
+        "originalName": "爆釣バーハンター",
         "date": "10/2",
         "time": "17:55",
         "carrier": "Original",
@@ -109,7 +109,7 @@
     },
     {
         "name": "人外先生的老婆",
-        "nameInJpn": "人外さんの嫁",
+        "originalName": "人外さんの嫁",
         "date": "10/2",
         "time": "25:00",
         "carrier": "Comic",
@@ -121,7 +121,7 @@
     },
     {
         "name": "青春豬頭少年不做兔女郎學姐的夢",
-        "nameInJpn": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+        "originalName": "青春ブタ野郎はバニーガール先輩の夢を見ない",
         "date": "10/3",
         "time": "26:15",
         "carrier": "Novel",
@@ -133,7 +133,7 @@
     },
     {
         "name": "喂，看見耳朵啦！",
-        "nameInJpn": "ほら、耳がみえてるよ！",
+        "originalName": "ほら、耳がみえてるよ！",
         "date": "8/25",
         "time": "00:00",
         "carrier": "Comic",
@@ -145,7 +145,7 @@
     },
     {
         "name": "轉吧！小海女！~在天空與海洋之間~",
-        "nameInJpn": "ソラとウミのアイダ",
+        "originalName": "ソラとウミのアイダ",
         "date": "10/3",
         "time": "24:00",
         "carrier": "Game",
@@ -157,7 +157,7 @@
     },
     {
         "name": "RErideD - 穿越時空的德希達 -",
-        "nameInJpn": "RErideD-刻越えのデリダ-",
+        "originalName": "RErideD-刻越えのデリダ-",
         "date": "10/3",
         "time": "25:05",
         "carrier": "Original",
@@ -169,7 +169,7 @@
     },
     {
         "name": "殭屍樂園 薩加",
-        "nameInJpn": "ゾンビランドサガ",
+        "originalName": "ゾンビランドサガ",
         "date": "10/4",
         "time": "23:30",
         "carrier": "Original",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Devidol！",
-        "nameInJpn": "でびどる！",
+        "originalName": "でびどる！",
         "date": "10/4",
         "time": "25:05",
         "carrier": "Original",
@@ -193,7 +193,7 @@
     },
     {
         "name": "學園BASARA",
-        "nameInJpn": "學園BASARA",
+        "originalName": "學園BASARA",
         "date": "10/4",
         "time": "1:28",
         "carrier": "Game",
@@ -205,7 +205,7 @@
     },
     {
         "name": "歡迎光臨、千歲醬",
-        "nameInJpn": "おこしやす、ちとせちゃん",
+        "originalName": "おこしやす、ちとせちゃん",
         "date": "10/5",
         "time": "25:35",
         "carrier": "Comic",
@@ -217,7 +217,7 @@
     },
     {
         "name": "BAKUMATSU",
-        "nameInJpn": "BAKUMATSU",
+        "originalName": "BAKUMATSU",
         "date": "10/4",
         "time": "1:58",
         "carrier": "Game",
@@ -229,7 +229,7 @@
     },
     {
         "name": "隔壁的吸血鬼美眉",
-        "nameInJpn": "となりの吸血鬼さん",
+        "originalName": "となりの吸血鬼さん",
         "date": "10/5",
         "time": "21:00",
         "carrier": "Comic",
@@ -241,7 +241,7 @@
     },
     {
         "name": "終將成為妳",
-        "nameInJpn": "やがて君になる Bloom Into You",
+        "originalName": "やがて君になる Bloom Into You",
         "date": "10/5",
         "time": "21:30",
         "carrier": "Comic",
@@ -253,7 +253,7 @@
     },
     {
         "name": "火之丸相撲",
-        "nameInJpn": "火ノ丸相撲",
+        "originalName": "火ノ丸相撲",
         "date": "10/5",
         "time": "22:00",
         "carrier": "Comic",
@@ -265,7 +265,7 @@
     },
     {
         "name": "魔法禁書目錄",
-        "nameInJpn": "とある魔術の禁書目錄",
+        "originalName": "とある魔術の禁書目錄",
         "date": "10/5",
         "time": "22:00",
         "carrier": "Comic",
@@ -277,7 +277,7 @@
     },
     {
         "name": "狐狸之聲",
-        "nameInJpn": "きつねのこえ",
+        "originalName": "きつねのこえ",
         "date": "10/8",
         "time": "25:10",
         "carrier": "Comic",
@@ -289,7 +289,7 @@
     },
     {
         "name": "錢進球場",
-        "nameInJpn": "グラゼニ 2期",
+        "originalName": "グラゼニ 2期",
         "date": "10/5",
         "time": "22:30",
         "carrier": "Comic",
@@ -301,7 +301,7 @@
     },
     {
         "name": "我家的女僕有夠煩！",
-        "nameInJpn": "うちのメイドがウザすぎる!",
+        "originalName": "うちのメイドがウザすぎる!",
         "date": "10/5",
         "time": "23:00",
         "carrier": "Comic",
@@ -313,7 +313,7 @@
     },
     {
         "name": "我讓最想被擁抱的男人給威脅了",
-        "nameInJpn": "抱かれたい男1位に脅されています。",
+        "originalName": "抱かれたい男1位に脅されています。",
         "date": "10/5",
         "time": "24:00",
         "carrier": "Comic",
@@ -325,7 +325,7 @@
     },
     {
         "name": "JOJO的奇妙冒險 黃金之風",
-        "nameInJpn": "ジョジョの奇妙な冒険 黃金の風",
+        "originalName": "ジョジョの奇妙な冒険 黃金の風",
         "date": "10/5",
         "time": "25:05",
         "carrier": "Comic",
@@ -337,7 +337,7 @@
     },
     {
         "name": "宇宙戰艦大和號2202 愛的戰士們",
-        "nameInJpn": "宇宙戦艦ヤマト2202　愛の戦士たち",
+        "originalName": "宇宙戦艦ヤマト2202　愛の戦士たち",
         "date": "10/5",
         "time": "25:23",
         "carrier": "Original",
@@ -349,7 +349,7 @@
     },
     {
         "name": "寄宿學校的茱麗葉",
-        "nameInJpn": "寄宿學校のジュリエット",
+        "originalName": "寄宿學校のジュリエット",
         "date": "10/5",
         "time": "25:55",
         "carrier": "Comic",
@@ -361,7 +361,7 @@
     },
     {
         "name": "來自繽紛世界的明天",
-        "nameInJpn": "色づく世界の明日から",
+        "originalName": "色づく世界の明日から",
         "date": "10/5",
         "time": "26:25",
         "carrier": "Original",
@@ -373,7 +373,7 @@
     },
     {
         "name": "逆轉裁判 〜對這個「真相」，有異議！〜",
-        "nameInJpn": "逆転裁判～その「真実」、異議あり！～",
+        "originalName": "逆転裁判～その「真実」、異議あり！～",
         "date": "10/6",
         "time": "17:30",
         "carrier": "Game",
@@ -385,7 +385,7 @@
     },
     {
         "name": "RADIANT",
-        "nameInJpn": "ラディアン",
+        "originalName": "ラディアン",
         "date": "10/6",
         "time": "17:35",
         "carrier": "Comic",
@@ -397,7 +397,7 @@
     },
     {
         "name": "刀劍神域 Alicization",
-        "nameInJpn": "ソードアート・オンライン アリシゼーション",
+        "originalName": "ソードアート・オンライン アリシゼーション",
         "date": "10/6",
         "time": "24:00",
         "carrier": "Novel",
@@ -409,7 +409,7 @@
     },
     {
         "name": "哥布林殺手",
-        "nameInJpn": "ゴブリンスレイヤー",
+        "originalName": "ゴブリンスレイヤー",
         "date": "10/6",
         "time": "25:30",
         "carrier": "Novel",
@@ -421,7 +421,7 @@
     },
     {
         "name": "那時的她。",
-        "nameInJpn": "その時、カノジョは。",
+        "originalName": "その時、カノジョは。",
         "date": "10/6",
         "time": "24:35",
         "carrier": "Original",
@@ -433,7 +433,7 @@
     },
     {
         "name": "SSSS.GRIDMAN",
-        "nameInJpn": "SSSS.GRIDMAN",
+        "originalName": "SSSS.GRIDMAN",
         "date": "10/6",
         "time": "25:00",
         "carrier": "Original",
@@ -445,7 +445,7 @@
     },
     {
         "name": "RELEASE THE SPYCE",
-        "nameInJpn": "リリース ザ スパイス",
+        "originalName": "リリース ザ スパイス",
         "date": "10/6",
         "time": "26:38",
         "carrier": "Original",
@@ -457,7 +457,7 @@
     },
     {
         "name": "FAIRY TAIL 魔導少年 最終系列",
-        "nameInJpn": "FAIRY TAIL ファイナルシリーズ",
+        "originalName": "FAIRY TAIL ファイナルシリーズ",
         "date": "10/8",
         "time": "12:00",
         "carrier": "Comic",
@@ -469,7 +469,7 @@
     },
     {
         "name": "尤利西斯 貞德與鍊金騎士",
-        "nameInJpn": "ユリシーズ ジャンヌ・ダルクと錬金の騎士",
+        "originalName": "ユリシーズ ジャンヌ・ダルクと錬金の騎士",
         "date": "10/7",
         "time": "22:00",
         "carrier": "Novel",
@@ -481,7 +481,7 @@
     },
     {
         "name": "Anima Yell!",
-        "nameInJpn": "アニマエール！",
+        "originalName": "アニマエール！",
         "date": "10/7",
         "time": "24:00",
         "carrier": "Comic",
@@ -493,7 +493,7 @@
     },
     {
         "name": "Himote House",
-        "nameInJpn": "ひもてはうす",
+        "originalName": "ひもてはうす",
         "date": "10/7",
         "time": "24:45",
         "carrier": "Original",
@@ -505,7 +505,7 @@
     },
     {
         "name": "末班電車後、膠囊旅館、給上司微熱的夜晚。",
-        "nameInJpn": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
+        "originalName": "終電後､カプセルホテルで､上司に微熱伝わる夜｡",
         "date": "10/7",
         "time": "25:00",
         "carrier": "Original",
@@ -517,7 +517,7 @@
     },
     {
         "name": "書店裡的骷髏店員本田",
-        "nameInJpn": "ガイコツ書店員 本田さん",
+        "originalName": "ガイコツ書店員 本田さん",
         "date": "10/7",
         "time": "25:35",
         "carrier": "Comic",
@@ -529,7 +529,7 @@
     },
     {
         "name": "麟&犀AI韻律♪",
-        "nameInJpn": "直感×アルゴリズム♪",
+        "originalName": "直感×アルゴリズム♪",
         "date": "10/8",
         "time": "21:00",
         "carrier": "Original",
@@ -541,7 +541,7 @@
     },
     {
         "name": "黃金神威",
-        "nameInJpn": "ゴールデンカムイ 第二期",
+        "originalName": "ゴールデンカムイ 第二期",
         "date": "10/8",
         "time": "23:00",
         "carrier": "Comic",
@@ -553,7 +553,7 @@
     },
     {
         "name": "蒼天之拳REGENESIS",
-        "nameInJpn": "蒼天の拳REGENESIS 第2期",
+        "originalName": "蒼天の拳REGENESIS 第2期",
         "date": "10/8",
         "time": "24:30",
         "carrier": "Comic",
@@ -565,7 +565,7 @@
     },
     {
         "name": "大人的防具店",
-        "nameInJpn": "おとなの防具屋さん",
+        "originalName": "おとなの防具屋さん",
         "date": "10/８",
         "time": "25:25",
         "carrier": "Comic",
@@ -577,7 +577,7 @@
     },
     {
         "name": "永不止步真好",
-        "nameInJpn": "走り続けてよかったって。",
+        "originalName": "走り続けてよかったって。",
         "date": "10/8",
         "time": "26:40",
         "carrier": "Original",
@@ -589,7 +589,7 @@
     },
     {
         "name": "偶像大師SideM 迷你是原因!",
-        "nameInJpn": "アイドルマスター SideM　理由（ワケ）あってMini!",
+        "originalName": "アイドルマスター SideM　理由（ワケ）あってMini!",
         "date": "10/9",
         "time": "21:54",
         "carrier": "Game",
@@ -601,7 +601,7 @@
     },
     {
         "name": "東京喰種：re",
-        "nameInJpn": "東京喰種:re 第2期",
+        "originalName": "東京喰種:re 第2期",
         "date": "10/9",
         "time": "23:00",
         "carrier": "Comic",
@@ -613,7 +613,7 @@
     },
     {
         "name": "Conception 產子救世錄",
-        "nameInJpn": "CONCEPTION 俺の子供を産んでくれ！",
+        "originalName": "CONCEPTION 俺の子供を産んでくれ！",
         "date": "10/9",
         "time": "25:30",
         "carrier": "Game",
@@ -625,7 +625,7 @@
     },
     {
         "name": "我喜歡的妹妹不是妹妹",
-        "nameInJpn": "俺が好きなのは妹だけど妹じゃない",
+        "originalName": "俺が好きなのは妹だけど妹じゃない",
         "date": "10/10",
         "time": "22:00",
         "carrier": "Novel",
@@ -637,7 +637,7 @@
     },
     {
         "name": "只要別西卜大小姐喜歡就好",
-        "nameInJpn": "ベルゼブブ嬢のお気に召すまま。",
+        "originalName": "ベルゼブブ嬢のお気に召すまま。",
         "date": "10/10",
         "time": "26:50",
         "carrier": "Comic",
@@ -649,7 +649,7 @@
     },
     {
         "name": "梅露可物語 -無精打采的少年與瓶中少女-",
-        "nameInJpn": "メルクストーリア -無気力少年と瓶の中の少女-",
+        "originalName": "メルクストーリア -無気力少年と瓶の中の少女-",
         "date": "10/11",
         "time": "23:30",
         "carrier": "Game",
@@ -661,7 +661,7 @@
     },
     {
         "name": "傀儡馬戲團",
-        "nameInJpn": "からくりサーカス",
+        "originalName": "からくりサーカス",
         "date": "10/11",
         "time": "22:30",
         "carrier": "Comic",
@@ -673,7 +673,7 @@
     },
     {
         "name": "閃亂神樂 東京妖魔篇",
-        "nameInJpn": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
+        "originalName": "閃乱カグラ SHINOVI MASTER -東京妖魔篇-",
         "date": "10/12",
         "time": "0:00",
         "carrier": "Game",
@@ -685,7 +685,7 @@
     },
     {
         "name": "弦音－風舞高中弓道部－",
-        "nameInJpn": "ツルネ-舞高校弓道部-",
+        "originalName": "ツルネ-舞高校弓道部-",
         "date": "10/14",
         "time": "24:10",
         "carrier": "Novel",
@@ -697,7 +697,7 @@
     },
     {
         "name": "INGRESS THE ANIMATION",
-        "nameInJpn": "イングレス",
+        "originalName": "イングレス",
         "date": "10/17",
         "time": "25:55",
         "carrier": "Game",
@@ -709,7 +709,7 @@
     },
     {
         "name": "叛逆性百萬亞瑟王",
-        "nameInJpn": "叛逆性ミリオンアーサー",
+        "originalName": "叛逆性ミリオンアーサー",
         "date": "10/25",
         "time": "22:00",
         "carrier": "Game",

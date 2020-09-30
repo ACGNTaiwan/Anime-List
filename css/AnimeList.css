@@ -152,7 +152,7 @@ body:not(.firefox) .mdui-dialog-content {
 .card .content {
   padding: 10px 0;
 }
-.card .content .nameInJpn {
+.card .content .originalName {
   color: #5a5a5a;
 }
 .card .content .name {

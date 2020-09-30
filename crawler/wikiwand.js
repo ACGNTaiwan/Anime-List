@@ -6,7 +6,7 @@ function tableToJson(table) {
         var tableRow = table.rows[i];
         var rowData = {
             "name": "",
-            "nameInJpn": "",
+            "originalName": "",
             "date": "",
             "time": "",
             "carrier": "",
@@ -17,7 +17,7 @@ function tableToJson(table) {
             "description": ""
         };
         rowData["name"] = tableRow.cells[1].innerText.replace(/（(.+)）/, '');
-        rowData["nameInJpn"] = tableRow.cells[2].innerText;
+        rowData["originalName"] = tableRow.cells[2].innerText;
         //rowData["production"] = tableRow.cells[3].innerText;
         rowData["episode"] = parseInt(tableRow.cells[4].innerText.replace("話", ""));
 
