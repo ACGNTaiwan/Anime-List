@@ -7,17 +7,18 @@ html
         //- social_tags
         include ./Jade/_tags.jade
         +social_tags('Anime List', '展示新番的清單', 'https://acgntaiwan.github.io/Anime-List/og.png', 'https://acgntaiwan.github.io/Anime-List/') 
-        
         //- MDUI
         link(href='//cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css', rel='stylesheet')
         //- evaicon
         link(href='//unpkg.com/eva-icons@1.1.0/style/eva-icons.css', rel='stylesheet')
-        link(href='//fonts.googleapis.com/css?family=Product+Sans&family=Noto+Serif+TC:wght@900&display=swap', rel='stylesheet')
+        //- font
+        link(href='//fonts.googleapis.com/css?family=Product+Sans&display=swap', rel='stylesheet')
         //- main 
         link(href='./css/AnimeList.css?' + Math.floor(Math.random() * (999)), rel='stylesheet')
-
+        //- theme color
         meta(name="theme-color" content="#e6f2fd")
-        link(rel="icon" href="./icon/drawable-ldpi/icon.png")
+        //- icon
+        link(rel="icon" href="./icon/icon.png")
 
     body.mdui-drawer-body-left.mdui-theme-primary-indigo.mdui-theme-accent-indigo
         header.mdui-appbar-fixed.mdui-appbar

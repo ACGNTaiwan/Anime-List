@@ -179,13 +179,13 @@ function showHome() {
     hwHeader("Anime List", "使用左方選單來瀏覽本站資料", "點擊左上角選單鈕來瀏覽本站資料")
     $("#content").html(
         `<div class="mdui-typo">
-            <div class="mdui-typo-display-1">最近更新</div>
+            <div class="mdui-typo-display-1 al-header">最近更新</div>
         </div>
         <div class="recent-update"></div>
         <div class="mdui-typo">
-            <div class="mdui-typo-display-1">資料有誤？</div>
-            <p>歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR</p>
-            <div class="mdui-typo-display-1">貢獻者</div>
+            <div class="mdui-typo-display-1 al-header">一起貢獻吧！</div>
+            <p>若資料有誤或想提供資料，歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR。</p>
+            <div class="mdui-typo-display-1 al-header">貢獻者</div>
         </div>
         <div al-contributors>正在讀取新鮮的肝......</div>`
     )
