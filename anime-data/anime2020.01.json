@@ -1,7 +1,7 @@
 [
   {
     "name": "戀愛小行星",
-    "nameInJpn": "恋する小惑星",
+    "originalName": "恋する小惑星",
     "date": "1/3",
     "time": "20:30",
     "carrier": "Comic",
@@ -13,7 +13,7 @@
   },
   {
     "name": "達爾文遊戲",
-    "nameInJpn": "ダーウィンズゲーム",
+    "originalName": "ダーウィンズゲーム",
     "date": "1/3",
     "time": "24:00",
     "carrier": "Comic",
@@ -25,7 +25,7 @@
   },
   {
     "name": "魔法紀錄 魔法少女小圓外傳",
-    "nameInJpn": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "originalName": "マギアレコード 魔法少女まどか☆マギカ外伝",
     "date": "1/4",
     "time": "24:00",
     "carrier": "Game",
@@ -37,7 +37,7 @@
   },
   {
     "name": "八十龜觀察日記",
-    "nameInJpn": "八十亀ちゃんかんさつにっき",
+    "originalName": "八十亀ちゃんかんさつにっき",
     "date": "1/5",
     "time": "21:54",
     "carrier": "Comic",
@@ -49,7 +49,7 @@
   },
   {
     "name": "別對映像研出手！",
-    "nameInJpn": "映像研には手を出すな!",
+    "originalName": "映像研には手を出すな!",
     "date": "1/5",
     "time": "24:10",
     "carrier": "Comic",
@@ -61,7 +61,7 @@
   },
   {
     "name": "異度侵入 ID:INVADED",
-    "nameInJpn": "イド：インヴェイデッド",
+    "originalName": "イド：インヴェイデッド",
     "date": "1/5",
     "time": "24:30",
     "carrier": "Comic",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Overflow",
-    "nameInJpn": "おーばーふろぉ",
+    "originalName": "おーばーふろぉ",
     "date": "1/5",
     "time": "25:00",
     "carrier": "Comic",
@@ -85,7 +85,7 @@
   },
   {
     "name": "房間露營△",
-    "nameInJpn": "へやキャン△",
+    "originalName": "へやキャン△",
     "date": "1/6",
     "time": "20:55",
     "carrier": "Comic",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Pet",
-    "nameInJpn": "ペット",
+    "originalName": "ペット",
     "date": "1/6",
     "time": "22:00",
     "carrier": "Comic",
@@ -109,7 +109,7 @@
   },
   {
     "name": "緣結熊本",
-    "nameInJpn": "なつなぐ！",
+    "originalName": "なつなぐ！",
     "date": "1/6",
     "time": "25:35",
     "carrier": "Original",
@@ -121,7 +121,7 @@
   },
   {
     "name": "成群結伴！西頓學園",
-    "nameInJpn": "群れなせ!シートン学園",
+    "originalName": "群れなせ!シートン学園",
     "date": "1/6",
     "time": "24:30",
     "carrier": "Comic",
@@ -133,7 +133,7 @@
   },
   {
     "name": "魔術師歐菲 流浪之旅",
-    "nameInJpn": "魔術士オーフェン はぐれ旅",
+    "originalName": "魔術士オーフェン はぐれ旅",
     "date": "1/7",
     "time": "23:00",
     "carrier": "Novel",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Hulaing Babies☆Petit",
-    "nameInJpn": "フライングベイビーズ☆プチ",
+    "originalName": "フライングベイビーズ☆プチ",
     "date": "1/8",
     "time": "07:30",
     "carrier": "Original",
@@ -157,7 +157,7 @@
   },
   {
     "name": "怕痛的我，把防禦力點滿就對了",
-    "nameInJpn": "痛いのは嫌なので防御力に極振りしたいと思います。",
+    "originalName": "痛いのは嫌なので防御力に極振りしたいと思います。",
     "date": "1/8",
     "time": "22:00",
     "carrier": "Novel",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Number24",
-    "nameInJpn": "number24",
+    "originalName": "number24",
     "date": "1/8",
     "time": "22:30",
     "carrier": "Original",
@@ -181,7 +181,7 @@
   },
   {
     "name": "空挺Dragons",
-    "nameInJpn": "空挺ドラゴンズ",
+    "originalName": "空挺ドラゴンズ",
     "date": "1/8",
     "time": "24:55",
     "carrier": "Comic",
@@ -193,7 +193,7 @@
   },
   {
     "name": "掠奪者",
-    "nameInJpn": "プランダラ",
+    "originalName": "プランダラ",
     "date": "1/8",
     "time": "25:05",
     "carrier": "Comic",
@@ -205,7 +205,7 @@
   },
   {
     "name": "貓娘樂園",
-    "nameInJpn": "ネコぱら",
+    "originalName": "ネコぱら",
     "date": "1/9",
     "time": "21:00",
     "carrier": "Game",
@@ -217,7 +217,7 @@
   },
   {
     "name": "SHOW BY ROCK!! Mashumairesh!!",
-    "nameInJpn": "SHOW BY ROCK!!ましゅまいれっしゅ!!",
+    "originalName": "SHOW BY ROCK!!ましゅまいれっしゅ!!",
     "date": "1/9",
     "time": "22:30",
     "carrier": "Game",
@@ -229,7 +229,7 @@
   },
   {
     "name": "〈Infinite Dendrogram〉-無盡連鎖-",
-    "nameInJpn": "＜Infinite Dendrogram＞-インフィニット・デンドログラム-",
+    "originalName": "＜Infinite Dendrogram＞-インフィニット・デンドログラム-",
     "date": "1/9",
     "time": "23:00",
     "carrier": "Novel",
@@ -241,7 +241,7 @@
   },
   {
     "name": "寶石商人理察的謎鑑定",
-    "nameInJpn": "宝石商リチャード氏の謎鑑定",
+    "originalName": "宝石商リチャード氏の謎鑑定",
     "date": "1/9",
     "time": "23:30",
     "carrier": "Novel",
@@ -253,7 +253,7 @@
   },
   {
     "name": "奇幻☆怪盜？",
-    "nameInJpn": "はてな☆イリュージョン",
+    "originalName": "はてな☆イリュージョン",
     "date": "1/9",
     "time": "23:30",
     "carrier": "Novel",
@@ -265,7 +265,7 @@
   },
   {
     "name": "索瑪麗與森林之神",
-    "nameInJpn": "ソマリと森の神様",
+    "originalName": "ソマリと森の神様",
     "date": "1/9",
     "time": "24:00",
     "carrier": "Comic",
@@ -277,7 +277,7 @@
   },
   {
     "name": "UCHITAMA?!～有看到我家的小玉嗎？～",
-    "nameInJpn": "うちタマ?! 〜うちのタマ知りませんか?〜",
+    "originalName": "うちタマ?! 〜うちのタマ知りませんか?〜",
     "date": "1/9",
     "time": "24:55",
     "carrier": "Original",
@@ -289,7 +289,7 @@
   },
   {
     "name": "神推偶像登上武道館我就死而無憾",
-    "nameInJpn": "推しが武道館いってくれたら死ぬ",
+    "originalName": "推しが武道館いってくれたら死ぬ",
     "date": "1/9",
     "time": "25:28",
     "carrier": "Comic",
@@ -301,7 +301,7 @@
   },
   {
     "name": "地縛少年花子君",
-    "nameInJpn": "地縛少年花子くん",
+    "originalName": "地縛少年花子くん",
     "date": "1/9",
     "time": "25:58",
     "carrier": "Comic",
@@ -313,7 +313,7 @@
   },
   {
     "name": "科學超電磁砲T",
-    "nameInJpn": "とある科学の超電磁砲T",
+    "originalName": "とある科学の超電磁砲T",
     "date": "1/10",
     "time": "22:00",
     "carrier": "Novel",
@@ -325,7 +325,7 @@
   },
   {
     "name": "理科生墜入情網，故嘗試證明。",
-    "nameInJpn": "理系が恋に落ちたので証明してみた。",
+    "originalName": "理系が恋に落ちたので証明してみた。",
     "date": "1/10",
     "time": "24:30",
     "carrier": "Comic",
@@ -337,7 +337,7 @@
   },
   {
     "name": "織田肉桂信長",
-    "nameInJpn": "織田シナモン信長",
+    "originalName": "織田シナモン信長",
     "date": "1/10",
     "time": "25:23",
     "carrier": "Comic",
@@ -349,7 +349,7 @@
   },
   {
     "name": "排球少年！！ TO THE TOP",
-    "nameInJpn": "ハイキュー!! TO THE TOP",
+    "originalName": "ハイキュー!! TO THE TOP",
     "date": "1/10",
     "time": "25:25",
     "carrier": "Comic",
@@ -361,7 +361,7 @@
   },
   {
     "name": "請在伸展台上微笑",
-    "nameInJpn": "ランウェイで笑って",
+    "originalName": "ランウェイで笑って",
     "date": "1/10",
     "time": "26:25",
     "carrier": "Comic",
@@ -373,7 +373,7 @@
   },
   {
     "name": "暗黑破壞神在身邊。",
-    "nameInJpn": "ぼくのとなりに暗黒破壊神がいます。",
+    "originalName": "ぼくのとなりに暗黒破壊神がいます。",
     "date": "1/11",
     "time": "21:00",
     "carrier": "Comic",
@@ -385,7 +385,7 @@
   },
   {
     "name": "22/7",
-    "nameInJpn": "22/7",
+    "originalName": "22/7",
     "date": "1/11",
     "time": "23:00",
     "carrier": "Original",
@@ -397,7 +397,7 @@
   },
   {
     "name": "異種族風俗娘評鑑指南",
-    "nameInJpn": "異種族レビュアーズ",
+    "originalName": "異種族レビュアーズ",
     "date": "1/11",
     "time": "23:30",
     "carrier": "Comic",
@@ -409,7 +409,7 @@
   },
   {
     "name": "虛構推理",
-    "nameInJpn": "虚構推理",
+    "originalName": "虚構推理",
     "date": "1/11",
     "time": "25:30",
     "carrier": "Novel",
@@ -421,7 +421,7 @@
   },
   {
     "name": "異獸魔都",
-    "nameInJpn": "ドロヘドロ",
+    "originalName": "ドロヘドロ",
     "date": "1/12",
     "time": "24:00",
     "carrier": "Comic",
@@ -433,7 +433,7 @@
   },
   {
     "name": "ARP Backstage Pass",
-    "nameInJpn": "ARP Backstage Pass",
+    "originalName": "ARP Backstage Pass",
     "date": "1/13",
     "time": "23:00",
     "carrier": "Original",
@@ -445,7 +445,7 @@
   },
   {
     "name": "A3！ SEASON SPRING & SUMMER",
-    "nameInJpn": "A3! SEASON SPRING & SUMMER",
+    "originalName": "A3! SEASON SPRING & SUMMER",
     "date": "1/13",
     "time": "24:00",
     "carrier": "Game",
@@ -457,7 +457,7 @@
   },
   {
     "name": "異世界四重奏",
-    "nameInJpn": "異世界かるてっと",
+    "originalName": "異世界かるてっと",
     "date": "1/14",
     "time": "24:30",
     "carrier": "Original",
@@ -469,7 +469,7 @@
   },
   {
     "name": "BanG Dream! 3rd Season",
-    "nameInJpn": "BanG Dream! 3rd Season",
+    "originalName": "BanG Dream! 3rd Season",
     "date": "1/23",
     "time": "22:30",
     "carrier": "Game",
@@ -481,7 +481,7 @@
   },
   {
     "name": "Healin' Good ♥ 光之美少女",
-    "nameInJpn": "ヒーリングっど♥プリキュア",
+    "originalName": "ヒーリングっど♥プリキュア",
     "date": "2/2",
     "time": "08:30",
     "carrier": "Original",

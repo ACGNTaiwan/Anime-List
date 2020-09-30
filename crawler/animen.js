@@ -9,7 +9,7 @@ $("#item-list .one-shiban").each((_i, e) => {
     let season = (regex.test(name)) ? parseInt(regex.exec(name)[1]) : 1;
     animeData = {
         "name": name,
-        "nameInJpn": jpName,
+        "originalName": jpName,
         "date": "4/",
         "time": "none",
         "carrier": "Comic Novel Game Original",

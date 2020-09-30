@@ -1,7 +1,7 @@
 [
   {
     "name": "ULTRAMAN 超人力霸王",
-    "nameInJpn": "ULTRAMAN",
+    "originalName": "ULTRAMAN",
     "date": "4/1",
     "time": "00:00",
     "carrier": "Comic",
@@ -13,7 +13,7 @@
   },
   {
     "name": "一拳超人",
-    "nameInJpn": "ワンパンマン 第2期",
+    "originalName": "ワンパンマン 第2期",
     "date": "4/2",
     "time": "01:35",
     "carrier": "Comic",
@@ -25,7 +25,7 @@
   },
   {
     "name": "POP TEAM EPIC",
-    "nameInJpn": "ポプテピピック",
+    "originalName": "ポプテピピック",
     "date": "4/1",
     "time": "22:00",
     "carrier": "Comic",
@@ -37,7 +37,7 @@
   },
   {
     "name": "八十龜醬觀察日記",
-    "nameInJpn": "八十亀ちゃんかんさつにっき",
+    "originalName": "八十亀ちゃんかんさつにっき",
     "date": "4/4",
     "time": "19:53",
     "carrier": "Comic",
@@ -49,7 +49,7 @@
   },
   {
     "name": "一個人的○○小日子",
-    "nameInJpn": "ひとりぼっちの○○生活",
+    "originalName": "ひとりぼっちの○○生活",
     "date": "4/5",
     "time": "01:30",
     "carrier": "Comic",
@@ -61,7 +61,7 @@
   },
   {
     "name": "KING OF PRISM -Shiny Seven Stars-",
-    "nameInJpn": "キングオブプリズム シャイニーセブンスターズ",
+    "originalName": "キングオブプリズム シャイニーセブンスターズ",
     "date": "4/8",
     "time": "00:30",
     "carrier": "Original",
@@ -73,7 +73,7 @@
   },
   {
     "name": "賢者之孫",
-    "nameInJpn": "賢者の孫",
+    "originalName": "賢者の孫",
     "date": "4/10",
     "time": "23:30",
     "carrier": "Novel",
@@ -85,7 +85,7 @@
   },
   {
     "name": "一弦定音！",
-    "nameInJpn": "この音とまれ!",
+    "originalName": "この音とまれ!",
     "date": "4/6",
     "time": "22:00",
     "carrier": "Comic",
@@ -97,7 +97,7 @@
   },
   {
     "name": "鬼滅之刃",
-    "nameInJpn": "鬼滅の刃",
+    "originalName": "鬼滅の刃",
     "date": "4/6",
     "time": "21:00",
     "carrier": "Comic",
@@ -109,7 +109,7 @@
   },
   {
     "name": "YU-NO 在這世界盡頭詠唱愛的少女",
-    "nameInJpn": "この世の果てで恋を唄う少女YU-NO",
+    "originalName": "この世の果てで恋を唄う少女YU-NO",
     "date": "4/2",
     "time": "22:00",
     "carrier": "Game",
@@ -121,7 +121,7 @@
   },
   {
     "name": "皿三昧",
-    "nameInJpn": "さらざんまい",
+    "originalName": "さらざんまい",
     "date": "4/11",
     "time": "00:00",
     "carrier": "Original",
@@ -133,7 +133,7 @@
   },
   {
     "name": "CAROL&TUESDAY",
-    "nameInJpn": "キャロル＆チューズデイ",
+    "originalName": "キャロル＆チューズデイ",
     "date": "4/10",
     "time": "00:55",
     "carrier": "Original",
@@ -145,7 +145,7 @@
   },
   {
     "name": "MIX",
-    "nameInJpn": "MIX",
+    "originalName": "MIX",
     "date": "4/6",
     "time": "17:30",
     "carrier": "Comic",
@@ -157,7 +157,7 @@
   },
   {
     "name": "進擊的巨人",
-    "nameInJpn": "進撃の巨人Season 3",
+    "originalName": "進撃の巨人Season 3",
     "date": "4/28",
     "time": "00:10",
     "carrier": "Comic",
@@ -169,7 +169,7 @@
   },
   {
     "name": "叛逆性百萬亞瑟王",
-    "nameInJpn": "叛逆性ミリオンアーサー 第2シーズン",
+    "originalName": "叛逆性ミリオンアーサー 第2シーズン",
     "date": "4/4",
     "time": "22:00",
     "carrier": "Game",
@@ -181,7 +181,7 @@
   },
   {
     "name": "深夜的神祕學公務員",
-    "nameInJpn": "真夜中のオカルト公務員",
+    "originalName": "真夜中のオカルト公務員",
     "date": "4/7",
     "time": "00:30",
     "carrier": "Comic",
@@ -193,7 +193,7 @@
   },
   {
     "name": "異世界四重奏",
-    "nameInJpn": "異世界かるてっと",
+    "originalName": "異世界かるてっと",
     "date": "4/9",
     "time": "21:30",
     "carrier": "Original",
@@ -205,7 +205,7 @@
   },
   {
     "name": "我們真的學不來！",
-    "nameInJpn": "ぼくたちは勉強ができない",
+    "originalName": "ぼくたちは勉強ができない",
     "date": "4/6",
     "time": "22:30",
     "carrier": "Comic",
@@ -217,7 +217,7 @@
   },
   {
     "name": "機動戰士鋼彈 THE ORIGIN",
-    "nameInJpn": "機動戦士ガンダム THE ORIGIN",
+    "originalName": "機動戦士ガンダム THE ORIGIN",
     "date": "4/28",
     "time": "00:35",
     "carrier": "Comic",
@@ -229,7 +229,7 @@
   },
   {
     "name": "強襲魔女 501 部隊出動！",
-    "nameInJpn": "ストライクウィッチーズ 501 部隊発進します！",
+    "originalName": "ストライクウィッチーズ 501 部隊発進します！",
     "date": "4/9",
     "time": "21:45",
     "carrier": "Comic",
@@ -241,7 +241,7 @@
   },
   {
     "name": "偶像大師 灰姑娘女孩劇場",
-    "nameInJpn": "アイドルマスターシンデレラガールズ劇場 第4期",
+    "originalName": "アイドルマスターシンデレラガールズ劇場 第4期",
     "date": "4/2",
     "time": "22:35",
     "carrier": "Game",
@@ -253,7 +253,7 @@
   },
   {
     "name": "川柳少女",
-    "nameInJpn": "川柳少女",
+    "originalName": "川柳少女",
     "date": "4/5",
     "time": "23:00",
     "carrier": "Comic",
@@ -265,7 +265,7 @@
   },
   {
     "name": "文豪野犬",
-    "nameInJpn": "文豪ストレイドッグス",
+    "originalName": "文豪ストレイドッグス",
     "date": "4/12",
     "time": "00:30",
     "carrier": "Comic",
@@ -277,7 +277,7 @@
   },
   {
     "name": "拾又之國",
-    "nameInJpn": "群青のマグメル",
+    "originalName": "群青のマグメル",
     "date": "4/7",
     "time": "22:00",
     "carrier": "Comic",
@@ -289,7 +289,7 @@
   },
   {
     "name": "RobiHachi",
-    "nameInJpn": "ロビハチ",
+    "originalName": "ロビハチ",
     "date": "4/8",
     "time": "23:30",
     "carrier": "Original",
@@ -301,7 +301,7 @@
   },
   {
     "name": "消滅都市",
-    "nameInJpn": "消滅都市",
+    "originalName": "消滅都市",
     "date": "4/7",
     "time": "21:00",
     "carrier": "Game",
@@ -313,7 +313,7 @@
   },
   {
     "name": "信長老師的年幼妻子",
-    "nameInJpn": "ノブナガ先生の幼な妻",
+    "originalName": "ノブナガ先生の幼な妻",
     "date": "4/8",
     "time": "23:20",
     "carrier": "Comic",
@@ -325,7 +325,7 @@
   },
   {
     "name": "賢惠幼妻仙狐小姐",
-    "nameInJpn": "世話やきキツネの仙狐さん",
+    "originalName": "世話やきキツネの仙狐さん",
     "date": "4/10",
     "time": "22:30",
     "carrier": "Comic",
@@ -337,7 +337,7 @@
   },
   {
     "name": "超可動女孩 1/6",
-    "nameInJpn": "超可動ガール1/6",
+    "originalName": "超可動ガール1/6",
     "date": "4/8",
     "time": "24:00",
     "carrier": "Comic",
@@ -349,7 +349,7 @@
   },
   {
     "name": "八月的棒球甜心",
-    "nameInJpn": "八月のシンデレラナイン",
+    "originalName": "八月のシンデレラナイン",
     "date": "4/7",
     "time": "00:30",
     "carrier": "Game",
@@ -361,7 +361,7 @@
   },
   {
     "name": "魔法水果籃",
-    "nameInJpn": "フルーツバスケット",
+    "originalName": "フルーツバスケット",
     "date": "4/5",
     "time": "21:00",
     "carrier": "Comic",
@@ -373,7 +373,7 @@
   },
   {
     "name": "滿腦都是○○的我沒辦法談戀愛",
-    "nameInJpn": "淫らな青ちゃんは勉強ができない",
+    "originalName": "淫らな青ちゃんは勉強ができない",
     "date": "4/5",
     "time": "23:15",
     "carrier": "Comic",
@@ -385,7 +385,7 @@
   },
   {
     "name": "女子高中生",
-    "nameInJpn": "女子かう生",
+    "originalName": "女子かう生",
     "date": "4/8",
     "time": "23:15",
     "carrier": "Comic",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Fairy gone",
-    "nameInJpn": "フェアリーゴーン",
+    "originalName": "フェアリーゴーン",
     "date": "4/7",
     "time": "24:00",
     "carrier": "Original",
@@ -409,7 +409,7 @@
   },
   {
     "name": "鑽石王牌",
-    "nameInJpn": "ダイヤのA",
+    "originalName": "ダイヤのA",
     "date": "4/2",
     "time": "22:00",
     "carrier": "Comic",
@@ -421,7 +421,7 @@
   },
   {
     "name": "為什麼老師會在這裡！？",
-    "nameInJpn": "なんでここに先生が!?",
+    "originalName": "なんでここに先生が!?",
     "date": "4/7",
     "time": "21:45",
     "carrier": "Comic",
@@ -433,7 +433,7 @@
   },
   {
     "name": "南無阿彌陀佛！-蓮台 UTENA-",
-    "nameInJpn": "なむあみだ仏っ！- 蓮台 UTENA -",
+    "originalName": "なむあみだ仏っ！- 蓮台 UTENA -",
     "date": "4/8",
     "time": "20:00",
     "carrier": "Game",
@@ -445,7 +445,7 @@
   },
   {
     "name": "爆丸",
-    "nameInJpn": "爆丸バトルブローラーズ",
+    "originalName": "爆丸バトルブローラーズ",
     "date": "4/1",
     "time": "17:55",
     "carrier": "Original",
@@ -457,7 +457,7 @@
   },
   {
     "name": "戰鬥陀螺 爆烈世代",
-    "nameInJpn": "ベイブレードバースト",
+    "originalName": "ベイブレードバースト",
     "date": "4/5",
     "time": "16:00",
     "carrier": "Original",

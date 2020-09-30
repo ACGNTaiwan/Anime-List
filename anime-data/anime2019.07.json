@@ -1,7 +1,7 @@
 [
   {
     "name": "在地下城尋求邂逅是否搞錯了什麼",
-    "nameInJpn": "ダンジョンに出会いを求めるのは間違っているだろうか",
+    "originalName": "ダンジョンに出会いを求めるのは間違っているだろうか",
     "date": "7/13",
     "time": "00:30",
     "carrier": "Novel",
@@ -13,7 +13,7 @@
   },
   {
     "name": "擅長捉弄人的高木同學",
-    "nameInJpn": "からかい上手の高木さん",
+    "originalName": "からかい上手の高木さん",
     "date": "7/7",
     "time": "23:30",
     "carrier": "Comic",
@@ -25,7 +25,7 @@
   },
   {
     "name": "高校星歌劇",
-    "nameInJpn": "スタミュ",
+    "originalName": "スタミュ",
     "date": "7/1",
     "time": "22:00",
     "carrier": "Original",
@@ -37,7 +37,7 @@
   },
   {
     "name": "戰姬絕唱",
-    "nameInJpn": "戦姫絶唱シンフォギア",
+    "originalName": "戦姫絶唱シンフォギア",
     "date": "7/6",
     "time": "25:00",
     "carrier": "Original",
@@ -49,7 +49,7 @@
   },
   {
     "name": "重來吧，魔王大人！",
-    "nameInJpn": "魔王様、リトライ！",
+    "originalName": "魔王様、リトライ！",
     "date": "7/3",
     "time": "24:00",
     "carrier": "Novel",
@@ -61,7 +61,7 @@
   },
   {
     "name": "平凡職業造就世界最強",
-    "nameInJpn": "ありふれた職業で世界最強",
+    "originalName": "ありふれた職業で世界最強",
     "date": "7/8",
     "time": "23:30",
     "carrier": "Novel",
@@ -73,7 +73,7 @@
   },
   {
     "name": "拳願阿修羅",
-    "nameInJpn": "ケンガンアシュラ",
+    "originalName": "ケンガンアシュラ",
     "date": "7/31",
     "time": "",
     "carrier": "Comic",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Dr.STONE 新石紀",
-    "nameInJpn": "Dr.STONE",
+    "originalName": "Dr.STONE",
     "date": "7/5",
     "time": "22:00",
     "carrier": "Comic",
@@ -97,7 +97,7 @@
   },
   {
     "name": "偶像夢幻祭",
-    "nameInJpn": "あんさんぶるスターズ!",
+    "originalName": "あんさんぶるスターズ!",
     "date": "7/7",
     "time": "22:30",
     "carrier": "Game",
@@ -109,7 +109,7 @@
   },
   {
     "name": "騷動時節的少女們啊",
-    "nameInJpn": "荒ぶる季節の乙女どもよ。",
+    "originalName": "荒ぶる季節の乙女どもよ。",
     "date": "7/5",
     "time": "26:25",
     "carrier": "Comic",
@@ -121,7 +121,7 @@
   },
   {
     "name": "艾梅洛閣下 II 世事件簿",
-    "nameInJpn": "",
+    "originalName": "",
     "date": "7/6",
     "time": "24:00",
     "carrier": "Novel",
@@ -133,7 +133,7 @@
   },
   {
     "name": "炎炎消防隊",
-    "nameInJpn": "炎炎ノ消防隊",
+    "originalName": "炎炎ノ消防隊",
     "date": "7/5",
     "time": "25:25",
     "carrier": "Comic",
@@ -145,7 +145,7 @@
   },
   {
     "name": "科學一方通行",
-    "nameInJpn": "とある科学の一方通行",
+    "originalName": "とある科学の一方通行",
     "date": "7/12",
     "time": "25:05",
     "carrier": "Comic",
@@ -157,7 +157,7 @@
   },
   {
     "name": "你遭難了嗎？",
-    "nameInJpn": "ソウナンですか?",
+    "originalName": "ソウナンですか?",
     "date": "7/2",
     "time": "23:15",
     "carrier": "Comic",
@@ -169,7 +169,7 @@
   },
   {
     "name": "實況主的逃脫遊戲【直播中】",
-    "nameInJpn": "ナカノヒトゲノム【実況中】",
+    "originalName": "ナカノヒトゲノム【実況中】",
     "date": "7/7",
     "time": "22:00",
     "carrier": "Comic",
@@ -181,7 +181,7 @@
   },
   {
     "name": "魔術學姊",
-    "nameInJpn": "手品先輩",
+    "originalName": "手品先輩",
     "date": "7/2",
     "time": "23:00",
     "carrier": "Comic",
@@ -193,7 +193,7 @@
   },
   {
     "name": "TRY KNIGHTS",
-    "nameInJpn": "トライナイツ",
+    "originalName": "トライナイツ",
     "date": "7/30",
     "time": "25:29",
     "carrier": "Comic",
@@ -205,7 +205,7 @@
   },
   {
     "name": "只要長得可愛，即使是變態你也喜歡嗎？",
-    "nameInJpn": "可愛ければ変態でも好きになってくれますか？",
+    "originalName": "可愛ければ変態でも好きになってくれますか？",
     "date": "7/8",
     "time": "20:20",
     "carrier": "Novel",
@@ -217,7 +217,7 @@
   },
   {
     "name": "普通攻擊是全體二連擊，這樣的媽媽你喜歡嗎？",
-    "nameInJpn": "通常攻撃が全体攻撃で二回攻撃のお母さんは好きですか？",
+    "originalName": "通常攻撃が全体攻撃で二回攻撃のお母さんは好きですか？",
     "date": "7/12",
     "time": "24:00",
     "carrier": "Novel",
@@ -229,7 +229,7 @@
   },
   {
     "name": "胡蝶綺 ～少年信長～",
-    "nameInJpn": "胡蝶綺 ～若き信長～",
+    "originalName": "胡蝶綺 ～若き信長～",
     "date": "7/8",
     "time": "21:30",
     "carrier": "Original",
@@ -241,7 +241,7 @@
   },
   {
     "name": "女高中生的虛度日常",
-    "nameInJpn": "女子高生の無駄づかい",
+    "originalName": "女子高生の無駄づかい",
     "date": "7/5",
     "time": "21:30",
     "carrier": "Comic",
@@ -253,7 +253,7 @@
   },
   {
     "name": "獵獸神兵",
-    "nameInJpn": "かつて神だった獣たちへ",
+    "originalName": "かつて神だった獣たちへ",
     "date": "7/1",
     "time": "23:00",
     "carrier": "Comic",
@@ -265,7 +265,7 @@
   },
   {
     "name": "彼方的阿斯特拉",
-    "nameInJpn": "彼方のアストラ",
+    "originalName": "彼方のアストラ",
     "date": "7/3",
     "time": "21:00",
     "carrier": "Comic",
@@ -277,7 +277,7 @@
   },
   {
     "name": "BEM",
-    "nameInJpn": "BEM",
+    "originalName": "BEM",
     "date": "7/14",
     "time": "25:35",
     "carrier": "Original",
@@ -289,7 +289,7 @@
   },
   {
     "name": "海盜戰記",
-    "nameInJpn": "ヴィンランド・サガ",
+    "originalName": "ヴィンランド・サガ",
     "date": "7/7",
     "time": "24:10",
     "carrier": "Comic",
@@ -301,7 +301,7 @@
   },
   {
     "name": "GIVEN 被贈與的未來",
-    "nameInJpn": "ギヴン",
+    "originalName": "ギヴン",
     "date": "7/11",
     "time": "24:55",
     "carrier": "Comic",
@@ -313,7 +313,7 @@
   },
   {
     "name": "異世界超能魔術師",
-    "nameInJpn": "異世界チート魔術師",
+    "originalName": "異世界チート魔術師",
     "date": "7/10",
     "time": "22:00",
     "carrier": "Novel",
@@ -325,7 +325,7 @@
   },
   {
     "name": "為了女兒，我說不定連魔王都能幹掉。",
-    "nameInJpn": "うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。",
+    "originalName": "うちの娘の為ならば、俺はもしかしたら魔王も倒せるかもしれない。",
     "date": "7/4",
     "time": "23:30",
     "carrier": "Novel",
@@ -337,7 +337,7 @@
   },
   {
     "name": "COP CRAFT",
-    "nameInJpn": "コップクラフト",
+    "originalName": "コップクラフト",
     "date": "7/8",
     "time": "24:00",
     "carrier": "Novel",
@@ -349,7 +349,7 @@
   },
   {
     "name": "GRANBELM",
-    "nameInJpn": "グランベルム",
+    "originalName": "グランベルム",
     "date": "7/5",
     "time": "25:55",
     "carrier": "Original",
@@ -361,7 +361,7 @@
   },
   {
     "name": "街角魔族",
-    "nameInJpn": "まちカドまぞく",
+    "originalName": "まちカドまぞく",
     "date": "7/11",
     "time": "25:28",
     "carrier": "Comic",
@@ -373,7 +373,7 @@
   },
   {
     "name": "流汗吧！健身少女",
-    "nameInJpn": "ダンベル何キロ持てる？",
+    "originalName": "ダンベル何キロ持てる？",
     "date": "7/3",
     "time": "22:30",
     "carrier": "Comic",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Re：Stage！Dream days♪",
-    "nameInJpn": "Re: ステージ！ドリームデイズ♪",
+    "originalName": "Re: ステージ！ドリームデイズ♪",
     "date": "7/7",
     "time": "22:00",
     "carrier": "Game",
