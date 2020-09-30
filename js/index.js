@@ -158,7 +158,7 @@ function showHome() {
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
                         <div class="image" style="background-image:url('${bgImg}')">
-                            <div class="big-text hover-show">
+                            <div class="hover-icon hover-show">
                                 <i class="mdui-icon eva eva-arrow-ios-forward-outline"></i>
                             </div>
                         </div>
@@ -198,7 +198,7 @@ function showHome() {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
                 <div class="image" style="background-image:url('${user.avatar_url}')">
-                    <div class="big-text hover-show">
+                    <div class="hover-icon hover-show">
                         <i class="mdui-icon eva eva-github-outline"></i>
                     </div>
                 </div>
@@ -292,7 +292,7 @@ function schedule(Anime, year) {
     }
     $(`#content>.schedule`).append(
         `<div class="mdui-list day" id="unknown" al-time-unknown>
-            <h3>播出時間未知</h3>
+            <h3 class="al-header">播出時間未知</h3>
         </div>`
     )
     for (let item of Anime) {
@@ -317,7 +317,7 @@ function schedule(Anime, year) {
             })
         })
     }
-    if ($("#unknown>*").length == 1) {
+    if ($("#unknown>*").length <= 1) {
         $(`[al-time-unknown]`).remove()
     }
 }
@@ -329,8 +329,10 @@ function info(Anime, year) {
     )
     for (day of showDate)
         $(`#content`).append(
-            `<div class="mdui-typo-display-1 al-header">${day.day}</div>
-            <div class="info" id="${day.id}"></div>`
+            `<div id="${day.id}">
+                <div class="mdui-typo-display-1 al-header">${day.day}</div>
+                <div class="info"></div>
+            </div>`
         )
     for (let item of Anime) {
         let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
@@ -338,10 +340,10 @@ function info(Anime, year) {
         let animeDay = week[setTime.getDay()]; //星期
         let time = `${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") time = "", animeDay = 'unknown'
-
-        $(`#${animeDay}`).append($(`<div class="card">
+        $(`#${animeDay}>.info`).append($(
+            `<div class="card">
                 <div class="image" style="background-image:url('${item.img}')">
-                    <div class="big-text hover-show">
+                    <div class="hover-icon hover-show">
                         <i class="mdui-icon eva eva-info-outline"></i>
                     </div>
                 </div>
@@ -351,9 +353,8 @@ function info(Anime, year) {
                     <div class="time">${time}</div>
                     <div class="description">${item.description}</div>
                 </div>
-            </div>`).click(function () {
-            showAnimeInfoDialog(item, year)
-        }))
+            </div>`
+        ).click(function () { showAnimeInfoDialog(item, year) }))
     }
     if ($("#unknown>*").length == 0)
         $(`[al-time-unknown]`).remove()
@@ -383,7 +384,7 @@ function showAnimeInfoDialog(item, year) {
     ).join('')
     let animeDialogContent = `
     <div class="anime-container">
-        <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"></div>
+        <div class="anime-poster" style="background-image:url('${item.img}')"><img src="${item.img}"/></div>
         <div class="anime-info-container">
             <div class="anime-info">
                 <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
