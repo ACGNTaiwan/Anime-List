@@ -132,7 +132,7 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-box-shadow: var(--shadow-hover);
           box-shadow: var(--shadow-hover);
 }
-.card:hover .image .big-text.hover-show {
+.card:hover .image .hover-icon.hover-show {
   opacity: 1;
   -webkit-transform: none;
       -ms-transform: none;
@@ -141,7 +141,7 @@ body:not(.firefox) .mdui-dialog-content {
 .card:active {
   cursor: pointer;
 }
-.card:active .image .big-text.hover-show {
+.card:active .image .hover-icon.hover-show {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
@@ -184,8 +184,8 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-box-shadow: var(--shadow-default);
           box-shadow: var(--shadow-default);
 }
-.card .image .big-text {
-  --circle-size: 70px;
+.card .image .hover-icon {
+  --circle-size: 56px;
   --font-size: 32px;
   position: absolute;
   bottom: 0;
@@ -204,17 +204,6 @@ body:not(.firefox) .mdui-dialog-content {
   height: var(--circle-size);
   text-align: center;
   font-family: "Noto Serif TC", serif;
-}
-.card .image .big-text i {
-  display: block;
-}
-.card .image .big-text i::before {
-  font-size: var(--font-size);
-  line-height: var(--circle-size);
-  width: auto;
-  height: auto;
-}
-.card .image .big-text.hover-show {
   opacity: 0;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
@@ -222,6 +211,15 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.card .image .hover-icon i {
+  display: block;
+}
+.card .image .hover-icon i::before {
+  font-size: var(--font-size);
+  line-height: var(--circle-size);
+  width: auto;
+  height: auto;
 }
 
 .waterfall {
@@ -386,14 +384,24 @@ body:not(.firefox) .mdui-dialog-content {
   }
 }
 /* anime-container */
-.mdui-dialog, .mdui-dialog-content {
-  overflow: visible !important;
-}
-
 .anime-container {
   min-height: 300px;
   margin: -24px;
-  position: relative;
+}
+.anime-container > .anime-poster {
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: var(--shadow-default);
+          box-shadow: var(--shadow-default);
+}
+.anime-container > .anime-poster > img {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .anime-container > .anime-info-container {
   padding: 12px;
@@ -401,39 +409,21 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.anime-container > .anime-info-container > .anime-info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
 .anime-container > .anime-info-container > .anime-actions {
   text-align: right;
 }
 
 @media (min-width: 800.01px) {
+  .anime-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .anime-container > .anime-poster {
-    -webkit-transform: scale(1.05) translateX(-12px);
-        -ms-transform: scale(1.05) translateX(-12px);
-            transform: scale(1.05) translateX(-12px);
-    border-radius: 12px;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    background-image: none !important;
-  }
-  .anime-container > .anime-poster img {
-    width: 100%;
-    border-radius: 12px;
-    -webkit-box-shadow: var(--shadow-default);
-            box-shadow: var(--shadow-default);
-    background-color: #dadada;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .anime-container > .anime-info-container {
-    padding-left: 312px;
+    border-radius: 12px 0 0 12px;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -441,17 +431,6 @@ body:not(.firefox) .mdui-dialog-content {
     border-radius: 12px 12px 0 0;
     height: 200px;
     width: 100%;
-    background-size: contain, cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain, cover;
-    background-blend-mode: normal, overlay;
-    -webkit-box-shadow: var(--shadow-default);
-            box-shadow: var(--shadow-default);
-    background-color: #dadada;
-  }
-  .anime-container > .anime-poster > img {
-    display: none;
   }
 }
 /* header-wrapper */

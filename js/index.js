@@ -158,7 +158,7 @@ function showHome() {
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
                         <div class="image" style="background-image:url('${bgImg}')">
-                            <div class="big-text hover-show">
+                            <div class="hover-icon hover-show">
                                 <i class="mdui-icon eva eva-arrow-ios-forward-outline"></i>
                             </div>
                         </div>
@@ -198,7 +198,7 @@ function showHome() {
                 if (user.login == 'invalid-email-address') continue
                 r += `<a class="card" href="${user.html_url}" title="${user.login}" target="_blank">
                 <div class="image" style="background-image:url('${user.avatar_url}')">
-                    <div class="big-text hover-show">
+                    <div class="hover-icon hover-show">
                         <i class="mdui-icon eva eva-github-outline"></i>
                     </div>
                 </div>
@@ -341,7 +341,7 @@ function info(Anime, year) {
 
         $(`#${animeDay}`).append($(`<div class="card">
                 <div class="image" style="background-image:url('${item.img}')">
-                    <div class="big-text hover-show">
+                    <div class="hover-icon hover-show">
                         <i class="mdui-icon eva eva-info-outline"></i>
                     </div>
                 </div>
@@ -383,7 +383,7 @@ function showAnimeInfoDialog(item, year) {
     ).join('')
     let animeDialogContent = `
     <div class="anime-container">
-        <div class="anime-poster" style="background-image:url('${item.img}'),url('${item.img}')"><img src="${item.img}"/></div>
+        <div class="anime-poster" style="background-image:url('${item.img}')"><img src="${item.img}"/></div>
         <div class="anime-info-container">
             <div class="anime-info">
                 <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
