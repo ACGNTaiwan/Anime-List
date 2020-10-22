@@ -187,7 +187,11 @@ function showHome() {
             <p>若資料有誤或想提供資料，歡迎至 <a href="https://github.com/ACGNTaiwan/Anime-List" target="_blank">GitHub</a> 提交 PR。</p>
             <div class="mdui-typo-display-1 al-header">貢獻者</div>
         </div>
-        <div al-contributors>正在讀取新鮮的肝......</div>`
+        <div al-contributors>正在讀取新鮮的肝......</div>
+        <div class="mdui-typo">
+            <div class="mdui-typo-display-1 al-header">留言板</div>
+        </div>
+        <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="lUO82nuW" data-limit="20" data-page-id="homePage" data-outlined="1" data-colorful="1" data-height="300"></script>`
     )
     appendRecentUpdate()
     fetch("https://api.github.com/repos/ACGNTaiwan/Anime-List/contributors")
@@ -362,6 +366,7 @@ function info(Anime, year) {
 
 function showAnimeInfoDialog(item, year) {
     let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
+    let animeId = md5((item.url || item.name) + '_S' + item.season)
     let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
     if (item.date.trim() === "" || !item.date) time = "播出時間未知"
     // 動畫詳細資料清單
@@ -386,14 +391,23 @@ function showAnimeInfoDialog(item, year) {
     <div class="anime-container">
         <div class="anime-poster" style="background-image:url('${item.img}')"><img src="${item.img}"/></div>
         <div class="anime-info-container">
-            <div class="anime-info">
-                <div class="mdui-typo-title mdui-text-color-theme mdui-typo-title">${animeName}</div>
-                <div class="mdui-typo-subheading-opacity">${item.originalName}</div>
-                <div class="mdui-list">
-                    ${displayItemsResult}
+            <div class="mdui-tab mdui-tab-full-width" mdui-tab>
+                <a href="#anime-tab-info" class="mdui-ripple">簡介</a>
+                <a href="#anime-tab-comment" class="mdui-ripple">留言板</a>
+            </div>
+            <div id="anime-tab-info" class="mdui-p-a-2">
+                <div class="anime-info">
+                    <div class="mdui-typo-title mdui-text-color-theme">${animeName}</div>
+                    <div class="mdui-typo-subheading-opacity">${item.originalName}</div>
+                    <div class="mdui-list">
+                        ${displayItemsResult}
+                    </div>
                 </div>
             </div>
-            <div class="anime-actions">
+            <div id="anime-tab-comment" class="mdui-p-a-2">
+               
+            </div>
+            <div class="anime-actions" style="padding: 16px">
                 <button class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" mdui-dialog-close>關閉</button>
             </div>
         </div>
@@ -408,4 +422,6 @@ function showAnimeInfoDialog(item, year) {
          }],*/
         onClose: () => router.pause(false)
     });
+    mdui.mutation()
+    $("#anime-tab-comment").html(`<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="lUO82nuW" data-limit="20" data-page-id="${animeId}" data-outlined="1" data-colorful="1" data-height="450"></script>`)
 }
