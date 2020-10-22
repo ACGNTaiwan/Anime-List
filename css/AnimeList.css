@@ -404,7 +404,6 @@ body:not(.firefox) .mdui-dialog-content {
      object-fit: contain;
 }
 .anime-container > .anime-info-container {
-  padding: 12px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
