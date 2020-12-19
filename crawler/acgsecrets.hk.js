@@ -1,4 +1,4 @@
-// https://acgsecrets.hk/bangumi/202004/
+// https://acgsecrets.hk/bangumi/202101/
 let res = []
 document.querySelectorAll('[acgs-bangumi-anime-id]').forEach((el, i) => {
     let date = "", time = ""
