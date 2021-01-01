@@ -269,15 +269,13 @@ async function loadData({
 function waterfall(Anime, year) {
     let container = $('<div class="waterfall"></div>')
     for (let item of Anime) {
-        // 如果不是第一季 ? 動畫名稱+季度 : 動畫名稱
-        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         $(container).append(
             $(`<div class="card">
                 <div class="image mdui-ripple mdui-ripple-white">
                     <img src="${item.img}"/>
                 </div>
                 <div class="content">
-                    <div class="name mdui-typo-title mdui-text-color-theme">${animeName}</div>
+                    <div class="name mdui-typo-title mdui-text-color-theme">${item.name}</div>
                     <div class="originalName">${item.originalName}</div>
                 </div>
             </div>`).click(function () {
@@ -303,7 +301,6 @@ function schedule(Anime, year) {
         </div>`
     )
     for (let item of Anime) {
-        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let animeDay;
         let time = `${item.date} ${item.time}`
         if (item.date == "" || item.date.split("/")[1] == "") {
@@ -315,8 +312,8 @@ function schedule(Anime, year) {
         }
         $(`#${animeDay}`).append(function () {
             return $(`<div class="mdui-list-item mdui-ripple">
-                <div class="mdui-list-item-content" title="${animeName}">
-                    <div class="mdui-list-item-title">${animeName}</div>
+                <div class="mdui-list-item-content" title="${item.name}">
+                    <div class="mdui-list-item-title">${item.name}</div>
                     <div class="mdui-list-item-text">${time}</div>
                 </div>
             </div>`).click(function () {
@@ -342,7 +339,6 @@ function info(Anime, year) {
             </div>`
         )
     for (let item of Anime) {
-        let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
         let setTime = new Date((item.year || year) + "/" + item.date)
         let animeDay = week[setTime.getDay()]; //星期
         let time = `${item.date}(${weekChinese[setTime.getDay()]}) ${item.time}`
@@ -355,7 +351,7 @@ function info(Anime, year) {
                     </div>
                 </div>
                 <div class="content">
-                    <div class="name mdui-text-color-theme mdui-typo-title">${animeName}</div>
+                    <div class="name mdui-text-color-theme mdui-typo-title">${item.name}</div>
                     <div class="originalName">${item.originalName}</div>
                     <div class="time">${time}</div>
                     <div class="description">${item.description}</div>
@@ -368,13 +364,13 @@ function info(Anime, year) {
 }
 
 function showAnimeInfoDialog(item, year) {
-    let animeName = item.name + (item.season != "1" ? " S" + item.season : '')
     let animeId = md5((item.url || item.name) + '_S' + item.season)
     let time = `${item.date}(${weekChinese[new Date((item.year || year) + "/" + item.date).getDay()]}) ${item.time}`
     if (item.date.trim() === "" || !item.date) time = "播出時間未知"
     // 動畫詳細資料清單
     let displayItems = []
     displayItems.push({ icon: 'access_time', title: '播出時間', content: time })
+    displayItems.push({ icon: 'label', title: '季數', content: item.season })
     if (item.carrier)
         displayItems.push({ icon: carrierIcon[item.carrier], title: '原作載體', content: carrierChinese[item.carrier] })
     displayItems.push({ icon: 'info', title: '簡介', content: item.description || '尚無簡介！' })
@@ -400,7 +396,7 @@ function showAnimeInfoDialog(item, year) {
             </div>
             <div id="anime-tab-info" class="mdui-p-a-2">
                 <div class="anime-info">
-                    <div class="mdui-typo-title mdui-text-color-theme">${animeName}</div>
+                    <div class="mdui-typo-title mdui-text-color-theme">${item.name}</div>
                     <div class="mdui-typo-subheading-opacity">${item.originalName}</div>
                     <div class="mdui-list">
                         ${displayItemsResult}
