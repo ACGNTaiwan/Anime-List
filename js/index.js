@@ -18,33 +18,7 @@ const showDate = week.map((w, i) => ({
     day: `週${weekChinese[i]}`
 }))
 const month2Season = month => ({ 1: '冬', 4: '春', 7: '夏', 10: '秋' }[month] || '新')
-const indexData = {
-    2017: {
-        7: "anime2017.07.json",
-        10: "anime2017.10.json"
-    },
-    2018: {
-        1: "anime2018.01.json",
-        4: "anime2018.04.json",
-        7: "anime2018.07.json",
-        10: "anime2018.10.json"
-    },
-    2019: {
-        1: "anime2019.01.json",
-        4: "anime2019.04.json",
-        7: "anime2019.07.json",
-        10: "anime2019.10.json"
-    },
-    2020: {
-        1: "anime2020.01.json",
-        4: "anime2020.04.json",
-        7: "anime2020.07.json",
-        10: "anime2020.10.json"
-    },
-    2021: {
-        1: "anime2021.01.json"
-    }
-};
+
 // 圖片數量不得小於 5
 const bg = [
     'https://i.imgur.com/NlrxM2r.png',
@@ -64,76 +38,82 @@ const bg = [
 ].sort(() => Math.random() - 0.5)
 // 路由
 const router = new Navigo('./', true, '#/');
-router
-    .on({
-        ':type/:year/:month/': params => loadData({
-            js: "./anime-data/" + indexData[params.year][params.month],
-            type: params.type,
-            year: params.year,
-            month: params.month
-        }),
-        '*': showHome
-    })
-    .resolve()
-router
-    .hooks({
-        before: (done, params) => {
-            $("#content").attr('class', '').html('')
-            $("#drawer>.mdui-list *").removeClass(activeDrawerItemClassName)
-            $(`[href="${router.lastRouteResolved().url}"]`).addClass(activeDrawerItemClassName)
-            done()
-        },
-        after: params => {
-            $('html, body').scrollTop(0)
-        }
-    })
+let indexData;
 let drawer;
-$(function () {
-    if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
-    $("#drawer>.mdui-list").append(
-        `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
-            <i class="mdui-list-item-icon mdui-icon eva eva-home-outline"></i>
-            <div class="mdui-list-item-content">首頁</div>
-        </li>`
-    )
-    for (year of Object.keys(indexData).reverse()) {
-        for (month of Object.keys(indexData[year]).reverse()) {
-            let html = $(
-                `<li class="mdui-collapse-item" al-month="${year}-${month}">
-                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon eva eva-archive-outline"></i>
-                        <div class="mdui-list-item-content">${year} ${month.length > 1 ? month : '0' + month} 月${month2Season(month)}番</div>
-                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                    </div>
-                    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                        <li class="mdui-list-item mdui-ripple" href="info/${year}/${month}" data-navigo>圖文介紹</li>
-                        <li class="mdui-list-item mdui-ripple" href="schedule/${year}/${month}" data-navigo>日程表</li>
-                        <li class="mdui-list-item mdui-ripple" href="waterfall/${year}/${month}" data-navigo>瀑布流</li>
-                    </ul>
-                </li>`
-            )
-            $("#drawer>.mdui-list").append(html)
-        }
-    }
+(async function() {
+    indexData = await loadIndexData();
 
-    router.updatePageLinks()
-    mdui.mutation(); //地方的 MDUI 需要初始化
-    // 手機自動收回 drawer
-    $(`#drawer [href]`).click(function () {
-        if ($(window).width() < 1024) {
-            new mdui.Drawer("#drawer").close();
+    router
+        .on({
+            ':type/:year/:month/': params => loadData({
+                js: "./anime-data/" + indexData[params.year][params.month],
+                type: params.type,
+                year: params.year,
+                month: params.month
+            }),
+            '*': showHome
+        })
+        .resolve()
+    router
+        .hooks({
+            before: (done, params) => {
+                $("#content").attr('class', '').html('')
+                $("#drawer>.mdui-list *").removeClass(activeDrawerItemClassName)
+                $(`[href="${router.lastRouteResolved().url}"]`).addClass(activeDrawerItemClassName)
+                done()
+            },
+            after: params => {
+                $('html, body').scrollTop(0)
+            }
+        })
+
+    $(function () {
+        if (typeof InstallTrigger !== 'undefined') $("body").addClass("firefox")
+        $("#drawer>.mdui-list").append(
+            `<li class="mdui-list-item mdui-ripple" href="home" data-navigo>
+                <i class="mdui-list-item-icon mdui-icon eva eva-home-outline"></i>
+                <div class="mdui-list-item-content">首頁</div>
+            </li>`
+        )
+        for (year of Object.keys(indexData).reverse()) {
+            for (month of Object.keys(indexData[year]).reverse()) {
+                let html = $(
+                    `<li class="mdui-collapse-item" al-month="${year}-${month}">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon eva eva-archive-outline"></i>
+                            <div class="mdui-list-item-content">${year} ${month.length > 1 ? month : '0' + month} 月${month2Season(month)}番</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                            <li class="mdui-list-item mdui-ripple" href="info/${year}/${month}" data-navigo>圖文介紹</li>
+                            <li class="mdui-list-item mdui-ripple" href="schedule/${year}/${month}" data-navigo>日程表</li>
+                            <li class="mdui-list-item mdui-ripple" href="waterfall/${year}/${month}" data-navigo>瀑布流</li>
+                        </ul>
+                    </li>`
+                )
+                $("#drawer>.mdui-list").append(html)
+            }
         }
+    
+        router.updatePageLinks()
+        mdui.mutation(); //地方的 MDUI 需要初始化
+        // 手機自動收回 drawer
+        $(`#drawer [href]`).click(function () {
+            if ($(window).width() < 1024) {
+                new mdui.Drawer("#drawer").close();
+            }
+        });
+        // p == null => 在首頁
+        let p = router.lastRouteResolved().params
+        let u = router.lastRouteResolved().url
+        drawer = new mdui.Collapse("#drawer>.mdui-list", { accordion: true })
+        drawer.open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
+        $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass(activeDrawerItemClassName)
+        // 隨機背景圖
+        hwBackground(bg[0])
+    
     });
-    // p == null => 在首頁
-    let p = router.lastRouteResolved().params
-    let u = router.lastRouteResolved().url
-    drawer = new mdui.Collapse("#drawer>.mdui-list", { accordion: true })
-    drawer.open(p ? `[al-month="${p.year}-${p.month}"]` : 0); //第一個讓他蹦出來
-    $(p ? `[href="${u}"]` : `[href="home"][data-navigo]`).addClass(activeDrawerItemClassName)
-    // 隨機背景圖
-    hwBackground(bg[0])
-
-});
+})();
 
 function hwHeader(title, subtitle, phoneSubtitle) {
     $(`#hw-header .hw-title`).text(title)
@@ -220,6 +200,17 @@ function showHome() {
         }).catch(err => $("[al-contributors]").attr('class', '').html(
             `<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`
         ))
+}
+
+async function loadIndexData() {
+    let res; 
+    try {
+        res = await fetch("anime-data/anime-data.json");
+    } catch (err) {
+        $("#content").attr('class', '').html(`<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`)
+    }
+
+    return res.json();
 }
 
 async function loadData({

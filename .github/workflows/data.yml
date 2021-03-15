@@ -1,0 +1,27 @@
+name: Anime data list generator
+
+on:
+  push:
+    paths:
+    - "anime-data/anime[0-9]+.[0-9]+.json"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: Generate anime-data/anime-data.json file
+      working-directory: .
+      run: python anime-data.py
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: github-actions
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: 'Update anime-data.json'
+        add: 'anime-data/anime-data.json'
