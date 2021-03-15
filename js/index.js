@@ -206,11 +206,11 @@ async function loadIndexData() {
     let res; 
     try {
         res = await fetch("anime-data/anime-data.json");
+        return res.json();
     } catch (err) {
         $("#content").attr('class', '').html(`<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`)
+        return {};
     }
-
-    return res.json();
 }
 
 async function loadData({
