@@ -11,7 +11,7 @@
     "description": "聖瑪格諾利亞共和國為了應對鄰國的無人機「Legion」侵略，成功研發出同型武器，不再需要靠著人命堆疊的戰爭終於來臨。是的──表面上確實如此。然而，位於共和國全八十五個行政區之外的「不存在的第 86 區」中，一群少年少女正以「有人駕駛的無人機」之姿，日夜奮戰不懈。率領一群年輕人出生入死的少年──辛，與身處遙遠後方，透過特殊通訊指揮他們作戰的「指揮管制官」少女──蕾娜。兩人壯烈而悲傷的戰鬥與離別的故事，就此揭開序幕──！"
   },
   {
-    "name": "佐賀偶像是傳奇 Revenge",
+    "name": "佐賀偶像是傳奇 捲土重來",
     "date": "4/8",
     "time": "23:30",
     "carrier": "Original",
@@ -162,12 +162,12 @@
     "originalName": "SSSS.DYNAZENON",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695740048212008/11120f095cac7443fff5e4cdca62656dd81ba3a73c51dcfc67ab3967e5130777.jpg",
     "official": "https://dynazenon.net/",
-    "description": ""
+    "description": "由圓谷製作聯手 TRIGGER 推出的完全新作動畫《SSSS.DYNAZENON》，和 TV 動畫《SSSS.GRIDMAN》一樣，以「古立特」作為原作，監督為 雨宮哲、腳本為 長谷川圭一、角色設計為 坂本勝、音樂由 鷺巣詩郎 所負責。"
   },
   {
     "name": "不要欺負我，長瀞同學",
-    "date": "",
-    "time": "",
+    "date": "4/11",
+    "time": "01:00",
     "carrier": "Comic",
     "season": 1,
     "originalName": "イジらないで、長瀞さん",
@@ -195,7 +195,7 @@
     "originalName": "ゴジラ シンギュラポイント",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695750375768104/4620c9670cdf1d3960ab40ebc22d8e2ebff6d8e9edb994d12e76ee48a95e37aa.jpg",
     "official": "https://godzilla-sp.jp/",
-    "description": ""
+    "description": "《哥吉拉》系列自 1954 年推出至今，除了由日本所製作的特攝電影外，還有授權美國傳奇影業與華納兄弟的《哥吉拉》系列作品，並且於 2017 年起推出了以 3DCG 動畫製作而成的《GODZILLA》三部曲。本次新作動畫《哥吉拉：奇異點》，將呈現與《GODZILLA》不同的原創故事，並且搭配《我的英雄學院》動畫製作公司 BONES，以及《寶石之國》動畫製作公司 Orange 攜手合作，推出手繪搭配 CG 的全新作品。"
   },
   {
     "name": "真白之音",
@@ -305,7 +305,7 @@
     "originalName": "バクテン!!",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695794931466290/3fe43d581d2d05d8de38b38490f1cb53f60c76773c932ac44bd1a59ea10a7217.jpg",
     "official": "https://bakuten-pr.com/",
-    "description": ""
+    "description": "《爆轉少年！！》以日本宮城縣的岩沼市作為舞台，描述當地高中男子新體操社的青春物語。國中三年級的夏天、被男子新體操吸引的少年雙葉翔太郎（土屋神葉配音演出），進入了私立蒼秀館高等學校後加入新體操社，遇上了充滿個性的前輩們以及同學，眾人朝向同一個目標共同邁進。"
   },
   {
     "name": "美少年偵探團",
@@ -332,7 +332,7 @@
   {
     "name": "再見了，我的克拉默",
     "date": "4/4",
-    "time": "",
+    "time": "23:30",
     "carrier": "Comic",
     "season": 1,
     "originalName": "さよなら私のクラマー",
@@ -415,7 +415,7 @@
     "originalName": "新幹線変形ロボ シンカリオンＺ",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695962451836948/1ae9f0acb49867a6be8898315292b268faa4e6c66cafd761dee0cc1704e4690d.jpg",
     "official": "https://www.shinkalion.com/",
-    "description": ""
+    "description": "動畫設定在日本出現一個「新幹線超進化研究所」面對從「漆黑的新幹線」誕生出的巨大怪物守護日本，「新幹線超進化研究所」開發出了「新幹線變形機器人 Shinkalion」，只有讓與Shinkalion 匹配率高的孩子們駕駛，才能發揮出機體最大的力量打退強敵，而「漆黑的新幹線」目的是什麼，孩子們能否守護好日本的未來!?"
   },
   {
     "name": "大運動會 ReSTART!",
@@ -429,11 +429,11 @@
     "description": "故事背景在擊退來自「ネリリ星」的侵略人後 100 年，以全世界為規模的大運動會再次舉辦，並且命名為「神・大運動會」。這次故事將圍繞著主角「明星」一行人，少女們的熱血競技將再次展開。"
   },
   {
-    "name": "憂國的莫里亞蒂 第二季",
+    "name": "憂國的莫里亞蒂 後半",
     "date": "4/4",
     "time": "22:30",
     "carrier": "Comic",
-    "season": 2,
+    "season": 1,
     "originalName": "憂国のモリアーティ 2クール目",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695968898875423/c5965d4ee1769ef2f216acbf19c231cf5e57c8328b40cd285b2381a0d38c4d55.jpg",
     "official": "https://moriarty-anime.com/",
@@ -441,8 +441,8 @@
   },
   {
     "name": "SD 鋼彈世界 HEROES",
-    "date": "",
-    "time": "",
+    "date": "4/7",
+    "time": "19:00",
     "carrier": "Original",
     "season": 1,
     "originalName": "SDガンダムワールド ヒーローズ",
@@ -452,8 +452,8 @@
   },
   {
     "name": "燒窯的話也要馬克杯",
-    "date": "",
-    "time": "",
+    "date": "4/3",
+    "time": "00:55",
     "carrier": "Comic",
     "season": 1,
     "originalName": "やくならマグカップも",
@@ -514,7 +514,7 @@
     "originalName": "結城友奈は勇者である ちゅるっと！",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820696004180705280/35c0cf2a7983996b983dfc14206923caddc38178e6196c17424d40a8e03e8217.jpg",
     "official": "http://yuyuyu.tv/churutto/",
-    "description": ""
+    "description": "「是勇者」系列手機遊戲「結城友奈是勇者 閃光的花結(/花結的閃光)」改編的 Q 版角色短動畫。"
   },
   {
     "name": "Mazica Party",
@@ -525,7 +525,7 @@
     "originalName": "Mazica Party",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820696011076403210/ed6526ab7460c36802791bb5f251ba938eff9f3086d8242da3e89182b3728544.jpg",
     "official": "https://www.tv-osaka.co.jp/mazicaparty/",
-    "description": ""
+    "description": "Takara Tomy 卡片遊戲的改編動畫版。"
   },
   {
     "name": "決鬥大師 King！",
@@ -536,7 +536,7 @@
     "originalName": "デュエル・マスターズ キング！",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820696016940171264/e833c7f5296c736f062cb64483afe960ae18e3ad98e32d4497f7a8e2de26325c.png",
     "official": "https://www.shopro.co.jp/tv/duelmasters/index.html",
-    "description": ""
+    "description": "迎來19週年的動畫「決鬥大師」的新季度。男主角跟去年一樣是切札勝。"
   },
   {
     "name": "認真地不認真的怪俠佐羅利 第2季",
@@ -561,7 +561,7 @@
     "description": ""
   },
   {
-    "name": "恐龍莊日和",
+    "name": "恐龍公寓日和",
     "date": "4/4",
     "time": "00:57",
     "carrier": "Original",
@@ -594,7 +594,7 @@
     "description": ""
   },
   {
-    "name": "宇宙奇妙生物小鐵君",
+    "name": "某某宇宙的小鐵君",
     "date": "4/7",
     "time": "18:45",
     "carrier": "Comic",
@@ -617,8 +617,8 @@
   },
   {
     "name": "放馬過來 壽司相撲",
-    "date": "",
-    "time": "",
+    "date": "4/3",
+    "time": "07:25",
     "carrier": "Original",
     "season": 1,
     "originalName": "どすこいすしずもう",
@@ -647,5 +647,16 @@
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820697733115150366/f9a6a76c6bf3ac748030211f321apzi5.JPG",
     "official": "https://www.thunderboltfantasy.com/",
     "description": "《東離劍遊紀 3》劇情延續第 2 季結尾，婁震戒和魔劍七殺天凌墜落魔脊山谷後，主角團的凜雪鴉與殤不患、浪巫謠、聆牙與捲殘雲在尋找他們的行蹤時，卻誤入了生長著奇特植物的廣闊洞窟。懷抱著復活魔神的野心卻遭受阻撓的妖女・刑亥，與西幽的邪教門派「神蝗盟」聯手，再次布下天羅地網，阻擋在凜雪鴉與殤不患面前。"
+  },
+  {
+    "name": "義呆利 World Stars",
+    "date": "4/1",
+    "time": "00:00",
+    "carrier": "Comic",
+    "season": 7,
+    "originalName": "ヘタリア World★Stars",
+    "img": "https://static.acgsecrets.hk/img/e9/e94e70063556642612a013aba4fc5810/7c667949283adb82dfcff488dcc07f5de736362cda9d9a13dd1cc69becf6388b.jpg",
+    "official": "https://hetalia-ws.com/",
+    "description": "《HETALIA Axis Powers》是 日丸屋秀和於網路上連載的漫畫，作品以世界歷史為主軸，將各個國家以及該國的文化以及風土民情擬人化，將國與國的關係描繪成人類之間互動關係的喜劇漫畫。 以第一次世界大戰及第二次世界大戰為中心開始，到了後期也發展至古代、中世紀以及現代等各個時空的故事，全作以搞笑的方式鋪述歷史中的事情以及文化趣事。"
   }
 ]
