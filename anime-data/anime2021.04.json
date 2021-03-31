@@ -209,7 +209,7 @@
     "description": "住在青森的澤村雪從小聽著外公松吾郎的津輕三味線長大，自己也彈得一手好琴，不過，卻被外公說那只是在模仿他。松吾郎死後，聽不見外公琴音的空虛令雪決定離開故鄉前往東京。可是，不適應大城市的雪卻在六本木被混混纏上，所幸路過的酒店公關優奈出手救了他，正朝著夢想努力的優奈在雪身上看見了自己，於是決定收留他……"
   },
   {
-    "name": "ODD TAXI",
+    "name": "奇巧計程車",
     "date": "4/6",
     "time": "02:00",
     "carrier": "Original",
@@ -220,7 +220,7 @@
     "description": "以各種動物共同生活的城市為舞台，《ODD TAXI》描述古怪又寡言的 41 歲計程車司機「小戶川」，在工作時遇到各式各樣乘客的故事。"
   },
   {
-    "name": "NOMAD MEGALOBOX 2",
+    "name": "NOMAD MEGALOBOX 機甲拳擊 第二季",
     "date": "4/4",
     "time": "23:00",
     "carrier": "Original",
@@ -341,7 +341,7 @@
     "description": "周防堇在國中是女子足球隊的翼鋒，有著驚人的足球天分。但由於其他同學跟不上她的程度，導致球隊每年都在地區大賽中敗退。即將從國中畢業時，她在球場上的對手曾志崎綠邀她等上高中後一起踢球，原本曾志崎綠想加入足球強校浦和邦成，但周防堇卻因為「某個原因」而選擇弱小的蕨青南高。之後，從前的知名女子職業足球選手「生剝鬼能見」來到蕨青南高擔任教練，她們之間將會擦出什麼樣的火花……？"
   },
   {
-    "name": "這個美妙的世界 The Animation",
+    "name": "美麗新世界 The Animation",
     "date": "4/10",
     "time": "01:25",
     "carrier": "Game",
@@ -349,7 +349,7 @@
     "originalName": "すばらしきこのせかい The Animation",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820695939080650802/0aea33325d32a1fa9c3f4ef01f4e6a4d7dac724572df21c21aa6b8fa031a71ca.jpg",
     "official": "https://subarashiki-anime.jp/",
-    "description": ""
+    "description": "《美麗新世界》最早是 2007 年時於 Nintendo DS 所發售的遊戲，其後陸續在智慧型手機以及 Nintendo Switch 推出了衍伸作品以及強化版。本作故事以虛構的澀谷為舞台，15 歲的主角櫻庭音操在原因不明的情況下被迫參加一場名為「死神遊戲」的死亡遊戲，如果想要活下來，就必須完成「死神」所交待的任務。不只如此，原本熟悉的澀谷街道上還出現了名為「雜音」的怪物。音操必須努力存活過七天的時限，與其他參加者一同設法逃離緊追身後的死亡威脅。"
   },
   {
     "name": "BLUE REFLECTION RAY/澪",
@@ -462,9 +462,9 @@
     "description": "《燒窯的話也要馬克杯》作品以日本美濃燒的產地「岐阜縣・多治見市」做為舞台，媽媽是傳說中的陶藝家、主角「豊川姫乃」與個性十足的陶藝社成員們，在青春的日常故事中展現了陶藝魅力所在。"
   },
   {
-    "name": "七騎士 革命－英雄的繼承者－",
-    "date": "",
-    "time": "",
+    "name": "七騎士：革命－英雄的繼承者－",
+    "date": "4/5",
+    "time": "00:00",
     "carrier": "Game",
     "season": 1,
     "originalName": "セブンナイツ レボリューション -英雄の継承者-",
@@ -572,7 +572,7 @@
     "description": ""
   },
   {
-    "name": "冰冰冰 冰淇琳",
+    "name": "iii Icecrin",
     "date": "4/6",
     "time": "07:30",
     "carrier": "Original",
@@ -584,8 +584,8 @@
   },
   {
     "name": "做得很好！名作君 第六季",
-    "date": "",
-    "time": "",
+    "date": "4/2",
+    "time": "18:20",
     "carrier": "Original",
     "season": 6,
     "originalName": "あはれ！名作くん シーズン６",
@@ -606,17 +606,17 @@
   },
   {
     "name": "暴力熊",
-    "date": "",
-    "time": "",
+    "date": "4/5",
+    "time": "23:57",
     "carrier": "Original",
     "season": 1,
     "originalName": "いたずらぐまのグル～ミ～",
     "img": "https://cdn.discordapp.com/attachments/787359871682478153/820696039576305704/177915bb0a89167df9b50582ae778e9dbcdf4f19869b2e7517988161e998f563.jpg",
     "official": "https://gloomy-official.com/",
-    "description": ""
+    "description": "慶祝「暴力熊」玩具系列20週年的改編動畫。"
   },
   {
-    "name": "放馬過來 壽司相撲",
+    "name": "壽司大相撲",
     "date": "4/3",
     "time": "07:25",
     "carrier": "Original",
