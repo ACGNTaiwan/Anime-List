@@ -20,7 +20,7 @@ document.querySelectorAll('[acgs-bangumi-anime-id]').forEach((el, i) => {
         "carrier": { 原創作品: "Original", 漫畫改編: "Comic", 小說改編: "Novel", 遊戲改編: "Game", 改編作品: "Original" }[el.querySelector('.anime_tag tags').textContent] || "Original",
         "season": 1,
         "originalName": el.querySelector('.entity_original_name').textContent,
-        "img": el.querySelector('.anime_cover_image').getAttribute("acgs-img-data-url"),
+        "img": el.querySelector('.anime_cover_image > img.img-fit-cover').getAttribute("acgs-img-data-url"),
         "official": el.querySelector('.anime_links a') ? el.querySelector('.anime_links a').href : '',
         "description": el.querySelector('.anime_story') ? el.querySelector('.anime_story').textContent : ""
     })
