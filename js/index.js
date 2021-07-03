@@ -48,22 +48,19 @@ const indexData = {
     }
 };
 // 圖片數量不得小於 5
-const bg = [
-    'https://i.imgur.com/NlrxM2r.png',
-    'https://i.imgur.com/EEvQxpd.jpg',
-    'https://cdn.discordapp.com/attachments/468412959119638550/591696683793121281/img01.png',
-    'https://i.imgur.com/cNmql8G.png',
-    'https://i.imgur.com/EguHw7O.jpg',
-    'https://i.imgur.com/SZg299H.jpg',
-    'https://i.imgur.com/zTT1DkC.jpg',
-    'https://i.imgur.com/FDlj5tL.png',
-    'https://i.pinimg.com/originals/3d/cf/7e/3dcf7e5cbc5e1e86ba28347ad86cf9ee.jpg',
-    'https://i.imgur.com/n85B77H.png',
-    'https://i.imgur.com/J4Sa0Wn.jpg',
+const bg = arrayShuffle([
     'https://cdn.discordapp.com/attachments/439314137584107532/728258277938561056/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/728246802762956810/kv.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/732937057055539240/unknown.png'
-].sort(() => Math.random() - 0.5)
+    'https://cdn.discordapp.com/attachments/439314137584107532/732937057055539240/unknown.png',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860905520940187679/00000036.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860908283832827924/ogp_3.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860911055659073536/unknown.png',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860912162141372466/cut06.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860914231560765450/snapshot5.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860918794217455616/E4KgGp7VgAEuECb.webp',
+    'https://cdn.discordapp.com/attachments/787359871682478153/856738206334451732/d92921dff9ce1efa796e5c45a0118a2c7647545ca3a098271a23565f1156f08b.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860929446281084928/img_ep01-1.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/860929867448451092/img_ep01-4.jpg'
+])
 // 路由
 const router = new Navigo('./', true, '#/');
 router
@@ -426,3 +423,35 @@ function showAnimeInfoDialog(item, year) {
     mdui.mutation()
     $("#anime-tab-comment").html(`<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="lUO82nuW" data-limit="20" data-page-id="${animeId}" data-outlined="1" data-colorful="1" data-height="450"></script>`)
 }
+
+/**
+ * @template T
+ * @param {Array<T>} array
+ * @returns {Array<T>}
+ * 
+ * @link https://github.com/sindresorhus/array-shuffle
+ * @license
+ * MIT License
+ * 
+ * Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+function arrayShuffle(array) {
+	if (!Array.isArray(array)) {
+		throw new TypeError(`Expected an array, got ${typeof array}`);
+	}
+
+	array = [...array];
+
+	for (let index = array.length - 1; index > 0; index--) {
+		const newIndex = Math.floor(Math.random() * (index + 1));
+		[array[index], array[newIndex]] = [array[newIndex], array[index]];
+	}
+
+	return array;
+};
