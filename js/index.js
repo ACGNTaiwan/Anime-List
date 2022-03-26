@@ -123,8 +123,10 @@ $(function () {
     mdui.mutation(); //地方的 MDUI 需要初始化
     // 手機自動收回 drawer  
     $(`#drawer [href]`).click(function () {
-        new mdui.Drawer("#drawer").close();
-        $(".mdui-overlay").click()
+        if ($(window).width() < 1024) {
+            new mdui.Drawer("#drawer").close();
+            $(".mdui-overlay").click()
+        }
     });
     // p == null => 在首頁
     let p = router.lastRouteResolved().params
