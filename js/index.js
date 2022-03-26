@@ -121,11 +121,10 @@ $(function () {
 
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
-    // 手機自動收回 drawer
+    // 手機自動收回 drawer  
     $(`#drawer [href]`).click(function () {
-        if ($(window).width() < 1024) {
-            new mdui.Drawer("#drawer").close();
-        }
+        new mdui.Drawer("#drawer").close();
+        $(".mdui-overlay").click()
     });
     // p == null => 在首頁
     let p = router.lastRouteResolved().params
@@ -446,16 +445,16 @@ function showAnimeInfoDialog(item, year) {
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 function arrayShuffle(array) {
-	if (!Array.isArray(array)) {
-		throw new TypeError(`Expected an array, got ${typeof array}`);
-	}
+    if (!Array.isArray(array)) {
+        throw new TypeError(`Expected an array, got ${typeof array}`);
+    }
 
-	array = [...array];
+    array = [...array];
 
-	for (let index = array.length - 1; index > 0; index--) {
-		const newIndex = Math.floor(Math.random() * (index + 1));
-		[array[index], array[newIndex]] = [array[newIndex], array[index]];
-	}
+    for (let index = array.length - 1; index > 0; index--) {
+        const newIndex = Math.floor(Math.random() * (index + 1));
+        [array[index], array[newIndex]] = [array[newIndex], array[index]];
+    }
 
-	return array;
+    return array;
 };
