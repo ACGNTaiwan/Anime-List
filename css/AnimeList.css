@@ -172,7 +172,7 @@ body:not(.firefox) .mdui-dialog-content {
 .card .image {
   height: 0;
   overflow: hidden;
-  padding-bottom: 141.7%;
+  padding-bottom: 141.4%;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -237,7 +237,7 @@ body:not(.firefox) .mdui-dialog-content {
   -webkit-column-break-inside: avoid;
      -moz-column-break-inside: avoid;
           break-inside: avoid;
-  padding: 1e-10px;
+  padding: 0.0000000001px;
   -webkit-box-shadow: var(--shadow-default);
           box-shadow: var(--shadow-default);
 }
@@ -289,9 +289,6 @@ body:not(.firefox) .mdui-dialog-content {
      text-overflow: ellipsis;
   white-space: nowrap;
 }
-.contributors .card .image, .recent-update .card .image, .info .card .image, .schedule .card .image {
-  padding-bottom: 100%;
-}
 
 .schedule .day {
   width: calc(100% / 7);
@@ -307,9 +304,6 @@ body:not(.firefox) .mdui-dialog-content {
 .info {
   --column-count: 6;
 }
-.info .card .image {
-  padding-bottom: 142.86%;
-}
 
 .contributors {
   --column-count: 8;
@@ -320,9 +314,6 @@ body:not(.firefox) .mdui-dialog-content {
 
 .recent-update {
   --column-count: 4;
-}
-.recent-update .card .image {
-  padding-bottom: 42.86%;
 }
 
 @media (max-width: 1450px) {
