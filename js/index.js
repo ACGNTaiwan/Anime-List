@@ -52,7 +52,6 @@ const indexData = {
         4: "anime2022.04.json"
     }
 };
-// 圖片數量不得小於 5
 const bg = arrayShuffle([
     'https://cdn.discordapp.com/attachments/439314137584107532/728258277938561056/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
     'https://cdn.discordapp.com/attachments/439314137584107532/732937057055539240/unknown.png',
@@ -64,7 +63,8 @@ const bg = arrayShuffle([
     'https://cdn.discordapp.com/attachments/439314137584107532/860918794217455616/E4KgGp7VgAEuECb.webp',
     'https://cdn.discordapp.com/attachments/787359871682478153/856738206334451732/d92921dff9ce1efa796e5c45a0118a2c7647545ca3a098271a23565f1156f08b.jpg',
     'https://cdn.discordapp.com/attachments/439314137584107532/860929446281084928/img_ep01-1.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860929867448451092/img_ep01-4.jpg'
+    'https://cdn.discordapp.com/attachments/439314137584107532/860929867448451092/img_ep01-4.jpg',
+    'https://cdn.discordapp.com/attachments/439314137584107532/961445202109804614/FKqIc_pVUAkuvh4.jpg'
 ])
 // 路由
 const router = new Navigo('./', true, '#/');
@@ -152,16 +152,14 @@ function hwBackground(url) {
 }
 
 function showHome() {
-    function appendRecentUpdate() {
+    async function appendRecentUpdate() {
         let count = 0
-        let bgCounter = 1
-        for (year of Object.keys(indexData).reverse()) {
-            for (month of Object.keys(indexData[year]).reverse()) {
-                if (count >= 4) break;
-                let y = year,
-                    m = month
-                let bgImg = bg[bgCounter]
-                bgCounter++
+        loop: for (year of Object.keys(indexData).reverse()) {
+            const y = year;
+            for (month of Object.keys(indexData[y]).reverse()) {
+                if (++count > 4) break loop;
+                const m = month
+                const bgImg = arrayShuffle((await loadJson("./anime-data/" + indexData[y][m])).map(i => i.img))[0]
                 $('#content .recent-update').append(
                     $(
                         `<a class="card" title="${y} 年 ${m} 月${month2Season(m)}番" href="info/${y}/${m}" data-navigo>
@@ -179,7 +177,6 @@ function showHome() {
                         drawer.open(`[al-month="${y}-${m}"]`);
                     })
                 )
-                count++
             }
         }
         router.updatePageLinks()
@@ -234,18 +231,8 @@ async function loadData({
     month
 }) {
     try {
-        let anime_data
-        if (sessionStorage["anime_data_" + js]) {
-            anime_data = JSON.parse(sessionStorage["anime_data_" + js]).data
-        } else {
-            anime_data = await fetch(js).then(res => res.json())
-            sessionStorage["anime_data_" + js] = JSON.stringify({
-                data: anime_data,
-                updatedTime: new Date()
-            })
-        }
         // 讓動畫按時間排序
-        const sorted_anime = anime_data.sort((a, b) => {
+        const sorted_anime = (await loadJson(js)).sort((a, b) => {
             //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
             let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
                 bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
@@ -269,6 +256,20 @@ async function loadData({
     } catch (err) {
         $("#content").attr('class', '').html(`<div class="mdui-typo">蹦蹦爆炸了，請稍後再試。<pre>錯誤原因：\n${err}</pre></div>`)
     }
+}
+
+async function loadJson(js) {
+    let anime_data
+    if (sessionStorage["anime_data_" + js]) {
+        anime_data = JSON.parse(sessionStorage["anime_data_" + js]).data
+    } else {
+        anime_data = await fetch(js).then(res => res.json())
+        sessionStorage["anime_data_" + js] = JSON.stringify({
+            data: anime_data,
+            updatedTime: new Date()
+        })
+    }
+    return anime_data
 }
 
 function waterfall(Anime, year) {
