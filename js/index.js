@@ -334,17 +334,17 @@ function schedule(Anime, year) {
 }
 
 function info(Anime, year) {
+    for (day of showDate)
+    $(`#content`).append(
+        `<div id="${day.id}">
+        <div class="mdui-typo-display-1 al-header">${day.day}</div>
+        <div class="info"></div>
+        </div>`
+        )
     $(`#content`).append(
         `<div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
         <div class="info" id="unknown" al-time-unknown></div>`
     )
-    for (day of showDate)
-        $(`#content`).append(
-            `<div id="${day.id}">
-                <div class="mdui-typo-display-1 al-header">${day.day}</div>
-                <div class="info"></div>
-            </div>`
-        )
     for (let item of Anime) {
         let setTime = new Date((item.year || year) + "/" + item.date)
         let animeDay = week[setTime.getDay()]; //星期
