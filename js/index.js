@@ -245,8 +245,13 @@ async function loadData({
                 b.date.split("/")[0], b.date.split("/")[1],
                 b.time.split(":")[0] || "23", b.time.split(":")[1] || "59" // 如果只有日期，預設 23:59，讓他排在該日期的最後面
             );
-            // 如果沒日期, aTime - bTime 會是 NaN，回傳 1 讓他的 sort 結果正確
-            return isNaN(aTime - bTime) ? 1 : aTime - bTime;
+            // 如果其中一個沒日期, aTime - bTime 會是 NaN
+            if (isNaN(aTime - bTime)) {
+                if (a.date == b.date) return 0; // aTime 跟 bTime 都是 invalid
+                if (a.date == "") return 1; // aTime invalid, bTime valid, a 要在 b 後面
+                if (b.date == "") return -1; // aTime valid, bTime invalid, a 要在 b 前面
+            } else
+                return aTime - bTime;
         });
         $("#content").attr('class', '').html('')
         let typeChinsese = {
