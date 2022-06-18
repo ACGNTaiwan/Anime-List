@@ -49,7 +49,8 @@ const indexData = {
     },
     2022: {
         1: "anime2022.01.json",
-        4: "anime2022.04.json"
+        4: "anime2022.04.json",
+        7: "anime2022.07.json"
     }
 };
 const bg = arrayShuffle([
@@ -122,7 +123,7 @@ $(function () {
 
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
-    // 手機自動收回 drawer  
+    // 手機自動收回 drawer
     $(`#drawer [href]`).click(function () {
         if ($(window).width() < 1024) {
             new mdui.Drawer("#drawer").close();
