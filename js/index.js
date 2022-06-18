@@ -351,8 +351,10 @@ function info(Anime, year) {
         </div>`
         )
     $(`#content`).append(
-        `<div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
-        <div class="info" id="unknown" al-time-unknown></div>`
+        `<div id="unknown">
+        <div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
+        <div class="info" al-time-unknown></div>
+        </div>`
     )
     for (let item of Anime) {
         let setTime = new Date((item.year || year) + "/" + item.date)
