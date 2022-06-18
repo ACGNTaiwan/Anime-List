@@ -235,9 +235,18 @@ async function loadData({
         // 讓動畫按時間排序
         const sorted_anime = (await loadJson(js)).sort((a, b) => {
             //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-            let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-                bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
-            return aTime - bTime;
+            let aTime = new Date(
+                year,
+                a.date.split("/")[0], a.date.split("/")[1],
+                a.time.split(":")[0] || "23", a.time.split(":")[1] || "59" // 如果只有日期，預設 23:59，讓他排在該日期的最後面
+            );
+            let bTime = new Date(
+                year,
+                b.date.split("/")[0], b.date.split("/")[1],
+                b.time.split(":")[0] || "23", b.time.split(":")[1] || "59" // 如果只有日期，預設 23:59，讓他排在該日期的最後面
+            );
+            // 如果沒日期, aTime - bTime 會是 NaN，回傳 1 讓他的 sort 結果正確
+            return isNaN(aTime - bTime) ? 1 : aTime - bTime;
         });
         $("#content").attr('class', '').html('')
         let typeChinsese = {
