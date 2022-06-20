@@ -348,13 +348,14 @@ function schedule(Anime, year) {
 }
 
 function info(Anime, year) {
-    for (day of showDate)
-    $(`#content`).append(
-        `<div id="${day.id}">
-        <div class="mdui-typo-display-1 al-header">${day.day}</div>
-        <div class="info"></div>
-        </div>`
+    for (day of showDate) {
+        $(`#content`).append(
+            `<div id="${day.id}">
+            <div class="mdui-typo-display-1 al-header">${day.day}</div>
+            <div class="info"></div>
+            </div>`
         )
+    }
     $(`#content`).append(
         `<div id="unknown">
         <div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
