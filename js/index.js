@@ -383,7 +383,7 @@ function info(Anime, year) {
             </div>`
         ).click(function () { showAnimeInfoDialog(item, year) }))
     }
-    if ($("#unknown>*").length == 0)
+    if ($("#unknown > .info > *").length == 0)
         $(`[al-time-unknown]`).remove()
 }
 
