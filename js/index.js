@@ -49,7 +49,8 @@ const indexData = {
     },
     2022: {
         1: "anime2022.01.json",
-        4: "anime2022.04.json"
+        4: "anime2022.04.json",
+        7: "anime2022.07.json"
     }
 };
 const bg = arrayShuffle([
@@ -122,7 +123,7 @@ $(function () {
 
     router.updatePageLinks()
     mdui.mutation(); //地方的 MDUI 需要初始化
-    // 手機自動收回 drawer  
+    // 手機自動收回 drawer
     $(`#drawer [href]`).click(function () {
         if ($(window).width() < 1024) {
             new mdui.Drawer("#drawer").close();
@@ -234,9 +235,23 @@ async function loadData({
         // 讓動畫按時間排序
         const sorted_anime = (await loadJson(js)).sort((a, b) => {
             //new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-            let aTime = new Date(year, a.date.split("/")[0], a.date.split("/")[1], a.time.split(":")[0], a.time.split(":")[1]),
-                bTime = new Date(year, b.date.split("/")[0], b.date.split("/")[1], b.time.split(":")[0], b.time.split(":")[1]);
-            return aTime - bTime;
+            let aTime = new Date(
+                year,
+                a.date.split("/")[0], a.date.split("/")[1],
+                a.time.split(":")[0] || "23", a.time.split(":")[1] || "59" // 如果只有日期，預設 23:59，讓他排在該日期的最後面
+            );
+            let bTime = new Date(
+                year,
+                b.date.split("/")[0], b.date.split("/")[1],
+                b.time.split(":")[0] || "23", b.time.split(":")[1] || "59" // 如果只有日期，預設 23:59，讓他排在該日期的最後面
+            );
+            // 如果其中一個沒日期, aTime - bTime 會是 NaN
+            if (isNaN(aTime - bTime)) {
+                if (a.date == b.date) return 0; // aTime 跟 bTime 都是 invalid
+                if (a.date == "") return 1; // aTime invalid, bTime valid, a 要在 b 後面
+                if (b.date == "") return -1; // aTime valid, bTime invalid, a 要在 b 前面
+            } else
+                return aTime - bTime;
         });
         $("#content").attr('class', '').html('')
         let typeChinsese = {
@@ -333,17 +348,20 @@ function schedule(Anime, year) {
 }
 
 function info(Anime, year) {
-    $(`#content`).append(
-        `<div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
-        <div class="info" id="unknown" al-time-unknown></div>`
-    )
-    for (day of showDate)
+    for (day of showDate) {
         $(`#content`).append(
             `<div id="${day.id}">
-                <div class="mdui-typo-display-1 al-header">${day.day}</div>
-                <div class="info"></div>
+            <div class="mdui-typo-display-1 al-header">${day.day}</div>
+            <div class="info"></div>
             </div>`
         )
+    }
+    $(`#content`).append(
+        `<div id="unknown">
+        <div class="mdui-typo-display-1 al-header" al-time-unknown>播出時間未知</div>
+        <div class="info" al-time-unknown></div>
+        </div>`
+    )
     for (let item of Anime) {
         let setTime = new Date((item.year || year) + "/" + item.date)
         let animeDay = week[setTime.getDay()]; //星期
@@ -365,7 +383,7 @@ function info(Anime, year) {
             </div>`
         ).click(function () { showAnimeInfoDialog(item, year) }))
     }
-    if ($("#unknown>*").length == 0)
+    if ($("#unknown > .info > *").length == 0)
         $(`[al-time-unknown]`).remove()
 }
 
