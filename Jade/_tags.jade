@@ -1,0 +1,36 @@
+//-
+    _tags.jade
+    快速產生社群網站所需的標籤
+
+    格式
+    +social_tags(title,description,image,url)
+
+    範例
+    +social_tags('Tocas Xiaoan','第一天，洨安創造了始春。','og.jpg','https://xiaoan.tocas-ui.com/')
+
+    一些你可能用得到的除錯工具
+    Facebook   https://developers.facebook.com/tools/debug/
+    Twitter    https://cards-dev.twitter.com/validator
+    Pinterest  https://developers.pinterest.com/tools/url-debugger/
+    Google+    https://developers.google.com/structured-data/testing-tool/
+mixin social_tags(title,description,image,url) 
+    //-Search Engine
+    meta(name='description', content=description)
+    meta(name='image', content=image)
+    //-Schema.org for Google
+    meta(itemprop='name', content=title)
+    meta(itemprop='description', content=description)
+    meta(itemprop='image', content=image)
+    //-Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content=title)
+    meta(name='twitter:description', content=description)
+    meta(name='twitter:image:src', content=image)
+    //-Open Graph general (Facebook, Pinterest & Google+)
+    meta(name='og:title', content=title)
+    meta(name='og:description', content=description)
+    meta(name='og:image', content=image)
+    meta(name='og:url', content=url)
+    meta(name='og:site_name', content=title)
+    meta(name='og:locale', content='zh_TW')
+    meta(name='og:type', content='website')
