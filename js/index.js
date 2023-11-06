@@ -61,18 +61,18 @@ const indexData = {
     }
 };
 const bg = arrayShuffle([
-    'https://cdn.discordapp.com/attachments/439314137584107532/728258277938561056/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/732937057055539240/unknown.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860905520940187679/00000036.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860908283832827924/ogp_3.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860911055659073536/unknown.png',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860912162141372466/cut06.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860914231560765450/snapshot5.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860918794217455616/E4KgGp7VgAEuECb.webp',
-    'https://cdn.discordapp.com/attachments/787359871682478153/856738206334451732/d92921dff9ce1efa796e5c45a0118a2c7647545ca3a098271a23565f1156f08b.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860929446281084928/img_ep01-1.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/860929867448451092/img_ep01-4.jpg',
-    'https://cdn.discordapp.com/attachments/439314137584107532/961445202109804614/FKqIc_pVUAkuvh4.jpg'
+    'anime-data/img/index/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
+    'anime-data/img/index/unknown.png',
+    'anime-data/img/index/00000036.jpg',
+    'anime-data/img/index/ogp_3.jpg',
+    'anime-data/img/index/unknown-1.png',
+    'anime-data/img/index/cut06.jpg',
+    'anime-data/img/index/snapshot5.jpg',
+    'anime-data/img/index/E4KgGp7VgAEuECb.webp',
+    'anime-data/img/index/d92921dff9ce1efa796e5c45a0118a2c7647545ca3a098271a23565f1156f08b.jpg',
+    'anime-data/img/index/img_ep01-1.jpg',
+    'anime-data/img/index/img_ep01-4.jpg',
+    'anime-data/img/index/FKqIc_pVUAkuvh4.jpg'
 ])
 // 路由
 const router = new Navigo('./', true, '#/');
