@@ -1,13 +1,13 @@
 // https://acgsecrets.hk/bangumi/202101/
-let res = []
+var res = []
 document.querySelectorAll('[acgs-bangumi-anime-id]').forEach((el, i) => {
     let date = "", time = ""
-    if (el.querySelector('.time_tomorrow').textContent.startsWith("跨季")) {
+    if (el.querySelector('.anime_onair').textContent.startsWith("跨季")) {
         // skip anime from last season
         return;
     }
     if (el.querySelector('.time_today').textContent != "時間未定") {
-        let qlm = el.querySelector('.time_tomorrow').textContent.match(/播放日期：(\d{1,2})月(\d{1,2})日起／.+／(\d{1,2})時(\d{1,2})分/)
+        let qlm = el.querySelector('.time_tomorrow').textContent.match(/(?:\d{4}年)?(\d{1,2})月(\d{1,2})日起／.+／(\d{1,2})時(\d{1,2})分/)
         if (qlm) {
             date = qlm[1] + '/' + qlm[2]
             time = qlm[3].padStart(2, "0") + ':' + qlm[4].padStart(2, "0")
