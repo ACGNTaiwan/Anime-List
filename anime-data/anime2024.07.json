@@ -507,8 +507,8 @@
   },
   {
     "name": "JOCHUM",
-    "date": "",
-    "time": "",
+    "date": "7/13",
+    "time": "06:00",
     "carrier": "Original",
     "season": 1,
     "originalName": "JOCHUM",
@@ -540,7 +540,7 @@
   },
   {
     "name": "拳願阿修羅 第二季 Part.2",
-    "date": "",
+    "date": "8/15",
     "time": "16:00",
     "carrier": "Comic",
     "season": 2,
@@ -562,7 +562,7 @@
   },
   {
     "name": "只想告訴你 第三季",
-    "date": "",
+    "date": "8/1",
     "time": "16:00",
     "carrier": "Comic",
     "season": 3,
@@ -580,7 +580,7 @@
     "originalName": "カードファイト!! ヴァンガード Divinez Season 2",
     "img": "anime-data/img/2024/07/5a25d6742c2b9f46e0bdc624311qcox5.JPG",
     "official": "https://anime.cf-vanguard.com/vgd/",
-    "description": ""
+    "description": "六張卡片從天而降，這是參加『命運之戰』的資格，贏到最後的人將能實現願望。"
   },
   {
     "name": "高爾夫物語 第一季",
@@ -616,7 +616,7 @@
     "description": "在 1997 年，「天網」向人類宣戰的那一年，為了 阻止時間線中「審判日」的到來，來自 2022 年的一名女士兵接到任務被送往當年，試圖保 護名叫 Malcolm Lee 的科學家，協助他製作足以對付天網的 AI 人工智慧系統。"
   },
   {
-    "name": "未來的黑幕系反派千金莫里亞蒂的異世界完全犯罪白書",
+    "name": "幽靈教授的惡女養成法則",
     "date": "7/20",
     "time": "01:56",
     "carrier": "Novel",
