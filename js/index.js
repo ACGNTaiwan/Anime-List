@@ -95,13 +95,13 @@ router
     .resolve()
 router
     .hooks({
-        before: (done, params) => {
+        before: (done, _params) => {
             $("#content").attr('class', '').html('')
             $("#drawer>.mdui-list *").removeClass(activeDrawerItemClassName)
             $(`[href="${router.lastRouteResolved().url}"]`).addClass(activeDrawerItemClassName)
             done()
         },
-        after: params => {
+        after: _params => {
             $('html, body').scrollTop(0)
         }
     })
