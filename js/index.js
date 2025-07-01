@@ -67,7 +67,8 @@ const indexData = {
     },
     2025: {
         1: "anime2025.01.json",
-        4: "anime2025.04.json"
+        4: "anime2025.04.json",
+        7: "anime2025.07.json"
     }
 };
 const bg = arrayShuffle([
