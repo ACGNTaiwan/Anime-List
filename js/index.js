@@ -70,7 +70,10 @@ const indexData = {
         4: "anime2025.04.json",
         7: "anime2025.07.json",
         10: "anime2025.10.json"
-    }
+    },
+    2026: {
+        1: "anime2026.01.json",
+    },
 };
 const bg = arrayShuffle([
     'anime-data/img/index/E382ADE383BCE38393E382B8E383A5E382A2E383AB.png',
